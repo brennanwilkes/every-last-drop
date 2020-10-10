@@ -1,3 +1,9 @@
+# Every Last Drop
+
+The complete database management system for the small bar, or bar owner. Every Last Drop manages the bar's inventory, orders, and sales, as well as featuring multi-user support for default customer users, and credential-required manager and admin users.
+
+---
+
 ## Installation
 
 ### Setup
@@ -24,6 +30,8 @@ cd ~/Desktop
 cd %USERPROFILE%\Desktop
 ```
 
+---
+
 <img src=https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg width=40px height=40px> **Clone the repo**
 
 ```sh
@@ -34,6 +42,8 @@ OR if you have an ssh key setup
 git clone git@github.com:brennanwilkes/every-last-drop.git
 ```
 
+---
+
 <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png width=40px height=20px> **Install NPM packages**
 
 ```sh
@@ -41,7 +51,9 @@ cd every-last-drop
 npm install
 ```
 
-## Usage
+---
+
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png width=40px height=20px> **Usage**
 
 ```sh
 npm start 
