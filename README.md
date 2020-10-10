@@ -17,14 +17,19 @@ The complete database management system for the small bar, or bar owner. Every L
 > Type "terminal"
 
 ```sh
+brew update
+brew install node
 cd ~/Desktop
 ```
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Windows_Logo_1995.svg/1181px-Windows_Logo_1995.svg.png width=40px height=40px> **Windows**
 
+> Go to https://nodejs.org/en/download/  
+> Click "Windows Installer"  
+> Double click the installer  
+> <kbd>Run</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Install</kbd> + <kbd>Finish</kbd>  
 > <kbd>⊞ Windows</kbd> + <kbd>R</kbd>  
 > Type "cmd"  
-> Click "ok"
 
 ```cmd
 cd %USERPROFILE%\Desktop
