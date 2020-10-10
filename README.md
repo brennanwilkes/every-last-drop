@@ -2,10 +2,10 @@
 
 ### Setup
 
-**Linux**
+<img src=https://i.pinimg.com/originals/c7/b8/11/c7b8113247fecd83bd9b5ed5bd3f34d5.png width=40px height=40px> **Linux**
 > You know what to do already
 
-**MAC**
+<img src=https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg width=40px height=40px> **MAC**
 
 > <kbd>⌘ Command</kbd> + <kbd>Space</kbd>  
 > Type "terminal"
@@ -14,7 +14,7 @@
 cd ~/Desktop
 ```
 
-**Windows**
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Windows_Logo_1995.svg/1181px-Windows_Logo_1995.svg.png width=40px height=40px> **Windows**
 
 > <kbd>⊞ Windows</kbd> + <kbd>R</kbd>  
 > Type "cmd"  
@@ -24,8 +24,7 @@ cd ~/Desktop
 cd %USERPROFILE%\Desktop
 ```
 
-
-### Clone the repo
+<img src=https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg width=40px height=40px> **Clone the repo**
 
 ```sh
 git clone https://github.com/brennanwilkes/every-last-drop.git
@@ -35,7 +34,7 @@ OR if you have an ssh key setup
 git clone git@github.com:brennanwilkes/every-last-drop.git
 ```
 
-### Install NPM packages
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png width=40px height=20px> **Install NPM packages**
 
 ```sh
 cd every-last-drop
