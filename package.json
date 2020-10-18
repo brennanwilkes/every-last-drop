@@ -1,28 +1,30 @@
 {
-  "name": "every-last-drop",
-  "version": "1.0.0",
-  "description": "Every Last Drop is the complete database management system for the small bar, or bar owner",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brennanwilkes/every-last-drop.git"
-  },
-  "author": "Mali Truong/Charles Lewis/Brennan Wilkes",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brennanwilkes/every-last-drop/issues"
-  },
-  "homepage": "https://github.com/brennanwilkes/every-last-drop#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mariadb": "^2.4.2",
-    "node": "^14.13.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.5"
-  }
+	"name": "every-last-drop",
+	"version": "1.0.0",
+	"description": "Every Last Drop is the complete database management system for the small bar, or bar owner",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node .",
+		"sql-init": "sudo mysql -u root -p < src/sql/init.sql",
+		"sql-login": "sudo mysql -u root -p"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/brennanwilkes/every-last-drop.git"
+	},
+	"author": "Mali Truong/Charles Lewis/Brennan Wilkes",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/brennanwilkes/every-last-drop/issues"
+	},
+	"homepage": "https://github.com/brennanwilkes/every-last-drop#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mariadb": "^2.4.2",
+		"node": "^14.13.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.5"
+	}
 }
