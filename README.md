@@ -9,7 +9,8 @@ The complete database management system for the small bar, or bar owner. Every L
 ### Setup
 
 <img src=https://i.pinimg.com/originals/c7/b8/11/c7b8113247fecd83bd9b5ed5bd3f34d5.png width=40px height=40px> **Linux**
-> You know what to do already
+> Install mariaDB, nodeJS  
+> You know how to do that already
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg width=40px height=40px> **MAC**
 
@@ -19,6 +20,7 @@ The complete database management system for the small bar, or bar owner. Every L
 ```sh
 brew update
 brew install node
+brew install mariadb
 cd ~/Desktop
 ```
 
@@ -28,6 +30,7 @@ cd ~/Desktop
 > Click "Windows Installer"  
 > Double click the installer  
 > <kbd>Run</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Install</kbd> + <kbd>Finish</kbd>  
+> Install mariaDB by following these steps: https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/  
 > <kbd>⊞ Windows</kbd> + <kbd>R</kbd>  
 > Type "cmd"  
 
