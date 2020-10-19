@@ -10,7 +10,11 @@
 		"sql-init:linux": "sh build/linux-sql-init.sh",
 		"sql-init:darwin": "sh build/darwin-sql-init.sh",
 		"sql-init:default": "echo 'AHHHH'",
-		"sql-login": "sudo mysql -u root -p"
+
+		"sql-login": "run-script-os",
+		"sql-login:linux": "sh dev/linux-sql-login.sh",
+		"sql-login:darwin": "sh dev/darwin-sql-login.sh",
+		"sql-login:default": "echo 'AHHHH'"
 	},
 	"repository": {
 		"type": "git",
