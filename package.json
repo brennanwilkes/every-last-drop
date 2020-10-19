@@ -7,8 +7,8 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node .",
 		"sql-init": "run-script-os",
-		"sql-init:linux": "if ! command -v mariadb 2>/dev/null >/dev/null; then echo \"mariadb is not installed. Try: 'sudo apt install mariadb-server'\"; else sudo mysql -u root -p < src/sql/init.sql; fi",
-		"sql-init:darwin": "sudo mysql -u root -p < src/sql/init.sql",
+		"sql-init:linux": "sh build/linux-sql-init.sh",
+		"sql-init:darwin": "sh build/darwin-sql-init.sh",
 		"sql-init:default": "echo 'AHHHH'",
 		"sql-login": "sudo mysql -u root -p"
 	},
