@@ -20,10 +20,30 @@ flush privileges;
 /* Set active database */
 USE everyLastDrop;
 
-/* Create tables blah blah blah */
-CREATE TABLE testing (
-	`id` INT NOT NULL AUTO_INCREMENT,
-	`name` VARCHAR(50),
-	`value` VARCHAR(50),
+/* Drink Recipe tabl */
+CREATE TABLE drinkRecipe (
+	`id` INT NOT NULL UNIQUE,
+	`name` VARCHAR(50) NOT NULL,
+	`price` FLOAT NOT NULL,
+	`mixMethod` VARCHAR(20) NOT NULL,
+	`onIce` BOOLEAN NOT NULL,
+	`glassID` INT NOT NULL,
+	`versionOf` INT,
+	PRIMARY KEY (id),
+	FOREIGN KEY (versionOf) REFERENCES drinkRecipe(id)
+) COLLATE='utf8_bin';
+
+/* Drink Recipe tabl */
+CREATE TABLE ingredient (
+	`id` INT NOT NULL UNIQUE,
+	`name` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id)
+) COLLATE='utf8_bin';
+
+CREATE TABLE drinkRequires(
+	`drinkId` INT NOT NULL,
+	`ingredientId` INT NOT NULL,
+	`quantity` FLOAT,
+	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id),
+	FOREIGN KEY (ingredientId) REFERENCES ingredient(id)
 ) COLLATE='utf8_bin';
