@@ -6,7 +6,10 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node .",
-		"sql-init": "sudo mysql -u root -p < src/sql/init.sql",
+		"sql-init": "run-script-os",
+		"sql-init:linux": "if ! command -v mariadb 2>/dev/null >/dev/null; then echo \"mariadb is not installed. Try: 'sudo apt install mariadb-server'\"; else sudo mysql -u root -p < src/sql/init.sql; fi",
+		"sql-init:darwin": "sudo mysql -u root -p < src/sql/init.sql",
+		"sql-init:default": "echo 'AHHHH'",
 		"sql-login": "sudo mysql -u root -p"
 	},
 	"repository": {
@@ -25,6 +28,7 @@
 		"node": "^14.13.0"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.5"
+		"nodemon": "^2.0.5",
+		"run-script-os": "^1.1.1"
 	}
 }
