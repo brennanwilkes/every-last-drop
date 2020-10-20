@@ -102,7 +102,7 @@
 			{"drinkId":2, "ingredientId": 16, "quantity": 1.0},
 			{"drinkId":3, "ingredientId": 3, "quantity": 3.0},
 			{"drinkId":3, "ingredientId": 5, "quantity": 0.5},
-			{"drinkId":3, "ingredientId": 5, "quantity": 0.5},
+			{"drinkId":3, "ingredientId": 20, "quantity": 1.0},
 			{"drinkId":4, "ingredientId": 1, "quantity": 2.0},
 			{"drinkId":4, "ingredientId": 6, "quantity": 1.0},
 			{"drinkId":4, "ingredientId": 9, "quantity": 1.0},
@@ -118,21 +118,21 @@
 	"customer":{
 		"order":7,
 		"data":[
-			{"fullName":"Brennan Wilkes", "dateOfBirth": "1/1/2020"},
-			{"fullName":"Charles Lewis", "dateOfBirth": "1/1/2020"},
-			{"fullName":"Mali Truong", "dateOfBirth": "1/1/2020"},
-			{"fullName":"Hazra Imran", "dateOfBirth": "1/1/2020"},
-			{"fullName":"Erik Jovanovic", "dateOfBirth": "1/1/2020"}
+			{"fullName":"Brennan Wilkes", "dateOfBirth": "2020/1/1"},
+			{"fullName":"Charles Lewis", "dateOfBirth": "2020/1/1"},
+			{"fullName":"Mali Truong", "dateOfBirth": "2020/1/1"},
+			{"fullName":"Hazra Imran", "dateOfBirth": "2020/1/1"},
+			{"fullName":"Erik Jovanovic", "dateOfBirth": "2020/1/1"}
 		]
 	},
 	"transaction":{
 		"order":8,
 		"data":[
-			{"date": "20/10/2020", "drinkId": 0, "customerName": "Brennan Wilkes"},
-			{"date": "20/10/2020", "drinkId": 1, "customerName": "Brennan Wilkes"},
-			{"date": "20/10/2020", "drinkId": 4, "customerName": "Mali Truong"},
-			{"date": "20/10/2020", "drinkId": 3, "customerName": "Charles Lewis"},
-			{"date": "20/10/2020", "drinkId": 2, "customerName": "Hazra Imran"}
+			{"date": "2020/10/20", "drinkId": 0, "customerName": "Brennan Wilkes"},
+			{"date": "2020/10/20", "drinkId": 1, "customerName": "Brennan Wilkes"},
+			{"date": "2020/10/20", "drinkId": 4, "customerName": "Mali Truong"},
+			{"date": "2020/10/20", "drinkId": 3, "customerName": "Charles Lewis"},
+			{"date": "2020/10/20", "drinkId": 2, "customerName": "Hazra Imran"}
 		]
 	}
 }
