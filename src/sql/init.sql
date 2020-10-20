@@ -54,6 +54,7 @@ CREATE TABLE drinkRequires(
 	`drinkId` INT NOT NULL,
 	`ingredientId` INT NOT NULL,
 	`quantity` FLOAT NOT NULL,
+	PRIMARY KEY (drinkId, ingredientId),
 	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id),
 	FOREIGN KEY (ingredientId) REFERENCES ingredient(id)
 ) COLLATE='utf8_bin';
@@ -81,7 +82,7 @@ CREATE TABLE juice (
 CREATE TABLE garnish (
 	`id` INT NOT NULL UNIQUE,
 	`placement` VARCHAR(50) NOT NULL,
-	`foodName` VARCHAR(50) NOT NULL,
+	`foodName` VARCHAR(50),
 	PRIMARY KEY (id),
 	FOREIGN KEY (id) REFERENCES ingredient(id)
 ) COLLATE='utf8_bin';
@@ -95,8 +96,8 @@ CREATE TABLE customer (
 
 /* Transaction- sale of a drink recipe to a person */
 CREATE TABLE transaction (
-	`id` INT NOT NULL UNIQUE,
-	`dateOfBirth` DATE NOT NULL,
+	`id` INT NOT NULL UNIQUE AUTO_INCREMENT,
+	`date` DATE NOT NULL,
 	`drinkId` INT NOT NULL,
 	`customerName` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id),
