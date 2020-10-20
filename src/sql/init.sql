@@ -1,7 +1,8 @@
 /* Initialization SQL script */
 
 /* Create everyLastDrop database */
-CREATE OR REPLACE DATABASE everyLastDrop;
+DROP DATABASE IF EXISTS everyLastDrop;
+CREATE DATABASE everyLastDrop;
 
 /*
 	Setup user account with privileges
@@ -20,30 +21,85 @@ flush privileges;
 /* Set active database */
 USE everyLastDrop;
 
-/* Drink Recipe tabl */
+/* Glass */
+CREATE TABLE glass (
+	`id` INT NOT NULL UNIQUE,
+	`name` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (id)
+) COLLATE='utf8_bin';
+
+/* Drink Recipe */
 CREATE TABLE drinkRecipe (
 	`id` INT NOT NULL UNIQUE,
 	`name` VARCHAR(50) NOT NULL,
 	`price` FLOAT NOT NULL,
-	`mixMethod` VARCHAR(20) NOT NULL,
+	`mixMethod` VARCHAR(50) NOT NULL,
 	`onIce` BOOLEAN NOT NULL,
 	`glassID` INT NOT NULL,
 	`versionOf` INT,
 	PRIMARY KEY (id),
-	FOREIGN KEY (versionOf) REFERENCES drinkRecipe(id)
+	FOREIGN KEY (versionOf) REFERENCES drinkRecipe(id),
+	FOREIGN KEY (glassId) REFERENCES glass(id)
 ) COLLATE='utf8_bin';
 
-/* Drink Recipe tabl */
+/* Ingredient */
 CREATE TABLE ingredient (
 	`id` INT NOT NULL UNIQUE,
 	`name` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id)
 ) COLLATE='utf8_bin';
 
+/* Required ingredients for recipe */
 CREATE TABLE drinkRequires(
 	`drinkId` INT NOT NULL,
 	`ingredientId` INT NOT NULL,
-	`quantity` FLOAT,
+	`quantity` FLOAT NOT NULL,
 	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id),
 	FOREIGN KEY (ingredientId) REFERENCES ingredient(id)
+) COLLATE='utf8_bin';
+
+/* Alcohol ingredient subtype */
+CREATE TABLE alcohol (
+	`id` INT NOT NULL UNIQUE,
+	`percentage` FLOAT NOT NULL,
+	`glassId` INT NOT NULL,
+	PRIMARY KEY (id),
+	FOREIGN KEY (id) REFERENCES ingredient(id),
+	FOREIGN KEY (glassId) REFERENCES glass(id)
+) COLLATE='utf8_bin';
+
+/* Juice ingredient subtype */
+CREATE TABLE juice (
+	`id` INT NOT NULL UNIQUE,
+	`isSweet` BOOLEAN NOT NULL,
+	`fruitName` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (id),
+	FOREIGN KEY (id) REFERENCES ingredient(id)
+) COLLATE='utf8_bin';
+
+/* Garnish ingredient subtype */
+CREATE TABLE garnish (
+	`id` INT NOT NULL UNIQUE,
+	`placement` VARCHAR(50) NOT NULL,
+	`foodName` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (id),
+	FOREIGN KEY (id) REFERENCES ingredient(id)
+) COLLATE='utf8_bin';
+
+/* Customer */
+CREATE TABLE customer (
+	`fullName` VARCHAR(50) NOT NULL UNIQUE,
+	`dateOfBirth` DATE NOT NULL,
+	PRIMARY KEY (fullName)
+) COLLATE='utf8_bin';
+
+/* Transaction- sale of a drink recipe to a person */
+CREATE TABLE transaction (
+	`id` INT NOT NULL UNIQUE,
+	`dateOfBirth` DATE NOT NULL,
+	`drinkId` INT NOT NULL,
+	`customerName` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (id),
+	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id),
+	FOREIGN KEY (customerName) REFERENCES customer(fullName)
 ) COLLATE='utf8_bin';
