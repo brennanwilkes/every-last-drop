@@ -33,6 +33,8 @@ cd ~/Desktop
 > Install mariaDB by following these steps: https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/  
 > <kbd>⊞ Windows</kbd> + <kbd>R</kbd>  
 > Type "cmd"  
+> Right click  
+> "Run as administrator"
 
 ```cmd
 cd %USERPROFILE%\Desktop
