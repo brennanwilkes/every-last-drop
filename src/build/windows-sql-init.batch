@@ -7,4 +7,4 @@ exit
 
 :run
 net start mariadb
-mariadb -u root -p < src/sql/init.sql
+mariadb -u root -p < src\sql\init.sql
