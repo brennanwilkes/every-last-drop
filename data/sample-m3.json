@@ -1,0 +1,138 @@
+{
+	"database": "everyLastDrop",
+	"glass":{
+		"order":0,
+		"data":[
+			{"id":0, "name": "rocks"},
+			{"id":1, "name": "collins"},
+			{"id":2, "name": "coupe"},
+			{"id":3, "name": "margarita"},
+			{"id":4, "name": "hurricane"},
+			{"id":5, "name": "wine"}
+		]
+	},
+	"drinkRecipe":{
+		"order":1,
+		"data":[
+			{"id":0, "name": "old fashioned", "price": 10.0, "mixMethod": "stirred", "onIce": true, "glassID": 0, "versionOf": null},
+			{"id":1, "name": "manhattan", "price": 12.0, "mixMethod": "stirred", "onIce": false, "glassID": 2, "versionOf": null},
+			{"id":2, "name": "pina colada", "price": 12.0, "mixMethod": "shaken", "onIce": true, "glassID": 4, "versionOf": null},
+			{"id":3, "name": "martini", "price": 10.0, "mixMethod": "stirred", "onIce": false, "glassID": 2, "versionOf": null},
+			{"id":4, "name": "margarita", "price": 12.0, "mixMethod": "shaken", "onIce": true, "glassID": 3, "versionOf": null},
+			{"id":5, "name": "mezcal margarita", "price": 14.0, "mixMethod": "shaken", "onIce": true, "glassID": 0, "versionOf": 4}
+		]
+	},
+	"ingredient":{
+		"order":2,
+		"data":[
+			{"id":0,"name":"whiskey"},
+			{"id":1,"name":"tequila"},
+			{"id":2,"name":"rum"},
+			{"id":3,"name":"gin"},
+			{"id":4,"name":"sweet vermouth"},
+			{"id":5,"name":"dry vermouth"},
+			{"id":6,"name":"cointreau"},
+			{"id":7,"name":"coconut cream"},
+			{"id":8,"name":"pineapple juice"},
+			{"id":9,"name":"lime juice"},
+			{"id":10,"name":"lemon juice"},
+			{"id":11,"name":"orange juice"},
+			{"id":12,"name":"pomegranate juice"},
+			{"id":13,"name":"simple syrup"},
+			{"id":14,"name":"angostura bitters"},
+			{"id":15,"name":"water"},
+			{"id":16,"name":"maraschino cherry"},
+			{"id":17,"name":"salt"},
+			{"id":18,"name":"lime wedge"},
+			{"id":19,"name":"orange peel"},
+			{"id":20,"name":"olive"},
+			{"id":21,"name":"lemon twist"},
+			{"id":22,"name":"mezcal"}
+		]
+	},
+	"alcohol":{
+		"order":3,
+		"data":[
+			{"id":0, "percentage": 50.0, "glassId": 0},
+			{"id":1, "percentage": 45.0, "glassId": 0},
+			{"id":2, "percentage": 40.0, "glassId": 0},
+			{"id":3, "percentage": 40.0, "glassId": 2},
+			{"id":4, "percentage": 20.0, "glassId": 5},
+			{"id":5, "percentage": 20.0, "glassId": 5},
+			{"id":6, "percentage": 15.0, "glassId": 0},
+			{"id":22, "percentage": 50.0, "glassId": 0}
+		]
+	},
+	"juice":{
+		"order":4,
+		"data":[
+			{"id":8, "isSweet": true, "fruitName": "pineapple"},
+			{"id":9, "isSweet": false, "fruitName": "lime"},
+			{"id":10, "isSweet": false, "fruitName": "lemon"},
+			{"id":11, "isSweet": true, "fruitName": "orange"},
+			{"id":12, "isSweet": true, "fruitName": "pomegranate"}
+		]
+	},
+	"garnish":{
+		"order":5,
+		"data":[
+			{"id":16, "placement": "on top", "foodName": "cherry"},
+			{"id":17, "placement": "on rim", "foodName": null},
+			{"id":18, "placement": "in glass", "foodName": "lime"},
+			{"id":19, "placement": "on rim", "foodName": "orange"},
+			{"id":20, "placement": "in glass", "foodName": "olive"},
+			{"id":21, "placement": "on top", "foodName": "lemon"}
+		]
+	},
+	"drinkRequires":{
+		"order":6,
+		"data":[
+			{"drinkId":0, "ingredientId": 0, "quantity": 1.5},
+			{"drinkId":0, "ingredientId": 12, "quantity": 0.25},
+			{"drinkId":0, "ingredientId": 14, "quantity": 0.125},
+			{"drinkId":0, "ingredientId": 15, "quantity": 0.25},
+			{"drinkId":0, "ingredientId": 19, "quantity": 1.0},
+			{"drinkId":1, "ingredientId": 0, "quantity": 2.0},
+			{"drinkId":1, "ingredientId": 4, "quantity": 0.75},
+			{"drinkId":1, "ingredientId": 14, "quantity": 0.125},
+			{"drinkId":1, "ingredientId": 16, "quantity": 1.0},
+			{"drinkId":2, "ingredientId": 7, "quantity": 1.0},
+			{"drinkId":2, "ingredientId": 2, "quantity": 2.0},
+			{"drinkId":2, "ingredientId": 8, "quantity": 3.0},
+			{"drinkId":2, "ingredientId": 16, "quantity": 1.0},
+			{"drinkId":3, "ingredientId": 3, "quantity": 3.0},
+			{"drinkId":3, "ingredientId": 5, "quantity": 0.5},
+			{"drinkId":3, "ingredientId": 20, "quantity": 1.0},
+			{"drinkId":4, "ingredientId": 1, "quantity": 2.0},
+			{"drinkId":4, "ingredientId": 6, "quantity": 1.0},
+			{"drinkId":4, "ingredientId": 9, "quantity": 1.0},
+			{"drinkId":4, "ingredientId": 17, "quantity": 1.0},
+			{"drinkId":4, "ingredientId": 18, "quantity": 1.0},
+			{"drinkId":5, "ingredientId": 22, "quantity": 2.0},
+			{"drinkId":5, "ingredientId": 6, "quantity": 1.0},
+			{"drinkId":5, "ingredientId": 9, "quantity": 1.0},
+			{"drinkId":5, "ingredientId": 17, "quantity": 1.0},
+			{"drinkId":5, "ingredientId": 18, "quantity": 1.0}
+		]
+	},
+	"customer":{
+		"order":7,
+		"data":[
+			{"fullName":"Brennan Wilkes", "dateOfBirth": "2020/1/1"},
+			{"fullName":"Charles Lewis", "dateOfBirth": "2020/1/1"},
+			{"fullName":"Mali Truong", "dateOfBirth": "2020/1/1"},
+			{"fullName":"Hazra Imran", "dateOfBirth": "2020/1/1"},
+			{"fullName":"Erik Jovanovic", "dateOfBirth": "2020/1/1"}
+		]
+	},
+	"transaction":{
+		"order":8,
+		"data":[
+			{"date": "2020/10/20", "drinkId": 0, "customerName": "Brennan Wilkes"},
+			{"date": "2020/10/20", "drinkId": 1, "customerName": "Brennan Wilkes"},
+			{"date": "2020/10/20", "drinkId": 4, "customerName": "Mali Truong"},
+			{"date": "2020/10/20", "drinkId": 3, "customerName": "Charles Lewis"},
+			{"date": "2020/10/20", "drinkId": 2, "customerName": "Hazra Imran"}
+		]
+	}
+}
