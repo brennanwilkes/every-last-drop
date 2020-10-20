@@ -17,7 +17,8 @@
 		"sql-login:darwin": "sh src/dev/darwin-sql-login.sh",
 		"sql-login:default": "src\\dev\\windows-sql-login.batch",
 
-		"gen-m3-sql": "node src/dev/jsonToSql.js ./data/sample-m3.json ./data/sample-m3.sql"
+		"gen-m3-sql": "node src/dev/jsonToSql.js ./data/sample-m3.json ./data/sample-m3.sql",
+		"sql-status": "mariadb --defaults-extra-file=config/sql-login --table < src/sql/status.sql"
 	},
 	"repository": {
 		"type": "git",
