@@ -64,7 +64,7 @@ CREATE TABLE alcohol (
 	`percentage` FLOAT NOT NULL,
 	`glassId` INT NOT NULL,
 	PRIMARY KEY (id),
-	FOREIGN KEY (id) REFERENCES ingredient(id),
+	FOREIGN KEY (id) REFERENCES ingredient(id) ON DELETE CASCADE,
 	FOREIGN KEY (glassId) REFERENCES glass(id)
 ) COLLATE='utf8_bin';
 
@@ -74,7 +74,7 @@ CREATE TABLE juice (
 	`isSweet` BOOLEAN NOT NULL,
 	`fruitName` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id),
-	FOREIGN KEY (id) REFERENCES ingredient(id)
+	FOREIGN KEY (id) REFERENCES ingredient(id) ON DELETE CASCADE
 ) COLLATE='utf8_bin';
 
 /* Garnish ingredient subtype */
@@ -83,7 +83,7 @@ CREATE TABLE garnish (
 	`placement` VARCHAR(50) NOT NULL,
 	`foodName` VARCHAR(50),
 	PRIMARY KEY (id),
-	FOREIGN KEY (id) REFERENCES ingredient(id)
+	FOREIGN KEY (id) REFERENCES ingredient(id) ON DELETE CASCADE
 ) COLLATE='utf8_bin';
 
 /* Customer */
