@@ -6,14 +6,17 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node .",
-		"sql-init": "run-script-os",
+
+		"sql-init": "node run-script-os-custom-index.js sql-init",
 		"sql-init:linux": "sh src/build/linux-sql-init.sh",
 		"sql-init:darwin": "sh src/build/darwin-sql-init.sh",
 		"sql-init:default": "src\\build\\windows-sql-init.batch",
-		"sql-login": "run-script-os",
+
+		"sql-login": "node run-script-os-custom-index.js sql-login",
 		"sql-login:linux": "sh src/dev/linux-sql-login.sh",
 		"sql-login:darwin": "sh src/dev/darwin-sql-login.sh",
 		"sql-login:default": "src\\dev\\windows-sql-login.batch",
+
 		"gen-m3-sql": "node src/dev/jsonToSql.js ./data/sample-m3.json ./data/sample-m3.sql",
 		"sql-status": "mariadb --defaults-extra-file=config/sql-login --table < src/sql/status.sql",
 		"os-test" : "echo $npm_config_argv; echo $npm_config_user_agent"
@@ -34,7 +37,6 @@
 		"node": "^14.13.0"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.5",
-		"run-script-os": "^1.1.1"
+		"nodemon": "^2.0.5"
 	}
 }
