@@ -11,7 +11,7 @@ if [ "$?" -ne 0 ]; then
 	fi;
 else
 	#AMAZON LINUX
-	
+	sudo service mysql start >/dev/null 2>/dev/null
 	mariadb --version 2>/dev/null >/dev/null
 	if [ "$?" -eq 0 ]; then
 		mariadb -u root < src/sql/init.sql;
