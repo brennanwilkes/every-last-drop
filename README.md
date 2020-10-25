@@ -18,6 +18,11 @@ The complete database management system for the small bar, or bar owner. Every L
 > Type "terminal"
 
 ```sh
+xcode-select --install
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+> Follow the instructions both give you
+```sh
 brew update
 brew install node
 brew install mariadb
