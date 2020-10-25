@@ -11,8 +11,6 @@ CREATE DATABASE everyLastDrop;
 	we need to decide on a username/password for
 	our app to use.
 */
-DROP USER IF EXISTS group12;
-FLUSH PRIVILEGES;
 
 GRANT all privileges ON everyLastDrop.* TO 'group12'@'localhost' IDENTIFIED BY 'cpsc2221';
 FLUSH PRIVILEGES;
