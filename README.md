@@ -12,6 +12,19 @@ The complete database management system for the small bar, or bar owner. Every L
 > Install mariaDB, nodeJS  
 > You know how to do that already
 
+<img src=https://i.pinimg.com/originals/c7/b8/11/c7b8113247fecd83bd9b5ed5bd3f34d5.png width=40px height=40px> **Amazon EC2 Linux**
+```sh
+sudo yum -y update
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+. ~/.bashrc
+nvm install node
+```
+> After following the below instructions for cloning the repo and installing npm, run the following mariadb installer script
+```sh
+sh ./src/build/amazon-install-mariadb.sh
+```
+
+
 <img src=https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg width=40px height=40px> **MAC**
 
 > <kbd>⌘ Command</kbd> + <kbd>Space</kbd>  
@@ -71,6 +84,7 @@ npm install
 <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png width=40px height=20px> **Usage**
 
 ```sh
-npm start 
+npm start
+npm run sql-init
 ```
 
