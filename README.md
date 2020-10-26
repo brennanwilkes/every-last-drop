@@ -12,7 +12,7 @@ The complete database management system for the small bar, or bar owner. Every L
 > Install mariaDB, nodeJS  
 > You know how to do that already
 
-<img src=https://i.pinimg.com/originals/c7/b8/11/c7b8113247fecd83bd9b5ed5bd3f34d5.png width=40px height=40px> **Amazon EC2 Linux**
+<img src=https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg width=60px height=40px> **Amazon EC2 Linux**
 ```sh
 sudo yum -y update
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
@@ -42,12 +42,13 @@ brew install mariadb
 cd ~/Desktop
 ```
 
-<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Windows_Logo_1995.svg/1181px-Windows_Logo_1995.svg.png width=40px height=40px> **Windows**
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Windows_Logo_1995.svg/1181px-Windows_Logo_1995.svg.png width=60px height=40px> **Windows**
 
 > Go to https://nodejs.org/en/download/  
 > Click "Windows Installer"  
 > Double click the installer  
 > <kbd>Run</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Install</kbd> + <kbd>Finish</kbd>  
+> Download the Windows msi from this link: https://downloads.mariadb.org/interstitial/mariadb-10.5.6/winx64-packages/mariadb-10.5.6-winx64.msi/from/https%3A//mirror.its.dal.ca/mariadb/  
 > Install mariaDB by following these steps: https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/  
 > <kbd>⊞ Windows</kbd> + <kbd>R</kbd>  
 > Type "cmd"  
