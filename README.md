@@ -55,7 +55,7 @@ cd ~/Desktop
 > Unless you know what you're doing, leave the defaults as is.  
 > If you change the process name to something other than "MariaDB" you will have to also update further installation scripts, so best to leave as is.  
 > If you change installation directory to something other than "\Program Files\MariaDB\" then you will also have to update the installation scripts.
-> Set your root password to something you'll remember  
+> If you install a different version of MariaDB other than 10.5, you'll have to update the installation scripts.
 
 > <kbd>⊞ Windows</kbd>
 > Type "cmd"  
