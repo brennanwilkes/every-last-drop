@@ -8,4 +8,4 @@ exit
 
 :run
 net start MariaDB
-MariaDB --defaults-extra-file=config\sql-login
+"\Program Files\MariaDB 10.5\bin\mariadb.exe" --defaults-extra-file=config\sql-login
