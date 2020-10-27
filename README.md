@@ -47,7 +47,7 @@ cd ~/Desktop
 > Go to https://nodejs.org/en/download/  
 > Click "Windows Installer"  
 > Double click the installer  
-> <kbd>Run</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Install</kbd> + <kbd>Finish</kbd>  
+> <kbd>Run</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Yes install dependencies</kbd> <kbd>Next</kbd> + <kbd>Install</kbd> + <kbd>Finish</kbd>  
 > Download the Windows msi from this link: https://downloads.mariadb.org/interstitial/mariadb-10.5.6/winx64-packages/mariadb-10.5.6-winx64.msi/from/https%3A//mirror.its.dal.ca/mariadb/  
 > Install mariaDB by following these steps: https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/  
 > <kbd>⊞ Windows</kbd> + <kbd>R</kbd>  
