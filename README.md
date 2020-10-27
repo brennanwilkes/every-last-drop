@@ -50,7 +50,10 @@ cd ~/Desktop
 > <kbd>Run</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Yes install dependencies</kbd> <kbd>Next</kbd> + <kbd>Install</kbd> + <kbd>Finish</kbd>  
 > Download the Windows msi from this link: https://downloads.mariadb.org/interstitial/mariadb-10.5.6/winx64-packages/mariadb-10.5.6-winx64.msi/from/https%3A//mirror.its.dal.ca/mariadb/  
 > Install mariaDB by following these steps: https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/  
-> Unless you know what you're doing, leave the defaults as is. If you change the process name to something other than "MariaDB" you will have to also update further installation scripts, so best to leave as is. Set your root password to something you'll remember
+
+> Ensure that you select "Database instance"
+> Unless you know what you're doing, leave the defaults as is. If you change the process name to something other than "MariaDB" you will have to also update further installation scripts, so best to leave as is. Set your root password to something you'll remember  
+
 > <kbd>⊞ Windows</kbd>
 > Type "cmd"  
 > Right click  
