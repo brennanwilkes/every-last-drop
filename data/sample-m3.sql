@@ -36,74 +36,119 @@ VALUES (4, "margarita", 12, "shaken", true, 3, null);
 INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf)
 VALUES (5, "mezcal margarita", 14, "shaken", true, 0, 4); 
 
-INSERT INTO ingredient(id, name)
-VALUES (0, "whiskey"); 
+INSERT INTO drinkRating(rating, popularity)
+VALUES (2, "never ordered"); 
 
-INSERT INTO ingredient(id, name)
-VALUES (1, "tequila"); 
+INSERT INTO drinkRating(rating, popularity)
+VALUES (4, "unpopular"); 
 
-INSERT INTO ingredient(id, name)
-VALUES (2, "rum"); 
+INSERT INTO drinkRating(rating, popularity)
+VALUES (6, "mediocre"); 
 
-INSERT INTO ingredient(id, name)
-VALUES (3, "gin"); 
+INSERT INTO drinkRating(rating, popularity)
+VALUES (8, "loved"); 
 
-INSERT INTO ingredient(id, name)
-VALUES (4, "sweet vermouth"); 
+INSERT INTO drinkRating(rating, popularity)
+VALUES (10, "fan favourite"); 
 
-INSERT INTO ingredient(id, name)
-VALUES (5, "dry vermouth"); 
+INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (0, false); 
 
-INSERT INTO ingredient(id, name)
-VALUES (6, "cointreau"); 
+INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (1, true); 
 
-INSERT INTO ingredient(id, name)
-VALUES (7, "coconut cream"); 
+INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (4, true); 
 
-INSERT INTO ingredient(id, name)
-VALUES (8, "pineapple juice"); 
+INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (6, true); 
 
-INSERT INTO ingredient(id, name)
-VALUES (9, "lime juice"); 
+INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (9, true); 
 
-INSERT INTO ingredient(id, name)
-VALUES (10, "lemon juice"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (0, "whiskey", 1); 
 
-INSERT INTO ingredient(id, name)
-VALUES (11, "orange juice"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (1, "tequila", 0); 
 
-INSERT INTO ingredient(id, name)
-VALUES (12, "pomegranate juice"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (2, "rum", 1); 
 
-INSERT INTO ingredient(id, name)
-VALUES (13, "simple syrup"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (3, "gin", 4); 
 
-INSERT INTO ingredient(id, name)
-VALUES (14, "angostura bitters"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (4, "sweet vermouth", 6); 
 
-INSERT INTO ingredient(id, name)
-VALUES (15, "water"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (5, "dry vermouth", 9); 
 
-INSERT INTO ingredient(id, name)
-VALUES (16, "maraschino cherry"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (6, "cointreau", 9); 
 
-INSERT INTO ingredient(id, name)
-VALUES (17, "salt"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (7, "coconut cream", 0); 
 
-INSERT INTO ingredient(id, name)
-VALUES (18, "lime wedge"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (8, "pineapple juice", 6); 
 
-INSERT INTO ingredient(id, name)
-VALUES (19, "orange peel"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (9, "lime juice", 0); 
 
-INSERT INTO ingredient(id, name)
-VALUES (20, "olive"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (10, "lemon juice", 1); 
 
-INSERT INTO ingredient(id, name)
-VALUES (21, "lemon twist"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (11, "orange juice", 4); 
 
-INSERT INTO ingredient(id, name)
-VALUES (22, "mezcal"); 
+INSERT INTO ingredient(id, name, quantity)
+VALUES (12, "pomegranate juice", 4); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (13, "simple syrup", 1); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (14, "angostura bitters", 6); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (15, "water", 6); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (16, "maraschino cherry", 0); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (17, "salt", 0); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (18, "lime wedge", 1); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (19, "orange peel", 0); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (20, "olive", 1); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (21, "lemon twist", 4); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (22, "mezcal", 4); 
+
+INSERT INTO alcoholType(percentage, liquor, liqueur)
+VALUES (50, true, false); 
+
+INSERT INTO alcoholType(percentage, liquor, liqueur)
+VALUES (45, true, false); 
+
+INSERT INTO alcoholType(percentage, liquor, liqueur)
+VALUES (40, true, false); 
+
+INSERT INTO alcoholType(percentage, liquor, liqueur)
+VALUES (20, false, true); 
+
+INSERT INTO alcoholType(percentage, liquor, liqueur)
+VALUES (15, false, true); 
 
 INSERT INTO alcohol(id, percentage, glassId)
 VALUES (0, 50, 0); 
@@ -129,20 +174,35 @@ VALUES (6, 15, 0);
 INSERT INTO alcohol(id, percentage, glassId)
 VALUES (22, 50, 0); 
 
-INSERT INTO juice(id, isSweet, fruitName)
-VALUES (8, true, "pineapple"); 
+INSERT INTO juiceFruit(fruitName, isSweet)
+VALUES ("pomegranate", true); 
 
-INSERT INTO juice(id, isSweet, fruitName)
-VALUES (9, false, "lime"); 
+INSERT INTO juiceFruit(fruitName, isSweet)
+VALUES ("lime", false); 
 
-INSERT INTO juice(id, isSweet, fruitName)
-VALUES (10, false, "lemon"); 
+INSERT INTO juiceFruit(fruitName, isSweet)
+VALUES ("lemon", false); 
 
-INSERT INTO juice(id, isSweet, fruitName)
-VALUES (11, true, "orange"); 
+INSERT INTO juiceFruit(fruitName, isSweet)
+VALUES ("orange", false); 
 
-INSERT INTO juice(id, isSweet, fruitName)
-VALUES (12, true, "pomegranate"); 
+INSERT INTO juiceFruit(fruitName, isSweet)
+VALUES ("pineapple", true); 
+
+INSERT INTO juice(id, fruitName)
+VALUES (8, "pineapple"); 
+
+INSERT INTO juice(id, fruitName)
+VALUES (9, "lime"); 
+
+INSERT INTO juice(id, fruitName)
+VALUES (10, "lemon"); 
+
+INSERT INTO juice(id, fruitName)
+VALUES (11, "orange"); 
+
+INSERT INTO juice(id, fruitName)
+VALUES (12, "pomegranate"); 
 
 INSERT INTO garnish(id, placement, foodName)
 VALUES (16, "on top", "cherry"); 

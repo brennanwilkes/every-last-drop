@@ -41,7 +41,7 @@ CREATE TABLE drinkRecipe (
 	`onIce` BOOLEAN NOT NULL,
 	`glassID` INT NOT NULL,
 	`versionOf` INT,
-	`rating` INT NOT NULL,
+	`rating` INT,
 	PRIMARY KEY (id),
 	FOREIGN KEY (versionOf) REFERENCES drinkRecipe(id),
 	FOREIGN KEY (glassId) REFERENCES glass(id),

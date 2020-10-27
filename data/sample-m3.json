@@ -22,36 +22,66 @@
 			{"id":5, "name": "mezcal margarita", "price": 14.0, "mixMethod": "shaken", "onIce": true, "glassID": 0, "versionOf": 4}
 		]
 	},
-	"ingredient":{
+	"drinkRating":{
 		"order":2,
 		"data":[
-			{"id":0,"name":"whiskey"},
-			{"id":1,"name":"tequila"},
-			{"id":2,"name":"rum"},
-			{"id":3,"name":"gin"},
-			{"id":4,"name":"sweet vermouth"},
-			{"id":5,"name":"dry vermouth"},
-			{"id":6,"name":"cointreau"},
-			{"id":7,"name":"coconut cream"},
-			{"id":8,"name":"pineapple juice"},
-			{"id":9,"name":"lime juice"},
-			{"id":10,"name":"lemon juice"},
-			{"id":11,"name":"orange juice"},
-			{"id":12,"name":"pomegranate juice"},
-			{"id":13,"name":"simple syrup"},
-			{"id":14,"name":"angostura bitters"},
-			{"id":15,"name":"water"},
-			{"id":16,"name":"maraschino cherry"},
-			{"id":17,"name":"salt"},
-			{"id":18,"name":"lime wedge"},
-			{"id":19,"name":"orange peel"},
-			{"id":20,"name":"olive"},
-			{"id":21,"name":"lemon twist"},
-			{"id":22,"name":"mezcal"}
+			{"rating":2, "popularity": "never ordered"},
+			{"rating":4, "popularity": "unpopular"},
+			{"rating":6, "popularity": "mediocre"},
+			{"rating":8, "popularity": "loved"},
+			{"rating":10, "popularity": "fan favourite"}
+		]
+	},
+	"ingredientAvailable":{
+		"order":3,
+		"data":[
+			{"quantity":0,"isAvailable":false},
+			{"quantity":1,"isAvailable":true},
+			{"quantity":4,"isAvailable":true},
+			{"quantity":6,"isAvailable":true},
+			{"quantity":9,"isAvailable":true}
+		]
+	},
+	"ingredient":{
+		"order":4,
+		"data":[
+			{"id":0,"name":"whiskey", "quantity" : 1},
+			{"id":1,"name":"tequila", "quantity" : 0},
+			{"id":2,"name":"rum", "quantity" : 1},
+			{"id":3,"name":"gin", "quantity" : 4},
+			{"id":4,"name":"sweet vermouth", "quantity" : 6},
+			{"id":5,"name":"dry vermouth", "quantity" : 9},
+			{"id":6,"name":"cointreau", "quantity" : 9},
+			{"id":7,"name":"coconut cream", "quantity" : 0},
+			{"id":8,"name":"pineapple juice", "quantity" : 6},
+			{"id":9,"name":"lime juice", "quantity" : 0},
+			{"id":10,"name":"lemon juice", "quantity" : 1},
+			{"id":11,"name":"orange juice", "quantity" : 4},
+			{"id":12,"name":"pomegranate juice", "quantity" : 4},
+			{"id":13,"name":"simple syrup", "quantity" : 1},
+			{"id":14,"name":"angostura bitters", "quantity" : 6},
+			{"id":15,"name":"water", "quantity" : 6},
+			{"id":16,"name":"maraschino cherry", "quantity" : 0},
+			{"id":17,"name":"salt", "quantity" : 0},
+			{"id":18,"name":"lime wedge", "quantity" : 1},
+			{"id":19,"name":"orange peel", "quantity" : 0},
+			{"id":20,"name":"olive", "quantity" : 1},
+			{"id":21,"name":"lemon twist", "quantity" : 4},
+			{"id":22,"name":"mezcal", "quantity" : 4}
+		]
+	},
+	"alcoholType":{
+		"order":5,
+		"data":[
+			{"percentage": 50.0, "liquor": true, "liqueur": false},
+			{"percentage": 45.0, "liquor": true, "liqueur": false},
+			{"percentage": 40.0, "liquor": true, "liqueur": false},
+			{"percentage": 20.0, "liquor": false, "liqueur": true},
+			{"percentage": 15.0, "liquor": false, "liqueur": true}
 		]
 	},
 	"alcohol":{
-		"order":3,
+		"order":6,
 		"data":[
 			{"id":0, "percentage": 50.0, "glassId": 0},
 			{"id":1, "percentage": 45.0, "glassId": 0},
@@ -63,18 +93,28 @@
 			{"id":22, "percentage": 50.0, "glassId": 0}
 		]
 	},
-	"juice":{
-		"order":4,
+	"juiceFruit":{
+		"order":7,
 		"data":[
-			{"id":8, "isSweet": true, "fruitName": "pineapple"},
-			{"id":9, "isSweet": false, "fruitName": "lime"},
-			{"id":10, "isSweet": false, "fruitName": "lemon"},
-			{"id":11, "isSweet": true, "fruitName": "orange"},
-			{"id":12, "isSweet": true, "fruitName": "pomegranate"}
+			{"fruitName": "pomegranate", "isSweet": true },
+			{"fruitName": "lime", "isSweet": false },
+			{"fruitName": "lemon", "isSweet": false },
+			{"fruitName": "orange", "isSweet": false },
+			{"fruitName": "pineapple", "isSweet": true }
+		]
+	},
+	"juice":{
+		"order":8,
+		"data":[
+			{"id":8, "fruitName": "pineapple"},
+			{"id":9, "fruitName": "lime"},
+			{"id":10, "fruitName": "lemon"},
+			{"id":11, "fruitName": "orange"},
+			{"id":12, "fruitName": "pomegranate"}
 		]
 	},
 	"garnish":{
-		"order":5,
+		"order":9,
 		"data":[
 			{"id":16, "placement": "on top", "foodName": "cherry"},
 			{"id":17, "placement": "on rim", "foodName": null},
@@ -85,7 +125,7 @@
 		]
 	},
 	"drinkRequires":{
-		"order":6,
+		"order":10,
 		"data":[
 			{"drinkId":0, "ingredientId": 0, "quantity": 1.5},
 			{"drinkId":0, "ingredientId": 12, "quantity": 0.25},
@@ -116,7 +156,7 @@
 		]
 	},
 	"customer":{
-		"order":7,
+		"order":11,
 		"data":[
 			{"fullName":"Brennan Wilkes", "dateOfBirth": "2020/1/1"},
 			{"fullName":"Charles Lewis", "dateOfBirth": "2020/1/1"},
@@ -126,7 +166,7 @@
 		]
 	},
 	"transaction":{
-		"order":8,
+		"order":12,
 		"data":[
 			{"date": "2020/10/20", "drinkId": 0, "customerName": "Brennan Wilkes"},
 			{"date": "2020/10/20", "drinkId": 1, "customerName": "Brennan Wilkes"},
