@@ -1,3 +1,3 @@
-const {backend} = require("./backend/server.js")
+const {server} = require("./backend/server.js")
 
-backend.init()
+server.init()
