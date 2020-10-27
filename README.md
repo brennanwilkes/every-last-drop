@@ -62,6 +62,10 @@ cd ~/Desktop
 ```cmd
 cd %USERPROFILE%\Desktop
 ```
+OR depending on your system, if you use OneDrive
+```cmd
+cd %USERPROFILE%\OneDrive\Desktop
+```
 
 ---
 
