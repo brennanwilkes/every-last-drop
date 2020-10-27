@@ -17,7 +17,7 @@
 		"gen-m3-sql": "node src/dev/jsonToSql.js ./data/sample-m3.json ./data/sample-m3.sql",
 		"sql-status": "node src/dev/run-script-os/run-script-os-custom-index.js sql-status",
 		"sql-status:linux:darwin": "mariadb --defaults-extra-file=config/sql-login --table < src/sql/status.sql",
-		"sql-status:default": "\"\\Program Files\\MariaDB 10.5\\bin\\mariadb.exe\" --defaults-extra-file=config\\sql-login --table < src\\sql\\status.sql",
+		"sql-status:default": "\"\"\\Program Files\\MariaDB 10.5\\bin\\mariadb.exe\"\" --defaults-extra-file=config\\sql-login --table < src\\sql\\status.sql",
 		"os-test": "echo $npm_config_argv; echo $npm_config_user_agent"
 	},
 	"repository": {
