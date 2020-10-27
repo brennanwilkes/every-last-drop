@@ -25,6 +25,13 @@ CREATE TABLE glass (
 	PRIMARY KEY (id)
 ) COLLATE='utf8_bin';
 
+/* Recipe Rating */
+CREATE TABLE drinkRating (
+	`rating` INT NOT NULL UNIQUE,
+	`Popularity` VARCHAR(25) NOT NULL,
+	PRIMARY KEY (rating)
+) COLLATE='utf8_bin';
+
 /* Drink Recipe */
 CREATE TABLE drinkRecipe (
 	`id` INT NOT NULL UNIQUE,
@@ -34,16 +41,27 @@ CREATE TABLE drinkRecipe (
 	`onIce` BOOLEAN NOT NULL,
 	`glassID` INT NOT NULL,
 	`versionOf` INT,
+	`rating` INT NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (versionOf) REFERENCES drinkRecipe(id),
-	FOREIGN KEY (glassId) REFERENCES glass(id)
+	FOREIGN KEY (glassId) REFERENCES glass(id),
+	FOREIGN KEY (rating) REFERENCES drinkRating(rating)
+) COLLATE='utf8_bin';
+
+/* Ingredient Available */
+CREATE TABLE ingredientAvailable (
+	`quantity` INT NOT NULL UNIQUE,
+	`isAvailable` BOOLEAN NOT NULL,
+	PRIMARY KEY (quantity)
 ) COLLATE='utf8_bin';
 
 /* Ingredient */
 CREATE TABLE ingredient (
 	`id` INT NOT NULL UNIQUE,
 	`name` VARCHAR(50) NOT NULL,
-	PRIMARY KEY (id)
+	`quantity` INT,
+	PRIMARY KEY (id),
+	FOREIGN KEY (quantity) REFERENCES ingredientAvailable(quantity)
 ) COLLATE='utf8_bin';
 
 /* Required ingredients for recipe */
@@ -56,6 +74,13 @@ CREATE TABLE drinkRequires(
 	FOREIGN KEY (ingredientId) REFERENCES ingredient(id)
 ) COLLATE='utf8_bin';
 
+CREATE TABLE alcoholType (
+	`percentage` FLOAT NOT NULL UNIQUE,
+	`liquor` BOOLEAN NOT NULL,
+	`liqueur` BOOLEAN NOT NULL,
+	PRIMARY KEY (percentage)
+) COLLATE='utf8_bin';
+
 /* Alcohol ingredient subtype */
 CREATE TABLE alcohol (
 	`id` INT NOT NULL UNIQUE,
@@ -63,16 +88,24 @@ CREATE TABLE alcohol (
 	`glassId` INT NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (id) REFERENCES ingredient(id) ON DELETE CASCADE,
+	FOREIGN KEY (percentage) REFERENCES alcoholType(percentage) ON DELETE CASCADE,
 	FOREIGN KEY (glassId) REFERENCES glass(id)
+) COLLATE='utf8_bin';
+
+/* Juice Fruit */
+CREATE TABLE juiceFruit (
+	`fruitName` VARCHAR(50) NOT NULL UNIQUE,
+	`isSweet` BOOLEAN NOT NULL,
+	PRIMARY KEY (fruitName)
 ) COLLATE='utf8_bin';
 
 /* Juice ingredient subtype */
 CREATE TABLE juice (
 	`id` INT NOT NULL UNIQUE,
-	`isSweet` BOOLEAN NOT NULL,
 	`fruitName` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id),
-	FOREIGN KEY (id) REFERENCES ingredient(id) ON DELETE CASCADE
+	FOREIGN KEY (id) REFERENCES ingredient(id) ON DELETE CASCADE,
+	FOREIGN KEY (fruitName) REFERENCES juiceFruit(fruitName)
 ) COLLATE='utf8_bin';
 
 /* Garnish ingredient subtype */
