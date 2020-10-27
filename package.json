@@ -10,7 +10,7 @@
 		"sql-init:linux": "sh src/build/linux-sql-init.sh",
 		"sql-init:darwin": "sh src/build/darwin-sql-init.sh",
 		"sql-init:default": "src\\build\\windows-sql-init.bat",
-		"sql-login": "node run-script-os-custom-index.js sql-login",
+		"sql-login": "node src/dev/run-script-os/run-script-os-custom-index.js sql-login",
 		"sql-login:linux": "sh src/dev/linux-sql-login.sh",
 		"sql-login:darwin": "sh src/dev/darwin-sql-login.sh",
 		"sql-login:default": "src\\dev\\windows-sql-login.bat",
