@@ -52,7 +52,10 @@ cd ~/Desktop
 > Install mariaDB by following these steps: https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/  
 
 > Ensure that you select "Database instance"
-> Unless you know what you're doing, leave the defaults as is. If you change the process name to something other than "MariaDB" you will have to also update further installation scripts, so best to leave as is. Set your root password to something you'll remember  
+> Unless you know what you're doing, leave the defaults as is.  
+> If you change the process name to something other than "MariaDB" you will have to also update further installation scripts, so best to leave as is.  
+> If you change installation directory to something other than "\Program Files\MariaDB\" then you will also have to update the installation scripts.
+> Set your root password to something you'll remember  
 
 > <kbd>⊞ Windows</kbd>
 > Type "cmd"  
