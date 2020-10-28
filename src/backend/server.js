@@ -22,8 +22,6 @@ exports.server = {
 	route(path,promise,method="get"){
 		path = path.substring(0,1) === "/" ? path : "/"+path;
 
-		print(`Setup ${method} route for ${path}`)
-
 		this.app[method](path, (req,res) => {
 			promise(req).then(data => {
 				res.send(data);
@@ -33,6 +31,7 @@ exports.server = {
 				res.end();
 			});
 		});
+		print(`Setup ${method} route for ${path}`)
 	},
 
 	start(){

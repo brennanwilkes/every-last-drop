@@ -40,7 +40,7 @@ exports.database = {
 
 	async get(query){
 		const conn = await this.connect();
-		print(`Querying ${query}@${this.hostname}`)
+		print(`Querying ${query} using ${this.database}`)
 		const res = await conn.query(query);
 		return res;
 	},
