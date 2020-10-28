@@ -7,8 +7,8 @@ exports.CONFIG = CONFIG
 
 //Just a config switch for printing
 const print = (...content) => {
-	if(CONFIG.verbose) console.log(content.join(" "));
-}
+	if(CONFIG.verbose) console.log(...content);
+};
 exports.print = print
 
 
