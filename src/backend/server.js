@@ -19,7 +19,23 @@ exports.server = {
 	port : CONFIG.port,
 	app: express(),
 
-	init(){
+	route(path,promise,method="get"){
+		path = path.substring(0,1) === "/" ? path : "/"+path;
+
+		print(`Setup ${method} route for ${path}`)
+
+		this.app[method](path, (req,res) => {
+			promise(req).then(data => {
+				res.send(data);
+				res.end();
+			}).catch(error => {
+				res.send("<h1>Internal Error</h1><br>"+error);
+				res.end();
+			});
+		});
+	},
+
+	start(){
 
 		//Static routing for public files
 		this.app.use('/', express.static(path.join(__dirname,"..", "..", "public")));
