@@ -2,18 +2,21 @@ const express = require('express');
 const path = require("path");
 
 //Store all backend config vars here
-const CONFIG = require(path.join("..", "..","config","backend.json"));
+const CONFIG = require(path.join(__dirname,"..", "..","config","backend.json"));
+exports.CONFIG = CONFIG
 
 //Just a config switch for printing
 const print = (...content) => {
-	if(CONFIG["verbose"]) console.log(content.join(" "));
+	if(CONFIG.verbose) console.log(content.join(" "));
 }
+exports.print = print
+
 
 /*
 	Server backend object
 */
 exports.server = {
-	port : CONFIG["port"],
+	port : CONFIG.port,
 	app: express(),
 
 	init(){
