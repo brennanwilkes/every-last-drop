@@ -3,7 +3,7 @@ const path = require("path");
 var fs = require('fs')
 
 //Pull utility functions from server.js
-const {print,CONFIG} = require("./server.js");
+const {print,CONFIG} = require(path.join(__dirname,"server.js"));
 
 //Get SQL User data from sql config file
 const SQL_CONFIG_DATA = fs.readFileSync(path.join(__dirname,"..", "..","config","sql-login")).toString().trim().split('\n');
