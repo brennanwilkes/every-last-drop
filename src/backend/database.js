@@ -19,7 +19,7 @@ exports.database = {
 	connectionLimit: 5,
 
 	init(){
-		let params = {host: this.hostname, user: this.username, password: this.password, connectionLimit: this.connectionLimit, database: this.database};
+		const params = {host: this.hostname, user: this.username, password: this.password, connectionLimit: this.connectionLimit, database: this.database};
 		this.pool = mariadb.createPool(params);
 		print("Created MariaDB Pool",JSON.stringify(params, null, 4))
 	},
@@ -42,6 +42,25 @@ exports.database = {
 		const conn = await this.connect();
 		print(`Querying ${query} using ${this.database}`)
 		const res = await conn.query(query);
+		return res;
+	},
+
+	async insert(table,tuple){
+		const conn = await this.connect();
+
+		let header = "";
+		let values = "";
+		const data = [];
+		Object.keys(tuple).forEach(key => {
+			header += key + ", ";
+			values += "?, ";
+			data.push(tuple[key])
+		});
+		let sql = `INSERT INTO ${table}(${header.substring(0,header.length-2)})`;
+		sql += `VALUES (${values.substring(0,values.length-2)});`;
+
+		print(`Inserting ${JSON.stringify(tuple,null,4)} into ${this.database}`)
+		const res = await conn.query(sql,data);
 		return res;
 	},
 
