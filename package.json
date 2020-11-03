@@ -18,7 +18,9 @@
 		"sql-status": "node src/dev/run-script-os/run-script-os-custom-index.js sql-status",
 		"sql-status:linux:darwin": "mariadb --defaults-extra-file=config/sql-login --table < src/sql/status.sql",
 		"sql-status:default": "\"\"\\Program Files\\MariaDB 10.5\\bin\\mariadb.exe\"\" --defaults-extra-file=config\\sql-login --table < src\\sql\\status.sql",
-		"dev": "nodemon ."
+		"dev": "nodemon .",
+		"watch": "webpack --config src/webpack.config.js --watch",
+		"build-frontend": "webpack --config src/webpack.config.js"
 	},
 	"repository": {
 		"type": "git",
