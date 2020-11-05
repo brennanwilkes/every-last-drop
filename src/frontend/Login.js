@@ -1,6 +1,8 @@
 import React from "react";
 
-import "./login.css";
+//import "./login.css";
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 class Login extends React.Component {
 
@@ -14,8 +16,7 @@ class Login extends React.Component {
 
 	render() {
 		return <>
-			<button onClick={this.staff}>Staff Login</button>
-			<button onClick={this.customer}>Customer Login</button>
+		
 		</>;
 	}
 }
