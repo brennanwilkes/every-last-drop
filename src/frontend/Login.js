@@ -16,23 +16,33 @@ class Login extends React.Component {
 										url(${barImage})`);
 	}
 
+	settingsClick(event){
+		event.preventDefault();
+		alert("Settings")
+	}
+
+	toMenuClick(event){
+		event.preventDefault();
+		alert("Menu")
+	}
+
 	render() {
 		return <>
 
-			<form className="text-center">
+			<form className="text-center" onSubmit={this.toMenuClick} noValidate>
 
-				<button id="settings-button" className="btn btn-lg"><ImCog size={32} /></button>
+				<button className="settings-button btn btn-lg" onClick={this.settingsClick}><ImCog size={32} /></button>
 				<h1 className="h1 mb-4 font-weight-normal">Every Last Drop</h1>
 
 				<label>
-					<input id="name" className="form-control" placeholder="Full Name" required autoFocus />
+					<input id="name" className="form-control form-control-secondary" placeholder="Full Name" required autoFocus />
 				</label>
 
 				<label>
-					<input type="date" id="dob" className="form-control" required />
+					<input type="date" id="dob" className="form-control form-control-secondary" required />
 				</label>
 
-				<button className="btn btn-lg btn-primary btn-block mt-4" type="submit">Continue to Menu</button>
+				<button className="btn btn-lg btn-secondary btn-block mt-4" type="submit">Continue to Menu</button>
 				<p className="mt-5 mb-0 text-muted">CPSC 2221 | W01 | Group 12</p>
 			</form>
 		</>;
