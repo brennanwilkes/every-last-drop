@@ -1,15 +1,32 @@
-main{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 100vh;
-	width: 100vw;
+html,
+body{
+
 }
 
-button{
-	margin: auto;
-	font-size: 4vmin;
-	padding: 4vmin;
-	width: 45vmin;
-	height: 45vmin;
+main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form{
+	width: 100%;
+	max-width: 330px;
+	padding: 4vmin 4vmin 2vmin 4vmin;
+	background-color: #80808080;
+	border-radius: 2vmin;
+}
+
+label{
+	margin:0;
+}
+
+label:first-of-type > input {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+form input[type="password"] {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
