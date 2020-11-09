@@ -1,19 +1,15 @@
-html,
-body{
-
-}
-
 main{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-size: cover;
 }
 
 form{
 	width: 100%;
 	max-width: 40vw;
 	padding: 4vmin 4vmin 2vmin 4vmin;
-	background-color: #80808080;
+	background-color: #BBB;
 	border-radius: 2vmin;
 }
 
@@ -22,7 +18,6 @@ label{
 }
 
 label:first-of-type > input {
-	margin-bottom: -1px;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
 }
