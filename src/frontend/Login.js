@@ -1,7 +1,6 @@
 import React from "react";
 
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-//import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import "./bootstrap-import.js";
 import "./login.css";
 
 
@@ -18,13 +17,11 @@ class Login extends React.Component {
 	render() {
 		return <>
 		<form className="text-center">
-			<h1 className="h1 mb-4">Every Last Drop</h1>
+			<h1 className="h3 mb-4 font-weight-normal">Every Last Drop</h1>
 			<label>
-				<span className="sr-only">Name</span>
 				<input id="name" className="form-control" placeholder="Email address" required autoFocus />
 			</label>
 			<label>
-				<span className="sr-only">Password</span>
 				<input type="password" id="inputPassword" className="form-control" placeholder="Password" required />
 			</label>
 
