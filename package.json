@@ -40,14 +40,15 @@
 		"axios": "^0.21.0",
 		"babel-loader": "^8.1.0",
 		"bootstrap": "^5.0.0-alpha2",
-		"popper.js": "^1.16.1",
 		"css-loader": "^5.0.0",
 		"express": "^4.17.1",
 		"jquery": "^3.5.1",
 		"mariadb": "^2.4.2",
 		"node": "^14.13.0",
+		"popper.js": "^1.16.1",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
+		"react-icons": "^3.11.0",
 		"style-loader": "^2.0.0"
 	},
 	"devDependencies": {
