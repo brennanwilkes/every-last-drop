@@ -17,12 +17,12 @@ class Login extends React.Component {
 	render() {
 		return <>
 		<form className="text-center">
-			<h1 className="h3 mb-4 font-weight-normal">Every Last Drop</h1>
+			<h1 className="h2 mb-4 font-weight-normal">Every Last Drop</h1>
 			<label>
-				<input id="name" className="form-control" placeholder="Email address" required autoFocus />
+				<input id="name" className="form-control" placeholder="Full Name" required autoFocus />
 			</label>
 			<label>
-				<input type="password" id="inputPassword" className="form-control" placeholder="Password" required />
+				<input type="date" id="dob" className="form-control" required />
 			</label>
 
 			<button className="btn btn-lg btn-primary btn-block mt-4" type="submit">Sign in</button>
