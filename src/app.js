@@ -14,8 +14,9 @@ server.route("drinks", req => {
 	let q = req.body.query;
 
 	q = q.toLowerCase();
+	q = `%${q}%`;
 
-	return database.get(`SELECT * FROM drinkRecipe WHERE name LIKE '%${q}%'`);
+	return database.get(`SELECT * FROM drinkRecipe WHERE name LIKE ?`,[q]);
 }, "post");
 
 
