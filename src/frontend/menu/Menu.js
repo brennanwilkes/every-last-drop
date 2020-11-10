@@ -44,7 +44,7 @@ class Menu extends React.Component {
 		}
 
 		return <>
-			<Nav user={"Test User"} />
+			<Nav user={this.props.user} />
 			<div className="container-fluid">{
 				splitDrinks.map(r => {
 					return <>

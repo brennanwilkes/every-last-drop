@@ -17,7 +17,9 @@ class App extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			md : AppMode.LOGIN
+			md : AppMode.LOGIN,
+			user: undefined,
+			dob: undefined
 		}
 	}
 
@@ -26,12 +28,19 @@ class App extends React.Component {
 			{
 				(this.state.md === AppMode.LOGIN)
 				? <Login
-					toDash={ () => this.setState({md:AppMode.DASHBOARD}) }
-					toMenu={ () => this.setState({md:AppMode.MENU}) }
+					toDash={ loginInfo => this.setState({
+						md: AppMode.DASHBOARD,
+						user: loginInfo.user
+					}) }
+					toMenu={ loginInfo => this.setState({
+						md: AppMode.MENU,
+						user: loginInfo.user,
+						dob: loginInfo.dob
+					}) }
 				/>
 				: ((this.state.md === AppMode.DASHBOARD)
 				? <Dashboard />
-				: <Menu /> )
+				: <Menu user={this.state.user} /> )
 			}
 		</>;
 	}
