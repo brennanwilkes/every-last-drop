@@ -3,6 +3,7 @@ import "./bootstrap-import.js";
 
 import Login from "./login/Login.js";
 import Dashboard from "./dashboard/Dashboard.js";
+import Menu from "./menu/Menu.js";
 
 const AppMode = Object.freeze({
 	"LOGIN":1,
@@ -30,7 +31,7 @@ class App extends React.Component {
 				/>
 				: ((this.state.md === AppMode.DASHBOARD)
 				? <Dashboard />
-				: <h1>Menu page</h1> )
+				: <Menu /> )
 			}
 		</>;
 	}
