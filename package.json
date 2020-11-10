@@ -6,6 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node .",
+		"sql-setup":"run-s sql-init sql-insert-data",
 		"sql-init": "node src/dev/run-script-os/run-script-os-custom-index.js sql-init",
 		"sql-init:linux": "sh src/build/linux-sql-init.sh",
 		"sql-init:darwin": "sh src/build/darwin-sql-init.sh",
@@ -14,6 +15,9 @@
 		"sql-login:linux": "sh src/dev/linux-sql-login.sh",
 		"sql-login:darwin": "sh src/dev/darwin-sql-login.sh",
 		"sql-login:default": "src\\dev\\windows-sql-login.bat",
+		"sql-insert-data": "node src/dev/run-script-os/run-script-os-custom-index.js sql-insert-data",
+		"sql-insert-data:linux:darwin": "mariadb --defaults-extra-file=config/sql-login < data/sample-m3.sql",
+		"sql-insert-data:default": "ECHO No WINDOWS implimentation for insert-data",
 		"gen-m3-sql": "node src/dev/jsonToSql.js ./data/sample-m3.json ./data/sample-m3.sql",
 		"sql-status": "node src/dev/run-script-os/run-script-os-custom-index.js sql-status",
 		"sql-status:linux:darwin": "mariadb --defaults-extra-file=config/sql-login --table < src/sql/status.sql",
