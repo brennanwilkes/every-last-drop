@@ -96,7 +96,7 @@ npm install
 <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png width=40px height=20px> **Usage**
 
 ```sh
-npm start
 npm run sql-init
+npm run dev
 ```
 
