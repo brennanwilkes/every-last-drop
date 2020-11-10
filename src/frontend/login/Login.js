@@ -28,8 +28,14 @@ class LoginHeader extends React.Component{
 
 class UserLogin extends React.Component{
 
+	constructor(props){
+		super(props);
+		this.login = this.login.bind(this);
+	}
+
 	login(event){
 		event.preventDefault();
+		this.props.toMenu();
 	}
 
 	render() {
@@ -57,8 +63,14 @@ class UserLogin extends React.Component{
 
 class AdminLogin extends React.Component{
 
+	constructor(props){
+		super(props);
+		this.login = this.login.bind(this);
+	}
+
 	login(event){
 		event.preventDefault();
+		this.props.toDash();
 	}
 
 	render() {
@@ -109,8 +121,8 @@ class Login extends React.Component {
 			<DynamicBackground md={this.state.adminMd} primary={barImage} secondary={computerImage} uid={"adminBackground"} />
 			{
 				(this.state.adminMd)
-				? <AdminLogin settingsCallback={this.settingsClick} />
-				: <UserLogin settingsCallback={this.settingsClick} />
+				? <AdminLogin settingsCallback={this.settingsClick} toDash={this.props.toDash}/>
+				: <UserLogin settingsCallback={this.settingsClick} toMenu={this.props.toMenu}/>
 			}
 		</>;
 	}
