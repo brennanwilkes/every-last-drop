@@ -2,10 +2,11 @@ import React from "react";
 import "../bootstrap-import.js";
 
 import SettingsButton from "./SettingsButton.js";
+import DynamicBackground from "./DynamicBackground.js";
 
-import barImage from "../../../assets/bar-stock.jpg";
 import "./login.css";
-
+import barImage from "../../../assets/bar-stock.jpg";
+import computerImage from "../../../assets/computer-chip-stock.jpg";
 
 class LoginFooter extends React.Component{
 	render(){
@@ -90,7 +91,6 @@ class Login extends React.Component {
 		super(props);
 
 		this.settingsClick = this.settingsClick.bind(this);
-		this.toMenuClick = this.toMenuClick.bind(this);
 
 		this.state = {
 			adminMd : false
@@ -104,20 +104,15 @@ class Login extends React.Component {
 		})
 	}
 
-	toMenuClick(event){
-		event.preventDefault();
-		alert("Menu")
-	}
-
-	componentDidMount() {
-		$("main").css("backgroundImage",`linear-gradient(
-											rgba(0, 0, 0, 0.75),
-											rgba(0, 0, 0, 0.75)),
-										url(${barImage})`);
-	}
-
 	render() {
-		return (this.state.adminMd ? <AdminLogin settingsCallback={this.settingsClick} /> : <UserLogin settingsCallback={this.settingsClick} />);
+		return <>
+			<DynamicBackground md={this.state.adminMd} primary={barImage} secondary={computerImage} uid={"adminBackground"} />
+			{
+				(this.state.adminMd)
+				? <AdminLogin settingsCallback={this.settingsClick} />
+				: <UserLogin settingsCallback={this.settingsClick} />
+			}
+		</>;
 	}
 }
 export default Login;

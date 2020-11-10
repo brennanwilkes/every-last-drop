@@ -7,6 +7,7 @@
 	justify-content: center;
 	-webkit-transition: -webkit-transform 8s ease;
 	transition:         transform 8s ease;
+	will-change: transform;
 
 }
 .settings-button:hover{
