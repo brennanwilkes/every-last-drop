@@ -1,9 +1,9 @@
 import React from "react";
 import "../bootstrap-import.js";
-
-import "./menu.css";
 import axios from "axios";
 
+import "./menu.css";
+import Nav from "../nav/Nav.js";
 
 const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
 
@@ -44,6 +44,7 @@ class Menu extends React.Component {
 		}
 
 		return <>
+			<Nav user={this.props.user} />
 			<div className="container-fluid">{
 				splitDrinks.map(r => {
 					return <>
@@ -58,7 +59,7 @@ class Menu extends React.Component {
 						}</div>
 					</>;
 				})
-		}</div>
+			}</div>
 		</>;
 	}
 }

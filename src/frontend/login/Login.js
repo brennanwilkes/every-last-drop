@@ -35,7 +35,10 @@ class UserLogin extends React.Component{
 
 	login(event){
 		event.preventDefault();
-		this.props.toMenu();
+		this.props.toMenu({
+			user: $("#name")[0].value,
+			dob: $("#dob")[0].value
+		});
 	}
 
 	render() {
@@ -70,7 +73,9 @@ class AdminLogin extends React.Component{
 
 	login(event){
 		event.preventDefault();
-		this.props.toDash();
+		this.props.toDash({
+			user: $("#username")[0].value
+		});
 	}
 
 	render() {
