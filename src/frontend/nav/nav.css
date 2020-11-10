@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+	.show .btn-within-collapsable {
+		margin-bottom: 1rem;
+	}
+
+	.nav-brand-item{
+		margin-right: -0.5rem;
+	}
+}
