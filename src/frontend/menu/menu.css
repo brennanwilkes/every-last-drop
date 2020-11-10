@@ -1,0 +1,36 @@
+.drinkRecipe{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	padding:5%;
+
+}
+
+.drinkRecipe-wrapper{
+	border: 2px dashed grey;
+
+	position: relative;
+	width: 80%;
+
+	border-radius: 2vmin;
+
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+
+.drinkRecipe-wrapper:hover{
+	transform: scale(1.15);
+	cursor: pointer;
+}
+
+.drinkRecipe-wrapper:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
