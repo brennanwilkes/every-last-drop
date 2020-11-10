@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require("path");
+const bodyParser = require('body-parser')
+
 
 //Store all backend config vars here
 const CONFIG = require(path.join(__dirname,"..", "..","config","backend.json"));
@@ -34,10 +36,19 @@ exports.server = {
 		print(`Setup ${method} route for ${path}`)
 	},
 
-	start(){
+	init(){
+
+		// support json encoded bodies
+		this.app.use(express.json());
+
+		// support encoded bodies
+		this.app.use(bodyParser.urlencoded({ extended: false }));
 
 		//Static routing for public files
 		this.app.use('/', express.static(path.join(__dirname,"..", "..", "public")));
+	},
+
+	start(){
 
 		//404 messages
 		this.app.get('*', (req, res) =>{
