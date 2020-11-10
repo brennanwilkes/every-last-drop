@@ -1,19 +1,37 @@
 import React from "react";
 import "../bootstrap-import.js";
 
+import "./nav.css";
+
+
 class User extends React.Component{
 	render(){
-		return <button type="button" className="btn btn-outline-secondary ml-3 mr-3">{(!this.props.name) || this.props.name.length < 1 ? "Invalid User": this.props.name}</button>;
+		return <button type="button" className="btn btn-outline-secondary btn-within-collapsable">{(!this.props.name) || this.props.name.length < 1 ? "Invalid User": this.props.name}</button>;
 	}
-
 }
+
+class Search extends React.Component{
+	render(){
+		return <>
+			<form className="form-inline p-0 mx-3" onSubmit={event => {
+				event.preventDefault();
+				$(event.target).children().blur();
+			}}>
+				<input className="form-control" type="text" placeholder="Search" onChange={event => {
+					this.props.callback(event.target.value);
+				}} />
+			</form>
+		</>;
+	}
+}
+
 
 class Nav extends React.Component{
 
 	render(){
 		return <>
-			<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark pt-3 pb-3">
-				<a className="navbar-brand ml-3" style={{marginRight:"-0.5em"}} href=".">Every Last Drop</a>
+			<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark py-3">
+				<a className="navbar-brand ml-3 nav-brand-item" href=".">Every Last Drop</a>
 				<button className="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarCollapse">
 					<span className="navbar-toggler-icon"></span>
 				</button>
@@ -26,10 +44,10 @@ class Nav extends React.Component{
 							<a className="nav-link" href=".">Link</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link disabled" href=".">Disabled</a>
+							<User name={this.props.user} />
 						</li>
 					</ul>
-					<User name={this.props.user} />
+					<Search callback={this.props.searchCallback}/>
 				</div>
 			</nav>
 		</>;
