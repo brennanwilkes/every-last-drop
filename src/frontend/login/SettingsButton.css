@@ -1,0 +1,24 @@
+.settings-button{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: -webkit-transform 8s ease;
+	transition:         transform 8s ease;
+	will-change: transform;
+
+}
+.settings-button:hover{
+	-webkit-transform: rotate(1080deg);
+	transform: rotate(1080deg);
+}
+.settings-button:active, .settings-button, .settings-button:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.settings-button:active{
+	color: #000;
+}
