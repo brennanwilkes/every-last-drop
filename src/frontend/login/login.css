@@ -10,7 +10,7 @@ form{
 	max-width: 33vw;
 	min-width: min(50vh,96vw);
 	padding: 4vmin 4vmin 2vmin 4vmin;
-	background-color: #BBBBBBE0;
+	background-color: #BBBBBBB0;
 	border-radius: 2vmin;
 	position: relative;
 }
