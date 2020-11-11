@@ -48,7 +48,9 @@ class Menu extends React.Component {
 	}
 
 	search(query){
-		axios.post('/drinks',{name: query}).then(res => {
+		axios.post('/drinks/advanced',{
+			name: query
+		}).then(res => {
 			this.setState({drinks:res.data})
 		});
 	}

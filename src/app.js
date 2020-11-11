@@ -7,13 +7,19 @@ const searchQuery = {
 	name : "",
 	contains: "",
 	orderedBy: "",
-	timesOrdered: undefined,
-	onIce: undefined,
+	onIce: "",
 	mixMethod: "",
 
-	percentWraps: ["contains","name"],
+	reset(){
+		Object.keys(this).forEach(key => {
+			if(typeof(this[key])=="string"){
+				this[key] = "";
+			}
+		});
+	},
 
 	update(params){
+		this.reset();
 		Object.keys(params).forEach(key => {
 			this[key] = params[key];
 		});
@@ -21,12 +27,10 @@ const searchQuery = {
 	sanitzize(){
 		Object.keys(this).forEach(key => {
 			if(typeof(this[key])=="string"){
-				this[key] = this[key].toLowerCase();
+				console.log(key,this[key])
+				this[key] = `%${this[key].toLowerCase()}%`;
+				console.log(key,this[key],'\n')
 			}
-		});
-
-		this.percentWraps.forEach(key => {
-			this[key] = `%${this[key]}%`;
 		});
 	}
 }
@@ -52,19 +56,40 @@ server.route("drinks/advanced", req => {
 	//return database.get(`SELECT * FROM drinkRecipe WHERE name LIKE ?`,[searchQuery.name]);
 
 	//Contains search
-	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe INNER JOIN drinkRequires ON drinkRecipe.id=drinkRequires.drinkId INNER JOIN ingredient ON drinkRequires.ingredientId=ingredient.id WHERE ingredient.name LIKE ?`,[searchQuery.name]);
+	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe INNER JOIN drinkRequires ON drinkRecipe.id=drinkRequires.drinkId INNER JOIN ingredient ON drinkRequires.ingredientId=ingredient.id WHERE ingredient.name LIKE ?`,[searchQuery.contains]);
 
 	//Filter by purchaser
-	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe INNER JOIN transaction ON drinkRecipe.id=transaction.drinkId WHERE UPPER(transaction.customerName) LIKE UPPER(?)`,[searchQuery.name]);
+	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe INNER JOIN transaction ON drinkRecipe.id=transaction.drinkId WHERE UPPER(transaction.customerName) LIKE UPPER(?)`,[searchQuery.orderedBy]);
 
 	//Filter by on onIce
-	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe WHERE onIce=?)`,[searchQuery.name]);
+	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe WHERE onIce LIKE ?)`,[searchQuery.onIce]);
 
 	//Filter by on mixMethod -> shaken / stirred
-	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe WHERE mixMethod=?)`,[searchQuery.name]);
+	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe WHERE mixMethod=?)`,[searchQuery.mixMethod]);
 
-	//General catch all search
-	return database.get(`SELECT * FROM drinkRecipe`);
+
+	//Mutli Search by combining all of the above queries
+	return database.get(`
+		SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
+		INNER JOIN (
+			SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
+			INNER JOIN (
+				SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
+				WHERE mixMethod LIKE ?
+				AND onIce LIKE ?
+				AND name LIKE ?
+			)group1
+				ON drinkRecipe.id=group1.id
+			INNER JOIN drinkRequires
+				ON drinkRecipe.id=drinkRequires.drinkId
+			INNER JOIN ingredient
+				ON ingredientId=ingredient.id
+			WHERE ingredient.name LIKE ?
+		)group2
+			ON group2.id=drinkRecipe.id
+		INNER JOIN transaction
+			ON group2.id=transaction.drinkId
+		WHERE UPPER(transaction.customerName) LIKE UPPER(?)`,[searchQuery.mixMethod,searchQuery.onIce,searchQuery.name,searchQuery.contains,searchQuery.orderedBy]);
 
 }, "post");
 
