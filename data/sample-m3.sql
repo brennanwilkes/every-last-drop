@@ -18,24 +18,6 @@ VALUES (4, "hurricane");
 INSERT INTO glass(id, name)
 VALUES (5, "wine"); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf)
-VALUES (0, "old fashioned", 10, "stirred", true, 0, null); 
-
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf)
-VALUES (1, "manhattan", 12, "stirred", false, 2, null); 
-
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf)
-VALUES (2, "pina colada", 12, "shaken", true, 4, null); 
-
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf)
-VALUES (3, "martini", 10, "stirred", false, 2, null); 
-
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf)
-VALUES (4, "margarita", 12, "shaken", true, 3, null); 
-
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf)
-VALUES (5, "mezcal margarita", 14, "shaken", true, 0, 4); 
-
 INSERT INTO drinkRating(rating, popularity)
 VALUES (2, "never ordered"); 
 
@@ -50,6 +32,24 @@ VALUES (8, "loved");
 
 INSERT INTO drinkRating(rating, popularity)
 VALUES (10, "fan favourite"); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
+VALUES (0, "old fashioned", 10, "stirred", true, 0, null, 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
+VALUES (1, "manhattan", 12, "stirred", false, 2, null, 10); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
+VALUES (2, "pina colada", 12, "shaken", true, 4, null, 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
+VALUES (3, "martini", 10, "stirred", false, 2, null, 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
+VALUES (4, "margarita", 12, "shaken", true, 3, null, 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
+VALUES (5, "mezcal margarita", 14, "shaken", true, 0, 4, 4); 
 
 INSERT INTO ingredientAvailable(quantity, isAvailable)
 VALUES (0, false); 
