@@ -38,10 +38,17 @@ exports.database = {
 		}
 	},
 
-	async get(query){
+	async get(query,data){
 		const conn = await this.connect();
-		print(`Querying ${query} using ${this.database}`)
-		const res = await conn.query(query);
+
+		if(data){
+			print(`Querying ${query}, with data ${data.join(" ")} using ${this.database}`)
+		}
+		else{
+			print(`Querying ${query} using ${this.database}`)
+		}
+
+		const res = await conn.query(query,data);
 		return res;
 	},
 
