@@ -81,7 +81,7 @@ class AdminLogin extends React.Component{
 	render() {
 		return <>
 
-			<form className="text-center" onSubmit={this.login} noValidate>
+			<form className="text-center login-form" onSubmit={this.login} noValidate>
 
 				<SettingsButton callback={this.props.settingsCallback} size={32} offset={10} />
 				<LoginHeader text={"ELD Admin Login"} />

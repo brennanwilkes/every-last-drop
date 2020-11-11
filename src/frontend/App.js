@@ -17,7 +17,7 @@ class App extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			md : AppMode.LOGIN,
+			md : AppMode.MENU,
 			user: undefined,
 			dob: undefined
 		}
