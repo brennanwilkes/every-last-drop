@@ -169,10 +169,13 @@
 		"order":12,
 		"data":[
 			{"date": "2020/10/20", "drinkId": 0, "customerName": "Brennan Wilkes"},
-			{"date": "2020/10/20", "drinkId": 1, "customerName": "Brennan Wilkes"},
-			{"date": "2020/10/20", "drinkId": 4, "customerName": "Mali Truong"},
-			{"date": "2020/10/20", "drinkId": 3, "customerName": "Charles Lewis"},
-			{"date": "2020/10/20", "drinkId": 2, "customerName": "Hazra Imran"}
+			{"date": "2020/10/21", "drinkId": 1, "customerName": "Brennan Wilkes"},
+			{"date": "2020/10/22", "drinkId": 1, "customerName": "Brennan Wilkes"},
+			{"date": "2020/10/23", "drinkId": 1, "customerName": "Brennan Wilkes"},
+			{"date": "2020/10/23", "drinkId": 0, "customerName": "Brennan Wilkes"},
+			{"date": "2020/10/24", "drinkId": 4, "customerName": "Mali Truong"},
+			{"date": "2020/10/25", "drinkId": 3, "customerName": "Charles Lewis"},
+			{"date": "2020/10/26", "drinkId": 2, "customerName": "Hazra Imran"}
 		]
 	}
 }

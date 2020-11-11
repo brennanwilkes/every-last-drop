@@ -319,14 +319,23 @@ INSERT INTO transaction(date, drinkId, customerName)
 VALUES ("2020/10/20", 0, "Brennan Wilkes"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES ("2020/10/20", 1, "Brennan Wilkes"); 
+VALUES ("2020/10/21", 1, "Brennan Wilkes"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES ("2020/10/20", 4, "Mali Truong"); 
+VALUES ("2020/10/22", 1, "Brennan Wilkes"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES ("2020/10/20", 3, "Charles Lewis"); 
+VALUES ("2020/10/23", 1, "Brennan Wilkes"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES ("2020/10/20", 2, "Hazra Imran"); 
+VALUES ("2020/10/23", 0, "Brennan Wilkes"); 
+
+INSERT INTO transaction(date, drinkId, customerName)
+VALUES ("2020/10/24", 4, "Mali Truong"); 
+
+INSERT INTO transaction(date, drinkId, customerName)
+VALUES ("2020/10/25", 3, "Charles Lewis"); 
+
+INSERT INTO transaction(date, drinkId, customerName)
+VALUES ("2020/10/26", 2, "Hazra Imran"); 
 
