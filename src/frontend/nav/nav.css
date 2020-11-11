@@ -2,8 +2,13 @@
 	.show .btn-within-collapsable {
 		margin-bottom: 1rem;
 	}
+}
+.nav-brand-item{
+	margin-right: -0.5rem;
+}
 
-	.nav-brand-item{
-		margin-right: -0.5rem;
-	}
+.AdvancedSearch-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

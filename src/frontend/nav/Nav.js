@@ -3,6 +3,7 @@ import "../bootstrap-import.js";
 
 import "./nav.css";
 
+import { FaSlidersH } from "react-icons/fa";
 
 class User extends React.Component{
 	render(){
@@ -24,6 +25,38 @@ class Search extends React.Component{
 		</>;
 	}
 }
+
+class AdvancedSearchButton extends React.Component{
+	render(){
+		return <>
+			<button className="AdvancedSearch-btn btn btn-light py-2" type="button" data-toggle="collapse" data-target={`#${this.props.target}`}>
+				<FaSlidersH />
+			</button>
+		</>
+	}
+}
+
+
+class AdvancedSearchPannel extends React.Component{
+	render(){
+		return <>
+			<div className="collapse bg-dark fixed-top" id={this.props.id}>
+				<div className="row">
+					<div className="col-md-4">.col-md-4</div>
+					<div className="col-md-4">.col-md-4</div>
+					<div className="col-md-4">.col-md-4</div>
+				</div>
+				<div className="row">
+					<div className="col-md-4">.col-md-4</div>
+					<div className="col-md-4">.col-md-4</div>
+					<div className="col-md-4">.col-md-4</div>
+				</div>
+			</div>
+		</>
+	}
+}
+
+
 
 
 class Nav extends React.Component{
@@ -47,9 +80,12 @@ class Nav extends React.Component{
 							<User name={this.props.user} />
 						</li>
 					</ul>
-					<Search callback={this.props.searchCallback}/>
+					<AdvancedSearchButton target="advancedOptions" />
+					<Search callback={this.props.searchCallback} />
 				</div>
 			</nav>
+			<AdvancedSearchPannel id="advancedOptions" />
+
 		</>;
 	}
 
