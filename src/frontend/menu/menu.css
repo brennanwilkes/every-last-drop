@@ -13,7 +13,8 @@
 }
 
 .drinkRecipe-wrapper{
-	border: 2px dashed grey;
+	border: 4px solid grey;
+	background-color: #FFFFFFC0;
 
 	position: relative;
 	width: 80%;

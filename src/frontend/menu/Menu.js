@@ -2,6 +2,8 @@ import React from "react";
 import "../bootstrap-import.js";
 import axios from "axios";
 
+import barImage from "../../../assets/bar-stock.jpg";
+
 import "./menu.css";
 import Nav from "../nav/Nav.js";
 
@@ -37,6 +39,12 @@ class Menu extends React.Component {
 		};
 
 		axios.get("/drinks").then(res => this.setState({drinks:res.data}));
+	}
+
+	componentDidMount(){
+		$("main").css("backgroundImage",`url(${barImage})`);
+		$("main").css("background-color","#00000080");
+		$("main").css("background-blend-mode","overlay");
 	}
 
 	search(query){

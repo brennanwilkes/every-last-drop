@@ -14,16 +14,10 @@ class DynamicBackground extends React.Component{
 	render(){
 		return <>
 			<div className={"DynamicBackground"} id={this.props.uid+"-secondary"} style={{
-				backgroundImage: `linear-gradient(
-										rgba(0, 0, 0, 0.75),
-										rgba(0, 0, 0, 0.75)),
-									url(${this.props.secondary})`
+				backgroundImage: `url(${this.props.secondary})`
 			}}></div>
 			<div className={"DynamicBackground"} id={this.props.uid+"-primary"} style={{
-				backgroundImage: `linear-gradient(
-										rgba(0, 0, 0, 0.75),
-										rgba(0, 0, 0, 0.75)),
-									url(${this.props.primary})`
+				backgroundImage: `url(${this.props.primary})`
 			}}></div>
 		</>;
 	}
