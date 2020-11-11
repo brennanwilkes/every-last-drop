@@ -33,11 +33,14 @@ const searchQuery = {
 
 database.init();
 server.init();
-//server.route("desc/:table", req => database.get(`DESC ${req.params.table}`));
-//server.route("select/:table", req => database.get(`SELECT * FROM ${req.params.table}`));
-//server.route("insertTest", req => database.insert("glass",{id:11,name:"Bucket"}));
 
+//Get all drinks
+//Projection query
 server.route("drinks", req => database.get(`SELECT * FROM drinkRecipe`));
+
+//Advanced search
+//Join query
+//Could be division and more?
 server.route("drinks/advanced", req => {
 
 
@@ -64,17 +67,34 @@ server.route("drinks/advanced", req => {
 	return database.get(`SELECT * FROM drinkRecipe`);
 
 }, "post");
+
+
+//Search by name
+//Selection Query
 server.route("drinks", req => {
 	searchQuery.update(req.body);
 	searchQuery.sanitzize();
 	return database.get(`SELECT * FROM drinkRecipe WHERE name LIKE ?`,[searchQuery.name]);
 }, "post");
 
-
+//Highest rated drink
+//Aggregation query 1
 server.route("drinks/favourite", req => {
+	return database.get(`SELECT drinkRecipe.* FROM drinkRecipe WHERE RATING = (SELECT MAX(RATING) FROM drinkRecipe)`);
+});
+
+//Number of drinks ordered by specific user
+//Aggregation query 2
+server.route("drinks/orderCount", req => {
 	searchQuery.update(req.body);
 	searchQuery.sanitzize();
-	return database.get(`SELECT drinkRecipe.* FROM drinkRecipe WHERE RATING = (SELECT MAX(RATING) FROM drinkRecipe)`);
+	return database.get(`SELECT COUNT(transaction.id) FROM transaction WHERE UPPER(transaction.customerName) UPPER(?)`,[searchQuery.orderedBy]);
+},"post");
+
+//Most ordered drink
+//Nested Aggregation query
+server.route("drinks/popular", req => {
+	return database.get(`SELECT drinkRecipe.* FROM (SELECT transaction.drinkId FROM transaction GROUP BY drinkId ORDER BY COUNT(drinkId) DESC)popular INNER JOIN drinkRecipe ON drinkId=id LIMIT 1`);
 });
 
 server.start();
