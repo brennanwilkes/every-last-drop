@@ -1,7 +1,9 @@
 const axios = require('axios');
 
-const ranURL = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
-const drinkURL = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
+const ranURL = "https://www.thecocktaildb.com/api/json/v2/9973533/random.php";
+const alcURL = "https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?a=Alcoholic";
+const drinkURL = "https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=";
+const letURL = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?f=";
 
 const roundQ = num => (Math.ceil(num * 4) / 4).toFixed(2);
 
@@ -33,6 +35,19 @@ class DrinkRecipe{
 
 				ingName = data[`strIngredient${i}`];
 				ingAmt = data[`strMeasure${i}`];
+
+				try{
+					let temp = ingAmt.replace("a","b");
+				}
+				catch{
+					ingAmt = "1";
+				}
+				try{
+					let temp = ingName.replace("a","b");
+				}
+				catch{
+					continue
+				}
 
 				ingAmt = ingAmt.replace(/(\d+)\/(\d+)/,(str,num,denom) => roundQ(parseFloat(num)/parseFloat(denom)));
 				ingAmt = ingAmt.replace(/(\d+) (\d+\.\d+)/,(str,whole,fract) => roundQ(parseFloat(whole)+parseFloat(fract)));
@@ -74,23 +89,32 @@ class DrinkRecipe{
 	}
 }
 
-var cache = [];
 
 let d;
-for(let i=0;i<1000;i++){
-	axios.get(ranURL).then(res => {
+
+let letters = [];
+for(let l=0;l<26;l++){
+	letters.push(String.fromCharCode(97+l));
+}
+letters = [...letters,0,1,2,3,4,5,6,7,8,9];
+
+letters.forEach((letter, i) => {
+	axios.get(letURL+letter).then(res => {
+		if(!res.data.drinks){
+			return;
+		}
 		res.data.drinks.forEach((drink, i) => {
+
 			axios.get(`${drinkURL}${drink.idDrink}`).then(res => {
+
 				res.data.drinks.forEach((details, i) => {
-					if(details.strAlcoholic === "Alcoholic"){
-						d = new DrinkRecipe(details)
-						if(d.glass.length > 0 && !cache.includes(d.id)){
-							cache.push(d.id);
-							console.log(`${JSON.stringify(d,false,4)},`);
-						}
+					d = new DrinkRecipe(details)
+
+					if(d.glass.length > 0 ){
+						console.log(`${JSON.stringify(d,false,4)},`);
 					}
 				});
 			}).catch(err=>{});
 		});
 	}).catch(err=>{});
-}
+});
