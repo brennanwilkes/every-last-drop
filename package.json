@@ -19,6 +19,7 @@
 		"sql-insert-data:linux:darwin": "mariadb --defaults-extra-file=config/sql-login < data/sample-data.sql",
 		"sql-insert-data:default": "ECHO No WINDOWS implimentation for insert-data",
 		"gen-m3-sql": "node src/dev/jsonToSql.js ./data/sample-m3.json ./data/sample-m3.sql",
+		"scrape-data": "echo '[' > data/scraped-data.json ; node src/dev/cocktailDataCollector.js >> data/scraped-data.json; truncate -s-2 data/scraped-data.json ; echo ']' >> data/scraped-data.json",
 		"gen-sample-sql": "node src/dev/jsonToSql.js ./data/sample-data.json ./data/sample-data.sql",
 		"sql-status": "node src/dev/run-script-os/run-script-os-custom-index.js sql-status",
 		"sql-status:linux:darwin": "mariadb --defaults-extra-file=config/sql-login --table < src/sql/status.sql",

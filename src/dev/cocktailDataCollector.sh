@@ -14,5 +14,12 @@ for drinkId in $(seq $numDrinks); do
 	[ -z "$name" ] && {
 		continue
 	}
-	echo "$name"
+
+
+#<tr><td valign="top">1 Measure</td>
+#<td><a href="browse_cocktails.php?type=ing&amp;ing_id=24" title="Display all cocktails containing Disaronno Amaretto">Disaronno Amaretto</a></td></tr>
+
+#<tr><td valign="top">1 Measure</td><td><a href="browse_cocktails.php?type=ing&amp;ing_id=18" title="Display all cocktails containing De Kuyper Crème De Café">De Kuyper Crème De Café</a></td></tr><tr><td valign="top">1.5 Measures</td><td><a href="browse_cocktails.php?type=ing&amp;ing_id=66" title="Display all cocktails containing Cream">Cream</a></td></tr><tr><td valign="top">1.5 Measures</td><td><a href="browse_cocktails.php?type=ing&amp;ing_id=79" title="Display all cocktails containing Milk">Milk</a></td></tr>
+
+
 done;
