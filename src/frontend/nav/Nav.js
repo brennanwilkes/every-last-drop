@@ -27,25 +27,73 @@ class AdvancedSearchButton extends React.Component{
 }
 
 
+
 class AdvancedSearchPannel extends React.Component{
+
+	constructor(props){
+		super(props);
+		this.updateSubmit = this.updateSubmit.bind(this);
+	}
+
+	componentDidMount(){
+		$("input").keypress(function(e) {
+			if(e.which == 10 || e.which == 13) {
+				$(e.target).blur();
+			}
+		});
+	}
+
+	updateSubmit(event){
+		this.props.callback({
+			name: $("#advName")[0].value,
+			contains: $("#contains")[0].value,
+			mixMethod: $("#mixMethod")[0].value,
+			onIce: $("#onIce")[0].value,
+			orderedBy: $("#orderedBy")[0].value
+		});
+	}
+
+
 	render(){
 		return <>
-			<div className="collapse bg-dark" id={this.props.id}>
+			<form className="collapse bg-dark form-group" id={this.props.id}>
 				<div className="row">
-					<div className="col-md-4">.col-md-4</div>
-					<div className="col-md-4">.col-md-4</div>
-					<div className="col-md-4">.col-md-4</div>
+					<label className="col-md-4">
+						<input id="advName" className="form-control" placeholder="Name" onChange={this.updateSubmit} />
+					</label>
+					<label className="col-md-4">
+						<input id="contains" className="form-control" placeholder="Contains" onChange={this.updateSubmit} />
+					</label>
+					<div className="col-md-4">
+						<select className="form-control" id="mixMethod" onChange={this.updateSubmit}>
+							<option value="">Mix Method (Any)</option>
+							<option value="Shaken">Shaken</option>
+							<option value="Stirred">Stirred</option>
+						</select>
+					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-4">.col-md-4</div>
-					<div className="col-md-4">.col-md-4</div>
-					<div className="col-md-4">.col-md-4</div>
+					<div className="col-md-4">
+						<select className="form-control" id="onIce" onChange={this.updateSubmit} >
+							<option value="">On Ice (Either)</option>
+							<option value="1">Ice</option>
+							<option value="0">No Ice</option>
+						</select>
+					</div>
+					<div className="col-md-4">
+						<select className="form-control" id="orderedBy" onChange={this.updateSubmit} >
+							<option value="">Ordered by anyone</option>
+							<option value={this.props.name}>Ordered by me ({this.props.name})</option>
+						</select>
+					</div>
+					<div className="col-md-4">
+						another
+					</div>
 				</div>
-			</div>
+			</form>
 		</>
 	}
 }
-
 
 class Search extends React.Component{
 	render(){
@@ -91,7 +139,7 @@ class Nav extends React.Component{
 						<Search callback={this.props.searchCallback} advancedSearch="advancedOptions"/>
 					</div>
 				</nav>
-				<AdvancedSearchPannel id="advancedOptions" />
+				<AdvancedSearchPannel id="advancedOptions" name={this.props.user} callback={this.props.advSearchCallback}/>
 			</div>
 		</>;
 	}
