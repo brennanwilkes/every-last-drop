@@ -70,7 +70,7 @@ class Menu extends React.Component {
 
 		return <>
 			<Nav user={this.props.user} searchCallback={this.search} advSearchCallback={this.advSearch} />
-			<div className="container-fluid">{
+			<div className="container-fluid my-5per" id="menu">{
 				splitDrinks.map(r => {
 					return <>
 						<div className="row">{

@@ -19,7 +19,9 @@ class AdvancedSearchButton extends React.Component{
 		}
 
 		return <>
-			<button className="AdvancedSearch-btn btn btn-light py-2" type="button" data-toggle="collapse" data-target={`#${this.props.target}`}>
+			<button className="AdvancedSearch-btn btn btn-light py-2" type="button" onClick={event=>{
+				$("#menu").toggleClass("my-10per").toggleClass("my-5per");
+			}} data-toggle="collapse" data-target={`#${this.props.target}`}>
 				<FaSlidersH />
 			</button>
 		</>
@@ -56,15 +58,15 @@ class AdvancedSearchPannel extends React.Component{
 
 	render(){
 		return <>
-			<form className="collapse bg-dark form-group" id={this.props.id}>
-				<div className="row">
-					<label className="col-md-4">
+			<form className="collapse bg-dark form-group py-3" id={this.props.id}>
+				<div className="row py-2 justify-content-md-center">
+					<label className="col-md-3">
 						<input id="advName" className="form-control" placeholder="Name" onChange={this.updateSubmit} />
 					</label>
-					<label className="col-md-4">
+					<label className="col-md-3">
 						<input id="contains" className="form-control" placeholder="Contains" onChange={this.updateSubmit} />
 					</label>
-					<div className="col-md-4">
+					<div className="col-md-3">
 						<select className="form-control" id="mixMethod" onChange={this.updateSubmit}>
 							<option value="">Mix Method (Any)</option>
 							<option value="Shaken">Shaken</option>
@@ -72,21 +74,21 @@ class AdvancedSearchPannel extends React.Component{
 						</select>
 					</div>
 				</div>
-				<div className="row">
-					<div className="col-md-4">
+				<div className="row py-2 justify-content-md-center">
+					<div className="col-md-3">
 						<select className="form-control" id="onIce" onChange={this.updateSubmit} >
 							<option value="">On Ice (Either)</option>
 							<option value="1">Ice</option>
 							<option value="0">No Ice</option>
 						</select>
 					</div>
-					<div className="col-md-4">
+					<div className="col-md-3">
 						<select className="form-control" id="orderedBy" onChange={this.updateSubmit} >
 							<option value="">Ordered by anyone</option>
 							<option value={this.props.name}>Ordered by me ({this.props.name})</option>
 						</select>
 					</div>
-					<div className="col-md-4">
+					<div className="col-md-3">
 						another
 					</div>
 				</div>
