@@ -45,12 +45,18 @@ orders.sort((a,b) => a.order - b.order);
 let sql = `USE ${orders.database};\n\n`;
 let statements = 0;
 orders.forEach(order => {
+	if(order.ignoreOrder){
+		sql+= `SET FOREIGN_KEY_CHECKS=0;\n`;
+	}
 	order.data.forEach(tuple => {
 		tuple = splitTupleJSON(tuple);
 		sql += `INSERT INTO ${order.table}(${tuple.col})\n`
 		sql += `VALUES (${tuple.data}); \n\n`;
 		statements++;
 	});
+	if(order.ignoreOrder){
+		sql+= `SET FOREIGN_KEY_CHECKS=1;\n`;
+	}
 });
 
 fs.writeFile(outputFile, sql, function (err) {
