@@ -68,6 +68,7 @@ server.route("drinks/advanced", req => {
 	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe WHERE mixMethod=?)`,[searchQuery.mixMethod]);
 
 
+
 	//Mutli Search by combining all of the above queries
 	return database.get(`
 		SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
@@ -86,10 +87,12 @@ server.route("drinks/advanced", req => {
 				ON ingredientId=ingredient.id
 			WHERE ingredient.name LIKE ?
 		)group2
-			ON group2.id=drinkRecipe.id
-		INNER JOIN transaction
-			ON group2.id=transaction.drinkId
-		WHERE UPPER(transaction.customerName) LIKE UPPER(?)`,[searchQuery.mixMethod,searchQuery.onIce,searchQuery.name,searchQuery.contains,searchQuery.orderedBy]);
+			ON group2.id=drinkRecipe.id`+ (searchQuery.orderedBy && searchQuery.orderedBy.length > 2 ?
+				`INNER JOIN transaction
+					ON group2.id=transaction.drinkId
+				WHERE UPPER(transaction.customerName) LIKE UPPER(?)` :
+				``)
+			,[searchQuery.mixMethod,searchQuery.onIce,searchQuery.name,searchQuery.contains,searchQuery.orderedBy]);
 
 }, "post");
 
