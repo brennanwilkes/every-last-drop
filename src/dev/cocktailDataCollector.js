@@ -4,12 +4,13 @@ const ranURL = "https://www.thecocktaildb.com/api/json/v2/9973533/random.php";
 const alcURL = "https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?a=Alcoholic";
 const drinkURL = "https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=";
 const letURL = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?f=";
+const ingrURL = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?i=";
 
 const roundQ = num => (Math.ceil(num * 4) / 4).toFixed(2);
 
 class DrinkRecipe{
 	constructor(data){
-		this.id = data.idDrink;
+		this.id = parseInt(data.idDrink);
 		this.name = data.strDrink.toLowerCase();
 		this.glass = data.strGlass.toLowerCase()
 								.replace(/ [gG]lass$/, "")
@@ -27,6 +28,7 @@ class DrinkRecipe{
 		this.price = 10 + Math.floor(Math.random()*5)*2;
 		this.rating = 2 + Math.floor(Math.random()*4)*2;
 
+		this.imgURL = data.strDrinkThumb;
 
 		this.ingredients = [];
 		let ingAmt, ingName;
@@ -34,6 +36,7 @@ class DrinkRecipe{
 			if(data[`strIngredient${i}`]){
 
 				ingName = data[`strIngredient${i}`];
+				let origName = ingName;
 				ingAmt = data[`strMeasure${i}`];
 
 				try{
@@ -77,18 +80,93 @@ class DrinkRecipe{
 
 				ingName = ingName.toLowerCase();
 				ingName = ingName.replace('-',' ');
-				ingName = ingName.replace(/[fF]resh $/, "");
+				ingName = ingName.replace(/[fF]resh /, "");
+				ingName = ingName.replace(/ [fF]resh/, "");
 
 				this.ingredients.push({
+					searchQuery: origName,
 					name: ingName,
 					amount: ingAmt,
 				})
 			}
 		}
+	}
 
+	getIngInfo(i=0){
+		const axiosQueue = [];
+		for(let i=0;i<this.ingredients.length;i++){
+
+			axiosQueue.push(
+				(ingredientCache[this.ingredients[i].name]
+					? new Promise((res,rej)=>{
+						this.ingredients[i].id = ingredientCache[this.ingredients[i].name].id;
+						this.ingredients[i].type = ingredientCache[this.ingredients[i].name].type;
+						this.ingredients[i].isAlcohol = ingredientCache[this.ingredients[i].name].isAlcohol;
+						this.ingredients[i].percentage = ingredientCache[this.ingredients[i].name].percentage;
+						res(true);
+					})
+					: axios.get(`${ingrURL}${this.ingredients[i].searchQuery.replace(" ","%20")}`)
+							.then(res => {
+								if(ingredientCache[this.ingredients[i].name]){
+									this.ingredients[i].id = ingredientCache[this.ingredients[i].name].id;
+									this.ingredients[i].type = ingredientCache[this.ingredients[i].name].type;
+									this.ingredients[i].isAlcohol = ingredientCache[this.ingredients[i].name].isAlcohol;
+									this.ingredients[i].percentage = ingredientCache[this.ingredients[i].name].percentage;
+								}
+								else if(res.data.ingredients && res.data.ingredients.length > 0){
+									let details = res.data.ingredients[0];
+									this.ingredients[i].id = parseInt(details.idIngredient);
+									this.ingredients[i].type = details.strType ? details.strType : "";
+									this.ingredients[i].isAlcohol = details.strAlcohol==="Yes";
+									this.ingredients[i].percentage = details.strABV ? parseFloat(details.strABV) : 0;
+
+									if(this.ingredients[i].percentage === 0){
+										if(this.ingredients[i].type.toLowerCase().includes("wine")){
+											this.ingredients[i].isAlcohol = true;
+											this.ingredients[i].percentage = (this.ingredients[i].type.toLowerCase().includes("fortified")) ? 20 : 12.5;
+										}
+										else if(this.ingredients[i].type.toLowerCase().includes("whisky") ||
+												this.ingredients[i].type.toLowerCase().includes("spirit")||
+												this.ingredients[i].type.toLowerCase().includes("liquor")||
+												this.ingredients[i].type.toLowerCase().includes("vodka")||
+												this.ingredients[i].type.toLowerCase().includes("whiskey")){
+													this.ingredients[i].isAlcohol = true;
+													this.ingredients[i].percentage = 40;
+										}
+										else if(this.ingredients[i].type.toLowerCase().includes("liqueur") ||
+												this.ingredients[i].type.toLowerCase().includes("brandy") ||
+												this.ingredients[i].type.toLowerCase().includes("rum") ||
+												this.ingredients[i].type.toLowerCase().includes("aperitif")){
+													this.ingredients[i].isAlcohol = true;
+													this.ingredients[i].percentage = 25;
+										}
+										else if(this.ingredients[i].type.toLowerCase().includes("stout")){
+											this.ingredients[i].isAlcohol = true;
+											this.ingredients[i].percentage = 17.5;
+										}
+
+									}
+
+
+									ingredientCache[this.ingredients[i].name] = this.ingredients[i];
+
+								}
+							}).catch(err=>{
+								if(ingredientCache[this.ingredients[i].name]){
+									this.ingredients[i].id = ingredientCache[this.ingredients[i].name].id;
+									this.ingredients[i].type = ingredientCache[this.ingredients[i].name].type;
+									this.ingredients[i].isAlcohol = ingredientCache[this.ingredients[i].name].isAlcohol;
+									this.ingredients[i].percentage = ingredientCache[this.ingredients[i].name].percentage;
+								}
+							})
+				)
+			)
+		}
+		return Promise.all(axiosQueue);
 	}
 }
 
+var ingredientCache = [];
 
 let d;
 
@@ -111,7 +189,12 @@ letters.forEach((letter, i) => {
 					d = new DrinkRecipe(details)
 
 					if(d.glass.length > 0 ){
-						console.log(`${JSON.stringify(d,false,4)},`);
+
+						d.getIngInfo().then(res=>{
+							console.log(`${JSON.stringify(d,false,4)},`);
+						}).catch(err=>{console.error(err)})
+
+
 					}
 				});
 			}).catch(err=>{});

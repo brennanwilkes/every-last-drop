@@ -37,8 +37,12 @@
 		"data":[
 			{"quantity":0,"isAvailable":false},
 			{"quantity":1,"isAvailable":true},
+			{"quantity":3,"isAvailable":true},
 			{"quantity":4,"isAvailable":true},
+			{"quantity":5,"isAvailable":true},
 			{"quantity":6,"isAvailable":true},
+			{"quantity":7,"isAvailable":true},
+			{"quantity":8,"isAvailable":true},
 			{"quantity":9,"isAvailable":true}
 		]
 	},
