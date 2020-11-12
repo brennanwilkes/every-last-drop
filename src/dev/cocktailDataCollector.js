@@ -119,8 +119,6 @@ class DrinkRecipe{
 									this.ingredients[i].isAlcohol = details.strAlcohol==="Yes";
 									this.ingredients[i].percentage = details.strABV ? parseFloat(details.strABV) : 0;
 
-									console.error(this.ingredients[i].type.toLowerCase());
-
 									if(this.ingredients[i].percentage === 0){
 										if(this.ingredients[i].type.toLowerCase().includes("wine")){
 											this.ingredients[i].isAlcohol = true;
