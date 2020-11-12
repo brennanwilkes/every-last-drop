@@ -32,7 +32,7 @@ class Menu extends React.Component {
 		super(props);
 
 		this.search = this.search.bind(this);
-
+		this.advSearch = this.advSearch.bind(this);
 
 		this.state = {
 			drinks: []
@@ -48,9 +48,15 @@ class Menu extends React.Component {
 	}
 
 	search(query){
-		axios.post('/drinks/advanced',{
+		axios.post('/drinks',{
 			name: query
 		}).then(res => {
+			this.setState({drinks:res.data})
+		});
+	}
+
+	advSearch(query){
+		axios.post('/drinks/advanced',query).then(res => {
 			this.setState({drinks:res.data})
 		});
 	}
@@ -63,7 +69,7 @@ class Menu extends React.Component {
 		}
 
 		return <>
-			<Nav user={this.props.user} searchCallback={this.search} />
+			<Nav user={this.props.user} searchCallback={this.search} advSearchCallback={this.advSearch} />
 			<div className="container-fluid">{
 				splitDrinks.map(r => {
 					return <>
