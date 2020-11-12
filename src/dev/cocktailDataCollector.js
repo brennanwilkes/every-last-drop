@@ -119,6 +119,8 @@ class DrinkRecipe{
 									this.ingredients[i].isAlcohol = details.strAlcohol==="Yes";
 									this.ingredients[i].percentage = details.strABV ? parseFloat(details.strABV) : 0;
 
+									console.error(this.ingredients[i].type.toLowerCase());
+
 									if(this.ingredients[i].percentage === 0){
 										if(this.ingredients[i].type.toLowerCase().includes("wine")){
 											this.ingredients[i].isAlcohol = true;
@@ -127,6 +129,8 @@ class DrinkRecipe{
 										else if(this.ingredients[i].type.toLowerCase().includes("whisky") ||
 												this.ingredients[i].type.toLowerCase().includes("spirit")||
 												this.ingredients[i].type.toLowerCase().includes("liquor")||
+												this.ingredients[i].type.toLowerCase().includes("tequila")||
+												this.ingredients[i].type.toLowerCase().includes("sambuca")||
 												this.ingredients[i].type.toLowerCase().includes("vodka")||
 												this.ingredients[i].type.toLowerCase().includes("whiskey")){
 													this.ingredients[i].isAlcohol = true;

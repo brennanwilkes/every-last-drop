@@ -58,10 +58,22 @@ INSERT INTO ingredientAvailable(quantity, isAvailable)
 VALUES (1, true); 
 
 INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (3, true); 
+
+INSERT INTO ingredientAvailable(quantity, isAvailable)
 VALUES (4, true); 
 
 INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (5, true); 
+
+INSERT INTO ingredientAvailable(quantity, isAvailable)
 VALUES (6, true); 
+
+INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (7, true); 
+
+INSERT INTO ingredientAvailable(quantity, isAvailable)
+VALUES (8, true); 
 
 INSERT INTO ingredientAvailable(quantity, isAvailable)
 VALUES (9, true); 
