@@ -75,7 +75,7 @@ data.forEach((drink, i) => {
 	}
 });
 
-console.log(Object.keys(ingredients).map(i=>ingredients[i].name))
+console.log(ingredients)
 
 
 

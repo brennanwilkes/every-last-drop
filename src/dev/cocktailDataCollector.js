@@ -10,7 +10,7 @@ const roundQ = num => (Math.ceil(num * 4) / 4).toFixed(2);
 
 class DrinkRecipe{
 	constructor(data){
-		this.id = parseInt(data.idDrink);
+		this.id = data.idDrink;
 		this.name = data.strDrink.toLowerCase();
 		this.glass = data.strGlass.toLowerCase()
 								.replace(/ [gG]lass$/, "")
@@ -92,10 +92,9 @@ class DrinkRecipe{
 		}
 	}
 
-	getIngInfo(i=0){
+	getIngInfoThenOutput(i=0){
 		const axiosQueue = [];
 		for(let i=0;i<this.ingredients.length;i++){
-
 			axiosQueue.push(
 				(ingredientCache[this.ingredients[i].name]
 					? new Promise((res,rej)=>{
@@ -147,7 +146,6 @@ class DrinkRecipe{
 
 									}
 
-
 									ingredientCache[this.ingredients[i].name] = this.ingredients[i];
 
 								}
@@ -162,7 +160,9 @@ class DrinkRecipe{
 				)
 			)
 		}
-		return Promise.all(axiosQueue);
+		Promise.all(axiosQueue).then(res=>{
+			console.log(`${JSON.stringify(this,false,4)},`);
+		}).catch(err=>{});
 	}
 }
 
@@ -190,9 +190,7 @@ letters.forEach((letter, i) => {
 
 					if(d.glass.length > 0 ){
 
-						d.getIngInfo().then(res=>{
-							console.log(`${JSON.stringify(d,false,4)},`);
-						}).catch(err=>{console.error(err)})
+						d.getIngInfoThenOutput()
 
 
 					}
