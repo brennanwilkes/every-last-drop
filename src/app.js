@@ -58,11 +58,12 @@ const searchQuery = {
 			args.push(searchQuery.percentage);
 			args.push(searchQuery.liquor);
 		}
-		if(searchQuery.isSweet.length > 2){
-			args.push(searchQuery.isSweet);
-		}
+
 		if(searchQuery.orderedBy && searchQuery.orderedBy.length > 2){
 			args.push(searchQuery.orderedBy);
+		}
+		if(searchQuery.isSweet.length > 2){
+			args.push(searchQuery.isSweet);
 		}
 
 		return args;
@@ -107,38 +108,50 @@ server.route("drinks/advanced", req => {
 	return database.get(`
 		SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
 		INNER JOIN (
-			SELECT drinkRequires.* FROM drinkRequires
+			SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
 			INNER JOIN (
-				SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
-				WHERE mixMethod LIKE ?
-				AND onIce LIKE ?
-				AND name LIKE ?
-				AND rating>=?
-			)group1
-				ON drinkRequires.drinkId=group1.id
+				SELECT drinkRequires.* FROM drinkRequires
+				INNER JOIN (
+					SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
+					WHERE mixMethod LIKE ?
+					AND onIce LIKE ?
+					AND name LIKE ?
+					AND rating>=?
+				)group1
+					ON drinkRequires.drinkId=group1.id
+				INNER JOIN ingredient
+					ON ingredientId=ingredient.id `+ (searchQuery.percentage > 0 || searchQuery.liquor.length > 2 ? `
+					INNER JOIN alcohol
+						ON ingredient.id=alcohol.id
+					INNER JOIN alcoholType
+						ON alcohol.percentage=alcoholType.percentage ` : ` `) + `
+				WHERE ingredient.name LIKE ? ` + (searchQuery.percentage > 0 || searchQuery.liquor.length > 2 ? `
+					AND alcohol.percentage>=?
+					AND alcoholType.liquor LIKE ?
+					`: ` `) + `
+			)group2
+				ON group2.drinkId=drinkRecipe.id ` + (searchQuery.orderedBy && searchQuery.orderedBy.length > 2 ?
+				`INNER JOIN transaction
+					ON group2.drinkId=transaction.drinkId
+				WHERE UPPER(transaction.customerName) LIKE UPPER(?)` :
+					` `)+`
+		)group3
+			ON group3.id=drinkRecipe.id
+			INNER JOIN drinkRequires
+				ON drinkRequires.drinkId=drinkRecipe.id` + (searchQuery.isSweet.length > 2 ? `
 			INNER JOIN ingredient
-				ON ingredientId=ingredient.id`+ (searchQuery.percentage > 0 || searchQuery.liquor.length > 2 ? `
-			INNER JOIN alcohol
-				ON ingredient.id=alcohol.id
-			INNER JOIN alcoholType
-				ON alcohol.percentage=alcoholType.percentage ` : ` `) + (searchQuery.isSweet.length > 2 ? `
+				ON ingredientId=ingredient.id
 			INNER JOIN juice
 				ON ingredient.id=juice.id
 			INNER JOIN juiceFruit
-				ON juice.fruitName=juiceFruit.fruitName ` : ` `) + `
-			WHERE ingredient.name LIKE ? ` + (searchQuery.percentage > 0 || searchQuery.liquor.length > 2 ? `
-				AND alcohol.percentage>=?
-				AND alcoholType.liquor LIKE ?
-				`: ` `) + (searchQuery.isSweet.length > 2 ? `
-				AND juiceFruit.isSweet LIKE ? `: ` `) + `
-		)group2
-			ON group2.drinkId=drinkRecipe.id ` + (searchQuery.orderedBy && searchQuery.orderedBy.length > 2 ?
-			`INNER JOIN transaction
-				ON group2.drinkId=transaction.drinkId
-			WHERE UPPER(transaction.customerName) LIKE UPPER(?)` :
-				` `),searchQuery.getArgs());
+				ON juice.fruitName=juiceFruit.fruitName
+				AND juiceFruit.isSweet LIKE ? `: ` `),searchQuery.getArgs());
 
 }, "post");
+
+
+
+
 
 
 //Search by name
