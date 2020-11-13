@@ -47,7 +47,6 @@ exports.database = {
 		else{
 			print(`Querying ${query} using ${this.database}`)
 		}
-
 		const res = await conn.query(query,data);
 		return res;
 	},

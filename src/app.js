@@ -9,6 +9,10 @@ const searchQuery = {
 	orderedBy: "",
 	onIce: "",
 	mixMethod: "",
+	percentage: 0,
+	rating: 0,
+	isSweet: "",
+	liquor: "",
 
 	reset(){
 		Object.keys(this).forEach(key => {
@@ -32,6 +36,36 @@ const searchQuery = {
 				console.log(key,this[key],'\n')
 			}
 		});
+
+		if(typeof(this.rating)!=="number"){
+			this.rating = 0;
+		}
+		if(typeof(this.percentage)!=="number"){
+			this.percentage = 0;
+		}
+	},
+
+	getArgs(){
+		let args = [
+			searchQuery.mixMethod,
+			searchQuery.onIce,
+			searchQuery.name,
+			searchQuery.rating,
+			searchQuery.contains
+		];
+
+		if(searchQuery.percentage > 0 || searchQuery.liquor.length > 2){
+			args.push(searchQuery.percentage);
+			args.push(searchQuery.liquor);
+		}
+		if(searchQuery.isSweet.length > 2){
+			args.push(searchQuery.isSweet);
+		}
+		if(searchQuery.orderedBy && searchQuery.orderedBy.length > 2){
+			args.push(searchQuery.orderedBy);
+		}
+
+		return args;
 	}
 }
 
@@ -73,26 +107,36 @@ server.route("drinks/advanced", req => {
 	return database.get(`
 		SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
 		INNER JOIN (
-			SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
+			SELECT drinkRequires.* FROM drinkRequires
 			INNER JOIN (
 				SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
 				WHERE mixMethod LIKE ?
 				AND onIce LIKE ?
 				AND name LIKE ?
+				AND rating>=?
 			)group1
-				ON drinkRecipe.id=group1.id
-			INNER JOIN drinkRequires
-				ON drinkRecipe.id=drinkRequires.drinkId
+				ON drinkRequires.drinkId=group1.id
 			INNER JOIN ingredient
-				ON ingredientId=ingredient.id
-			WHERE ingredient.name LIKE ?
+				ON ingredientId=ingredient.id`+ (searchQuery.percentage > 0 || searchQuery.liquor.length > 2 ? `
+			INNER JOIN alcohol
+				ON ingredient.id=alcohol.id
+			INNER JOIN alcoholType
+				ON alcohol.percentage=alcoholType.percentage ` : ` `) + (searchQuery.isSweet.length > 2 ? `
+			INNER JOIN juice
+				ON ingredient.id=juice.id
+			INNER JOIN juiceFruit
+				ON juice.fruitName=juiceFruit.fruitName ` : ` `) + `
+			WHERE ingredient.name LIKE ? ` + (searchQuery.percentage > 0 || searchQuery.liquor.length > 2 ? `
+				AND alcohol.percentage>=?
+				AND alcoholType.liquor LIKE ?
+				`: ` `) + (searchQuery.isSweet.length > 2 ? `
+				AND juiceFruit.isSweet LIKE ? `: ` `) + `
 		)group2
-			ON group2.id=drinkRecipe.id`+ (searchQuery.orderedBy && searchQuery.orderedBy.length > 2 ?
-				`INNER JOIN transaction
-					ON group2.id=transaction.drinkId
-				WHERE UPPER(transaction.customerName) LIKE UPPER(?)` :
-				``)
-			,[searchQuery.mixMethod,searchQuery.onIce,searchQuery.name,searchQuery.contains,searchQuery.orderedBy]);
+			ON group2.drinkId=drinkRecipe.id ` + (searchQuery.orderedBy && searchQuery.orderedBy.length > 2 ?
+			`INNER JOIN transaction
+				ON group2.drinkId=transaction.drinkId
+			WHERE UPPER(transaction.customerName) LIKE UPPER(?)` :
+				` `),searchQuery.getArgs());
 
 }, "post");
 
