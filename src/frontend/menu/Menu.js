@@ -33,9 +33,11 @@ class Menu extends React.Component {
 
 		this.search = this.search.bind(this);
 		this.advSearch = this.advSearch.bind(this);
+		this.advancedSearchToggle = this.advancedSearchToggle.bind(this);
 
 		this.state = {
-			drinks: []
+			drinks: [],
+			advancedSearchExpanded: false
 		};
 
 		axios.get("/drinks").then(res => this.setState({drinks:res.data}));
@@ -45,6 +47,7 @@ class Menu extends React.Component {
 		$("main").css("backgroundImage",`url(${barImage})`);
 		$("main").css("background-color","#00000080");
 		$("main").css("background-blend-mode","overlay");
+		$("#menu").css("marginTop","7.5%");
 	}
 
 	search(query){
@@ -53,6 +56,24 @@ class Menu extends React.Component {
 		}).then(res => {
 			this.setState({drinks:res.data})
 		});
+	}
+
+	advancedSearchToggle(){
+		if(this.state.advancedSearchExpanded){
+			$("#menu").animate({
+				marginTop: "7.5%"
+			},400);
+		}
+		else{
+			$("#menu").animate({
+				marginTop: "12.5%"
+			},400);
+		}
+
+		this.setState({
+			advancedSearchExpanded: !this.state.advancedSearchExpanded
+		});
+
 	}
 
 	advSearch(query){
@@ -69,8 +90,11 @@ class Menu extends React.Component {
 		}
 
 		return <>
-			<Nav user={this.props.user} searchCallback={this.search} advSearchCallback={this.advSearch} />
-			<div className="container-fluid my-5per" id="menu">{
+			<Nav user={this.props.user}
+				searchCallback={this.search}
+				advSearchCallback={this.advSearch}
+				advancedSearchToggleCallback={this.advancedSearchToggle} />
+			<div className="container-fluid" id="menu">{
 				splitDrinks.map(r => {
 					return <>
 						<div className="row">{

@@ -19,9 +19,7 @@ class AdvancedSearchButton extends React.Component{
 		}
 
 		return <>
-			<button className="AdvancedSearch-btn btn btn-light py-2" type="button" onClick={event=>{
-				$("#menu").toggleClass("my-10per").toggleClass("my-5per");
-			}} data-toggle="collapse" data-target={`#${this.props.target}`}>
+			<button className="AdvancedSearch-btn btn btn-light py-2" type="button" onClick={this.props.expandCallback} data-toggle="collapse" data-target={`#${this.props.target}`}>
 				<FaSlidersH />
 			</button>
 		</>
@@ -104,7 +102,7 @@ class Search extends React.Component{
 				event.preventDefault();
 				$(event.target).children().blur();
 			}}>
-				<AdvancedSearchButton target={this.props.advancedSearch} />
+				<AdvancedSearchButton target={this.props.advancedSearch} expandCallback={this.props.advancedSearchCallback} />
 				<input className="form-control" type="text" placeholder="Search" onChange={event => {
 					this.props.callback(event.target.value);
 				}} />
@@ -138,7 +136,7 @@ class Nav extends React.Component{
 								<User name={this.props.user} />
 							</li>
 						</ul>
-						<Search callback={this.props.searchCallback} advancedSearch="advancedOptions"/>
+						<Search callback={this.props.searchCallback} advancedSearchCallback={this.props.advancedSearchToggleCallback} advancedSearch="advancedOptions"/>
 					</div>
 				</nav>
 				<AdvancedSearchPannel id="advancedOptions" name={this.props.user} callback={this.props.advSearchCallback}/>
