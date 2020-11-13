@@ -40,8 +40,7 @@ class Menu extends React.Component {
 		this.advancedSearchToggle = this.advancedSearchToggle.bind(this);
 
 		this.state = {
-			drinks: [],
-			advancedSearchExpanded: false
+			drinks: []
 		};
 
 		axios.get("/drinks").then(res => this.setState({drinks:res.data}));
@@ -63,21 +62,11 @@ class Menu extends React.Component {
 	}
 
 	advancedSearchToggle(){
-		if(this.state.advancedSearchExpanded){
+		setTimeout(()=>{
 			$("#menu").animate({
-				marginTop: "7.5%"
-			},400);
-		}
-		else{
-			$("#menu").animate({
-				marginTop: "12.5%"
-			},400);
-		}
-
-		this.setState({
-			advancedSearchExpanded: !this.state.advancedSearchExpanded
-		});
-
+				marginTop: `${$("#nav-wrapper").height() + 50}px`
+			},200);
+		},250);
 	}
 
 	advSearch(query){

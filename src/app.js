@@ -37,10 +37,10 @@ const searchQuery = {
 			}
 		});
 
-		if(typeof(this.rating)!=="number"){
+		if(typeof(this.rating)!=="number" || isNaN(this.rating)){
 			this.rating = 0;
 		}
-		if(typeof(this.percentage)!=="number"){
+		if(typeof(this.percentage)!=="number" || isNaN(this.percentage)){
 			this.percentage = 0;
 		}
 	},
