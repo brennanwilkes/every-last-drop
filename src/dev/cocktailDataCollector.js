@@ -23,7 +23,17 @@ class DrinkRecipe{
 								.replace(/whiskey sour/g,'coupe')
 								.replace(/cocktail/g,'coupe');
 		this.mixMethod = (data.strInstructions.toLowerCase().includes("shake") ? "shaken" : "stirred");
-		this.onIce = data.strInstructions.toLowerCase().includes("ice") || new Array(15).map(i => data[`strIngredient${i+1}`]).join(" ").includes("ice");
+
+		if(["coupe","shot","nick and nora","champagne flute"].some(el => this.glass.includes(el))){
+			this.onIce = false;
+		}
+		else if(["rocks","hurricane","punch bowl"].some(el => this.glass.includes(el))){
+			this.onIce = true;
+		}
+		else{
+			this.onIce = data.strInstructions.toLowerCase().includes("ice") || new Array(15).map(i => data[`strIngredient${i+1}`]).join(" ").includes("ice");
+		}
+
 
 		this.price = 10 + Math.floor(Math.random()*5)*2;
 		this.rating = 2 + Math.floor(Math.random()*4)*2;

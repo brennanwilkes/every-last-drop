@@ -1,79 +1,79 @@
 USE everyLastDrop;
 
 INSERT INTO glass(id, name)
-VALUES (0, "wine"); 
+VALUES (0, "irish coffee cup"); 
 
 INSERT INTO glass(id, name)
-VALUES (1, "coffee mug"); 
+VALUES (1, "highball"); 
 
 INSERT INTO glass(id, name)
-VALUES (2, "coupe"); 
+VALUES (2, "collins"); 
 
 INSERT INTO glass(id, name)
-VALUES (3, "beer mug"); 
+VALUES (3, "coupe"); 
 
 INSERT INTO glass(id, name)
-VALUES (4, "collins"); 
+VALUES (4, "coffee mug"); 
 
 INSERT INTO glass(id, name)
-VALUES (5, "highball"); 
+VALUES (5, "rocks"); 
 
 INSERT INTO glass(id, name)
 VALUES (6, "shot"); 
 
 INSERT INTO glass(id, name)
-VALUES (7, "rocks"); 
+VALUES (7, "wine"); 
 
 INSERT INTO glass(id, name)
-VALUES (8, "pint"); 
+VALUES (8, "beer"); 
 
 INSERT INTO glass(id, name)
-VALUES (9, "brandy snifter"); 
+VALUES (9, "champagne flute"); 
 
 INSERT INTO glass(id, name)
-VALUES (10, "nick and nora"); 
+VALUES (10, "beer mug"); 
 
 INSERT INTO glass(id, name)
-VALUES (11, "champagne flute"); 
+VALUES (11, "punch bowl"); 
 
 INSERT INTO glass(id, name)
 VALUES (12, "hurricane"); 
 
 INSERT INTO glass(id, name)
-VALUES (13, "beer"); 
+VALUES (13, "pitcher"); 
 
 INSERT INTO glass(id, name)
-VALUES (14, "punch bowl"); 
+VALUES (14, "pint"); 
 
 INSERT INTO glass(id, name)
-VALUES (15, "irish coffee cup"); 
+VALUES (15, "beer pilsner"); 
 
 INSERT INTO glass(id, name)
-VALUES (16, "mason jar"); 
+VALUES (16, "pousse cafe"); 
 
 INSERT INTO glass(id, name)
-VALUES (17, "cordial"); 
+VALUES (17, "mason jar"); 
 
 INSERT INTO glass(id, name)
-VALUES (18, "balloon"); 
+VALUES (18, "nick and nora"); 
 
 INSERT INTO glass(id, name)
-VALUES (19, "copper mug"); 
+VALUES (19, "brandy snifter"); 
 
 INSERT INTO glass(id, name)
-VALUES (20, "beer pilsner"); 
+VALUES (20, "cordial"); 
 
 INSERT INTO glass(id, name)
-VALUES (21, "pousse cafe"); 
+VALUES (21, "balloon"); 
 
 INSERT INTO glass(id, name)
-VALUES (22, "pitcher"); 
+VALUES (22, "copper mug"); 
 
 INSERT INTO glass(id, name)
-VALUES (23, "jar"); 
+VALUES (23, "parfait"); 
 
 INSERT INTO glass(id, name)
-VALUES (24, "parfait"); 
+VALUES (24, "jar"); 
 
 INSERT INTO drinkRating(rating, popularity)
 VALUES (2, "never ordered"); 
@@ -91,1742 +91,1826 @@ INSERT INTO drinkRating(rating, popularity)
 VALUES (10, "fan favourite"); 
 
 SET FOREIGN_KEY_CHECKS=0;
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (213, "252", 10, "stirred", false, 6, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (126, "252", 18, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/rtpxqw1468877562.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (396, "747", 18, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (21, "747", 12, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/xxsxqy1472668106.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (0, "155 belmont", 16, "stirred", true, 0, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (0, "irish coffee", 16, "stirred", false, 0, null, "https://www.thecocktaildb.com/images/media/drink/sywsqw1439906999.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (1, "egg cream", 10, "stirred", false, 1, 206, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (1, "irish russian", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/swqurw1454512730.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (2, "clove cocktail", 14, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (2, "501 blue", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/ywxwqs1461867097.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (3, "quarter deck cocktail", 12, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (3, "kiwi lemon", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/tpupvr1478251697.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (4, "rose", 12, "shaken", false, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (4, "ice pick #1", 14, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/ypsrqp1469091726.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (5, "derby", 14, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (5, "imperial cocktail", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/bcsj2e1487603625.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (6, "h.d.", 14, "stirred", false, 3, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (6, "irish curdling cow", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/yrhutv1503563730.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (7, "harvey wallbanger", 16, "stirred", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (7, "iced coffee fillip", 14, "stirred", false, 4, 36, "https://www.thecocktaildb.com/images/media/drink/sxtxrp1454514223.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (8, "amaretto sunrise", 12, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (8, "irish cream", 18, "stirred", false, 0, null, "https://www.thecocktaildb.com/images/media/drink/90etyl1504884699.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (9, "adonis cocktail", 12, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (9, "50/50", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/wwpyvr1461919316.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (10, "pysch vitamin light", 16, "shaken", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (10, "wine punch", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/txustu1473344310.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (11, "danbooka", 18, "stirred", false, 1, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (11, "godfather", 12, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/e5zgao1582582378.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (12, "almond chocolate coffee", 12, "stirred", false, 1, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (12, "golden dream", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/qrot6j1504369425.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (13, "apello", 14, "stirred", false, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (13, "gin basil smash", 14, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/jqh2141572807327.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (14, "a night in old mandalay", 14, "shaken", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (14, "gin and tonic", 12, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/z0omyp1582480573.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (15, "cream soda", 10, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (15, "kool-aid slammer", 12, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/kugu2m1504735473.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (16, "adios amigos cocktail", 16, "shaken", false, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (16, "harvey wallbanger", 12, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/vg4bva1504369725.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (17, "chocolate drink", 10, "stirred", false, 1, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (17, "grape lemon pineapple smoothie", 18, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/54z5h71487603583.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (18, "quick f**k", 10, "stirred", false, 6, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (18, "whisky mac", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/yvvwys1461867858.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (19, "california root beer", 12, "stirred", false, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (19, "gin fizz", 16, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/xhl8q31504351772.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (20, "queen bee", 14, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (20, "espresso martini", 10, "shaken", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/n0sx531504372951.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (21, "jack's vanilla coke", 14, "stirred", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (22, "waikiki beachcomber", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ysuqus1441208583.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (22, "coffee liqueur", 16, "stirred", false, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (23, "girl from ipanema", 14, "shaken", true, 7, null, "https://www.thecocktaildb.com/images/media/drink/xypspq1469090633.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (23, "501 blue", 12, "stirred", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (24, "110 in the shade", 18, "stirred", false, 8, null, "https://www.thecocktaildb.com/images/media/drink/xxyywq1454511117.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (24, "brandon and will's coke float", 10, "stirred", true, 3, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (25, "karsk", 16, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/808mxk1487602471.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (25, "japanese fizz", 18, "shaken", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (26, "whiskey sour", 12, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/hbkfsh1589574990.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (26, "kool-aid slammer", 18, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (27, "white russian", 10, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/vsrupw1472405732.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (27, "clover club", 14, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (28, "gagliardo", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/lyloe91487602877.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (28, "lemon drop", 14, "shaken", false, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (29, "whitecap margarita", 16, "stirred", false, 3, 244, "https://www.thecocktaildb.com/images/media/drink/srpxxp1441209622.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (29, "lazy coconut paloma", 12, "stirred", true, 5, 322, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (30, "kamikaze", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/xa58bb1504373204.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (30, "69 special", 12, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (31, "kioki coffee", 16, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/uppqty1441247374.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (31, "hemingway special", 12, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (32, "imperial fizz", 14, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/zj1usl1504884548.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (32, "cosmopolitan", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (33, "godmother", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/quksqg1582582597.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (33, "grass skirt", 12, "shaken", true, 7, 362, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (34, "kentucky colonel", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/utqwpu1478820348.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (34, "casa blanca", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (35, "kurant tea", 10, "stirred", false, 9, null, "https://www.thecocktaildb.com/images/media/drink/xrsrpr1441247464.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (35, "green goblin", 18, "stirred", false, 8, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (36, "iced coffee", 14, "shaken", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/ytprxy1454513855.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (36, "long vodka", 10, "shaken", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (37, "dark and stormy", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/t1tn0s1504374905.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (37, "gin and tonic", 14, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (38, "gin swizzle", 18, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/sybce31504884026.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (38, "national aquarium", 12, "shaken", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (39, "grasshopper", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/aqm9el1504369613.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (39, "vodka and tonic", 14, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (40, "wine cooler", 12, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/yutxtv1473344210.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (40, "kentucky b and b", 10, "stirred", false, 9, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (41, "h.d.", 14, "stirred", false, 10, null, "https://www.thecocktaildb.com/images/media/drink/upusyu1472667977.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (41, "kiss me quick", 12, "stirred", false, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (42, "grim reaper", 14, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/kztu161504883192.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (42, "orangeade", 16, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (43, "port wine cocktail", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/qruprq1441553976.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (43, "old pal", 12, "stirred", true, 10, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (44, "pina colada", 12, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/cpf4j51504371346.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (44, "kurant tea", 16, "stirred", false, 11, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (45, "gin cooler", 14, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/678xt11582481163.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (45, "greyhound", 16, "stirred", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (46, "garibaldi negroni", 18, "shaken", true, 1, 403, "https://www.thecocktaildb.com/images/media/drink/kb4bjg1604179771.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (46, "kioki coffee", 16, "stirred", false, 1, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (47, "citrus coke", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/uyrvut1479473214.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (47, "orange whip", 18, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (48, "gin smash", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/hp41fi1504883656.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (48, "jamaica kiss", 12, "stirred", true, 12, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (49, "gentleman's club", 10, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/k2r7wv1582481454.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (49, "empellón cocina's fat-washed mezcal", 14, "shaken", true, 13, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (50, "gin daisy", 10, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/z6e22f1582581155.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (50, "jitterbug", 12, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (51, "gin sling", 12, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/8cl9sm1582581761.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (51, "happy skipper", 18, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (52, "ipamena", 16, "shaken", true, 7, null, "https://www.thecocktaildb.com/images/media/drink/yswuwp1469090992.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (52, "halloween punch", 14, "stirred", true, 14, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (53, "vodka fizz", 14, "stirred", false, 7, null, "https://www.thecocktaildb.com/images/media/drink/xwxyux1441254243.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (53, "adam bomb", 12, "stirred", true, 2, 414, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (54, "kir royale", 16, "stirred", false, 9, 81, "https://www.thecocktaildb.com/images/media/drink/yt9i7n1504370388.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (54, "9 1/2 weeks", 18, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (55, "godchild", 16, "shaken", false, 9, null, "https://www.thecocktaildb.com/images/media/drink/m5nhtr1504820829.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (55, "alice cocktail", 12, "shaken", false, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (56, "gg", 12, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/vyxwut1468875960.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (56, "bellini", 18, "stirred", false, 11, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (57, "kiwi papaya smoothie", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/jogv4w1487603571.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (57, "classic old-fashioned", 12, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (58, "gin squirt", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/xrbhz61504883702.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (58, "kill the cold smoothie", 14, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (59, "151 florida bushwacker", 10, "stirred", false, 10, null, "https://www.thecocktaildb.com/images/media/drink/rvwrvv1468877323.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (59, "big red", 10, "stirred", false, 6, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (60, "greyhound", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/g5upn41513706732.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (60, "corn n oil", 18, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (61, "holloween punch", 18, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/lfeoe41504888925.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (61, "pina colada", 18, "stirred", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (62, "drinking chocolate", 14, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/u6jrdf1487603173.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (62, "black & tan", 10, "stirred", false, 8, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (63, "vodka and tonic", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/lmj2yt1504820500.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (63, "chicago fizz", 10, "shaken", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (64, "zombie", 14, "stirred", true, 12, null, "https://www.thecocktaildb.com/images/media/drink/2en3jk1509557725.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (64, "captain kidd's punch", 18, "shaken", false, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (65, "popped cherry", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/sxvrwv1473344825.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (65, "vesuvio", 16, "shaken", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (66, "just a moonmint", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/znald61487604035.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (66, "imperial fizz", 16, "shaken", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (67, "danbooka", 18, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/vurrxr1441246074.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (67, "old fashioned", 14, "stirred", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (68, "jam donut", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/uuytrp1474039804.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (68, "irish russian", 18, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (69, "sea breeze", 12, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/7rfuks1504371562.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (69, "iced coffee", 14, "shaken", false, 1, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (70, "coke and drops", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/yrtxxp1472719367.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (70, "rum sour", 10, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (71, "scooter", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/twuptu1483388307.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (71, "addison special", 14, "shaken", true, 7, 394, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (72, "pink gin", 10, "shaken", true, 7, null, "https://www.thecocktaildb.com/images/media/drink/qyr51e1504888618.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (72, "nuked hot chocolate", 16, "stirred", false, 1, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (73, "hawaiian cocktail", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ujoh9x1504882987.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (73, "abbey martini", 10, "shaken", false, 2, 188, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (74, "jamaican coffee", 14, "stirred", false, 9, null, "https://www.thecocktaildb.com/images/media/drink/xqptps1441247257.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (74, "royal flush", 18, "stirred", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (75, "white wine sangria", 14, "stirred", false, 13, null, "https://www.thecocktaildb.com/images/media/drink/hnuod91587851576.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (75, "bloody punch", 10, "stirred", false, 14, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (76, "zorbatini", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/wtkqgb1485621155.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (76, "affinity", 18, "stirred", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (77, "cranberry cordial", 14, "shaken", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/qtspsx1472667392.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (77, "belgian blue", 18, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (78, "castillian hot chocolate", 10, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/3nbu4a1487603196.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (78, "gin toddy", 18, "stirred", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (79, "kool-aid shot", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/fegm621503564966.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (79, "amaretto sour", 12, "shaken", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (80, "kill the cold smoothie", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/7j1z2e1487603414.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (80, "brigadier", 18, "stirred", false, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (81, "kir", 14, "stirred", false, 7, null, "https://www.thecocktaildb.com/images/media/drink/apneom1504370294.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (81, "balmoral", 16, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (82, "dirty nipple", 10, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/vtyqrt1461866508.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (82, "blue mountain", 18, "shaken", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (83, "gin sour", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/mt7l7m1504883523.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (83, "gin rickey", 18, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (84, "white lady", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/jofsaz1504352991.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (84, "van vleet", 18, "shaken", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (85, "derby", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/i502ra1504349156.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (85, "boulevardier", 18, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (86, "snakebite and black", 12, "stirred", false, 14, null, "https://www.thecocktaildb.com/images/media/drink/rssvwv1441248863.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (86, "hot creamy bush", 10, "stirred", false, 15, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (87, "grass skirt", 18, "shaken", true, 5, 81, "https://www.thecocktaildb.com/images/media/drink/qyvprp1473891585.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (87, "homemade kahlua", 18, "stirred", false, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (88, "sazerac", 10, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/vvpxwy1439907208.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (88, "abbey cocktail", 18, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (89, "jewel of the nile", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/hx4nrb1504884947.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (89, "caipirissima", 14, "stirred", false, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (90, "lord and lady", 14, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/quwrys1468923219.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (90, "amaretto sunset", 12, "shaken", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (91, "coffee-vodka", 14, "shaken", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/qvrrvu1472667494.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (91, "daiquiri", 12, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (92, "kool first aid", 18, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/hfp6sv1503564824.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (92, "chocolate beverage", 14, "stirred", false, 1, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (93, "munich mule", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/rj55pl1582476101.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (93, "rail splitter", 14, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (94, "vodka russian", 14, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/rpttur1454515129.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (94, "queen elizabeth", 18, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (95, "cherry rum", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/twsuvr1441554424.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (95, "apricot lady", 18, "shaken", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (96, "clove cocktail", 16, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/qxvtst1461867579.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (96, "acid", 16, "stirred", false, 6, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (97, "747 drink", 16, "stirred", true, 1, 21, "https://www.thecocktaildb.com/images/media/drink/i9suxb1582474926.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (97, "city slicker", 16, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (98, "havana cocktail", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/59splc1504882899.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (98, "amaretto mist", 12, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (99, "cosmopolitan martini", 14, "shaken", false, 3, 334, "https://www.thecocktaildb.com/images/media/drink/upxxpq1439907580.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (99, "lemon shot", 14, "stirred", false, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (100, "irish spring", 16, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/sot8v41504884783.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (100, "aloha fruit punch", 10, "stirred", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (101, "captain kidd's punch", 18, "shaken", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/d83spj1596017390.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (101, "loch lomond", 12, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (102, "damned if you do", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/ql7bmx1503565106.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (102, "grand blue", 18, "stirred", false, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (103, "410 gone", 10, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/xtuyqv1472669026.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (103, "bible belt", 18, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (104, "vesuvio", 10, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/26cq601492976203.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (104, "amaretto liqueur", 18, "stirred", false, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (105, "death in the afternoon", 10, "stirred", false, 3, 245, "https://www.thecocktaildb.com/images/media/drink/y7s3rh1598719574.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (105, "at&t", 12, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (106, "dubonnet cocktail", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/pfz3hz1582483111.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (106, "adam sunrise", 16, "stirred", true, 4, 414, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (107, "zoksel", 14, "stirred", false, 15, null, "https://www.thecocktaildb.com/images/media/drink/ft8ed01485620930.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (107, "jackhammer", 18, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (108, "abilene", 12, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/smb2oe1582479072.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (108, "havana cocktail", 10, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (109, "pure passion", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/4tymma1604179273.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (109, "zizi coin-coin", 16, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (110, "acid", 18, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/xuxpxt1479209317.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (110, "zambeer", 10, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (111, "corpse reviver #2", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/gifgao1513704334.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (111, "espresso martini", 14, "shaken", true, 2, 188, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (112, "espresso rumtini", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/acvf171561574403.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (112, "zorbatini", 14, "stirred", false, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (113, "lassi - sweet", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/9jeifz1487603885.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (113, "talos coffee", 18, "stirred", false, 9, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (114, "mint julep", 16, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/squyyq1439907312.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (114, "herbal flame", 18, "stirred", false, 16, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (115, "amaretto stinger", 16, "shaken", false, 3, 524, "https://www.thecocktaildb.com/images/media/drink/vvop4w1493069934.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (115, "diesel", 16, "stirred", false, 8, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (116, "port and starboard", 14, "stirred", false, 16, null, "https://www.thecocktaildb.com/images/media/drink/wxvupx1441553911.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (116, "ice pick #1", 14, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (117, "pisco sour", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/tsssur1439907622.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (117, "egg nog #4", 16, "stirred", false, 14, 206, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (118, "dry martini", 18, "stirred", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (118, "aviation", 18, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (119, "caipirinha", 18, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/jgvn7p1582484435.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (119, "algonquin", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (120, "long vodka", 12, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/9179i01503565212.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (120, "alaska cocktail", 16, "stirred", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (121, "jitterbug", 14, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/wwqvrq1441245318.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (121, "absolut limousine", 12, "stirred", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (122, "prgane rosemary collins", 12, "stirred", true, 1, 603, "https://www.thecocktaildb.com/images/media/drink/mokcas1604179977.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (122, "arthur tompkins", 18, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (123, "buccaneer", 12, "stirred", false, 15, null, "https://www.thecocktaildb.com/images/media/drink/upvtyt1441249023.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (123, "arizona stingers", 12, "stirred", true, 12, 260, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (124, "belgian blue", 16, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/jylbrq1582580066.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (124, "absolut evergreen", 14, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (125, "algonquin", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/uwryxx1483387873.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (125, "gin basil smash", 12, "shaken", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (127, "amaretto tea", 12, "stirred", false, 16, null, "https://www.thecocktaildb.com/images/media/drink/b7qzo21493070167.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (126, "aztec punch", 16, "stirred", false, 14, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (128, "zippy's revenge", 14, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/1sqm7n1485620312.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (127, "gin fizz", 12, "shaken", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (129, "sherry eggnog", 14, "shaken", true, 2, 56, "https://www.thecocktaildb.com/images/media/drink/xwrpsv1478820541.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (128, "dubonnet cocktail", 14, "stirred", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (130, "pineapple gingerale smoothie", 18, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/eg9i1d1487603469.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (129, "jack rose cocktail", 16, "shaken", true, 2, 4, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (131, "zorro", 14, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/kvvd4z1485621283.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (130, "lady love fizz", 16, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (132, "cuba libre", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/uuxsrr1473201663.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (131, "artillery punch", 14, "stirred", true, 14, 358, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (133, "long island tea", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/tppn6i1589574695.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (132, "avalanche", 16, "shaken", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (134, "the evil blue thing", 14, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/ojnpz71504793059.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (133, "apricot punch", 18, "stirred", true, 14, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (135, "abbey martini", 18, "shaken", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/2mcozt1504817403.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (134, "jelly bean", 18, "stirred", false, 17, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (136, "herbal flame", 12, "stirred", false, 17, null, "https://www.thecocktaildb.com/images/media/drink/rrstxv1441246184.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (135, "747 drink", 10, "stirred", true, 5, 396, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (137, "port wine flip", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vrprxu1441553844.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (136, "banana cantaloupe smoothie", 10, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (138, "lassi - a south indian drink", 18, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/iq6scx1487603980.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (137, "lassi - a south indian drink", 18, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (139, "bijou", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/rysb3r1513706985.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (138, "tommy's margarita", 10, "shaken", false, 7, 185, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (140, "zipperhead", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/r2qzhu1485620235.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (139, "hot chocolate to die for", 16, "stirred", false, 1, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (141, "gin toddy", 14, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/jxstwf1582582101.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (140, "autumn garibaldi", 18, "stirred", true, 17, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (142, "downshift", 12, "stirred", true, 12, null, "https://www.thecocktaildb.com/images/media/drink/y36z8c1503563911.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (141, "english rose cocktail", 16, "shaken", true, 2, 4, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (143, "jack rose cocktail", 10, "shaken", false, 3, 603, "https://www.thecocktaildb.com/images/media/drink/uuqqrv1439907068.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (142, "apple grande", 10, "stirred", false, 14, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (144, "turf cocktail", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/utypqq1441554367.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (143, "aperol spritz", 16, "stirred", true, 0, 477, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (145, "lassi - mango", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/1bw6sd1487603816.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (144, "coffee-vodka", 10, "shaken", false, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (146, "cranberry punch", 16, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/mzgaqu1504389248.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (145, "bruce's puce", 14, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (147, "duchamp's punch", 18, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/g51naw1485084685.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (146, "rum runner", 18, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (148, "coffee liqueur", 12, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/ryvtsu1441253851.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (147, "royal gin fizz", 10, "shaken", true, 5, 127, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (149, "dry rob roy", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/typuyq1439456976.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (148, "grasshopper", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (150, "3-mile long island iced tea", 14, "stirred", true, 2, 308, "https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (149, "barracuda", 10, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (151, "daiquiri", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/mrz9091589574515.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (150, "brandy sour", 14, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (152, "planter's punch", 16, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/yvos231504351384.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (151, "kentucky colonel", 10, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (153, "brandy flip", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/6ty09d1504366461.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (152, "blue lagoon", 12, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (154, "quick f**k", 10, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/wvtwpp1478963454.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (153, "karsk", 12, "stirred", false, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (155, "allegheny", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/uwvyts1483387934.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (154, "quentin", 18, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (156, "scotch sour", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/0dnb6k1504890436.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (155, "gluehwein", 14, "stirred", true, 15, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (157, "egg nog - healthy", 14, "stirred", false, 2, 56, "https://www.thecocktaildb.com/images/media/drink/qxuppv1468875308.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (156, "grim reaper", 16, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (158, "sherry flip", 16, "shaken", false, 18, null, "https://www.thecocktaildb.com/images/media/drink/qrryvq1478820428.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (157, "baby eskimo", 12, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (159, "sol y sombra", 14, "shaken", true, 19, null, "https://www.thecocktaildb.com/images/media/drink/3gz2vw1503425983.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (158, "monkey wrench", 16, "stirred", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (160, "mai tai", 12, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/twyrrp1439907470.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (159, "boomerang", 16, "stirred", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (161, "queen elizabeth", 16, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vpqspv1478963339.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (160, "manhattan", 16, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (162, "california root beer", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/rsxuyr1472719526.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (161, "mai tai", 14, "shaken", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (163, "salty dog", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/4vfge01504890216.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (162, "brandy flip", 14, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (164, "thriller", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/rvuswq1461867714.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (163, "blind russian", 10, "shaken", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (165, "pegu club", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/jfkemm1513703902.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (164, "boston sour", 10, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (166, "bee's knees", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/tx8ne41582475326.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (165, "godchild", 18, "shaken", true, 11, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (167, "clover club", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/t0aja61504348715.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (166, "espresso rumtini", 18, "stirred", false, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (168, "mocha-berry", 16, "stirred", false, 0, null, "https://www.thecocktaildb.com/images/media/drink/vtwyyx1441246448.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (167, "apple pie with a crust", 16, "stirred", false, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (169, "limona corona", 14, "stirred", false, 8, null, "https://www.thecocktaildb.com/images/media/drink/wwqrsw1441248662.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (168, "girl from ipanema", 10, "shaken", true, 0, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (170, "snowball", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/7ibfs61504735416.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (169, "bloody mary", 16, "stirred", false, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (171, "sweet bananas", 16, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/sxpcj71487603345.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (170, "jewel of the nile", 14, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (172, "diesel", 12, "stirred", false, 14, null, "https://www.thecocktaildb.com/images/media/drink/sxrrqq1454512852.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (171, "midnight manx", 10, "shaken", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (173, "creme de menthe", 14, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/yxswtp1441253918.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (172, "mojito", 14, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (174, "zenmeister", 18, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/qyuvsu1479209462.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (173, "blackthorn", 14, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (175, "pineapple paloma", 10, "stirred", true, 2, 386, "https://www.thecocktaildb.com/images/media/drink/pg8iw31593351601.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (174, "hunter's moon", 12, "shaken", true, 18, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (176, "orange oasis", 14, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/su1olx1582473812.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (175, "a true amaretto sour", 18, "shaken", true, 7, 79, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (177, "69 special", 14, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/vqyxqx1472669095.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (176, "just a moonmint", 14, "stirred", false, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (178, "pink penocha", 10, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/6vigjx1503564007.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (177, "atomic lokade", 12, "shaken", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (179, "jack's vanilla coke", 12, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/kjnt7z1504793319.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (178, "champagne cocktail", 14, "stirred", true, 11, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (180, "vodka martini", 16, "shaken", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/qyxrqw1439906528.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (179, "after dinner cocktail", 10, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (181, "dragonfly", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/uc63bh1582483589.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (180, "imperial cocktail", 14, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (182, "frozen pineapple daiquiri", 18, "stirred", false, 3, 151, "https://www.thecocktaildb.com/images/media/drink/k3aecd1582481679.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (181, "gagliardo", 12, "shaken", false, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (183, "banana cantaloupe smoothie", 12, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/uqxqsy1468876703.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (182, "auburn headbanger", 14, "stirred", true, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (184, "ace", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/l3cd7f1504818306.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (183, "mulled wine", 12, "stirred", false, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (185, "atomic lokade", 10, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/n3zfrh1493067412.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (184, "gin smash", 14, "stirred", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (186, "addison", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/yzva7x1504820300.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (185, "margarita", 16, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (187, "poppy cocktail", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/cslw1w1504389915.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (186, "mint julep", 16, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (188, "zizi coin-coin", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/0fbo2t1485620752.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (187, "moscow mule", 16, "stirred", true, 19, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (189, "funk and soul", 14, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/qtv83q1596015790.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (188, "martini", 12, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (190, "black & tan", 16, "stirred", false, 14, null, "https://www.thecocktaildb.com/images/media/drink/rwpswp1454511017.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (189, "bee's knees", 14, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (191, "hot chocolate to die for", 14, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/0lrmjp1487603166.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (190, "rum punch", 12, "stirred", false, 14, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (192, "victory collins", 12, "shaken", true, 2, 324, "https://www.thecocktaildb.com/images/media/drink/lx0lvs1492976619.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (191, "ipamena", 14, "shaken", true, 0, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (193, "orange scented hot chocolate", 16, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/hdzwrh1487603131.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (192, "apple cider punch #1", 14, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (194, "campari beer", 12, "stirred", false, 10, null, "https://www.thecocktaildb.com/images/media/drink/xsqrup1441249130.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (193, "mimosa", 12, "stirred", false, 11, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (195, "almond joy", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/xutuqs1483388296.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (194, "honey bee", 18, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (196, "quaker's cocktail", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/yrqppx1478962314.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (195, "monkey gland", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (197, "155 belmont", 18, "stirred", true, 7, null, "https://www.thecocktaildb.com/images/media/drink/yqvvqs1475667388.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (196, "arctic mouthwash", 12, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (198, "apple grande", 10, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/wqrptx1472668622.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (197, "lassi raita", 12, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (199, "paradise", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ejozd71504351060.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (198, "lunch box", 12, "stirred", true, 8, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (200, "black and brown", 10, "stirred", false, 15, null, "https://www.thecocktaildb.com/images/media/drink/wwuvxv1472668899.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (199, "russian spring punch", 12, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (201, "pink panty pulldowns", 14, "shaken", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/squsuy1468926657.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (200, "lassi khara", 12, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (202, "japanese fizz", 12, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/37vzv11504884831.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (201, "banana strawberry shake daiquiri-type", 16, "stirred", false, 2, 519, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (203, "melya", 12, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/xwtptq1441247579.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (202, "allies cocktail", 12, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (204, "pink lady", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/5ia6j21504887829.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (203, "martinez cocktail", 10, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (205, "slippery nipple", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/l9tgru1551439725.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (204, "mississippi planters punch", 14, "shaken", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (206, "casino", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/1mvjxg1504348579.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (205, "holloween punch", 10, "stirred", true, 14, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (207, "caipirissima", 12, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/yd47111503565515.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (206, "gg", 12, "stirred", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (208, "jelly bean", 16, "stirred", false, 20, null, "https://www.thecocktaildb.com/images/media/drink/bglc6y1504388797.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (207, "amaretto sweet & sour", 10, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (209, "brandy sour", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/b1bxgq1582484872.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (208, "mary pickford", 14, "shaken", false, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (210, "john collins", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/u5yaxl1504350270.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (209, "midnight cowboy", 14, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (211, "tequila sunrise", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/quqyqp1480879103.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (210, "arctic fish", 12, "stirred", true, 20, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (212, "shot-gun", 14, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/2j1m881503563583.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (211, "martinez 2", 16, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (213, "boomerang", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/3m6yz81504389551.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (212, "mother's milk", 18, "shaken", true, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (214, "malibu twister", 16, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/2dwae41504885321.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (214, "vodka martini", 12, "shaken", true, 2, 188, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (215, "happy skipper", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/42w2g41487602448.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (215, "banana milk shake", 18, "stirred", false, 0, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (216, "rum cooler", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/2hgwsb1504888674.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (216, "addington", 16, "shaken", false, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (217, "rum cobbler", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/5vh9ld1504390683.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (217, "citrus coke", 18, "stirred", false, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (218, "baby eskimo", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/wywrtw1472720227.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (218, "amaretto tea", 14, "stirred", false, 21, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (219, "spice 75", 14, "shaken", true, 7, null, "https://www.thecocktaildb.com/images/media/drink/0108c41576797064.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (219, "apple karate", 16, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (220, "pysch vitamin light", 12, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/xsqsxw1441553580.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (220, "applejack", 14, "stirred", false, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (221, "dirty martini", 10, "shaken", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/vcyvpq1485083300.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (221, "amaretto rose", 10, "stirred", true, 4, 4, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (222, "french martini", 14, "shaken", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/clth721504373134.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (222, "caipirinha", 10, "stirred", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (223, "caribbean boilermaker", 10, "stirred", false, 15, null, "https://www.thecocktaildb.com/images/media/drink/svsxsv1454511666.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (223, "apple slammer", 10, "stirred", false, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (224, "berry deadly", 10, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/zk74k21593351065.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (224, "turkeyball", 14, "shaken", true, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (225, "spiking coffee", 18, "stirred", true, 4, null, "https://www.thecocktaildb.com/images/media/drink/isql6y1487602375.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (225, "ace", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (226, "raspberry cooler", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/suqyyx1441254346.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (226, "vesper", 16, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (227, "apple slammer", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/09yd5f1493069852.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (227, "dragonfly", 16, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (228, "egg-nog - classic cooked", 18, "stirred", true, 13, 56, "https://www.thecocktaildb.com/images/media/drink/quxsvt1468875505.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (228, "whiskey sour", 16, "shaken", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (229, "spritz veneziano", 12, "stirred", true, 7, 496, "https://www.thecocktaildb.com/images/media/drink/51ezka1551456113.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (229, "campari beer", 10, "stirred", false, 3, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (230, "black russian", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/2k5gbb1504367689.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (230, "broadside", 10, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (231, "lone tree cocktail", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/tsxpty1468923417.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (231, "bubble gum", 16, "stirred", false, 6, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (232, "baby guinness", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/rvyvxs1473482359.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (232, "pink panty pulldowns", 10, "shaken", false, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (233, "scotch cobbler", 12, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/1q7coh1504736227.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (233, "radioactive long island iced tea", 10, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (234, "bellini", 16, "stirred", false, 9, null, "https://www.thecocktaildb.com/images/media/drink/eaag491504367543.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (234, "bruised heart", 10, "stirred", true, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (235, "bellini martini", 12, "shaken", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/3h9wv51504389379.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (235, "zoksel", 10, "stirred", false, 20, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (236, "after sex", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/xrl66i1493068702.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (236, "army special", 10, "stirred", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (237, "abbey cocktail", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/mr30ob1582479875.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (237, "limona corona", 16, "stirred", false, 13, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (238, "apricot punch", 12, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/tuxxtp1472668667.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (238, "alfie cocktail", 12, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (239, "afterglow", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/vuquyv1468876052.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (239, "arise my love", 10, "stirred", false, 11, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (240, "angel face", 18, "shaken", false, 3, 184, "https://www.thecocktaildb.com/images/media/drink/vqpptp1478253178.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (240, "tequila surprise", 16, "stirred", false, 6, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (241, "sidecar cocktail", 14, "shaken", false, 3, 502, "https://www.thecocktaildb.com/images/media/drink/ewjxui1504820428.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (241, "avalon", 14, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (242, "aztec punch", 14, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/uqwuyp1454514591.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (242, "zombie", 16, "stirred", true, 12, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (243, "after five", 14, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/sk3lr91493068595.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (243, "kiwi lemon", 12, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (244, "margarita", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (244, "texas rattlesnake", 16, "shaken", false, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (245, "afternoon", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/vyrurp1472667777.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (245, "godmother", 10, "stirred", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (246, "texas rattlesnake", 18, "shaken", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/rtohqp1504889750.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (246, "the jimmy conway", 14, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (247, "after supper cocktail", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/quyxwu1483387610.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (247, "bob marley", 16, "stirred", false, 6, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (248, "egg cream", 14, "stirred", false, 4, 56, "https://www.thecocktaildb.com/images/media/drink/mvis731484430445.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (248, "tequila slammer", 18, "stirred", false, 12, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (249, "vesper", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/mtdxpa1504374514.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (249, "almeria", 18, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (250, "blue lagoon", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/5wm4zo1582579154.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (250, "new york sour", 14, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (251, "tomato tang", 16, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/869qr81487603278.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (251, "grape lemon pineapple smoothie", 18, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (252, "bob marley", 14, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/rrqrst1477140664.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (252, "a splash of nash", 10, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (253, "brainteaser", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/ruywtq1461866066.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (253, "moranguito", 12, "stirred", false, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (254, "addington", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ib0b7g1504818925.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (254, "kool first aid", 10, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (255, "americano", 16, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/trwruu1478253126.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (255, "bramble", 12, "stirred", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (256, "stone sour", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vruvtp1472719895.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (256, "veteran", 14, "stirred", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (257, "cream soda", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/yqstxr1479209367.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (257, "microwave hot cocoa", 10, "stirred", false, 1, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (258, "penicillin", 16, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/hc9b1a1521853096.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (258, "atlantic sun", 16, "shaken", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (259, "chicago fizz", 18, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/qwvwqr1441207763.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (259, "munich mule", 18, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (260, "jackhammer", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/9von5j1504388896.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (260, "stinger", 12, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (261, "shark attack", 10, "stirred", true, 13, null, "https://www.thecocktaildb.com/images/media/drink/uv96zr1504793256.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (261, "melya", 12, "stirred", false, 1, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (262, "caribbean orange liqueur", 14, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/qwxuwy1472667570.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (262, "masala chai", 14, "stirred", false, 1, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (263, "spiced peach punch", 14, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/qxvypq1468924331.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (263, "arizona twister", 14, "stirred", true, 12, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (264, "masala chai", 12, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/uyrpww1441246384.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (264, "bora bora", 18, "shaken", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (265, "almond chocolate coffee", 18, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/jls02c1493069441.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (265, "mango orange smoothie", 12, "stirred", false, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (266, "artillery", 16, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/g1vnbe1493067747.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (266, "white wine sangria", 18, "stirred", false, 22, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (267, "apple pie with a crust", 10, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/qspqxt1472720078.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (267, "after supper cocktail", 10, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (268, "arctic mouthwash", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/wqstwv1478963735.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (268, "casino", 16, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (269, "a true amaretto sour", 16, "shaken", true, 5, 539, "https://www.thecocktaildb.com/images/media/drink/rptuxy1472669372.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (269, "a.d.m. (after dinner mint)", 16, "shaken", false, 15, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (270, "amaretto and cream", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/dj8n0r1504375018.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (270, "cuba libre", 18, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (271, "auburn headbanger", 12, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/vw7iv91493067320.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (271, "absolutly screwed up", 16, "shaken", false, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (272, "arizona stingers", 18, "stirred", true, 12, 524, "https://www.thecocktaildb.com/images/media/drink/y7w0721493068255.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (272, "malibu twister", 10, "stirred", false, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (273, "addison special", 10, "shaken", true, 5, 186, "https://www.thecocktaildb.com/images/media/drink/4vo5651493068493.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (273, "mocha-berry", 14, "stirred", false, 15, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (274, "russian spring punch", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/ctt20s1504373488.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (274, "cuba libra", 18, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (275, "miami vice", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/qvuyqw1441208955.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (275, "mudslinger", 16, "stirred", false, 14, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (276, "midnight mint", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/svuvrq1441208310.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (276, "brandy alexander", 14, "shaken", true, 2, 569, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (277, "arthur tompkins", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/7onfhz1493067921.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (277, "brainteaser", 14, "stirred", false, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (278, "blueberry mojito", 18, "stirred", true, 1, 507, "https://www.thecocktaildb.com/images/media/drink/07iep51598719977.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (278, "jam donut", 18, "stirred", false, 6, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (279, "mulled wine", 12, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/iuwi6h1504735724.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (279, "orange oasis", 18, "shaken", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (280, "green goblin", 10, "stirred", false, 14, null, "https://www.thecocktaildb.com/images/media/drink/qxprxr1454511520.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (280, "planter's punch", 16, "shaken", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (281, "lassi raita", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/s4x0qj1487603933.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (281, "brooklyn", 10, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (282, "banana strawberry shake", 10, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/vqquwx1472720634.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (282, "miami vice", 18, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (283, "ziemes martini apfelsaft", 16, "stirred", true, 2, 300, "https://www.thecocktaildb.com/images/media/drink/xnzr2p1485619687.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (283, "midnight mint", 12, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (284, "archbishop", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/4g6xds1582579703.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (284, "cherry rum", 14, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (285, "flying dutchman", 18, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/mwko4q1582482903.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (285, "dry martini", 18, "stirred", true, 2, 188, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (286, "avalanche", 18, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/uppqty1472720165.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (286, "penicillin", 16, "shaken", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (287, "tia-maria", 12, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/sih81u1504367097.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (287, "baby guinness", 12, "stirred", false, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (288, "van vleet", 16, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/fgq2bl1492975771.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (288, "bourbon sour", 14, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (289, "strawberry daiquiri", 18, "shaken", false, 3, 151, "https://www.thecocktaildb.com/images/media/drink/deu59m1504736135.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (289, "drinking chocolate", 18, "stirred", false, 1, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (290, "tequila surprise", 18, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/8189p51504735581.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (290, "garibaldi negroni", 16, "shaken", true, 5, 512, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (291, "flaming lamborghini", 16, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/yywpss1461866587.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (291, "bahama mama", 14, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (292, "mojito #3", 18, "stirred", true, 2, 507, "https://www.thecocktaildb.com/images/media/drink/vwxrsw1478251483.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (292, "bloody maria", 18, "shaken", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (293, "the last word", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/91oule1513702624.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (293, "adam & eve", 16, "shaken", false, 2, 414, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (294, "bruce's puce", 10, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/svsvqv1473344558.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (294, "pisco sour", 12, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (295, "chocolate milk", 10, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/j6q35t1504889399.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (295, "amaretto stone sour #3", 10, "shaken", true, 5, 490, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (296, "martinez 2", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/fs6kiq1513708455.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (296, "snowball", 12, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (297, "fuzzy asshole", 16, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/wrvpuu1472667898.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (297, "the evil blue thing", 18, "stirred", false, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (298, "foxy lady", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/r9cz3q1504519844.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (298, "egg nog - healthy", 14, "stirred", false, 4, 206, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (299, "hemingway special", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/jfcvps1504369888.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (299, "mojito #3", 16, "stirred", true, 4, 172, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (300, "martini", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/71t8581504353095.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (300, "dirty nipple", 12, "stirred", false, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (301, "sangria #1", 10, "stirred", false, 13, null, "https://www.thecocktaildb.com/images/media/drink/xrvxpp1441249280.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (301, "downshift", 16, "stirred", false, 12, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (302, "amaretto stone sour #3", 14, "shaken", true, 1, 577, "https://www.thecocktaildb.com/images/media/drink/wutxqr1472720012.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (302, "bombay cassis", 18, "stirred", true, 18, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (303, "queen charlotte", 16, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/vqruyt1478963249.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (303, "brandy cobbler", 18, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (304, "banana milk shake", 16, "stirred", false, 7, null, "https://www.thecocktaildb.com/images/media/drink/rtwwsx1472720307.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (304, "a midsummernight dream", 12, "shaken", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (305, "royal bitch", 18, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/qupuyr1441210090.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (305, "english highball", 12, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (306, "rum screwdriver", 12, "stirred", true, 1, 335, "https://www.thecocktaildb.com/images/media/drink/4c85zq1511782093.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (306, "quick-sand", 12, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (307, "gin rickey", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/s00d6f1504883945.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (307, "oatmeal cookie", 10, "stirred", true, 16, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (308, "long island iced tea", 10, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/wx7hsg1504370510.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (308, "gideon's green dinosaur", 10, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (309, "mango orange smoothie", 16, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/vdp2do1487603520.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (309, "amaretto fizz", 10, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (310, "frozen mint daiquiri", 12, "stirred", true, 5, 151, "https://www.thecocktaildb.com/images/media/drink/jrhn1q1504884469.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (310, "horse's neck", 10, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (311, "moranguito", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/urpsyq1475667335.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (311, "jello shots", 14, "stirred", false, 6, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (312, "old fashioned", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (312, "california lemonade", 14, "shaken", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (313, "french connection", 12, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/zaqa381504368758.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (313, "amaretto stinger", 14, "shaken", true, 2, 260, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (314, "classic old-fashioned", 18, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/w8cxqv1582485254.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (314, "absolut stress #2", 16, "stirred", false, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (315, "corn n oil", 10, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/pk6dwi1592767243.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (315, "alabama slammer", 16, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (316, "butter baby", 10, "stirred", false, 10, null, "https://www.thecocktaildb.com/images/media/drink/1xhjk91504783763.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (316, "gin swizzle", 16, "shaken", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (317, "nuked hot chocolate", 10, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/xcu6nb1487603142.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (317, "a piece of ass", 10, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (318, "radler", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/xz8igv1504888995.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (318, "egg-nog - classic cooked", 16, "stirred", true, 22, 206, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (319, "mother's milk", 12, "shaken", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/7stuuh1504885399.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (319, "acapulco", 14, "shaken", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (320, "champagne cocktail", 10, "stirred", false, 9, null, "https://www.thecocktaildb.com/images/media/drink/ehh5df1504366811.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (320, "kamikaze", 14, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (321, "boulevardier", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/km84qi1513705868.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (321, "port wine flip", 10, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (322, "brave bull shooter", 10, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/yrtypx1473344625.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (322, "paloma", 10, "stirred", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (323, "the laverstoke", 10, "stirred", true, 21, null, "https://www.thecocktaildb.com/images/media/drink/6xfj5t1517748412.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (323, "darkwood sling", 14, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (324, "victor", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/voapgc1492976416.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (324, "long island tea", 14, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (325, "bourbon sling", 10, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/3s36ql1504366260.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (325, "americano", 14, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (326, "lady love fizz", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/20d63k1504885263.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (326, "allegheny", 18, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (327, "frappé", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/vqwryq1441245927.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (327, "blue hurricane", 16, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (328, "bubble gum", 14, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/spuurv1468878783.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (328, "after sex", 14, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (329, "apple berry smoothie", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/xwqvur1468876473.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (329, "lord and lady", 12, "stirred", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (330, "midnight manx", 18, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/uqqurp1441208231.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (330, "afterglow", 12, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (331, "kentucky b and b", 14, "stirred", false, 19, null, "https://www.thecocktaildb.com/images/media/drink/sqxsxp1478820236.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (331, "zorro", 18, "stirred", false, 1, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (332, "gimlet", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/3xgldt1513707271.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (332, "absolut sex", 10, "shaken", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (333, "grand blue", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/vsrsqu1472761749.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (333, "poppy cocktail", 14, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (334, "cosmopolitan", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/kpsajh1504368362.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (334, "thai iced coffee", 12, "stirred", true, 5, 69, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (335, "screwdriver", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/8xnyke1504352207.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (335, "the philosopher", 18, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (336, "honey bee", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vu8l7t1582475673.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (336, "b-52", 12, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (337, "empellón cocina's fat-washed mezcal", 14, "shaken", true, 8, null, "https://www.thecocktaildb.com/images/media/drink/osgvxt1513595509.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (337, "blue margarita", 18, "shaken", true, 2, 185, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (338, "fahrenheit 5000", 12, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/tysssx1473344692.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (338, "black russian", 14, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (339, "angelica liqueur", 18, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/yuurps1472667672.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (339, "bermuda highball", 12, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (340, "darkwood sling", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/sxxsyq1472719303.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (340, "highland fling cocktail", 12, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (341, "barracuda", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/jwmr1x1504372337.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (341, "after five", 14, "stirred", false, 6, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (342, "bounty hunter", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/t8bgxl1596018175.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (342, "angel face", 18, "shaken", true, 2, 225, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (343, "the strange weaver", 14, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/opxjzh1604179528.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (343, "zipperhead", 12, "stirred", false, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (344, "flaming dr. pepper", 14, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/d30z931503565384.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (344, "zippy's revenge", 14, "shaken", false, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (345, "city slicker", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/dazdlg1504366949.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (345, "porto flip", 10, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (346, "turkeyball", 12, "shaken", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/rxurpr1441554292.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (346, "archbishop", 18, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (347, "orange crush", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/zvoics1504885926.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (347, "amaretto shake", 18, "stirred", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (348, "orgasm", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vr6kle1504886114.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (348, "buccaneer", 10, "stirred", false, 20, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (349, "tipperary", 18, "stirred", false, 18, null, "https://www.thecocktaildb.com/images/media/drink/b522ek1521761610.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (349, "boozy snickers milkshake", 12, "shaken", true, 16, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (350, "chocolate drink", 16, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/q7w4xu1487603180.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (350, "angelica liqueur", 14, "shaken", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (351, "owen's grandmother's revenge", 12, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/0wt4uo1503565321.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (351, "3 wise men", 14, "stirred", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (352, "hot creamy bush", 18, "stirred", false, 0, null, "https://www.thecocktaildb.com/images/media/drink/spvrtp1472668037.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (352, "orange scented hot chocolate", 10, "stirred", false, 1, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (353, "arise my love", 10, "stirred", false, 9, null, "https://www.thecocktaildb.com/images/media/drink/wyrrwv1441207432.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (353, "orange push-up", 10, "stirred", true, 12, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (354, "3 wise men", 16, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/wxqpyw1468877677.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (354, "brain fart", 14, "stirred", true, 14, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (355, "moscow mule", 10, "stirred", true, 22, null, "https://www.thecocktaildb.com/images/media/drink/3pylqc1504370988.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (355, "paradise", 10, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (356, "grizzly bear", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/k6v97f1487602550.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (356, "the strange weaver", 14, "stirred", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (357, "a1", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (357, "bleeding surgeon", 16, "stirred", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (358, "amaretto mist", 18, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/utpxxq1483388370.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (358, "artillery", 14, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (359, "absolut summertime", 10, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/trpxxs1472669662.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (359, "pegu club", 12, "shaken", false, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (360, "9 1/2 weeks", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/xvwusr1472669302.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (360, "lassi - sweet", 10, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (361, "apello", 18, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/uptxtv1468876415.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (361, "lemouroudji", 14, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (362, "royal gin fizz", 10, "shaken", true, 1, 19, "https://www.thecocktaildb.com/images/media/drink/pe1x1c1504735672.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (362, "kir", 16, "stirred", false, 0, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (363, "monkey gland", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/94psp81504350690.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (363, "creme de menthe", 18, "stirred", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (364, "bahama mama", 12, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/tyb4a41515793339.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (364, "aquamarine", 14, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (365, "highland fling cocktail", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/0bkwca1492975553.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (365, "oreo mudslide", 12, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (366, "midnight cowboy", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vsxxwy1441208133.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (366, "lone tree cooler", 12, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (367, "bourbon sour", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/dms3io1504366318.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (367, "butter baby", 18, "stirred", false, 3, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (368, "blue hurricane", 12, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/nwx02s1515795822.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (368, "gimlet", 12, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (369, "amaretto sunset", 16, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/apictz1493069760.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (369, "gin sour", 12, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (370, "alaska cocktail", 14, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/wsyryt1483387720.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (370, "pink lady", 16, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (371, "zima blaster", 18, "stirred", true, 12, null, "https://www.thecocktaildb.com/images/media/drink/1wifuv1485619797.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (371, "john collins", 18, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (372, "martinez cocktail", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/wwxwvr1439906452.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (372, "vampiro", 16, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (373, "lone tree cooler", 16, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/wsyqry1479298485.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (373, "queen charlotte", 10, "stirred", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (374, "gluehwein", 10, "stirred", true, 0, null, "https://www.thecocktaildb.com/images/media/drink/vuxwvt1468875418.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (374, "vermouth cassis", 16, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (375, "strawberry lemonade", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/spvvxp1468924425.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (375, "passion fruit martini", 18, "stirred", false, 2, 188, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (376, "brain fart", 10, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/rz5aun1504389701.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (376, "pineapple paloma", 16, "stirred", true, 4, 322, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (377, "tennesee mud", 12, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/txruqv1441245770.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (377, "valencia cocktail", 14, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (378, "a.d.m. (after dinner mint)", 10, "shaken", false, 0, null, "https://www.thecocktaildb.com/images/media/drink/ruxuvp1472669600.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (378, "abilene", 16, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (379, "english rose cocktail", 16, "shaken", false, 3, 603, "https://www.thecocktaildb.com/images/media/drink/yxwrpp1441208697.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (379, "ziemes martini apfelsaft", 14, "stirred", true, 4, 188, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (380, "absolutely fabulous", 12, "shaken", false, 9, null, "https://www.thecocktaildb.com/images/media/drink/abcpwr1504817734.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (380, "a. j.", 18, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (381, "gideon's green dinosaur", 14, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/p5r0tr1503564636.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (381, "whisky mac", 18, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (382, "vermouth cassis", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/tswpxx1441554674.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (382, "3-mile long island iced tea", 16, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (383, "salted toffee martini", 14, "shaken", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/3s6mlr1509551211.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (383, "wine punch", 14, "stirred", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (384, "alice in wonderland", 18, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/g12lj41493069391.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (384, "kiwi papaya smoothie", 14, "stirred", false, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (385, "snake bite (uk)", 14, "stirred", false, 14, null, "https://www.thecocktaildb.com/images/media/drink/xuwpyu1441248734.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (385, "white russian", 12, "stirred", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (386, "paloma", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/samm5j1513706393.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (386, "rum milk punch", 10, "shaken", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (387, "valencia cocktail", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/9myuc11492975640.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (387, "affair", 10, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (388, "apple karate", 18, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/syusvw1468876634.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (388, "jamaican coffee", 16, "stirred", false, 11, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (389, "cuba libra", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/ck6d0p1504388696.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (389, "yoghurt cooler", 16, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (390, "passion fruit martini", 16, "stirred", false, 3, 300, "https://www.thecocktaildb.com/images/media/drink/6trfve1582473527.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (390, "radler", 16, "stirred", false, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (391, "amaretto shake", 14, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/xk79al1493069655.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (391, "vodka russian", 12, "stirred", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (392, "halloween punch", 12, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/7hcgyj1571687671.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (392, "london town", 18, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (393, "adios amigos cocktail", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/8nk2mp1504819893.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (393, "iced coffee fillip", 14, "stirred", false, 1, 69, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (394, "lemouroudji", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/eirmo71487603745.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (394, "addison", 14, "shaken", false, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (395, "thai iced tea", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/trvwpu1441245568.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (395, "vodka fizz", 16, "stirred", false, 0, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (396, "autodafé", 10, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/7dkf0i1487602928.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (397, "applecar", 14, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (397, "arctic fish", 10, "stirred", true, 15, null, "https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (398, "royal bitch", 14, "stirred", false, 6, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (398, "adonis cocktail", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/xrvruq1472812030.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (399, "wine cooler", 18, "stirred", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (399, "tequila fizz", 10, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/2bcase1504889637.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (400, "cosmopolitan martini", 16, "shaken", true, 2, 188, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (400, "applejack", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/sutyqp1479209062.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (401, "white lady", 16, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (401, "smut", 16, "stirred", false, 10, null, "https://www.thecocktaildb.com/images/media/drink/rx8k8e1504365812.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (402, "1-900-fuk-meup", 14, "shaken", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (402, "a midsummernight dream", 14, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/ysqvqp1461867292.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (403, "irish coffee", 16, "stirred", false, 15, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (403, "negroni", 18, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/qgdu971561574065.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (404, "cranberry punch", 14, "stirred", true, 14, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (404, "black forest shake", 16, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/xxtxsu1472720505.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (405, "110 in the shade", 10, "stirred", false, 13, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (405, "bloody maria", 12, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/yz0j6z1504389461.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (406, "whitecap margarita", 10, "stirred", false, 2, 185, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (406, "nutty irishman", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/xspupx1441248014.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (407, "almond joy", 10, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (407, "amaretto rose", 14, "stirred", true, 2, 603, "https://www.thecocktaildb.com/images/media/drink/3jm41q1493069578.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (408, "abc", 16, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (408, "sangria - the world's best", 16, "stirred", false, 13, null, "https://www.thecocktaildb.com/images/media/drink/vysywu1468924264.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (409, "chocolate milk", 18, "stirred", false, 6, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (409, "amaretto sunrise", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/akcpsh1493070267.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (410, "victor", 10, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (410, "absolutly screwed up", 18, "shaken", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/yvxrwv1472669728.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (411, "irish curdling cow", 18, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (411, "affinity", 16, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/wzdtnn1582477684.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (412, "waikiki beachcomber", 18, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (412, "bermuda highball", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/qrvtww1441206528.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (413, "a1", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (413, "boston sour", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/kxlgbi1504366100.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (414, "adam", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (414, "allies cocktail", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/qvprvp1483388104.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (415, "orange crush", 10, "stirred", false, 6, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (415, "rum milk punch", 14, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/w64lqm1504888810.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (416, "new york lemonade", 18, "stirred", false, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (416, "screaming orgasm", 10, "stirred", false, 3, 348, "https://www.thecocktaildb.com/images/media/drink/x894cs1504388670.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (417, "absinthe #2", 18, "stirred", true, 23, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (417, "english highball", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/dhvr7d1504519752.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (418, "cranberry cordial", 16, "shaken", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (418, "bloody punch", 16, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/5yhd3n1571687385.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (419, "zimadori zinger", 12, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (419, "bombay cassis", 12, "stirred", true, 21, null, "https://www.thecocktaildb.com/images/media/drink/h1e0e51510136907.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (420, "zima blaster", 12, "stirred", true, 12, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (420, "old pal", 12, "stirred", false, 18, null, "https://www.thecocktaildb.com/images/media/drink/x03td31521761009.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (421, "irish cream", 12, "stirred", false, 15, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (421, "rum punch", 16, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/wyrsxu1441554538.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (422, "rosemary blue", 18, "stirred", true, 18, 4, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (422, "french negroni", 18, "shaken", false, 3, 403, "https://www.thecocktaildb.com/images/media/drink/x8lhp41513703167.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (423, "pineapple gingerale smoothie", 18, "stirred", false, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (423, "brigadier", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/nl89tf1518947401.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (424, "pure passion", 16, "stirred", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (424, "bacardi cocktail", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/n433t21504348259.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (425, "pink penocha", 14, "stirred", true, 14, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (425, "flying scotchman", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/q53l911582482518.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (426, "zenmeister", 16, "stirred", false, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (426, "scottish highland liqueur", 14, "shaken", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/upqvvp1441253441.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (427, "berry deadly", 16, "stirred", false, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (427, "bramble", 10, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/lvzl3r1504372526.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (428, "port and starboard", 12, "stirred", false, 21, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (428, "the philosopher", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/sp8hkp1596017787.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (429, "24k nightmare", 14, "shaken", true, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (429, "bloody mary", 14, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/t6caa21582485702.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (430, "corpse reviver #2", 14, "shaken", false, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (430, "flander's flake-out", 14, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/sqvqrx1461866705.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (431, "sangria - the world's best", 12, "stirred", false, 22, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (431, "orange push-up", 16, "stirred", true, 12, null, "https://www.thecocktaildb.com/images/media/drink/mgf0y91503565781.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (432, "tuxedo cocktail", 10, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (432, "cafe savoy", 16, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/vqwptt1441247711.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (433, "tomato tang", 14, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (433, "thai coffee", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/wquwxs1441247025.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (434, "strawberry daiquiri", 10, "shaken", true, 2, 91, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (434, "porto flip", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/64x5j41504351518.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (435, "tequila sour", 12, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (435, "adam bomb", 14, "stirred", false, 3, 543, "https://www.thecocktaildb.com/images/media/drink/tpxurs1454513016.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (436, "sweet tooth", 14, "stirred", false, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (436, "california lemonade", 12, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/q5z4841582484168.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (437, "tennesee mud", 14, "stirred", false, 1, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (437, "apple cider punch #1", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/xrqxuv1454513218.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (438, "sherry eggnog", 18, "shaken", true, 4, 206, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (438, "artillery punch", 16, "stirred", true, 11, 266, "https://www.thecocktaildb.com/images/media/drink/9a4vqb1493067692.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (439, "slippery nipple", 16, "stirred", false, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (439, "kiss me quick", 10, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/m7iaxu1504885119.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (440, "snake bite (uk)", 18, "stirred", false, 8, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (440, "monkey wrench", 14, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/bw2noj1582473243.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (441, "thriller", 14, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (441, "between the sheets", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/of1rj41504348346.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (442, "sherry flip", 14, "shaken", true, 10, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (442, "sweet sangria", 10, "stirred", false, 13, null, "https://www.thecocktaildb.com/images/media/drink/uqqvsp1468924228.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (443, "sex on the beach", 10, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (443, "cherry electric lemonade", 12, "stirred", true, 14, null, "https://www.thecocktaildb.com/images/media/drink/tquyyt1451299548.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (444, "scotch sour", 12, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (444, "space odyssey", 10, "stirred", true, 1, 184, "https://www.thecocktaildb.com/images/media/drink/vxtjbx1504817842.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (445, "cafe savoy", 18, "stirred", false, 1, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (445, "egg nog #4", 12, "stirred", true, 11, 56, "https://www.thecocktaildb.com/images/media/drink/wpspsy1468875747.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (446, "screwdriver", 12, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (446, "mudslinger", 18, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/hepk6h1504885554.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (447, "strawberry lemonade", 14, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (447, "sloe gin cocktail", 14, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/d7mo481504889531.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (448, "arizona antifreeze", 14, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (448, "surf city lifesaver", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/2rzfer1487602699.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (449, "tequila sunrise", 16, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (449, "hunter's moon", 12, "shaken", true, 21, null, "https://www.thecocktaildb.com/images/media/drink/t0iugg1509556712.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (450, "a gilligan's island", 10, "shaken", false, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (450, "swedish coffee", 16, "stirred", true, 4, null, "https://www.thecocktaildb.com/images/media/drink/ywtrvt1441246783.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (451, "surf city lifesaver", 14, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (451, "adam sunrise", 16, "stirred", true, 2, 543, "https://www.thecocktaildb.com/images/media/drink/vtuyvu1472812112.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (452, "amaretto and cream", 14, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (452, "orange whip", 16, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/ttyrxr1454514759.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (453, "texas sling", 10, "stirred", true, 0, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (453, "casino royale", 14, "shaken", false, 3, 206, "https://www.thecocktaildb.com/images/media/drink/3qpv121504366699.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (454, "strawberry shivers", 14, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (454, "rosemary blue", 12, "stirred", true, 21, 603, "https://www.thecocktaildb.com/images/media/drink/qwc5f91512406543.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (455, "a furlong too late", 14, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (455, "lazy coconut paloma", 16, "stirred", true, 1, 386, "https://www.thecocktaildb.com/images/media/drink/rytuex1598719770.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (456, "sloe gin cocktail", 10, "stirred", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (456, "chocolate beverage", 12, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/jbqrhv1487603186.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (457, "screaming orgasm", 12, "stirred", true, 2, 518, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (457, "jamaica kiss", 10, "stirred", true, 12, null, "https://www.thecocktaildb.com/images/media/drink/urpvvv1441249549.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (458, "alice in wonderland", 10, "stirred", false, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (458, "blackthorn", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/xvswvy1441209430.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (459, "strawberry margarita", 12, "shaken", true, 2, 185, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (459, "adam & eve", 14, "shaken", false, 3, 543, "https://www.thecocktaildb.com/images/media/drink/vfeumw1504819077.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (460, "sweet bananas", 10, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (460, "bumble bee #1", 14, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/uwqpvv1461866378.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (461, "turf cocktail", 10, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (461, "royal fizz", 10, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/wrh44j1504390609.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (462, "tequila fizz", 14, "shaken", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (462, "a day at the beach", 10, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/trptts1454514474.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (463, "amaretto stone sour", 12, "shaken", true, 4, 490, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (463, "arizona twister", 14, "stirred", true, 12, null, "https://www.thecocktaildb.com/images/media/drink/ido1j01493068134.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (464, "spritz veneziano", 12, "stirred", true, 0, 477, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (464, "frozen daiquiri", 16, "stirred", false, 9, 151, "https://www.thecocktaildb.com/images/media/drink/7oyrj91504884412.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (465, "absolut summertime", 12, "shaken", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (465, "bible belt", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/6bec6v1503563675.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (466, "coke and drops", 10, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (466, "amaretto fizz", 12, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/92h3jz1582474310.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (467, "singapore sling", 12, "shaken", true, 12, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (467, "bora bora", 16, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/xwuqvw1473201811.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (468, "spanish chocolate", 14, "stirred", false, 1, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (468, "banana daiquiri", 12, "shaken", false, 9, 151, "https://www.thecocktaildb.com/images/media/drink/k1xatq1504389300.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (469, "foxy lady", 14, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (469, "brandy cobbler", 18, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/5xgu591582580586.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (470, "smut", 18, "stirred", false, 3, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (470, "blind russian", 10, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/wxuqvr1472720408.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (471, "shark attack", 14, "stirred", true, 22, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (471, "raspberry julep", 12, "stirred", true, 20, null, "https://www.thecocktaildb.com/images/media/drink/hyztmx1598719265.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (472, "flying scotchman", 10, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (472, "army special", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/55muhh1493068062.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (473, "spiced peach punch", 14, "stirred", true, 4, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (473, "blue margarita", 14, "shaken", false, 3, 244, "https://www.thecocktaildb.com/images/media/drink/bry4qh1582751040.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (474, "chocolate black russian", 16, "stirred", false, 11, 338, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (474, "aperol spritz", 18, "stirred", true, 7, 496, "https://www.thecocktaildb.com/images/media/drink/iloasq1587661955.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (475, "shot-gun", 10, "stirred", false, 6, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (475, "broadside", 12, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/l2o6xu1582476870.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (476, "thai coffee", 18, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (476, "texas sling", 14, "stirred", true, 7, null, "https://www.thecocktaildb.com/images/media/drink/ypl13s1504890158.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (477, "spritz", 14, "stirred", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (477, "a furlong too late", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/ssxvww1472669166.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (478, "absolutely fabulous", 10, "shaken", true, 11, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (478, "rum sour", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/bylfi21504886323.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (479, "frappé", 10, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (479, "french 75", 18, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/4qnyty1504368615.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (480, "spice 75", 10, "shaken", true, 0, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (480, "rusty nail", 12, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/yqsvtw1478252982.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (481, "flying dutchman", 10, "stirred", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (481, "manhattan", 16, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/hz7p4t1589575281.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (482, "caribbean orange liqueur", 14, "stirred", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (482, "sex on the beach", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/lijtw51551455287.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (483, "scooter", 18, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (483, "fruit cooler", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/i3tfn31484430499.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (484, "sangria #1", 12, "stirred", false, 22, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (484, "bleeding surgeon", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/usuvvr1472719118.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (485, "spiking coffee", 14, "stirred", true, 1, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (485, "absolut evergreen", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/wrxrxp1472812609.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (486, "frisco sour", 12, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (486, "vampiro", 12, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/yfhn371504374246.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (487, "fruit shake", 16, "stirred", false, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (487, "new york lemonade", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/b3n0ge1503565473.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (488, "caribbean boilermaker", 14, "stirred", false, 20, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (488, "chocolate monkey", 18, "stirred", true, 23, null, "https://www.thecocktaildb.com/images/media/drink/tyvpxt1468875212.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (489, "flaming lamborghini", 16, "stirred", false, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (489, "spanish chocolate", 12, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/pra8vt1487603054.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (490, "stone sour", 10, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (490, "freddy kruger", 14, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/tuppuq1461866798.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (491, "frozen mint daiquiri", 10, "stirred", true, 7, 91, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (491, "oreo mudslide", 12, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/tpwwut1468925017.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (492, "fruit flip-flop", 10, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (492, "sweet tooth", 10, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/j6rq6h1503563821.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (493, "french connection", 16, "stirred", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (493, "homemade kahlua", 12, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/uwtsst1441254025.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (494, "sea breeze", 12, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (494, "blue mountain", 14, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/bih7ln1582485506.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (495, "french 75", 10, "shaken", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (495, "boxcar", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/pwgtpa1504366376.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (496, "frozen daiquiri", 16, "stirred", false, 11, 91, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (496, "spritz", 18, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/j9evx11504373665.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (497, "fuzzy asshole", 10, "stirred", false, 1, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (497, "talos coffee", 16, "stirred", false, 19, null, "https://www.thecocktaildb.com/images/media/drink/rswqpy1441246518.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (498, "nutty irishman", 10, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (498, "dark caipirinha", 18, "stirred", true, 1, 119, "https://www.thecocktaildb.com/images/media/drink/uwstrx1472406058.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (499, "owen's grandmother's revenge", 16, "stirred", false, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (499, "sunny holiday punch", 10, "stirred", true, 11, null, "https://www.thecocktaildb.com/images/media/drink/rywtwy1468924758.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (500, "bailey's dream shake", 12, "stirred", false, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (500, "tommy's margarita", 10, "shaken", true, 5, 244, "https://www.thecocktaildb.com/images/media/drink/loezxn1504373874.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (501, "kir royale", 14, "stirred", false, 11, 362, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (501, "amaretto sweet & sour", 14, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vswwus1472668546.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (502, "frozen pineapple daiquiri", 14, "stirred", true, 2, 91, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (502, "sidecar", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/stwxuq1439906852.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (503, "tom collins", 12, "shaken", true, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (503, "zinger", 12, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/iixv4l1485620014.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (504, "san francisco", 18, "stirred", true, 5, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (504, "bruised heart", 12, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/7if5kq1503564209.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (505, "fruit cooler", 16, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (505, "new york sour", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/61wgch1504882795.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (506, "salty dog", 16, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (506, "yoghurt cooler", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/trttrv1441254466.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (507, "prgane rosemary collins", 14, "stirred", true, 5, 4, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (507, "mojito", 16, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/3z6xdi1589574603.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (508, "sidecar cocktail", 18, "shaken", true, 2, 509, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (508, "quentin", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/spxtqp1478963398.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (509, "sidecar", 14, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (509, "quarter deck cocktail", 16, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/qrwvps1478963017.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (510, "swedish coffee", 10, "stirred", true, 1, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (510, "lassi khara", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/m1suzm1487603970.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (511, "a day at the beach", 16, "shaken", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (511, "san francisco", 12, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/szmj2d1504889961.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (512, "negroni", 18, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (512, "queen bee", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/rvvpxu1478963194.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (513, "the laverstoke", 10, "stirred", true, 18, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (513, "strawberry shivers", 16, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/9h1vvt1487603404.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (514, "scottish highland liqueur", 14, "shaken", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (514, "london town", 14, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/rpsrqv1468923507.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (515, "kool-aid shot", 14, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (515, "zimadori zinger", 12, "stirred", true, 2, 503, "https://www.thecocktaildb.com/images/media/drink/bw8gzx1485619920.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (516, "sweet sangria", 14, "stirred", false, 22, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (516, "tequila sour", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ek0mlq1504820601.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (517, "sol y sombra", 18, "shaken", true, 9, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (517, "lemon drop", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/mtpxgk1504373297.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (518, "orgasm", 16, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (518, "smashed watermelon margarita", 16, "shaken", true, 2, 244, "https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (519, "banana strawberry shake", 18, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (519, "b-53", 10, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/rwqxrv1461866023.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (520, "boston sidecar", 18, "shaken", true, 2, 509, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (520, "oatmeal cookie", 16, "stirred", true, 17, null, "https://www.thecocktaildb.com/images/media/drink/bsvmlg1515792693.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (521, "between the sheets", 16, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (521, "lunch box", 12, "stirred", true, 14, null, "https://www.thecocktaildb.com/images/media/drink/qywpvt1454512546.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (522, "blueberry mojito", 10, "stirred", true, 5, 172, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (522, "big red", 12, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/yqwuwu1441248116.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (523, "brave bull shooter", 18, "stirred", false, 6, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (523, "orangeade", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/ytsxxw1441167732.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (524, "pink gin", 10, "shaken", true, 0, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (524, "stinger", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/2ahv791504352433.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (525, "bounty hunter", 18, "shaken", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (525, "autumn garibaldi", 18, "stirred", true, 20, null, "https://www.thecocktaildb.com/images/media/drink/ne7re71604179012.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (526, "apple berry smoothie", 10, "stirred", false, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (526, "yellow bird", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/2t9r6w1504374811.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (527, "black forest shake", 12, "stirred", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (527, "mary pickford", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/f9erqb1504350557.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (528, "black and brown", 12, "stirred", false, 20, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (528, "national aquarium", 12, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/dlw0om1503565021.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (529, "death in the afternoon", 10, "stirred", false, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (529, "tom collins", 12, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/qystvv1439907682.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (530, "dark and stormy", 10, "stirred", true, 5, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (530, "balmoral", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vysuyq1441206297.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (531, "damned if you do", 18, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (531, "rail splitter", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/stsuqq1441207660.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (532, "chocolate monkey", 16, "stirred", true, 24, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (532, "mimosa", 14, "stirred", false, 9, null, "https://www.thecocktaildb.com/images/media/drink/juhcuu1504370685.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (533, "port wine cocktail", 18, "stirred", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (533, "shanghai cocktail", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ttyrxr1478820678.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (534, "scotch cobbler", 18, "stirred", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (534, "fruit flip-flop", 14, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/nfdx6p1484430633.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (535, "sunny holiday punch", 16, "stirred", false, 14, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (535, "absolut stress #2", 14, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/xuyqrw1472811825.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (536, "boxcar", 14, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (536, "24k nightmare", 10, "shaken", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/yyrwty1468877498.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (537, "b-53", 18, "stirred", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (537, "aquamarine", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/zvsre31572902738.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (538, "french martini", 10, "shaken", true, 2, 188, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (538, "microwave hot cocoa", 16, "stirred", false, 4, null, "https://www.thecocktaildb.com/images/media/drink/8y4x5f1487603151.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (539, "funk and soul", 18, "stirred", false, 4, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (539, "amaretto sour", 12, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/xnzc541493070211.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (540, "sazerac", 10, "stirred", true, 7, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (540, "veteran", 12, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/iwml9t1492976255.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (541, "french negroni", 18, "shaken", true, 2, 512, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (541, "lemon shot", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/mx31hv1487602979.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (542, "banana daiquiri", 16, "shaken", true, 11, 91, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (542, "brandy alexander", 18, "shaken", false, 3, 560, "https://www.thecocktaildb.com/images/media/drink/o318v11604824158.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (543, "bobby burns cocktail", 16, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (543, "adam", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/v0at4i1582478473.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (544, "snakebite and black", 12, "stirred", false, 8, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (544, "horse's neck", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/006k4e1504370092.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (545, "flander's flake-out", 18, "stirred", false, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (545, "brooklyn", 18, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ojsezf1582477277.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (546, "shanghai cocktail", 10, "shaken", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (546, "affair", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/h5za6y1582477994.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (547, "smashed watermelon margarita", 18, "shaken", true, 4, 185, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (547, "limeade", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/5jdp5r1487603680.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (548, "salted toffee martini", 10, "shaken", true, 2, 188, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (548, "rum old-fashioned", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/otn2011504820649.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (549, "freddy kruger", 12, "stirred", false, 6, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (549, "a gilligan's island", 10, "shaken", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/wysqut1461867176.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (550, "bacardi cocktail", 18, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (550, "frisco sour", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/acuvjz1582482022.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (551, "fahrenheit 5000", 16, "stirred", false, 6, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (551, "a splash of nash", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/rsvtrr1472668201.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (552, "dry rob roy", 10, "stirred", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (552, "loch lomond", 12, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/rpvtpr1468923881.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (553, "cherry electric lemonade", 16, "stirred", true, 8, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (553, "alfie cocktail", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ypxsqy1483387829.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (554, "castillian hot chocolate", 14, "stirred", false, 1, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (554, "absolut sex", 12, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/xtrvtx1472668436.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (555, "flaming dr. pepper", 10, "stirred", false, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (555, "absolutely cranberry smash", 14, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vqwstv1472811884.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (556, "space odyssey", 18, "stirred", true, 5, 225, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (556, "absinthe #2", 10, "stirred", true, 24, null, "https://www.thecocktaildb.com/images/media/drink/uxxtrt1472667197.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (557, "bellini martini", 14, "shaken", true, 2, 188, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (557, "arizona antifreeze", 16, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/dbtylp1493067262.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (558, "dark caipirinha", 14, "stirred", true, 5, 222, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (558, "alice cocktail", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/qyqtpv1468876144.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (559, "duchamp's punch", 10, "shaken", true, 7, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (559, "amaretto liqueur", 16, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/swqxuv1472719649.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (560, "dirty martini", 18, "shaken", true, 2, 188, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (560, "alexander", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/urystu1478253039.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (561, "151 florida bushwacker", 14, "stirred", false, 3, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (561, "jello shots", 12, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/l0smzo1504884904.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (562, "gin cooler", 16, "stirred", true, 4, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (562, "apricot lady", 16, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/7ityp11582579598.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (563, "gentleman's club", 18, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (563, "boston sidecar", 12, "shaken", false, 3, 502, "https://www.thecocktaildb.com/images/media/drink/qzs5d11504365962.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (564, "gin daisy", 10, "shaken", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (564, "radioactive long island iced tea", 18, "stirred", true, 2, 308, "https://www.thecocktaildb.com/images/media/drink/rdvqmh1503563512.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (565, "gin squirt", 12, "stirred", true, 5, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (565, "atlantic sun", 18, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/doyxqb1493067556.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (566, "bluebird", 14, "stirred", true, 2, null, 2); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (566, "after dinner cocktail", 18, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vtytxq1483387578.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (567, "godfather", 10, "stirred", true, 7, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (567, "casa blanca", 12, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/usspxq1441553762.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (568, "grizzly bear", 12, "stirred", true, 4, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (568, "zambeer", 14, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/bje5401485619578.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (569, "alexander", 16, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (569, "b-52", 12, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (570, "popped cherry", 14, "stirred", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (570, "bluebird", 14, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/5jhyd01582579843.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (571, "gin sling", 18, "stirred", true, 7, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (571, "bobby burns cocktail", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/km6se51484411608.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (572, "yellow bird", 12, "shaken", false, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (572, "quick-sand", 10, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/vprxqv1478963533.jpg", 2); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (573, "golden dream", 12, "shaken", true, 2, null, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (573, "alabama slammer", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/qtwxwr1483387647.jpg", 4); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (574, "bijou", 10, "stirred", true, 2, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (574, "a piece of ass", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/tqxyxx1472719737.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (575, "bourbon sling", 14, "shaken", true, 5, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (575, "chocolate black russian", 12, "stirred", false, 9, 230, "https://www.thecocktaildb.com/images/media/drink/yyvywx1472720879.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (576, "quaker's cocktail", 14, "shaken", true, 2, null, 4); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (576, "a. j.", 16, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/l74qo91582480316.jpg", 8); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (577, "bumble bee #1", 10, "stirred", false, 6, null, 6); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (577, "amaretto stone sour", 12, "shaken", true, 2, 256, "https://www.thecocktaildb.com/images/media/drink/xwryyx1472719921.jpg", 6); 
 
-INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, rating)
-VALUES (578, "victory collins", 14, "shaken", true, 4, 410, 8); 
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (578, "bailey's dream shake", 10, "stirred", false, 2, null, "https://www.thecocktaildb.com/images/media/drink/qxrvqw1472718959.jpg", 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (579, "aviation", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/ruutxt1478253328.jpg", 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (580, "at&t", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/rhhwmp1493067619.jpg", 4); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (581, "absolut limousine", 18, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/ssqpyw1472719844.jpg", 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (582, "a night in old mandalay", 18, "shaken", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/vyrvxt1461919380.jpg", 4); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (583, "red snapper", 14, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/7p607y1504735343.jpg", 2); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (584, "almeria", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/rwsyyu1483388181.jpg", 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (585, "rum toddy", 10, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/athdk71504886286.jpg", 4); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (586, "acapulco", 14, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/il9e0r1582478841.jpg", 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (587, "tequila slammer", 12, "stirred", true, 12, null, "https://www.thecocktaildb.com/images/media/drink/43uhr51551451311.jpg", 2); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (588, "boozy snickers milkshake", 16, "shaken", true, 17, null, "https://www.thecocktaildb.com/images/media/drink/861tzm1504784164.jpg", 2); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (589, "aloha fruit punch", 10, "stirred", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/wsyvrt1468876267.jpg", 2); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (590, "thai iced coffee", 12, "stirred", true, 1, 36, "https://www.thecocktaildb.com/images/media/drink/rqpypv1441245650.jpg", 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (591, "royal flush", 16, "stirred", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/7rnm8u1504888527.jpg", 4); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (592, "banana strawberry shake daiquiri-type", 14, "stirred", false, 3, 282, "https://www.thecocktaildb.com/images/media/drink/uvypss1472720581.jpg", 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (593, "the jimmy conway", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/wbcvyo1535794478.jpg", 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (594, "abc", 18, "stirred", false, 6, null, "https://www.thecocktaildb.com/images/media/drink/tqpvqp1472668328.jpg", 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (595, "strawberry margarita", 14, "shaken", false, 3, 244, "https://www.thecocktaildb.com/images/media/drink/tqyrpw1439905311.jpg", 4); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (596, "fruit shake", 16, "stirred", false, 1, null, "https://www.thecocktaildb.com/images/media/drink/q0fg2m1484430704.jpg", 2); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (597, "applecar", 14, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/sbffau1504389764.jpg", 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (598, "avalon", 14, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/3k9qic1493068931.jpg", 2); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (599, "singapore sling", 14, "shaken", true, 12, null, "https://www.thecocktaildb.com/images/media/drink/7dozeg1582578095.jpg", 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (600, "ruby tuesday", 18, "stirred", true, 1, null, "https://www.thecocktaildb.com/images/media/drink/qsyqqq1441553437.jpg", 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (601, "tuxedo cocktail", 14, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/4u0nbl1504352551.jpg", 2); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (602, "rum runner", 10, "stirred", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/vqws6t1504888857.jpg", 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (603, "rose", 10, "shaken", false, 3, null, "https://www.thecocktaildb.com/images/media/drink/8kxbvq1504371462.jpg", 2); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (604, "mississippi planters punch", 12, "shaken", true, 2, null, "https://www.thecocktaildb.com/images/media/drink/urpyqs1439907531.jpg", 8); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (605, "brandon and will's coke float", 16, "stirred", true, 10, null, "https://www.thecocktaildb.com/images/media/drink/xspxyr1472719185.jpg", 6); 
+
+INSERT INTO drinkRecipe(id, name, price, mixMethod, onIce, glassID, versionOf, imgURL, rating)
+VALUES (606, "1-900-fuk-meup", 18, "shaken", true, 5, null, "https://www.thecocktaildb.com/images/media/drink/uxywyw1468877224.jpg", 8); 
 
 SET FOREIGN_KEY_CHECKS=1;
 INSERT INTO ingredientAvailable(quantity, isAvailable)
@@ -1860,1003 +1944,1015 @@ INSERT INTO ingredientAvailable(quantity, isAvailable)
 VALUES (9, true); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (0, "dark rum", 3); 
+VALUES (0, "irish whiskey", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (1, "light rum", 4); 
+VALUES (1, "coffee", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (2, "vodka", 8); 
+VALUES (2, "sugar", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (3, "orange juice", 0); 
+VALUES (3, "whipped cream", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (4, "chocolate syrup", 4); 
+VALUES (4, "vodka", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (5, "milk", 7); 
+VALUES (5, "kahlua", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (6, "soda water", 5); 
+VALUES (6, "coca cola", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (7, "sweet vermouth", 9); 
+VALUES (7, "guinness stout", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (8, "sloe gin", 0); 
+VALUES (8, "blue curacao", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (9, "wine", 0); 
+VALUES (9, "blueberry schnapps", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (10, "sherry", 6); 
+VALUES (10, "sour mix", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (11, "lime", 8); 
+VALUES (11, "7 up", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (12, "dry vermouth", 9); 
+VALUES (12, "kiwi liqueur", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (13, "gin", 5); 
+VALUES (13, "bitter lemon", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (14, "apricot brandy", 8); 
+VALUES (14, "ice", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (15, "lemon juice", 3); 
+VALUES (15, "iced tea", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (16, "grenadine", 3); 
+VALUES (16, "lemon juice", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (17, "powdered sugar", 2); 
+VALUES (17, "lime juice", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (18, "peach bitters", 3); 
+VALUES (18, "gin", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (19, "mint", 6); 
+VALUES (19, "aperol", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (20, "whisky", 1); 
+VALUES (20, "baileys irish cream", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (21, "baileys irish cream", 8); 
+VALUES (21, "bourbon", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (22, "coffee", 8); 
+VALUES (22, "orange juice", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (23, "galliano", 1); 
+VALUES (23, "scotch", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (24, "amaretto", 5); 
+VALUES (24, "half and-half", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (25, "orange bitters", 4); 
+VALUES (25, "condensed milk", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (26, "apple juice", 2); 
+VALUES (26, "coconut syrup", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (27, "pineapple juice", 2); 
+VALUES (27, "chocolate syrup", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (28, "ice", 6); 
+VALUES (28, "vanilla vodka", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (29, "everclear", 5); 
+VALUES (29, "grand marnier", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (30, "dark creme de cacao", 7); 
+VALUES (30, "red wine", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (31, "grapefruit juice", 1); 
+VALUES (31, "lemon", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (32, "maraschino cherry", 9); 
+VALUES (32, "orange", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (33, "añejo rum", 9); 
+VALUES (33, "pineapple juice", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (34, "ginger ale", 2); 
+VALUES (34, "amaretto", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (35, "lemon peel", 1); 
+VALUES (35, "galliano", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (36, "spiced rum", 9); 
+VALUES (36, "triple sec", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (37, "rum", 9); 
+VALUES (37, "cream", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (38, "cognac", 6); 
+VALUES (38, "sugar syrup", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (39, "lime juice", 4); 
+VALUES (39, "basil", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (40, "sugar syrup", 3); 
+VALUES (40, "tonic water", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (41, "water", 3); 
+VALUES (41, "lime", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (42, "chocolate", 2); 
+VALUES (42, "kool aid", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (43, "kahlua", 3); 
+VALUES (43, "grapes", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (44, "midori melon liqueur", 3); 
+VALUES (44, "pineapple", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (45, "coffee brandy", 0); 
+VALUES (45, "wine", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (46, "lime vodka", 0); 
+VALUES (46, "powdered sugar", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (47, "tennessee whiskey", 2); 
+VALUES (47, "carbonated water", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (48, "vanilla extract", 8); 
+VALUES (48, "frangelico", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (49, "coca cola", 2); 
+VALUES (49, "cachaca", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (50, "sugar", 3); 
+VALUES (50, "agave syrup", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (51, "blue curacao", 6); 
+VALUES (51, "champagne", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (52, "blueberry schnapps", 6); 
+VALUES (52, "lager", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (53, "sour mix", 7); 
+VALUES (53, "tequila", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (54, "7 up", 6); 
+VALUES (54, "grain alcohol", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (55, "vanilla ice cream", 2); 
+VALUES (55, "blended whiskey", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (56, "bourbon", 3); 
+VALUES (56, "cherry", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (57, "blended whiskey", 5); 
+VALUES (57, "coffee liqueur", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (58, "lemon", 3); 
+VALUES (58, "light cream", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (59, "port", 2); 
+VALUES (59, "peach vodka", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (60, "egg white", 3); 
+VALUES (60, "sirup of roses", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (61, "carbonated water", 6); 
+VALUES (61, "cream of coconut", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (62, "kool aid", 2); 
+VALUES (62, "brandy", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (63, "absolut vodka", 6); 
+VALUES (63, "light rum", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (64, "cointreau", 5); 
+VALUES (64, "benedictine", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (65, "coconut liqueur", 7); 
+VALUES (65, "lemon peel", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (66, "maraschino liqueur", 4); 
+VALUES (66, "absolut kurant", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (67, "absolut citron", 0); 
+VALUES (67, "tea", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (68, "cranberry juice", 3); 
+VALUES (68, "water", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (69, "triple sec", 1); 
+VALUES (69, "milk", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (70, "pineapple", 1); 
+VALUES (70, "dark rum", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (71, "cider", 3); 
+VALUES (71, "ginger beer", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (72, "lager", 8); 
+VALUES (72, "bitters", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (73, "angostura bitters", 1); 
+VALUES (73, "club soda", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (74, "tonic water", 8); 
+VALUES (74, "green creme de menthe", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (75, "lemon lime soda", 4); 
+VALUES (75, "creme de cacao", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (76, "benedictine", 4); 
+VALUES (76, "lemon lime soda", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (77, "cranberry vodka", 4); 
+VALUES (77, "whisky", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (78, "apfelkorn", 4); 
+VALUES (78, "151 proof rum", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (79, "schweppes russchian", 5); 
+VALUES (79, "grenadine", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (80, "rye whiskey", 5); 
+VALUES (80, "port", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (81, "campari", 2); 
+VALUES (81, "coconut milk", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (82, "absolut kurant", 6); 
+VALUES (82, "orange spiral", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (83, "tea", 4); 
+VALUES (83, "campari", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (84, "brandy", 1); 
+VALUES (84, "orange peel", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (85, "cream", 3); 
+VALUES (85, "bacardi limon", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (86, "coffee liqueur", 5); 
+VALUES (86, "mint", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (87, "mezcal", 9); 
+VALUES (87, "sweet vermouth", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (88, "chocolate liqueur", 8); 
+VALUES (88, "maraschino cherry", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (89, "cherry juice", 6); 
+VALUES (89, "brown sugar", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (90, "orange peel", 5); 
+VALUES (90, "passion fruit juice", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (91, "red chili flakes", 3); 
+VALUES (91, "ginger ale", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (92, "cloves", 4); 
+VALUES (92, "limeade", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (93, "ginger", 0); 
+VALUES (93, "nutmeg", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (94, "tequila", 5); 
+VALUES (94, "creme de cassis", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (95, "fruit", 5); 
+VALUES (95, "heavy cream", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (96, "salt", 2); 
+VALUES (96, "kiwi", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (97, "fruit juice", 3); 
+VALUES (97, "papaya", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (98, "orange curacao", 6); 
+VALUES (98, "strawberries", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (99, "strawberry liqueur", 3); 
+VALUES (99, "malibu rum", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (100, "champagne", 0); 
+VALUES (100, "dark creme de cacao", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (101, "peach schnapps", 6); 
+VALUES (101, "cointreau", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (102, "bitters", 4); 
+VALUES (102, "coconut liqueur", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (103, "orange", 5); 
+VALUES (103, "vanilla ice cream", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (104, "irish cream", 2); 
+VALUES (104, "grapefruit juice", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (105, "goldschlager", 2); 
+VALUES (105, "grape juice", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (106, "falernum", 2); 
+VALUES (106, "carbonated soft drink", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (107, "blackstrap rum", 8); 
+VALUES (107, "sherbet", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (108, "coconut milk", 2); 
+VALUES (108, "cinnamon", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (109, "ale", 1); 
+VALUES (109, "vanilla", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (110, "guinness stout", 9); 
+VALUES (110, "chocolate", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (111, "nutmeg", 0); 
+VALUES (111, "rum", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (112, "cocoa powder", 1); 
+VALUES (112, "gold rum", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (113, "crown royal", 5); 
+VALUES (113, "pernod", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (114, "chambord raspberry liqueur", 2); 
+VALUES (114, "angostura bitters", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (115, "strawberries", 9); 
+VALUES (115, "cherry liqueur", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (116, "raisins", 5); 
+VALUES (116, "cranberry juice", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (117, "blueberries", 3); 
+VALUES (117, "mint syrup", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (118, "scotch", 5); 
+VALUES (118, "everclear", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (119, "sprite", 9); 
+VALUES (119, "chambord raspberry liqueur", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (120, "hot chocolate", 9); 
+VALUES (120, "white wine", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (121, "green chartreuse", 9); 
+VALUES (121, "apple", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (122, "cherry heering", 0); 
+VALUES (122, "apple brandy", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (123, "tia maria", 1); 
+VALUES (123, "soda water", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (124, "maple syrup", 8); 
+VALUES (124, "ouzo", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (125, "irish whiskey", 1); 
+VALUES (125, "cranberries", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (126, "corn syrup", 3); 
+VALUES (126, "cocoa powder", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (127, "cherry", 5); 
+VALUES (127, "cornstarch", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (128, "white rum", 4); 
+VALUES (128, "sloe gin", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (129, "cinnamon", 0); 
+VALUES (129, "ginger", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (130, "egg", 6); 
+VALUES (130, "sambuca", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (131, "151 proof rum", 4); 
+VALUES (131, "peach bitters", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (132, "wild turkey", 6); 
+VALUES (132, "cider", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (133, "guava juice", 2); 
+VALUES (133, "blackcurrant squash", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (134, "drambuie", 0); 
+VALUES (134, "ricard", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (135, "malibu rum", 1); 
+VALUES (135, "peychaud bitters", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (136, "sweet and sour", 4); 
+VALUES (136, "green chartreuse", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (137, "southern comfort", 5); 
+VALUES (137, "yellow chartreuse", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (138, "apricot", 7); 
+VALUES (138, "tia maria", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (139, "almond flavoring", 0); 
+VALUES (139, "caramel coloring", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (140, "grain alcohol", 1); 
+VALUES (140, "cucumber", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (141, "food coloring", 4); 
+VALUES (141, "schweppes russchian", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (142, "glycerine", 2); 
+VALUES (142, "cherry brandy", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (143, "lemonade", 1); 
+VALUES (143, "roses sweetened lime juice", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (144, "jack daniels", 5); 
+VALUES (144, "sprite", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (145, "sambuca", 8); 
+VALUES (145, "peach brandy", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (146, "root beer", 0); 
+VALUES (146, "sweet and sour", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (147, "ouzo", 9); 
+VALUES (147, "egg white", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (148, "grand marnier", 4); 
+VALUES (148, "whiskey", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (149, "hot damn", 5); 
+VALUES (149, "hot damn", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (150, "blackcurrant cordial", 9); 
+VALUES (150, "absinthe", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (151, "iced tea", 6); 
+VALUES (151, "dubonnet rouge", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (152, "egg yolk", 2); 
+VALUES (152, "beer", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (153, "whipping cream", 4); 
+VALUES (153, "root beer", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (154, "yellow chartreuse", 9); 
+VALUES (154, "lemonade", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (155, "pisang ambon", 5); 
+VALUES (155, "peach nectar", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (156, "bitter lemon", 0); 
+VALUES (156, "passoa", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (157, "basil", 8); 
+VALUES (157, "passion fruit syrup", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (158, "dubonnet rouge", 9); 
+VALUES (158, "wild turkey", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (159, "apple brandy", 2); 
+VALUES (159, "lillet blanc", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (160, "light cream", 0); 
+VALUES (160, "vanilla syrup", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (161, "red wine", 9); 
+VALUES (161, "espresso", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (162, "blackberry brandy", 2); 
+VALUES (162, "yoghurt", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (163, "anis", 4); 
+VALUES (163, "salt", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (164, "roses sweetened lime juice", 7); 
+VALUES (164, "white creme de menthe", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (165, "cantaloupe", 0); 
+VALUES (165, "pisco", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (166, "banana", 7); 
+VALUES (166, "dry vermouth", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (167, "yoghurt", 4); 
+VALUES (167, "olive", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (168, "cumin seed", 6); 
+VALUES (168, "rosemary syrup", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (169, "agave syrup", 0); 
+VALUES (169, "rosemary", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (170, "butter", 0); 
+VALUES (170, "corona", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (171, "half and-half", 1); 
+VALUES (171, "sherry", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (172, "marshmallows", 9); 
+VALUES (172, "egg", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (173, "ginger beer", 9); 
+VALUES (173, "cumin seed", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (174, "apple cider", 1); 
+VALUES (174, "orange bitters", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (175, "aperol", 1); 
+VALUES (175, "fruit punch", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (176, "prosecco", 1); 
+VALUES (176, "anis", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (177, "vanilla", 9); 
+VALUES (177, "mango", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (178, "caramel coloring", 4); 
+VALUES (178, "almond flavoring", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (179, "green creme de menthe", 5); 
+VALUES (179, "pineapple syrup", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (180, "creme de cacao", 3); 
+VALUES (180, "st. germain", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (181, "orgeat syrup", 6); 
+VALUES (181, "pepper", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (182, "godiva liqueur", 5); 
+VALUES (182, "lavender", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (183, "butterscotch schnapps", 1); 
+VALUES (183, "vanilla extract", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (184, "heavy cream", 1); 
+VALUES (184, "orgeat syrup", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (185, "vanilla syrup", 7); 
+VALUES (185, "midori melon liqueur", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (186, "espresso", 3); 
+VALUES (186, "blackberry brandy", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (187, "cachaca", 4); 
+VALUES (187, "anisette", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (188, "tomato juice", 9); 
+VALUES (188, "orange curacao", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (189, "worcestershire sauce", 2); 
+VALUES (189, "advocaat", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (190, "tabasco sauce", 4); 
+VALUES (190, "banana", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (191, "vermouth", 2); 
+VALUES (191, "honey", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (192, "blackberries", 4); 
+VALUES (192, "blackcurrant cordial", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (193, "mint syrup", 1); 
+VALUES (193, "peppermint extract", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (194, "peach vodka", 7); 
+VALUES (194, "food coloring", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (195, "sirup of roses", 7); 
+VALUES (195, "jägermeister", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (196, "jägermeister", 2); 
+VALUES (196, "peach schnapps", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (197, "olive", 0); 
+VALUES (197, "tennessee whiskey", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (198, "gold rum", 8); 
+VALUES (198, "cantaloupe", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (199, "fruit punch", 4); 
+VALUES (199, "vermouth", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (200, "brown sugar", 2); 
+VALUES (200, "apricot nectar", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (201, "passion fruit juice", 0); 
+VALUES (201, "pomegranate juice", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (202, "allspice", 5); 
+VALUES (202, "ale", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (203, "honey", 1); 
+VALUES (203, "butter", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (204, "maui", 4); 
+VALUES (204, "marshmallows", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (205, "mountain dew", 6); 
+VALUES (205, "raspberry syrup", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (206, "beer", 8); 
+VALUES (206, "apple cider", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (207, "creme de cassis", 4); 
+VALUES (207, "apricot brandy", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (208, "asafoetida", 2); 
+VALUES (208, "pink lemonade", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (209, "kummel", 6); 
+VALUES (209, "irish cream", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (210, "grape juice", 5); 
+VALUES (210, "maraschino liqueur", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (211, "carbonated soft drink", 0); 
+VALUES (211, "white rum", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (212, "sherbet", 7); 
+VALUES (212, "jim beam", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (213, "grape soda", 3); 
+VALUES (213, "jack daniels", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (214, "candy", 6); 
+VALUES (214, "tropicana", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (215, "bacardi limon", 2); 
+VALUES (215, "spiced rum", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (216, "whipped cream", 9); 
+VALUES (216, "allspice", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (217, "carrot", 5); 
+VALUES (217, "apple juice", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (218, "club soda", 4); 
+VALUES (218, "olive brine", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (219, "apple schnapps", 0); 
+VALUES (219, "raspberry liqueur", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (220, "lillet blanc", 5); 
+VALUES (220, "raspberry vodka", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (221, "wormwood", 4); 
+VALUES (221, "apple schnapps", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (222, "banana liqueur", 2); 
+VALUES (222, "prosecco", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (223, "pink lemonade", 0); 
+VALUES (223, "curacao", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (224, "peachtree schnapps", 2); 
+VALUES (224, "creme de banane", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (225, "lime juice cordial", 9); 
+VALUES (225, "peppermint schnapps", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (226, "corona", 8); 
+VALUES (226, "yukon jack", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (227, "lemon vodka", 9); 
+VALUES (227, "southern comfort", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (228, "pernod", 4); 
+VALUES (228, "tomato juice", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (229, "kiwi liqueur", 2); 
+VALUES (229, "celery salt", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (230, "yukon jack", 6); 
+VALUES (230, "goldschlager", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (231, "cherry brandy", 7); 
+VALUES (231, "erin cream", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (232, "grapes", 7); 
+VALUES (232, "blended scotch", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (233, "creme de banane", 3); 
+VALUES (233, "honey syrup", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (234, "absinthe", 0); 
+VALUES (234, "ginger syrup", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (235, "creme de mure", 6); 
+VALUES (235, "islay single malt scotch", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (236, "passion fruit syrup", 0); 
+VALUES (236, "cloves", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (237, "cucumber", 2); 
+VALUES (237, "cardamom", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (238, "white creme de menthe", 4); 
+VALUES (238, "black pepper", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (239, "cardamom", 0); 
+VALUES (239, "maui", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (240, "black pepper", 6); 
+VALUES (240, "mountain dew", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (241, "gold tequila", 4); 
+VALUES (241, "absolut vodka", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (242, "cream of coconut", 9); 
+VALUES (242, "pina colada mix", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (243, "mango", 4); 
+VALUES (243, "daiquiri mix", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (244, "white wine", 0); 
+VALUES (244, "blueberries", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (245, "apple", 6); 
+VALUES (245, "crown royal", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (246, "tropicana", 5); 
+VALUES (246, "maple syrup", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (247, "pepsi cola", 0); 
+VALUES (247, "strawberry schnapps", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (248, "erin cream", 2); 
+VALUES (248, "tabasco sauce", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (249, "advocaat", 6); 
+VALUES (249, "chocolate liqueur", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (250, "pina colada mix", 1); 
+VALUES (250, "cognac", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (251, "daiquiri mix", 7); 
+VALUES (251, "falernum", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (252, "blended scotch", 6); 
+VALUES (252, "añejo rum", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (253, "honey syrup", 6); 
+VALUES (253, "blackstrap rum", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (254, "ginger syrup", 4); 
+VALUES (254, "butterscotch schnapps", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (255, "islay single malt scotch", 7); 
+VALUES (255, "rye whiskey", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (256, "celery salt", 0); 
+VALUES (256, "elderflower cordial", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (257, "pisco", 0); 
+VALUES (257, "rosso vermouth", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (258, "condensed milk", 0); 
+VALUES (258, "banana liqueur", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (259, "kirschwasser", 1); 
+VALUES (259, "berries", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (260, "black sambuca", 0); 
+VALUES (260, "absolut citron", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (261, "bailey", 3); 
+VALUES (261, "mezcal", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (262, "jagermeister", 9); 
+VALUES (262, "firewater", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (263, "melon liqueur", 4); 
+VALUES (263, "absolut peppar", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (264, "jello", 2); 
+VALUES (264, "angelica root", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (265, "passoa", 9); 
+VALUES (265, "almond", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (266, "peppermint schnapps", 0); 
+VALUES (266, "anise", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (267, "chocolate ice cream", 8); 
+VALUES (267, "coriander", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (268, "caramel sauce", 4); 
+VALUES (268, "marjoram leaves", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (269, "chocolate sauce", 2); 
+VALUES (269, "cherry heering", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (270, "mini snickers bars", 9); 
+VALUES (270, "dr. pepper", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (271, "angelica root", 5); 
+VALUES (271, "johnnie walker", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (272, "almond", 5); 
+VALUES (272, "strawberry liqueur", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (273, "anise", 4); 
+VALUES (273, "zima", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (274, "coriander", 6); 
+VALUES (274, "surge", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (275, "marjoram leaves", 0); 
+VALUES (275, "hot chocolate", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (276, "johnnie walker", 2); 
+VALUES (276, "melon liqueur", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (277, "jim beam", 5); 
+VALUES (277, "chocolate sauce", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (278, "surge", 2); 
+VALUES (278, "salted chocolate", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (279, "cayenne pepper", 4); 
+VALUES (279, "grape soda", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (280, "peppermint extract", 3); 
+VALUES (280, "carrot", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (281, "hpnotiq", 9); 
+VALUES (281, "chocolate ice cream", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (282, "oreo cookie", 7); 
+VALUES (282, "cherry juice", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (283, "orange spiral", 6); 
+VALUES (283, "red chili flakes", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (284, "pepper", 9); 
+VALUES (284, "cayenne pepper", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (285, "peach nectar", 4); 
+VALUES (285, "candy", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (286, "applejack", 8); 
+VALUES (286, "pepsi cola", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (287, "kiwi", 5); 
+VALUES (287, "kirschwasser", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (288, "papaya", 7); 
+VALUES (288, "kummel", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (289, "strawberry schnapps", 1); 
+VALUES (289, "raisins", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (290, "limeade", 5); 
+VALUES (290, "lillet", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (291, "frangelico", 0); 
+VALUES (291, "fennel seeds", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (292, "licorice root", 7); 
+VALUES (292, "creme de mure", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (293, "cranberries", 4); 
+VALUES (293, "worcestershire sauce", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (294, "zima", 1); 
+VALUES (294, "sarsaparilla", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (295, "coconut syrup", 3); 
+VALUES (295, "whipping cream", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (296, "rosemary", 7); 
+VALUES (296, "egg yolk", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (297, "rumple minze", 3); 
+VALUES (297, "fruit", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (298, "whiskey", 7); 
+VALUES (298, "fruit juice", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (299, "rosemary syrup", 8); 
+VALUES (299, "cranberry vodka", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (300, "aquavit", 6); 
+VALUES (300, "apfelkorn", 0); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (301, "coconut rum", 6); 
+VALUES (301, "fresca", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (302, "elderflower cordial", 6); 
+VALUES (302, "cherry grenadine", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (303, "rosso vermouth", 7); 
+VALUES (303, "cherries", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (304, "fennel seeds", 0); 
+VALUES (304, "blackberries", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (305, "fresca", 0); 
+VALUES (305, "aquavit", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (306, "anisette", 5); 
+VALUES (306, "coconut rum", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (307, "berries", 2); 
+VALUES (307, "gold tequila", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (308, "chocolate milk", 0); 
+VALUES (308, "godiva liqueur", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (309, "curacao", 1); 
+VALUES (309, "lime juice cordial", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (310, "raspberry liqueur", 6); 
+VALUES (310, "wormwood", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (311, "apricot nectar", 9); 
+VALUES (311, "drambuie", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (312, "pomegranate juice", 9); 
+VALUES (312, "pisang ambon", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (313, "ricard", 6); 
+VALUES (313, "chocolate milk", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (314, "peychaud bitters", 7); 
+VALUES (314, "oreo cookie", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (315, "lillet", 5); 
+VALUES (315, "corn syrup", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (316, "blackcurrant squash", 5); 
+VALUES (316, "demerara sugar", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (317, "sarsaparilla", 1); 
+VALUES (317, "peachtree schnapps", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (318, "watermelon", 9); 
+VALUES (318, "asafoetida", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (319, "salted chocolate", 2); 
+VALUES (319, "coffee brandy", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (320, "firewater", 1); 
+VALUES (320, "lime vodka", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (321, "absolut peppar", 9); 
+VALUES (321, "watermelon", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (322, "cherry grenadine", 7); 
+VALUES (322, "bailey", 8); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (323, "cornstarch", 9); 
+VALUES (323, "jagermeister", 5); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (324, "dr. pepper", 9); 
+VALUES (324, "rumple minze", 4); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (325, "cherries", 8); 
+VALUES (325, "hpnotiq", 3); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (326, "demerara sugar", 4); 
+VALUES (326, "lime peel", 1); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (327, "pineapple syrup", 7); 
+VALUES (327, "lemon vodka", 2); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (328, "st. germain", 0); 
+VALUES (328, "licorice root", 6); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (329, "lavender", 9); 
+VALUES (329, "apricot", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (330, "olive brine", 6); 
+VALUES (330, "glycerine", 7); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (331, "cherry liqueur", 6); 
+VALUES (331, "jello", 9); 
 
 INSERT INTO ingredient(id, name, quantity)
-VALUES (332, "raspberry syrup", 7); 
+VALUES (332, "black sambuca", 9); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (333, "applejack", 5); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (334, "caramel sauce", 9); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (335, "mini snickers bars", 8); 
+
+INSERT INTO ingredient(id, name, quantity)
+VALUES (336, "guava juice", 7); 
 
 INSERT INTO alcoholType(percentage, liquor, liqueur)
 VALUES (0, false, true); 
@@ -2922,349 +3018,358 @@ INSERT INTO alcoholType(percentage, liquor, liqueur)
 VALUES (44, true, false); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (0, 40, 6); 
+VALUES (0, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (1, 25, 6); 
+VALUES (4, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (2, 40, 6); 
+VALUES (5, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (7, 20, 0); 
+VALUES (7, 17, 8); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (8, 25, 0); 
+VALUES (8, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (9, 14, 0); 
+VALUES (9, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (10, 20, 0); 
+VALUES (12, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (12, 20, 0); 
+VALUES (18, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (13, 40, 6); 
+VALUES (19, 11, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (14, 24, 6); 
+VALUES (20, 13, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (20, 40, 7); 
+VALUES (21, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (21, 13, 0); 
+VALUES (23, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (23, 25, 0); 
+VALUES (28, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (24, 28, 0); 
+VALUES (29, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (37, 40, 6); 
+VALUES (30, 14, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (38, 25, 6); 
+VALUES (34, 28, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (43, 25, 0); 
+VALUES (35, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (44, 25, 0); 
+VALUES (36, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (45, 25, 6); 
+VALUES (45, 14, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (46, 40, 6); 
+VALUES (49, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (47, 40, 7); 
+VALUES (51, 13, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (51, 25, 0); 
+VALUES (52, 4, 8); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (52, 40, 6); 
+VALUES (53, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (56, 40, 7); 
+VALUES (55, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (57, 40, 7); 
+VALUES (57, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (59, 20, 0); 
+VALUES (59, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (63, 40, 6); 
+VALUES (62, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (64, 40, 0); 
+VALUES (63, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (65, 25, 0); 
+VALUES (66, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (66, 25, 0); 
+VALUES (70, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (67, 40, 6); 
+VALUES (74, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (69, 25, 0); 
+VALUES (77, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (71, 4, 13); 
+VALUES (78, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (72, 4, 13); 
+VALUES (80, 20, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (77, 40, 6); 
+VALUES (85, 32, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (78, 18, 6); 
+VALUES (87, 20, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (80, 40, 7); 
+VALUES (94, 15, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (82, 40, 6); 
+VALUES (99, 21, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (84, 40, 6); 
+VALUES (101, 40, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (86, 25, 0); 
+VALUES (102, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (88, 25, 0); 
+VALUES (111, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (94, 40, 6); 
+VALUES (112, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (98, 25, 0); 
+VALUES (115, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (99, 40, 6); 
+VALUES (119, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (100, 13, 0); 
+VALUES (120, 12, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (101, 40, 6); 
+VALUES (122, 35, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (104, 25, 0); 
+VALUES (124, 38, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (105, 44, 6); 
+VALUES (128, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (107, 25, 6); 
+VALUES (130, 38, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (109, 4, 13); 
+VALUES (132, 4, 8); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (110, 17, 13); 
+VALUES (134, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (114, 25, 0); 
+VALUES (137, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (118, 40, 7); 
+VALUES (145, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (125, 40, 7); 
+VALUES (148, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (128, 25, 6); 
+VALUES (150, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (131, 25, 6); 
+VALUES (152, 4, 8); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (132, 40, 7); 
+VALUES (156, 17, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (134, 25, 0); 
+VALUES (158, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (135, 21, 6); 
+VALUES (159, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (137, 25, 0); 
+VALUES (165, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (144, 40, 7); 
+VALUES (166, 20, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (145, 38, 0); 
+VALUES (170, 4, 8); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (147, 38, 0); 
+VALUES (171, 20, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (148, 25, 0); 
+VALUES (180, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (154, 25, 0); 
+VALUES (185, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (159, 35, 6); 
+VALUES (186, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (161, 14, 0); 
+VALUES (188, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (162, 25, 6); 
+VALUES (189, 17, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (174, 5, 13); 
+VALUES (196, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (175, 11, 0); 
+VALUES (197, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (176, 12, 0); 
+VALUES (199, 20, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (179, 25, 0); 
+VALUES (202, 4, 8); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (182, 25, 0); 
+VALUES (206, 5, 8); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (183, 40, 6); 
+VALUES (207, 24, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (187, 40, 6); 
+VALUES (209, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (191, 20, 0); 
+VALUES (210, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (194, 40, 6); 
+VALUES (211, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (198, 25, 6); 
+VALUES (212, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (206, 4, 13); 
+VALUES (213, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (207, 15, 0); 
+VALUES (219, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (215, 32, 6); 
+VALUES (220, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (219, 18, 6); 
+VALUES (221, 18, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (220, 25, 0); 
+VALUES (222, 12, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (222, 25, 0); 
+VALUES (225, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (224, 40, 6); 
+VALUES (226, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (226, 4, 13); 
+VALUES (227, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (229, 25, 0); 
+VALUES (230, 44, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (230, 25, 0); 
+VALUES (232, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (234, 40, 6); 
-
-INSERT INTO alcohol(id, percentage, glassId)
-VALUES (235, 16, 6); 
+VALUES (235, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
 VALUES (241, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (244, 12, 0); 
+VALUES (247, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (249, 17, 6); 
+VALUES (249, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (252, 40, 7); 
+VALUES (250, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (255, 40, 7); 
+VALUES (253, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (257, 25, 6); 
+VALUES (254, 40, 6); 
+
+INSERT INTO alcohol(id, percentage, glassId)
+VALUES (255, 40, 5); 
+
+INSERT INTO alcohol(id, percentage, glassId)
+VALUES (257, 20, 7); 
+
+INSERT INTO alcohol(id, percentage, glassId)
+VALUES (258, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
 VALUES (260, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (261, 13, 0); 
+VALUES (263, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (262, 35, 0); 
+VALUES (271, 40, 5); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (263, 25, 0); 
+VALUES (272, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (265, 17, 0); 
+VALUES (273, 0, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (266, 40, 6); 
+VALUES (276, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (276, 40, 7); 
+VALUES (292, 16, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (277, 40, 7); 
+VALUES (299, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (286, 40, 6); 
+VALUES (300, 18, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (289, 40, 6); 
+VALUES (306, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (294, 0, 6); 
+VALUES (307, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (298, 40, 7); 
+VALUES (308, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (301, 25, 6); 
+VALUES (311, 25, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (303, 20, 0); 
+VALUES (317, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (310, 25, 0); 
+VALUES (319, 25, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (313, 25, 0); 
+VALUES (320, 40, 6); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (321, 40, 6); 
+VALUES (322, 13, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (328, 40, 6); 
+VALUES (323, 35, 7); 
 
 INSERT INTO alcohol(id, percentage, glassId)
-VALUES (331, 25, 0); 
+VALUES (332, 40, 6); 
+
+INSERT INTO alcohol(id, percentage, glassId)
+VALUES (333, 40, 6); 
 
 INSERT INTO juiceFruit(fruitName, isSweet)
 VALUES ("lemon", false); 
@@ -3321,6982 +3426,7297 @@ INSERT INTO juiceFruit(fruitName, isSweet)
 VALUES ("lime cordial", false); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (3, "orange"); 
+VALUES (16, "lemon"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (15, "lemon"); 
+VALUES (17, "lime"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (26, "apple"); 
+VALUES (22, "orange"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (27, "pineapple"); 
+VALUES (33, "pineapple"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (31, "grapefruit"); 
+VALUES (90, "passion fruit"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (39, "lime"); 
+VALUES (104, "grapefruit"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (68, "cranberry"); 
+VALUES (105, "grape"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (89, "cherry"); 
+VALUES (116, "cranberry"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (97, "fruit"); 
+VALUES (143, "roses sweetened lime"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (133, "guava"); 
+VALUES (175, "fruit punch"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (164, "roses sweetened lime"); 
+VALUES (179, "pineapple syrup"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (188, "tomato"); 
+VALUES (201, "pomegranate"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (199, "fruit punch"); 
+VALUES (217, "apple"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (201, "passion fruit"); 
+VALUES (228, "tomato"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (210, "grape"); 
+VALUES (282, "cherry"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (225, "lime cordial"); 
+VALUES (298, "fruit"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (312, "pomegranate"); 
+VALUES (309, "lime cordial"); 
 
 INSERT INTO juice(id, fruitName)
-VALUES (327, "pineapple syrup"); 
+VALUES (336, "guava"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (11, "lime", "in glass"); 
+VALUES (31, "lemon", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (19, "mint", "in glass"); 
+VALUES (32, "orange", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (58, "lemon", "in glass"); 
+VALUES (41, "lime", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (70, "pineapple", "in glass"); 
+VALUES (44, "pineapple", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (95, "fruit", "in glass"); 
+VALUES (86, "mint", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (103, "orange", "in glass"); 
+VALUES (98, "strawberries", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (115, "strawberries", "in glass"); 
+VALUES (157, "passion fruit syrup", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (236, "passion fruit syrup", "in glass"); 
+VALUES (169, "rosemary", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (270, "mini snickers bars", "in glass"); 
+VALUES (182, "lavender", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (296, "rosemary", "in glass"); 
+VALUES (256, "elderflower cordial", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (302, "elderflower cordial", "in glass"); 
+VALUES (278, "salted chocolate", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (318, "watermelon", "in glass"); 
+VALUES (297, "fruit", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (319, "salted chocolate", "in glass"); 
+VALUES (321, "watermelon", "in glass"); 
 
 INSERT INTO garnish(id, foodName, placement)
-VALUES (329, "lavender", "in glass"); 
+VALUES (335, "mini snickers bars", "in glass"); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (0, 0, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (0, 1, 3); 
+VALUES (0, 1, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (0, 2, 1.5); 
+VALUES (0, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (0, 3, 1.5); 
+VALUES (0, 3, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (1, 4, 1); 
+VALUES (1, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (1, 5, 6); 
+VALUES (1, 5, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (1, 6, 6); 
+VALUES (1, 6, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (2, 7, 1); 
+VALUES (1, 7, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (2, 8, 0.5); 
+VALUES (2, 8, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (2, 9, 0.5); 
+VALUES (2, 9, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (3, 1, 1.5); 
+VALUES (2, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (3, 10, 0.5); 
+VALUES (2, 10, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (3, 11, 0.5); 
+VALUES (2, 11, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (4, 12, 0.5); 
+VALUES (3, 12, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (4, 13, 1); 
+VALUES (3, 13, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (4, 14, 0.5); 
+VALUES (3, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (4, 15, 0.25); 
+VALUES (4, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (4, 16, 0.25); 
+VALUES (4, 15, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (4, 17, 1); 
+VALUES (4, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (5, 13, 2.25); 
+VALUES (5, 17, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (5, 18, 0.25); 
+VALUES (5, 18, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (5, 19, 2); 
+VALUES (5, 19, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (6, 20, 1.5); 
+VALUES (6, 20, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (6, 21, 2.75); 
+VALUES (6, 21, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (6, 22, 1); 
+VALUES (6, 4, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (7, 2, 1); 
+VALUES (6, 22, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (7, 23, 0.5); 
+VALUES (7, 5, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (7, 3, 4); 
+VALUES (7, 1, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (8, 24, 0.5); 
+VALUES (8, 23, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (8, 3, 4); 
+VALUES (8, 24, 10); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (8, 16, 0.25); 
+VALUES (8, 25, 25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (9, 7, 0.75); 
+VALUES (8, 26, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (9, 10, 1.5); 
+VALUES (8, 27, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (9, 25, 0.25); 
+VALUES (9, 28, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (10, 3, 1); 
+VALUES (9, 29, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (10, 26, 1); 
+VALUES (9, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (10, 27, 1); 
+VALUES (10, 30, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (10, 28, 1); 
+VALUES (10, 31, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (11, 22, 3); 
+VALUES (10, 22, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (11, 29, 1); 
+VALUES (10, 32, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (12, 24, 0.75); 
+VALUES (10, 33, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (12, 30, 0.5); 
+VALUES (11, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (12, 22, 8); 
+VALUES (11, 34, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (13, 3, 1.5); 
+VALUES (12, 35, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (13, 31, 1.25); 
+VALUES (12, 36, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (13, 26, 0.5); 
+VALUES (12, 22, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (13, 32, 1); 
+VALUES (12, 37, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (14, 1, 1); 
+VALUES (13, 18, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (14, 33, 1); 
+VALUES (13, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (14, 3, 1); 
+VALUES (13, 38, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (14, 15, 0.5); 
+VALUES (13, 39, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (14, 34, 3); 
+VALUES (14, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (14, 35, 1); 
+VALUES (14, 40, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (15, 36, 1); 
+VALUES (14, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (15, 34, 1); 
+VALUES (15, 42, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (16, 37, 1.5); 
+VALUES (15, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (16, 12, 0.75); 
+VALUES (16, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (16, 38, 0.75); 
+VALUES (16, 35, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (16, 13, 0.75); 
+VALUES (16, 22, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (16, 39, 0.5); 
+VALUES (17, 43, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (16, 40, 0.5); 
+VALUES (17, 31, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (16, 41, 0.75); 
+VALUES (17, 44, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (17, 42, 125); 
+VALUES (18, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (17, 5, 25.5); 
+VALUES (18, 45, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (17, 41, 1); 
+VALUES (19, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (18, 43, 1); 
+VALUES (19, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (18, 44, 1); 
+VALUES (19, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (18, 21, 1); 
+VALUES (19, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (19, 43, 0.75); 
+VALUES (20, 4, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (19, 23, 0.75); 
+VALUES (20, 5, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (19, 6, 1); 
+VALUES (20, 38, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (20, 45, 1); 
+VALUES (21, 5, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (20, 46, 1.5); 
+VALUES (21, 20, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (20, 10, 0.5); 
+VALUES (21, 48, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (21, 28, 5); 
+VALUES (22, 36, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (21, 47, 2); 
+VALUES (22, 18, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (21, 48, 0.25); 
+VALUES (22, 33, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (21, 49, 12); 
+VALUES (23, 49, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (22, 22, 5); 
+VALUES (23, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (22, 48, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (22, 50, 20); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (22, 2, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (22, 41, 20); 
+VALUES (23, 50, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (23, 51, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (23, 52, 1); 
+VALUES (24, 52, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (23, 2, 1); 
+VALUES (24, 53, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (23, 53, 1); 
+VALUES (25, 1, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (23, 54, 1); 
+VALUES (25, 54, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (24, 55, 2); 
+VALUES (26, 55, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (24, 49, 25); 
+VALUES (26, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (24, 56, 2); 
+VALUES (26, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (25, 57, 1.5); 
+VALUES (26, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (25, 58, 0.5); 
+VALUES (27, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (25, 17, 0.25); 
+VALUES (27, 57, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (25, 59, 0.5); 
+VALUES (27, 58, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (25, 60, 1); 
+VALUES (28, 59, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (25, 61, 1); 
+VALUES (28, 16, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (26, 62, 0.5); 
+VALUES (28, 35, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (26, 2, 0.5); 
+VALUES (28, 60, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (27, 13, 1.5); 
+VALUES (29, 14, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (27, 16, 0.5); 
+VALUES (29, 53, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (27, 58, 0.5); 
+VALUES (29, 61, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (27, 60, 1); 
+VALUES (29, 17, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (28, 63, 2.25); 
+VALUES (30, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (28, 64, 2.25); 
+VALUES (30, 36, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (28, 58, 1); 
+VALUES (30, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (29, 65, 1.25); 
+VALUES (31, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (29, 31, 2.75); 
+VALUES (31, 62, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (29, 6, 1); 
+VALUES (31, 1, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (30, 13, 2); 
+VALUES (32, 63, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (30, 54, 4); 
+VALUES (32, 55, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (30, 15, 0.75); 
+VALUES (32, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (31, 37, 12); 
+VALUES (32, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (31, 31, 8); 
+VALUES (32, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (31, 66, 3); 
+VALUES (33, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (31, 39, 3); 
+VALUES (33, 34, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (32, 67, 1.25); 
+VALUES (34, 21, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (32, 39, 0.25); 
+VALUES (34, 64, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (32, 64, 0.25); 
+VALUES (34, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (32, 68, 2); 
+VALUES (35, 66, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (33, 13, 1.5); 
+VALUES (35, 67, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (33, 69, 1); 
+VALUES (35, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (33, 27, 1); 
+VALUES (36, 1, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (33, 16, 0.25); 
+VALUES (36, 2, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (33, 70, 1); 
+VALUES (36, 68, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (34, 1, 2); 
+VALUES (36, 69, 32); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (34, 69, 0.5); 
+VALUES (37, 70, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (34, 39, 0.5); 
+VALUES (37, 71, 3.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (34, 66, 0.5); 
+VALUES (38, 17, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (35, 71, 0.5); 
+VALUES (38, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (35, 72, 0.5); 
+VALUES (38, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (35, 51, 1.5); 
+VALUES (38, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (36, 2, 1.75); 
+VALUES (38, 73, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (36, 11, 0.5); 
+VALUES (39, 74, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (36, 73, 0.25); 
+VALUES (39, 75, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (36, 74, 1); 
+VALUES (39, 58, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (36, 28, 4); 
+VALUES (40, 30, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (37, 13, 2); 
+VALUES (40, 76, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (37, 74, 5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (37, 11, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (38, 37, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (38, 2, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (38, 13, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (38, 51, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (38, 53, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (38, 75, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (39, 2, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (39, 74, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (40, 56, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (40, 76, 0.5); 
+VALUES (40, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (41, 77, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (41, 78, 0.75); 
+VALUES (41, 20, 2.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (41, 79, 2.5); 
+VALUES (41, 1, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (41, 26, 2.75); 
+VALUES (42, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (41, 28, 1); 
+VALUES (42, 78, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (42, 15, 1.75); 
+VALUES (42, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (42, 3, 5.25); 
+VALUES (43, 80, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (42, 40, 1.25); 
+VALUES (43, 62, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (42, 6, 1); 
+VALUES (44, 63, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (43, 80, 2); 
+VALUES (44, 81, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (43, 81, 1); 
+VALUES (44, 44, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (43, 12, 1); 
+VALUES (45, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (44, 82, 1.5); 
+VALUES (45, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (44, 83, 1); 
+VALUES (45, 46, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (44, 50, 1); 
+VALUES (45, 82, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (45, 2, 1.5); 
+VALUES (45, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (45, 31, 3); 
+VALUES (46, 18, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (46, 43, 1); 
+VALUES (46, 83, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (46, 84, 0.5); 
+VALUES (46, 22, 3.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (46, 22, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (47, 3, 4); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (47, 37, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (47, 2, 1); 
+VALUES (46, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (47, 85, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (47, 28, 1); 
+VALUES (47, 6, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (48, 86, 1.5); 
+VALUES (48, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (48, 1, 1.5); 
+VALUES (48, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (48, 28, 1); 
+VALUES (48, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (48, 5, 1); 
+VALUES (48, 86, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (49, 87, 2); 
+VALUES (48, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (49, 88, 0.75); 
+VALUES (48, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (49, 86, 0.5); 
+VALUES (49, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (50, 13, 2); 
+VALUES (49, 62, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (50, 2, 1); 
+VALUES (49, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (50, 16, 0.25); 
+VALUES (49, 73, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (50, 39, 1.5); 
+VALUES (50, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (50, 50, 0.25); 
+VALUES (50, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (50, 40, 0.25); 
+VALUES (50, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (50, 6, 1); 
+VALUES (50, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (51, 36, 0.75); 
+VALUES (50, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (51, 34, 1); 
+VALUES (50, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (51, 11, 1); 
+VALUES (51, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (51, 28, 1); 
+VALUES (51, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (52, 89, 75); 
+VALUES (51, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (52, 90, 3); 
+VALUES (51, 68, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (51, 84, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (52, 41, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (52, 89, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (52, 90, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (52, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (52, 92, 10); 
+VALUES (52, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (52, 93, 6); 
+VALUES (53, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (52, 2, 7); 
+VALUES (53, 24, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (53, 37, 1); 
+VALUES (53, 92, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (53, 2, 1); 
+VALUES (53, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (53, 94, 1); 
+VALUES (53, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (53, 69, 0.5); 
+VALUES (54, 94, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (53, 95, 1); 
+VALUES (54, 51, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (53, 28, 1); 
+VALUES (55, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (53, 96, 3); 
+VALUES (55, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (53, 97, 1); 
+VALUES (55, 95, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (54, 67, 2); 
+VALUES (56, 35, 3.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (54, 98, 0.5); 
+VALUES (56, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (54, 99, 0.25); 
+VALUES (56, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (54, 3, 1); 
+VALUES (57, 96, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (55, 16, 0.5); 
+VALUES (57, 97, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (55, 3, 0.5); 
+VALUES (58, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (55, 27, 0.75); 
+VALUES (58, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (55, 85, 1.5); 
+VALUES (58, 46, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (56, 100, 6); 
+VALUES (58, 44, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (56, 101, 1); 
+VALUES (58, 98, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (57, 102, 0.25); 
+VALUES (58, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (57, 41, 0.25); 
+VALUES (59, 99, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (57, 50, 1); 
+VALUES (59, 63, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (57, 56, 3); 
+VALUES (59, 78, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (57, 103, 1); 
+VALUES (59, 100, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (57, 32, 1); 
+VALUES (59, 101, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (58, 93, 1); 
+VALUES (59, 69, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (58, 58, 0.25); 
+VALUES (59, 102, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (58, 41, 8); 
+VALUES (59, 103, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (59, 104, 0.5); 
+VALUES (60, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (59, 105, 0.5); 
+VALUES (60, 104, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (60, 11, 0.5); 
+VALUES (61, 105, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (60, 106, 0.5); 
+VALUES (61, 106, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (60, 73, 0.25); 
+VALUES (61, 107, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (60, 33, 1); 
+VALUES (62, 95, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (60, 107, 1); 
+VALUES (62, 69, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (61, 1, 3); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (61, 108, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (61, 70, 1.5); 
+VALUES (62, 108, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (62, 109, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (62, 110, 1); 
+VALUES (62, 110, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (63, 1, 1); 
+VALUES (62, 3, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (63, 59, 1); 
+VALUES (63, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (63, 58, 0.5); 
+VALUES (63, 40, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (63, 17, 0.25); 
+VALUES (64, 111, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (63, 60, 1); 
+VALUES (64, 112, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (63, 61, 1); 
+VALUES (64, 78, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (64, 37, 3); 
+VALUES (64, 113, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (64, 39, 1.5); 
+VALUES (64, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (64, 60, 1.5); 
+VALUES (64, 17, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (64, 102, 0.25); 
+VALUES (64, 114, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (64, 50, 1); 
+VALUES (65, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (64, 111, 1); 
+VALUES (65, 115, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (65, 1, 1); 
+VALUES (65, 116, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (65, 7, 0.5); 
+VALUES (65, 22, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (65, 58, 0.5); 
+VALUES (66, 69, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (65, 17, 0.25); 
+VALUES (66, 27, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (65, 60, 1); 
+VALUES (66, 117, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (66, 1, 0.5); 
+VALUES (67, 1, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (66, 57, 1.5); 
+VALUES (67, 118, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (66, 58, 0.5); 
+VALUES (68, 20, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (66, 17, 0.25); 
+VALUES (68, 119, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (66, 61, 1); 
+VALUES (68, 38, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (67, 56, 1.75); 
+VALUES (68, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (67, 73, 0.25); 
+VALUES (69, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (67, 50, 1); 
+VALUES (69, 116, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (67, 41, 0.25); 
+VALUES (69, 104, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (68, 2, 1.5); 
+VALUES (70, 6, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (68, 43, 1.5); 
+VALUES (70, 16, 7); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (68, 49, 0.25); 
+VALUES (71, 62, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (68, 110, 1); 
+VALUES (71, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (69, 22, 2); 
+VALUES (71, 58, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (69, 50, 2); 
+VALUES (72, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (69, 41, 2); 
+VALUES (72, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (69, 5, 32); 
+VALUES (73, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (70, 1, 2); 
+VALUES (73, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (70, 15, 1); 
+VALUES (73, 33, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (70, 50, 0.25); 
+VALUES (74, 111, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (70, 103, 1); 
+VALUES (74, 1, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (70, 32, 1); 
+VALUES (74, 68, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (71, 2, 1.5); 
+VALUES (74, 3, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (71, 16, 0.5); 
+VALUES (75, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (71, 3, 1); 
+VALUES (75, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (72, 112, 0.5); 
+VALUES (75, 120, 25.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (72, 50, 0.25); 
+VALUES (75, 98, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (72, 48, 0.25); 
+VALUES (75, 121, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (72, 5, 12); 
+VALUES (75, 122, 4.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (73, 13, 3); 
+VALUES (75, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (73, 7, 1.5); 
+VALUES (76, 4, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (73, 3, 1.5); 
+VALUES (76, 124, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (73, 73, 0.25); 
+VALUES (77, 125, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (74, 113, 1.5); 
+VALUES (77, 2, 25.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (74, 101, 1); 
+VALUES (77, 63, 17); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (74, 114, 0.5); 
+VALUES (78, 126, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (74, 68, 1); 
+VALUES (78, 2, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (75, 2, 15); 
+VALUES (78, 127, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (75, 115, 24); 
+VALUES (78, 68, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (75, 39, 4); 
+VALUES (78, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (75, 75, 12); 
+VALUES (79, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (75, 116, 8); 
+VALUES (79, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (75, 117, 8); 
+VALUES (79, 128, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (76, 118, 1.5); 
+VALUES (79, 36, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (76, 7, 1); 
+VALUES (79, 116, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (76, 12, 1); 
+VALUES (80, 129, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (76, 25, 0.25); 
+VALUES (80, 31, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (77, 2, 0.75); 
+VALUES (80, 68, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (77, 65, 0.5); 
+VALUES (81, 94, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (77, 51, 0.5); 
+VALUES (81, 51, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (77, 119, 1); 
+VALUES (82, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (78, 13, 2); 
+VALUES (82, 130, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (78, 41, 0.5); 
+VALUES (82, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (78, 17, 0.25); 
+VALUES (83, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (78, 35, 1); 
+VALUES (83, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (79, 24, 1.5); 
+VALUES (83, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (79, 53, 3); 
+VALUES (83, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (80, 120, 4); 
+VALUES (83, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (80, 121, 1); 
+VALUES (84, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (80, 122, 1); 
+VALUES (84, 36, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (81, 118, 1.5); 
+VALUES (84, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (81, 7, 0.5); 
+VALUES (85, 18, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (81, 12, 0.5); 
+VALUES (85, 131, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (81, 102, 0.25); 
+VALUES (85, 86, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (82, 33, 1.5); 
+VALUES (86, 52, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (82, 123, 0.5); 
+VALUES (86, 132, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (82, 2, 0.5); 
+VALUES (86, 133, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (82, 3, 1); 
+VALUES (87, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (82, 15, 0.25); 
+VALUES (87, 36, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (83, 13, 2); 
+VALUES (87, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (83, 16, 0.25); 
+VALUES (87, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (83, 58, 0.5); 
+VALUES (87, 44, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (83, 6, 1); 
+VALUES (88, 134, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (83, 11, 1); 
+VALUES (88, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (84, 1, 3); 
+VALUES (88, 135, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (84, 124, 1); 
+VALUES (88, 68, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (84, 15, 1); 
+VALUES (88, 21, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (85, 81, 1); 
+VALUES (88, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (85, 7, 1); 
+VALUES (89, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (85, 80, 1.25); 
+VALUES (89, 136, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (85, 90, 1); 
+VALUES (89, 137, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (86, 125, 1.5); 
+VALUES (90, 70, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (86, 21, 1.25); 
+VALUES (90, 138, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (86, 22, 6); 
+VALUES (91, 68, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (87, 50, 20); 
+VALUES (91, 2, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (87, 126, 8); 
+VALUES (91, 1, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (87, 22, 1.5); 
+VALUES (91, 109, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (87, 48, 2); 
+VALUES (91, 4, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (87, 41, 24); 
+VALUES (91, 139, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (87, 2, 1); 
+VALUES (92, 78, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (88, 13, 1.5); 
+VALUES (92, 42, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (88, 25, 0.25); 
+VALUES (93, 18, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (88, 103, 0.25); 
+VALUES (93, 17, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (88, 127, 1); 
+VALUES (93, 71, 3.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (89, 11, 2); 
+VALUES (93, 140, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (89, 50, 1); 
+VALUES (93, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (89, 128, 3); 
+VALUES (94, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (89, 28, 1); 
+VALUES (94, 141, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (90, 69, 0.5); 
+VALUES (95, 63, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (90, 24, 4.5); 
+VALUES (95, 142, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (90, 71, 4); 
+VALUES (95, 58, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (90, 28, 4); 
+VALUES (96, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (91, 1, 1.5); 
+VALUES (96, 128, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (91, 11, 0.5); 
+VALUES (96, 45, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (91, 17, 0.25); 
+VALUES (97, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (92, 5, 48); 
+VALUES (97, 143, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (92, 42, 75); 
+VALUES (97, 116, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (92, 129, 0.25); 
+VALUES (97, 144, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (92, 130, 3); 
+VALUES (98, 63, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (93, 40, 0.5); 
+VALUES (98, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (93, 15, 1); 
+VALUES (98, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (93, 34, 1); 
+VALUES (99, 101, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (94, 12, 0.5); 
+VALUES (99, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (94, 13, 1.5); 
+VALUES (99, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (94, 76, 0.5); 
+VALUES (99, 116, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (95, 1, 1.5); 
+VALUES (100, 0, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (95, 14, 1); 
+VALUES (100, 145, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (95, 69, 0.25); 
+VALUES (100, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (95, 15, 0.5); 
+VALUES (100, 146, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (95, 60, 1); 
+VALUES (100, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (95, 103, 1); 
+VALUES (100, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (96, 131, 1); 
+VALUES (101, 111, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (96, 132, 1); 
+VALUES (101, 17, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (97, 84, 2); 
+VALUES (101, 147, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (97, 69, 0.5); 
+VALUES (101, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (97, 15, 0.5); 
+VALUES (101, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (98, 24, 1.5); 
+VALUES (101, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (98, 11, 1); 
+VALUES (102, 148, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (99, 23, 0.5); 
+VALUES (102, 149, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (99, 67, 0.5); 
+VALUES (103, 59, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (99, 58, 1); 
+VALUES (103, 6, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (99, 50, 1); 
+VALUES (104, 63, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (99, 131, 1); 
+VALUES (104, 87, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (100, 41, 6); 
+VALUES (104, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (100, 93, 0.5); 
+VALUES (104, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (100, 133, 16); 
+VALUES (104, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (100, 15, 0.75); 
+VALUES (105, 150, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (100, 70, 12); 
+VALUES (105, 51, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (100, 50, 8); 
+VALUES (106, 151, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (100, 27, 32); 
+VALUES (106, 18, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (101, 118, 2); 
+VALUES (106, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (101, 134, 0.5); 
+VALUES (106, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (101, 12, 0.5); 
+VALUES (107, 152, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (101, 35, 1); 
+VALUES (107, 153, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (102, 135, 0.75); 
+VALUES (107, 154, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (102, 101, 0.75); 
+VALUES (107, 6, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (102, 51, 0.75); 
+VALUES (107, 11, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (102, 136, 1.25); 
+VALUES (107, 94, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (103, 137, 2); 
+VALUES (107, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (103, 69, 0.5); 
+VALUES (108, 70, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (103, 11, 2); 
+VALUES (108, 155, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (103, 53, 2); 
+VALUES (108, 22, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (104, 50, 8); 
+VALUES (109, 111, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (104, 41, 6); 
+VALUES (109, 156, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (104, 138, 2); 
+VALUES (109, 17, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (104, 139, 0.5); 
+VALUES (109, 157, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (104, 140, 4); 
+VALUES (109, 131, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (104, 84, 8); 
+VALUES (109, 86, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (104, 141, 3); 
+VALUES (110, 78, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (104, 142, 0.25); 
+VALUES (110, 158, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (105, 63, 1); 
+VALUES (111, 18, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (105, 13, 1); 
+VALUES (111, 36, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (105, 74, 4); 
+VALUES (111, 159, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (106, 2, 0.5); 
+VALUES (111, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (106, 143, 12.5); 
+VALUES (111, 150, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (106, 41, 0.5); 
+VALUES (112, 111, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (106, 50, 1.75); 
+VALUES (112, 160, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (107, 144, 1); 
+VALUES (112, 161, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (107, 24, 1); 
+VALUES (112, 1, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (108, 1, 1); 
+VALUES (113, 162, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (108, 27, 1); 
+VALUES (113, 68, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (108, 15, 0.25); 
+VALUES (113, 2, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (109, 64, 1.75); 
+VALUES (113, 163, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (109, 15, 0.75); 
+VALUES (113, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (109, 28, 1); 
+VALUES (114, 86, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (109, 58, 1); 
+VALUES (114, 21, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (110, 145, 1.5); 
+VALUES (114, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (110, 146, 10); 
+VALUES (114, 68, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (110, 28, 1); 
+VALUES (115, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (111, 2, 1.75); 
+VALUES (115, 164, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (111, 43, 0.5); 
+VALUES (116, 79, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (111, 40, 0.25); 
+VALUES (116, 74, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (112, 2, 1.25); 
+VALUES (117, 165, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (112, 147, 0.25); 
+VALUES (117, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (113, 148, 3); 
+VALUES (117, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (113, 22, 1); 
+VALUES (117, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (114, 149, 7.5); 
+VALUES (118, 18, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (114, 83, 1); 
+VALUES (118, 166, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (115, 72, 0.5); 
+VALUES (118, 167, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (115, 71, 0.5); 
+VALUES (119, 2, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (115, 150, 0.25); 
+VALUES (119, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (116, 2, 1.5); 
+VALUES (119, 49, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (116, 151, 6); 
+VALUES (120, 4, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (116, 15, 1); 
+VALUES (120, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 152, 6); 
+VALUES (120, 114, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 50, 2); 
+VALUES (120, 40, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 5, 16); 
+VALUES (120, 14, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 1, 4); 
+VALUES (121, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 56, 4); 
+VALUES (121, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 48, 0.25); 
+VALUES (121, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 96, 0.25); 
+VALUES (121, 17, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 153, 8); 
+VALUES (121, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 60, 6); 
+VALUES (121, 38, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (117, 111, 1); 
+VALUES (121, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (118, 13, 1.75); 
+VALUES (122, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (118, 15, 0.75); 
+VALUES (122, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (118, 66, 0.75); 
+VALUES (122, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (119, 57, 1.5); 
+VALUES (122, 168, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (119, 12, 1); 
+VALUES (122, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (119, 27, 1); 
+VALUES (122, 169, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (120, 25, 0.25); 
+VALUES (122, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (120, 13, 1.5); 
+VALUES (123, 170, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (120, 154, 0.75); 
+VALUES (123, 85, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (120, 35, 1); 
+VALUES (124, 4, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (121, 67, 0.75); 
+VALUES (124, 102, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (121, 39, 0.5); 
+VALUES (124, 8, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (121, 28, 1); 
+VALUES (124, 144, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (121, 74, 1); 
+VALUES (125, 55, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (122, 13, 2); 
+VALUES (125, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (122, 148, 0.5); 
+VALUES (125, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (122, 15, 0.5); 
+VALUES (126, 78, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (122, 35, 1); 
+VALUES (126, 158, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (123, 63, 3); 
+VALUES (127, 67, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (123, 151, 12); 
+VALUES (127, 34, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (124, 67, 0.75); 
+VALUES (127, 3, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (124, 155, 0.5); 
+VALUES (128, 34, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (124, 28, 1); 
+VALUES (128, 111, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (124, 156, 1); 
+VALUES (128, 42, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (125, 13, 2.25); 
+VALUES (129, 171, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (125, 15, 0.75); 
+VALUES (129, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (125, 40, 0.75); 
+VALUES (129, 172, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (125, 157, 1); 
+VALUES (129, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (126, 143, 25); 
+VALUES (129, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (126, 2, 5); 
+VALUES (130, 129, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (126, 37, 7); 
+VALUES (130, 44, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (126, 34, 75); 
+VALUES (131, 130, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (127, 13, 2); 
+VALUES (131, 20, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (127, 58, 0.5); 
+VALUES (131, 164, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (127, 17, 0.25); 
+VALUES (132, 63, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (127, 61, 1); 
+VALUES (132, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (128, 158, 1.5); 
+VALUES (132, 6, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (128, 13, 0.75); 
+VALUES (133, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (128, 102, 0.25); 
+VALUES (133, 63, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (128, 35, 1); 
+VALUES (133, 18, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (129, 159, 1.5); 
+VALUES (133, 53, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (129, 16, 0.25); 
+VALUES (133, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (129, 11, 0.5); 
+VALUES (133, 6, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (130, 13, 2); 
+VALUES (134, 75, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (130, 160, 0.5); 
+VALUES (134, 8, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (130, 17, 0.25); 
+VALUES (134, 63, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (130, 58, 0.5); 
+VALUES (135, 18, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (130, 60, 1); 
+VALUES (135, 87, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (130, 61, 1); 
+VALUES (135, 22, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (131, 83, 1); 
+VALUES (135, 114, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (131, 80, 1); 
+VALUES (136, 149, 7.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (131, 161, 1); 
+VALUES (136, 67, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (131, 37, 25); 
+VALUES (137, 80, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (131, 84, 0.5); 
+VALUES (137, 58, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (131, 76, 1.5); 
+VALUES (137, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (131, 3, 1); 
+VALUES (137, 172, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (131, 15, 0.5); 
+VALUES (137, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (132, 113, 1.5); 
+VALUES (138, 162, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (132, 43, 1.5); 
+VALUES (138, 68, 10); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (132, 85, 1); 
+VALUES (138, 173, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (133, 14, 1); 
+VALUES (138, 163, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (133, 100, 4); 
+VALUES (138, 86, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (133, 2, 1); 
+VALUES (139, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (133, 54, 135.5); 
+VALUES (139, 136, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (133, 3, 0.5); 
+VALUES (139, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (134, 162, 1); 
+VALUES (139, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (134, 163, 1); 
+VALUES (140, 119, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (135, 2, 1); 
+VALUES (140, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (135, 164, 1); 
+VALUES (140, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (135, 68, 1); 
+VALUES (141, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (135, 119, 1); 
+VALUES (141, 68, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (136, 165, 0.5); 
+VALUES (141, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (136, 166, 1); 
+VALUES (141, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (137, 167, 4); 
+VALUES (142, 175, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (137, 41, 10); 
+VALUES (142, 144, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (137, 168, 0.25); 
+VALUES (142, 53, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (137, 96, 0.25); 
+VALUES (142, 78, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (137, 19, 0.25); 
+VALUES (143, 122, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (138, 94, 1.75); 
+VALUES (143, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (138, 39, 0.75); 
+VALUES (143, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (138, 169, 2); 
+VALUES (144, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (139, 42, 12); 
+VALUES (144, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (139, 170, 0.25); 
+VALUES (144, 176, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (139, 48, 0.25); 
+VALUES (144, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (139, 171, 8); 
+VALUES (144, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (139, 172, 1); 
+VALUES (145, 177, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (140, 81, 1.5); 
+VALUES (145, 162, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (140, 3, 2.5); 
+VALUES (145, 2, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (140, 173, 2.5); 
+VALUES (145, 68, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (140, 90, 1); 
+VALUES (146, 116, 32); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (141, 14, 0.75); 
+VALUES (146, 2, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (141, 13, 1.5); 
+VALUES (146, 33, 32); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (141, 12, 0.75); 
+VALUES (146, 178, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (141, 16, 0.25); 
+VALUES (146, 91, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (141, 15, 0.25); 
+VALUES (147, 165, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (141, 127, 1); 
+VALUES (147, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (142, 94, 3); 
+VALUES (147, 179, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (142, 174, 12); 
+VALUES (147, 180, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (143, 175, 3.5); 
+VALUES (147, 114, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (143, 176, 5.25); 
+VALUES (147, 181, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (143, 6, 1); 
+VALUES (147, 182, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (144, 41, 16); 
+VALUES (148, 1, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (144, 50, 16); 
+VALUES (148, 183, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (144, 22, 4); 
+VALUES (148, 2, 20); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (144, 177, 0.5); 
+VALUES (148, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (144, 2, 12); 
+VALUES (148, 68, 20); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (144, 178, 1); 
+VALUES (149, 23, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (145, 16, 1); 
+VALUES (149, 166, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (145, 43, 1); 
+VALUES (149, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (145, 21, 1); 
+VALUES (150, 18, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (146, 135, 1.5); 
+VALUES (150, 63, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (146, 162, 1); 
+VALUES (150, 53, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (146, 3, 4); 
+VALUES (150, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (146, 27, 4); 
+VALUES (150, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (146, 68, 4); 
+VALUES (150, 6, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (147, 13, 2); 
+VALUES (150, 146, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (147, 58, 0.5); 
+VALUES (150, 72, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (147, 17, 0.25); 
+VALUES (150, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (147, 130, 1); 
+VALUES (151, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (147, 61, 1); 
+VALUES (151, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (148, 179, 0.75); 
+VALUES (151, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (148, 180, 0.75); 
+VALUES (152, 70, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (148, 160, 0.75); 
+VALUES (152, 184, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (149, 37, 1.75); 
+VALUES (152, 22, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (149, 23, 0.75); 
+VALUES (152, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (149, 27, 2.25); 
+VALUES (153, 62, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (149, 39, 0.25); 
+VALUES (153, 172, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (149, 176, 1); 
+VALUES (153, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (150, 84, 2); 
+VALUES (153, 58, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (150, 58, 0.5); 
+VALUES (153, 93, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (150, 17, 0.25); 
+VALUES (154, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (150, 127, 1); 
+VALUES (154, 185, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (151, 56, 3); 
+VALUES (154, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (151, 76, 0.5); 
+VALUES (155, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (151, 35, 1); 
+VALUES (155, 21, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (152, 2, 1); 
+VALUES (155, 186, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (152, 51, 1); 
+VALUES (155, 16, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (152, 143, 1); 
+VALUES (155, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (152, 127, 1); 
+VALUES (156, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (153, 22, 1); 
+VALUES (156, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (153, 140, 2); 
+VALUES (156, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (154, 0, 1.5); 
+VALUES (156, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (154, 43, 0.5); 
+VALUES (156, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (154, 160, 1); 
+VALUES (157, 172, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (154, 111, 0.25); 
+VALUES (157, 2, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (155, 161, 34); 
+VALUES (157, 25, 13); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (155, 41, 4.25); 
+VALUES (157, 69, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (155, 50, 60); 
+VALUES (157, 183, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (155, 129, 1); 
+VALUES (157, 111, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (155, 92, 3); 
+VALUES (157, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (155, 35, 0.5); 
+VALUES (158, 171, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (156, 43, 1); 
+VALUES (158, 58, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (156, 131, 1); 
+VALUES (158, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (156, 16, 0.25); 
+VALUES (158, 172, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (157, 43, 2); 
+VALUES (158, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (157, 5, 8); 
+VALUES (159, 62, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (157, 55, 2); 
+VALUES (159, 187, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (158, 1, 1.5); 
+VALUES (160, 63, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (158, 31, 3); 
+VALUES (160, 184, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (158, 102, 0.25); 
+VALUES (160, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (159, 13, 2); 
+VALUES (160, 146, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (159, 12, 0.5); 
+VALUES (160, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (159, 102, 0.25); 
+VALUES (161, 166, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (159, 66, 0.25); 
+VALUES (161, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (159, 32, 1); 
+VALUES (161, 64, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (160, 7, 0.75); 
+VALUES (162, 5, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (160, 56, 2.5); 
+VALUES (162, 35, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (160, 73, 0.25); 
+VALUES (162, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (160, 28, 23); 
+VALUES (163, 104, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (160, 32, 1); 
+VALUES (163, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (160, 90, 1); 
+VALUES (163, 163, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (161, 1, 1); 
+VALUES (164, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (161, 181, 0.5); 
+VALUES (164, 45, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (161, 69, 0.5); 
+VALUES (164, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (161, 136, 1.5); 
+VALUES (165, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (161, 127, 1); 
+VALUES (165, 188, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (162, 84, 2); 
+VALUES (165, 17, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (162, 130, 1); 
+VALUES (165, 114, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (162, 50, 0.25); 
+VALUES (165, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (162, 160, 0.5); 
+VALUES (166, 112, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (162, 111, 0.25); 
+VALUES (166, 22, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (163, 21, 0.75); 
+VALUES (166, 17, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (163, 182, 0.75); 
+VALUES (166, 36, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (163, 43, 0.75); 
+VALUES (167, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (163, 183, 0.5); 
+VALUES (167, 79, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (163, 5, 1); 
+VALUES (167, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (164, 57, 2); 
+VALUES (167, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (164, 58, 0.5); 
+VALUES (168, 1, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (164, 17, 0.25); 
+VALUES (168, 119, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (164, 60, 1); 
+VALUES (168, 126, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (164, 127, 1); 
+VALUES (168, 3, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (165, 2, 1); 
+VALUES (169, 170, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (165, 24, 1); 
+VALUES (169, 85, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (165, 184, 1); 
+VALUES (170, 189, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (166, 37, 1.5); 
+VALUES (170, 154, 10); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (166, 185, 0.75); 
+VALUES (170, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (166, 186, 1.5); 
+VALUES (170, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (166, 22, 1.5); 
+VALUES (171, 69, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (167, 26, 3); 
+VALUES (171, 190, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (167, 135, 1); 
+VALUES (171, 191, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (167, 129, 0.25); 
+VALUES (172, 52, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (168, 187, 1); 
+VALUES (172, 132, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (168, 15, 0.75); 
+VALUES (172, 192, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (168, 169, 0.5); 
+VALUES (173, 2, 64); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (168, 100, 1); 
+VALUES (173, 68, 48); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (169, 2, 1.5); 
+VALUES (173, 54, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (169, 188, 3); 
+VALUES (173, 193, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (169, 15, 0.25); 
+VALUES (173, 194, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (169, 189, 0.25); 
+VALUES (174, 195, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (169, 190, 3); 
+VALUES (174, 153, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (169, 11, 1); 
+VALUES (175, 53, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (170, 13, 1.5); 
+VALUES (175, 104, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (170, 121, 0.5); 
+VALUES (175, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (170, 154, 0.5); 
+VALUES (175, 33, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (171, 43, 1); 
+VALUES (175, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (171, 21, 1); 
+VALUES (175, 181, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (171, 105, 0.25); 
+VALUES (176, 142, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (171, 184, 2); 
+VALUES (176, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (171, 22, 2); 
+VALUES (176, 22, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (172, 1, 3); 
+VALUES (176, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (172, 11, 1); 
+VALUES (177, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (172, 50, 0.5); 
+VALUES (177, 11, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (172, 19, 4); 
+VALUES (177, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (172, 6, 1); 
+VALUES (178, 118, 25.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (173, 7, 1); 
+VALUES (178, 4, 59.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (173, 8, 1.5); 
+VALUES (178, 196, 59.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (173, 35, 1); 
+VALUES (178, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (174, 191, 1); 
+VALUES (178, 116, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (174, 32, 0.75); 
+VALUES (179, 14, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (174, 40, 0.5); 
+VALUES (179, 197, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (174, 143, 3.5); 
+VALUES (179, 183, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (174, 192, 2); 
+VALUES (179, 6, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (175, 24, 1); 
+VALUES (180, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (175, 58, 0.5); 
+VALUES (180, 166, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (175, 28, 1); 
+VALUES (180, 167, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (175, 32, 1); 
+VALUES (181, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (176, 5, 16); 
+VALUES (181, 91, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (176, 4, 1); 
+VALUES (181, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (176, 193, 1); 
+VALUES (182, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (177, 143, 5); 
+VALUES (182, 44, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (177, 2, 1); 
+VALUES (182, 17, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (177, 51, 0.5); 
+VALUES (182, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (177, 69, 0.5); 
+VALUES (183, 198, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (177, 50, 1); 
+VALUES (183, 190, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (177, 28, 1); 
+VALUES (184, 18, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (178, 100, 1); 
+VALUES (184, 79, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (178, 50, 1); 
+VALUES (184, 95, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (178, 102, 0.25); 
+VALUES (184, 69, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (178, 35, 1); 
+VALUES (184, 147, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (178, 38, 0.25); 
+VALUES (185, 154, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (179, 14, 1); 
+VALUES (185, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (179, 69, 1); 
+VALUES (185, 8, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (179, 11, 1); 
+VALUES (185, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (180, 39, 1.5); 
+VALUES (185, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (180, 13, 0.75); 
+VALUES (185, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (180, 175, 1.5); 
+VALUES (186, 18, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (181, 194, 5); 
+VALUES (186, 199, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (181, 15, 3); 
+VALUES (187, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (181, 23, 1); 
+VALUES (187, 75, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (181, 195, 1); 
+VALUES (188, 101, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (182, 196, 1); 
+VALUES (188, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (182, 105, 1); 
+VALUES (188, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (183, 41, 24); 
+VALUES (188, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (183, 50, 8); 
+VALUES (189, 111, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (183, 92, 12); 
+VALUES (189, 200, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (183, 129, 2); 
+VALUES (189, 201, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (183, 35, 1); 
+VALUES (189, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (183, 161, 25.5); 
+VALUES (189, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (183, 84, 2); 
+VALUES (190, 202, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (184, 13, 2); 
+VALUES (190, 7, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (184, 61, 1); 
+VALUES (191, 110, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (184, 50, 1); 
+VALUES (191, 203, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (184, 19, 4); 
+VALUES (191, 183, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (184, 103, 1); 
+VALUES (191, 24, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (184, 127, 1); 
+VALUES (191, 204, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (185, 94, 1.5); 
+VALUES (192, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (185, 69, 0.5); 
+VALUES (192, 16, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (185, 39, 1); 
+VALUES (192, 105, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (185, 96, 1); 
+VALUES (192, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (186, 19, 4); 
+VALUES (192, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (186, 56, 2.5); 
+VALUES (193, 69, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (186, 17, 0.25); 
+VALUES (193, 110, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (186, 41, 0.5); 
+VALUES (193, 84, 32); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (187, 2, 2); 
+VALUES (193, 161, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (187, 39, 2); 
+VALUES (193, 93, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (187, 34, 8); 
+VALUES (194, 52, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (188, 13, 1.75); 
+VALUES (194, 83, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (188, 12, 0.5); 
+VALUES (195, 34, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (188, 197, 1); 
+VALUES (195, 75, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (189, 198, 2.25); 
+VALUES (195, 58, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (189, 3, 0.75); 
+VALUES (196, 63, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (189, 39, 0.75); 
+VALUES (196, 62, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (189, 69, 2); 
+VALUES (196, 31, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (190, 37, 1); 
+VALUES (196, 205, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (190, 34, 1); 
+VALUES (197, 70, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (190, 199, 12.25); 
+VALUES (197, 63, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (190, 3, 12.25); 
+VALUES (197, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (190, 28, 1); 
+VALUES (197, 22, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (191, 11, 1); 
+VALUES (198, 53, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (191, 200, 0.5); 
+VALUES (198, 206, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (191, 201, 1.5); 
+VALUES (199, 18, 7); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (191, 34, 1); 
+VALUES (199, 207, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (191, 28, 1); 
+VALUES (199, 22, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (192, 174, 4); 
+VALUES (200, 7, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (192, 200, 8); 
+VALUES (200, 153, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (192, 143, 6); 
+VALUES (201, 144, 34); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (192, 3, 6); 
+VALUES (201, 208, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (192, 92, 6); 
+VALUES (201, 4, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (192, 202, 6); 
+VALUES (202, 55, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (192, 111, 0.25); 
+VALUES (202, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (192, 129, 3); 
+VALUES (202, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (193, 100, 1); 
+VALUES (202, 80, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (193, 3, 2); 
+VALUES (202, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (194, 128, 2.25); 
+VALUES (202, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (194, 203, 0.75); 
+VALUES (203, 161, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (194, 15, 0.75); 
+VALUES (203, 191, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (195, 13, 2); 
+VALUES (203, 126, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (195, 76, 0.25); 
+VALUES (204, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (195, 3, 0.5); 
+VALUES (204, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (195, 16, 0.25); 
+VALUES (204, 58, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (196, 204, 5); 
+VALUES (204, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (196, 205, 5); 
+VALUES (205, 130, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (196, 28, 1); 
+VALUES (205, 209, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (197, 167, 16); 
+VALUES (206, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (197, 28, 6); 
+VALUES (206, 210, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (197, 50, 1); 
+VALUES (206, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (197, 11, 1); 
+VALUES (206, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (197, 96, 1); 
+VALUES (206, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (198, 206, 56.25); 
+VALUES (207, 41, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (198, 24, 1.5); 
+VALUES (207, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (198, 3, 1); 
+VALUES (207, 211, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (199, 2, 1); 
+VALUES (207, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (199, 207, 0.75); 
+VALUES (208, 186, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (199, 40, 0.5); 
+VALUES (208, 176, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (199, 15, 1); 
+VALUES (209, 62, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (200, 167, 8); 
+VALUES (209, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (200, 41, 16); 
+VALUES (209, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (200, 96, 0.25); 
+VALUES (209, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (200, 208, 0.25); 
+VALUES (210, 21, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (201, 115, 0.5); 
+VALUES (210, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (201, 166, 1); 
+VALUES (210, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (201, 26, 16); 
+VALUES (210, 73, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (202, 12, 1); 
+VALUES (210, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (202, 13, 1); 
+VALUES (210, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (202, 209, 0.25); 
+VALUES (211, 53, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (203, 13, 1); 
+VALUES (211, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (203, 12, 1); 
+VALUES (211, 79, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (203, 69, 0.25); 
+VALUES (212, 212, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (203, 25, 0.25); 
+VALUES (212, 213, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (203, 127, 1); 
+VALUES (212, 158, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (204, 84, 1); 
+VALUES (213, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (204, 1, 0.5); 
+VALUES (213, 166, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (204, 56, 0.5); 
+VALUES (213, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (204, 58, 0.5); 
+VALUES (213, 210, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (204, 17, 0.5); 
+VALUES (213, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (204, 61, 1); 
+VALUES (214, 99, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (205, 210, 1); 
+VALUES (214, 214, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (205, 211, 1); 
+VALUES (214, 116, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (205, 212, 1); 
+VALUES (215, 215, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (206, 23, 3.75); 
+VALUES (215, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (206, 34, 1); 
+VALUES (215, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (206, 28, 1); 
+VALUES (215, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (207, 24, 1); 
+VALUES (216, 111, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (207, 136, 1); 
+VALUES (216, 76, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (207, 44, 1); 
+VALUES (216, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (207, 27, 1); 
+VALUES (217, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (208, 1, 1.5); 
+VALUES (217, 73, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (208, 27, 1); 
+VALUES (217, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (208, 66, 0.25); 
+VALUES (217, 70, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (208, 16, 0.25); 
+VALUES (217, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (208, 32, 1); 
+VALUES (217, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (209, 56, 2); 
+VALUES (218, 5, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (209, 0, 1); 
+VALUES (218, 69, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (209, 184, 0.5); 
+VALUES (218, 103, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (210, 2, 0.5); 
+VALUES (219, 2, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (210, 213, 0.5); 
+VALUES (219, 216, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (210, 3, 0.5); 
+VALUES (219, 111, 7); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (210, 28, 1); 
+VALUES (219, 17, 3.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (210, 214, 0.25); 
+VALUES (219, 51, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (211, 13, 1.5); 
+VALUES (219, 82, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (211, 7, 1.5); 
+VALUES (220, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (211, 66, 0.25); 
+VALUES (220, 217, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (211, 73, 0.25); 
+VALUES (220, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (212, 105, 1); 
+VALUES (220, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (212, 183, 1); 
+VALUES (221, 4, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (212, 5, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (213, 131, 0.75); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (213, 132, 0.75); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (214, 2, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (214, 12, 0.75); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (214, 197, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (215, 5, 3.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (215, 3, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (215, 40, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (215, 166, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (216, 7, 3); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (216, 12, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (216, 6, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (217, 215, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (217, 49, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (218, 83, 6); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (218, 24, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (218, 216, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (219, 26, 16); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (219, 217, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (220, 144, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (220, 44, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (220, 53, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (221, 24, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (221, 39, 0.5); 
+VALUES (221, 166, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (221, 218, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (222, 50, 0.5); 
+VALUES (221, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (222, 11, 1); 
+VALUES (221, 167, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (222, 187, 2.5); 
+VALUES (222, 4, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (223, 54, 1); 
+VALUES (222, 219, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (223, 219, 1); 
+VALUES (222, 33, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (224, 132, 1); 
+VALUES (223, 170, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (224, 24, 0.75); 
+VALUES (223, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (224, 27, 0.25); 
+VALUES (224, 118, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (225, 13, 3); 
+VALUES (224, 45, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (225, 16, 0.75); 
+VALUES (224, 22, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (225, 184, 0.75); 
+VALUES (224, 42, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (225, 5, 0.75); 
+VALUES (225, 1, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (225, 60, 0.5); 
+VALUES (225, 108, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (226, 13, 2.25); 
+VALUES (226, 220, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (226, 2, 0.75); 
+VALUES (226, 76, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (226, 220, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (227, 13, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (227, 34, 4); 
+VALUES (226, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (227, 11, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (228, 57, 2); 
+VALUES (227, 221, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (228, 58, 0.5); 
+VALUES (228, 172, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (228, 17, 0.25); 
+VALUES (228, 2, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (228, 127, 1); 
+VALUES (228, 163, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (229, 72, 75); 
+VALUES (228, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (229, 81, 0.75); 
+VALUES (228, 183, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (230, 131, 1.5); 
+VALUES (229, 222, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (230, 118, 0.75); 
+VALUES (229, 19, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (230, 102, 3); 
+VALUES (229, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (230, 221, 1); 
+VALUES (230, 57, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (230, 28, 1); 
+VALUES (230, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (231, 2, 0.25); 
+VALUES (231, 87, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (231, 222, 0.25); 
+VALUES (231, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (231, 3, 0.25); 
+VALUES (232, 5, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (231, 101, 0.25); 
+VALUES (232, 20, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (232, 119, 34); 
+VALUES (233, 23, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (232, 223, 16); 
+VALUES (233, 62, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (232, 2, 16); 
+VALUES (233, 223, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (233, 37, 1); 
+VALUES (233, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (233, 2, 1); 
+VALUES (233, 86, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (233, 94, 1); 
+VALUES (234, 51, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (233, 13, 1); 
+VALUES (234, 196, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (233, 69, 1); 
+VALUES (235, 14, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (233, 114, 1); 
+VALUES (235, 4, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (233, 44, 1); 
+VALUES (235, 155, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (233, 135, 1); 
+VALUES (235, 196, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (234, 2, 0.5); 
+VALUES (235, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (234, 114, 0.5); 
+VALUES (236, 4, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (234, 224, 0.5); 
+VALUES (236, 224, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (234, 68, 0.5); 
+VALUES (236, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (235, 206, 1); 
+VALUES (237, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (235, 146, 1); 
+VALUES (237, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (235, 143, 1); 
+VALUES (237, 32, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (235, 49, 1); 
+VALUES (237, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (235, 54, 1); 
+VALUES (238, 207, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (235, 207, 1); 
+VALUES (238, 51, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (235, 58, 1); 
+VALUES (238, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (236, 2, 1.25); 
+VALUES (238, 11, 135.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (236, 13, 1.25); 
+VALUES (238, 22, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (236, 225, 1.75); 
+VALUES (239, 79, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (236, 28, 4); 
+VALUES (239, 22, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (237, 226, 75); 
+VALUES (239, 33, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (237, 215, 1); 
+VALUES (240, 207, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (238, 227, 1.5); 
+VALUES (240, 122, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (238, 69, 0.25); 
+VALUES (240, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (238, 27, 0.5); 
+VALUES (241, 62, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (239, 100, 1); 
+VALUES (241, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (239, 179, 0.25); 
+VALUES (241, 31, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (240, 94, 1); 
+VALUES (242, 154, 25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (240, 190, 8); 
+VALUES (242, 4, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (241, 2, 3); 
+VALUES (242, 111, 7); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (241, 155, 1); 
+VALUES (242, 91, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (241, 26, 6); 
+VALUES (243, 225, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (241, 15, 1.5); 
+VALUES (243, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (241, 143, 1); 
+VALUES (243, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (242, 37, 1.5); 
+VALUES (244, 53, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (242, 198, 1.5); 
+VALUES (244, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (242, 131, 1); 
+VALUES (244, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (242, 228, 0.25); 
+VALUES (244, 163, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (242, 16, 0.25); 
+VALUES (245, 5, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (242, 39, 0.25); 
+VALUES (245, 20, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (242, 73, 1); 
+VALUES (245, 48, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (243, 229, 1); 
+VALUES (245, 1, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (243, 156, 2); 
+VALUES (245, 37, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (243, 28, 1); 
+VALUES (246, 226, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (244, 230, 1); 
+VALUES (246, 142, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (244, 231, 0.5); 
+VALUES (246, 227, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (244, 137, 1); 
+VALUES (246, 146, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (244, 136, 0.25); 
+VALUES (247, 36, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (245, 2, 1.5); 
+VALUES (247, 207, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (245, 24, 0.75); 
+VALUES (247, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (246, 125, 1.75); 
+VALUES (248, 27, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (246, 24, 1.75); 
+VALUES (248, 69, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (246, 68, 4); 
+VALUES (248, 123, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (247, 44, 0.5); 
+VALUES (249, 18, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (247, 196, 0.5); 
+VALUES (249, 4, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (247, 105, 0.5); 
+VALUES (249, 159, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (248, 94, 1.5); 
+VALUES (250, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (248, 54, 1); 
+VALUES (250, 8, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (249, 0, 2); 
+VALUES (250, 154, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (249, 43, 1); 
+VALUES (250, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (249, 60, 1); 
+VALUES (251, 228, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (250, 57, 2); 
+VALUES (251, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (250, 58, 0.5); 
+VALUES (251, 229, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (250, 50, 0.25); 
+VALUES (252, 185, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (250, 161, 1); 
+VALUES (252, 195, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (250, 127, 1); 
+VALUES (252, 230, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (251, 232, 8); 
+VALUES (253, 130, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (251, 58, 0.25); 
+VALUES (253, 231, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (251, 70, 0.5); 
+VALUES (253, 189, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (252, 68, 2); 
+VALUES (254, 87, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (252, 6, 2); 
+VALUES (254, 166, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (252, 44, 0.5); 
+VALUES (254, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (252, 233, 0.5); 
+VALUES (255, 83, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (253, 234, 0.5); 
+VALUES (255, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (253, 94, 0.5); 
+VALUES (255, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (253, 16, 0.25); 
+VALUES (255, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (254, 131, 2); 
+VALUES (256, 207, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (254, 62, 0.25); 
+VALUES (256, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (255, 13, 1.5); 
+VALUES (256, 146, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (255, 15, 0.75); 
+VALUES (257, 215, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (255, 40, 0.5); 
+VALUES (257, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (255, 235, 0.75); 
+VALUES (258, 232, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (256, 0, 2); 
+VALUES (258, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (256, 231, 0.5); 
+VALUES (258, 233, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (257, 50, 2.5); 
+VALUES (258, 234, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (257, 112, 1.5); 
+VALUES (258, 235, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (257, 96, 0.25); 
+VALUES (259, 63, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (257, 41, 1.5); 
+VALUES (259, 80, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (257, 5, 16); 
+VALUES (259, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (257, 48, 0.25); 
+VALUES (259, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (258, 2, 0.75); 
+VALUES (259, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (258, 137, 0.75); 
+VALUES (259, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (258, 236, 0.75); 
+VALUES (260, 213, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (258, 136, 2.25); 
+VALUES (260, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (258, 218, 0.25); 
+VALUES (261, 154, 25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (259, 13, 1.75); 
+VALUES (261, 68, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (259, 39, 0.75); 
+VALUES (261, 4, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (259, 173, 3.5); 
+VALUES (262, 32, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (259, 237, 1); 
+VALUES (262, 4, 24); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (259, 58, 1); 
+VALUES (262, 2, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (260, 84, 1.5); 
+VALUES (263, 155, 46); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (260, 238, 0.5); 
+VALUES (263, 22, 20); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (261, 186, 1); 
+VALUES (263, 89, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (261, 203, 1); 
+VALUES (263, 108, 33); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (261, 112, 1); 
+VALUES (263, 236, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 41, 16); 
+VALUES (263, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 83, 0.75); 
+VALUES (264, 68, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 93, 1); 
+VALUES (264, 67, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 239, 4); 
+VALUES (264, 129, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 92, 3); 
+VALUES (264, 237, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 129, 1); 
+VALUES (264, 236, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 240, 2); 
+VALUES (264, 108, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 50, 1); 
+VALUES (264, 238, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (262, 5, 1); 
+VALUES (264, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 2, 1.5); 
+VALUES (264, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 135, 1.5); 
+VALUES (265, 34, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 241, 1.5); 
+VALUES (265, 100, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 3, 0.25); 
+VALUES (265, 1, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 27, 0.25); 
+VALUES (266, 87, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 242, 0.25); 
+VALUES (266, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 16, 0.25); 
+VALUES (266, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 28, 1); 
+VALUES (267, 217, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (263, 70, 1); 
+VALUES (267, 99, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (264, 27, 3.5); 
+VALUES (267, 108, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (264, 201, 2.25); 
+VALUES (268, 239, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (264, 15, 0.5); 
+VALUES (268, 240, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (264, 16, 0.5); 
+VALUES (268, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (265, 243, 1); 
+VALUES (269, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (265, 103, 2); 
+VALUES (269, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (266, 11, 1); 
+VALUES (269, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (266, 58, 1); 
+VALUES (269, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (266, 244, 25.5); 
+VALUES (270, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (266, 115, 8); 
+VALUES (270, 58, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (266, 245, 8); 
+VALUES (271, 195, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (266, 159, 4.5); 
+VALUES (271, 230, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (266, 6, 1); 
+VALUES (272, 241, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (267, 69, 1); 
+VALUES (272, 15, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (267, 14, 1); 
+VALUES (273, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (267, 15, 0.25); 
+VALUES (273, 79, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (268, 13, 2); 
+VALUES (273, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (268, 66, 0.25); 
+VALUES (274, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (268, 15, 0.25); 
+VALUES (274, 94, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (268, 25, 0.25); 
+VALUES (274, 38, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (268, 127, 1); 
+VALUES (274, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (269, 238, 0.5); 
+VALUES (275, 78, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (269, 137, 0.75); 
+VALUES (275, 242, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (269, 2, 0.5); 
+VALUES (275, 243, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (269, 120, 1); 
+VALUES (276, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (270, 1, 2); 
+VALUES (276, 164, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (270, 11, 0.5); 
+VALUES (276, 37, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (270, 49, 1); 
+VALUES (277, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (271, 67, 1.5); 
+VALUES (277, 29, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (271, 3, 1.5); 
+VALUES (277, 16, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (271, 69, 1.5); 
+VALUES (277, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (271, 34, 1); 
+VALUES (278, 70, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (272, 135, 2); 
+VALUES (278, 17, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (272, 246, 2); 
+VALUES (278, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (272, 68, 1); 
+VALUES (278, 244, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (273, 22, 6); 
+VALUES (278, 76, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (273, 114, 2); 
+VALUES (279, 68, 24); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (273, 112, 1); 
+VALUES (279, 2, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (273, 216, 1); 
+VALUES (279, 236, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (274, 0, 3); 
+VALUES (279, 108, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (274, 11, 1); 
+VALUES (279, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (274, 49, 1); 
+VALUES (279, 30, 25.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (274, 28, 1); 
+VALUES (279, 62, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (275, 137, 25.5); 
+VALUES (280, 132, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (275, 3, 34); 
+VALUES (280, 52, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (275, 247, 25.5); 
+VALUES (280, 8, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (276, 84, 1); 
+VALUES (281, 162, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (276, 180, 1); 
+VALUES (281, 14, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (276, 160, 1); 
+VALUES (281, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (276, 111, 1); 
+VALUES (281, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (277, 145, 1.25); 
+VALUES (281, 163, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (277, 248, 1.25); 
+VALUES (282, 98, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (277, 249, 0.25); 
+VALUES (282, 190, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (278, 21, 0.75); 
+VALUES (282, 162, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (278, 114, 0.5); 
+VALUES (282, 69, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (278, 40, 0.25); 
+VALUES (282, 191, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (278, 50, 0.25); 
+VALUES (283, 199, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (279, 231, 0.5); 
+VALUES (283, 217, 5.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (279, 13, 1.5); 
+VALUES (284, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (279, 3, 4); 
+VALUES (284, 45, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (279, 34, 1); 
+VALUES (284, 64, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (280, 0, 1); 
+VALUES (284, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (280, 181, 0.5); 
+VALUES (285, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (280, 3, 2); 
+VALUES (285, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (280, 27, 1); 
+VALUES (286, 245, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (281, 80, 2); 
+VALUES (286, 5, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (281, 12, 1); 
+VALUES (286, 37, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (281, 66, 0.25); 
+VALUES (287, 68, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (281, 73, 0.25); 
+VALUES (287, 89, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (281, 32, 1); 
+VALUES (287, 1, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (282, 131, 5); 
+VALUES (287, 111, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (282, 250, 1); 
+VALUES (287, 183, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (282, 251, 1); 
+VALUES (288, 63, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (283, 21, 1); 
+VALUES (288, 246, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (283, 238, 0.75); 
+VALUES (288, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (283, 85, 0.75); 
+VALUES (289, 247, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (284, 1, 1.25); 
+VALUES (289, 63, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (284, 231, 0.5); 
+VALUES (289, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (284, 160, 0.5); 
+VALUES (289, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (285, 13, 1.75); 
+VALUES (289, 98, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (285, 12, 0.5); 
+VALUES (290, 53, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (285, 197, 1); 
+VALUES (290, 248, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (286, 252, 2); 
+VALUES (291, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (286, 15, 0.75); 
+VALUES (291, 130, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (286, 253, 0.5); 
+VALUES (291, 8, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (286, 254, 0.5); 
+VALUES (291, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (286, 255, 0.25); 
+VALUES (292, 86, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (287, 43, 2.5); 
+VALUES (292, 16, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (287, 21, 0.5); 
+VALUES (292, 70, 8.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (288, 56, 2); 
+VALUES (292, 73, 8.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (288, 15, 1); 
+VALUES (292, 114, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (288, 50, 0.25); 
+VALUES (293, 136, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (288, 103, 1); 
+VALUES (293, 210, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (288, 32, 1); 
+VALUES (293, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (289, 184, 2); 
+VALUES (294, 79, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (289, 5, 8); 
+VALUES (294, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (289, 129, 1); 
+VALUES (294, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (289, 177, 1); 
+VALUES (295, 249, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (289, 42, 2); 
+VALUES (295, 69, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (289, 216, 1); 
+VALUES (295, 34, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (290, 13, 1.25); 
+VALUES (296, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (290, 81, 1.25); 
+VALUES (296, 87, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (290, 3, 3.25); 
+VALUES (296, 210, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (290, 90, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (291, 37, 3); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (291, 0, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (291, 222, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (291, 16, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (291, 27, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (291, 3, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (291, 136, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (292, 94, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (292, 188, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (292, 15, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (292, 190, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (292, 256, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (292, 58, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (293, 13, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (293, 38, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (293, 207, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (293, 15, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (294, 257, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (294, 15, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (294, 50, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (294, 28, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (295, 53, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (295, 24, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (295, 94, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (295, 3, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (296, 249, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (296, 143, 10); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (296, 58, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (296, 28, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (297, 180, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (297, 51, 1); 
+VALUES (296, 114, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (297, 1, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (298, 130, 4); 
+VALUES (297, 196, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (298, 50, 1.5); 
+VALUES (298, 34, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (298, 258, 13); 
+VALUES (298, 75, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (298, 5, 6); 
+VALUES (298, 58, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (298, 48, 0.25); 
+VALUES (299, 111, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (298, 37, 0.25); 
+VALUES (299, 104, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (298, 111, 1); 
+VALUES (299, 210, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (299, 19, 0.5); 
+VALUES (299, 17, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (299, 15, 1.25); 
+VALUES (300, 18, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (299, 0, 8.5); 
+VALUES (300, 166, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (299, 218, 8.5); 
+VALUES (300, 167, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (299, 73, 8); 
+VALUES (301, 30, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (300, 43, 1); 
+VALUES (301, 2, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (300, 145, 1); 
+VALUES (301, 22, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (300, 21, 1); 
+VALUES (301, 16, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (301, 199, 2); 
+VALUES (301, 236, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (301, 119, 1); 
+VALUES (301, 108, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (301, 94, 3); 
+VALUES (302, 10, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (301, 131, 1); 
+VALUES (302, 34, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (302, 13, 1.75); 
+VALUES (302, 53, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (302, 207, 0.75); 
+VALUES (302, 22, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (302, 39, 0.75); 
+VALUES (303, 30, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (302, 173, 2.75); 
+VALUES (303, 79, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (302, 11, 1); 
+VALUES (303, 76, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (302, 93, 1); 
+VALUES (304, 69, 3.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (303, 50, 0.25); 
+VALUES (304, 22, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (303, 218, 3); 
+VALUES (304, 38, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (303, 58, 1); 
+VALUES (304, 190, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (303, 84, 2); 
+VALUES (305, 48, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (303, 32, 1); 
+VALUES (305, 245, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (303, 103, 1); 
+VALUES (306, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (304, 2, 2); 
+VALUES (306, 22, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (304, 259, 1); 
+VALUES (307, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (304, 99, 0.25); 
+VALUES (307, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (304, 115, 5); 
+VALUES (307, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (304, 79, 1); 
+VALUES (307, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (305, 84, 0.75); 
+VALUES (307, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (305, 13, 0.75); 
+VALUES (308, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (305, 7, 0.75); 
+VALUES (308, 53, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (305, 61, 1); 
+VALUES (308, 63, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (305, 35, 1); 
+VALUES (308, 18, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (306, 260, 1); 
+VALUES (308, 6, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (306, 3, 8.5); 
+VALUES (308, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (307, 43, 2); 
+VALUES (309, 177, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (307, 261, 2); 
+VALUES (309, 32, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (307, 183, 4); 
+VALUES (310, 63, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (307, 262, 1); 
+VALUES (310, 17, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (307, 105, 0.5); 
+VALUES (310, 86, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (308, 0, 0.5); 
+VALUES (310, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (308, 2, 0.5); 
+VALUES (311, 150, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (308, 69, 0.5); 
+VALUES (311, 53, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (308, 94, 0.5); 
+VALUES (311, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (308, 263, 0.5); 
+VALUES (312, 21, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (308, 205, 1); 
+VALUES (312, 114, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (309, 24, 1.5); 
+VALUES (312, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (309, 3, 2.25); 
+VALUES (312, 68, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (309, 244, 5.25); 
+VALUES (313, 250, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (309, 90, 1); 
+VALUES (313, 34, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (310, 35, 1); 
+VALUES (314, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (310, 84, 2); 
+VALUES (314, 68, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (310, 34, 5); 
+VALUES (314, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (310, 102, 0.25); 
+VALUES (314, 21, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (311, 2, 16); 
+VALUES (314, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (311, 264, 3); 
+VALUES (314, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (311, 41, 24); 
+VALUES (315, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (312, 57, 2); 
+VALUES (315, 251, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (312, 58, 1); 
+VALUES (315, 114, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (312, 11, 1); 
+VALUES (315, 252, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (312, 17, 0.5); 
+VALUES (315, 253, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (312, 16, 0.25); 
+VALUES (316, 103, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (312, 61, 1); 
+VALUES (316, 254, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (313, 24, 1.5); 
+VALUES (316, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (313, 238, 0.75); 
+VALUES (316, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (314, 63, 1.5); 
+VALUES (317, 126, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (314, 101, 0.5); 
+VALUES (317, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (314, 65, 0.5); 
+VALUES (317, 183, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (314, 68, 1.5); 
+VALUES (317, 69, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (314, 27, 1.5); 
+VALUES (318, 152, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (315, 137, 1); 
+VALUES (318, 11, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (315, 24, 1); 
+VALUES (319, 230, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (315, 8, 0.5); 
+VALUES (319, 254, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (315, 15, 0.25); 
+VALUES (319, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (316, 39, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (316, 50, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (316, 13, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (316, 102, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (316, 218, 3); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (317, 24, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (317, 137, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (317, 28, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (317, 53, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (318, 130, 6); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (318, 50, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (318, 96, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (318, 5, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (318, 48, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (319, 1, 1.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (319, 69, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (319, 39, 0.5); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (319, 50, 0.25); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (319, 60, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (319, 19, 1); 
+VALUES (320, 51, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (320, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (320, 69, 1); 
+VALUES (320, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (320, 39, 1); 
+VALUES (320, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (321, 59, 1.5); 
+VALUES (320, 250, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (321, 160, 0.5); 
+VALUES (321, 83, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (321, 17, 0.25); 
+VALUES (321, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (321, 130, 1); 
+VALUES (321, 255, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (321, 111, 1); 
+VALUES (321, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (322, 213, 3); 
+VALUES (322, 53, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (322, 94, 1.5); 
+VALUES (322, 248, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (323, 122, 1); 
+VALUES (323, 18, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (323, 6, 1); 
+VALUES (323, 256, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (323, 3, 1); 
+VALUES (323, 257, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (323, 28, 1); 
+VALUES (323, 40, 2.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (324, 2, 0.5); 
+VALUES (323, 41, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (324, 1, 0.5); 
+VALUES (323, 129, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (324, 13, 0.5); 
+VALUES (323, 86, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (324, 94, 0.5); 
+VALUES (324, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (324, 58, 0.5); 
+VALUES (324, 87, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (324, 49, 0.25); 
+VALUES (324, 62, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (325, 81, 1); 
+VALUES (325, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (325, 7, 1); 
+VALUES (325, 68, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (325, 35, 1); 
+VALUES (325, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (325, 90, 1); 
+VALUES (325, 21, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (326, 12, 1); 
+VALUES (325, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (326, 56, 1); 
+VALUES (326, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (326, 162, 0.5); 
+VALUES (326, 58, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (326, 15, 0.5); 
+VALUES (326, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (326, 35, 1); 
+VALUES (326, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (327, 37, 4); 
+VALUES (326, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (327, 0, 2); 
+VALUES (326, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (327, 265, 1); 
+VALUES (327, 1, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (327, 51, 1); 
+VALUES (327, 69, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (327, 136, 6); 
+VALUES (327, 2, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (327, 28, 1); 
+VALUES (328, 4, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (328, 2, 0.75); 
+VALUES (328, 258, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (328, 233, 0.5); 
+VALUES (328, 22, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (328, 3, 1); 
+VALUES (328, 196, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (329, 0, 1.5); 
+VALUES (329, 259, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (329, 123, 0.5); 
+VALUES (329, 121, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (330, 16, 1); 
+VALUES (330, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (330, 3, 4); 
+VALUES (330, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (330, 27, 4); 
+VALUES (330, 230, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (331, 145, 0.75); 
+VALUES (330, 95, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (331, 21, 0.75); 
+VALUES (330, 1, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (331, 238, 0.75); 
+VALUES (331, 21, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (332, 82, 0.75); 
+VALUES (331, 64, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (332, 44, 0.75); 
+VALUES (332, 18, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (332, 68, 1); 
+VALUES (332, 17, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (332, 119, 0.25); 
+VALUES (332, 38, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (333, 13, 1.5); 
+VALUES (332, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (333, 180, 0.75); 
+VALUES (333, 99, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (334, 22, 1); 
+VALUES (333, 196, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (334, 50, 1); 
+VALUES (333, 8, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (334, 85, 1); 
+VALUES (333, 146, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (334, 239, 1); 
+VALUES (334, 260, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (335, 13, 1.5); 
+VALUES (334, 17, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (335, 263, 1.5); 
+VALUES (334, 101, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (335, 25, 0.25); 
+VALUES (334, 116, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (335, 15, 0.25); 
+VALUES (335, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (335, 176, 1); 
+VALUES (335, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (336, 21, 0.5); 
+VALUES (336, 211, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (336, 148, 0.5); 
+VALUES (336, 191, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (336, 43, 0.25); 
+VALUES (336, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (337, 94, 1.5); 
+VALUES (337, 261, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (337, 51, 1); 
+VALUES (337, 249, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (337, 39, 1); 
+VALUES (337, 57, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (337, 96, 1); 
+VALUES (338, 262, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (338, 86, 0.75); 
+VALUES (338, 263, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (338, 2, 1.5); 
+VALUES (338, 248, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (339, 84, 0.75); 
+VALUES (339, 264, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (339, 13, 0.75); 
+VALUES (339, 265, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (339, 12, 0.75); 
+VALUES (339, 216, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (339, 61, 1); 
+VALUES (339, 108, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (339, 35, 1); 
+VALUES (339, 266, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (340, 118, 1.5); 
+VALUES (339, 267, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (340, 7, 0.75); 
+VALUES (339, 268, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (340, 25, 0.25); 
+VALUES (339, 4, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (340, 197, 1); 
+VALUES (339, 2, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (341, 266, 1); 
+VALUES (339, 68, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (341, 43, 1); 
+VALUES (339, 194, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (341, 21, 1); 
+VALUES (340, 269, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (342, 14, 0.5); 
+VALUES (340, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (342, 159, 0.5); 
+VALUES (340, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (342, 13, 1); 
+VALUES (340, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (343, 114, 1.5); 
+VALUES (341, 111, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (343, 2, 1.5); 
+VALUES (341, 35, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (343, 6, 1); 
+VALUES (341, 33, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (344, 24, 2); 
+VALUES (341, 17, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (344, 37, 2); 
+VALUES (341, 222, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (344, 62, 4); 
+VALUES (342, 111, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (345, 84, 3); 
+VALUES (342, 102, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (345, 59, 9); 
+VALUES (342, 244, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (345, 152, 2); 
+VALUES (342, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (346, 13, 2); 
+VALUES (342, 222, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (346, 9, 1); 
+VALUES (343, 63, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (346, 76, 0.25); 
+VALUES (343, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (346, 11, 1); 
+VALUES (343, 87, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (347, 267, 2); 
+VALUES (343, 83, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (347, 84, 2); 
+VALUES (343, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (347, 24, 2); 
+VALUES (343, 184, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (348, 226, 1); 
+VALUES (343, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (348, 215, 1.5); 
+VALUES (344, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (349, 55, 24); 
+VALUES (344, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (349, 5, 8); 
+VALUES (344, 78, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (349, 182, 4); 
+VALUES (344, 270, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (349, 216, 1); 
+VALUES (344, 152, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (349, 268, 4); 
+VALUES (345, 62, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (349, 269, 4); 
+VALUES (345, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (349, 270, 15); 
+VALUES (345, 16, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 271, 1.5); 
+VALUES (346, 158, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 272, 0.5); 
+VALUES (346, 34, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 202, 1); 
+VALUES (346, 33, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 129, 1); 
+VALUES (347, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 273, 6); 
+VALUES (347, 36, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 274, 0.25); 
+VALUES (347, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 275, 0.5); 
+VALUES (348, 75, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 2, 12); 
+VALUES (348, 34, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 50, 4); 
+VALUES (348, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 41, 2); 
+VALUES (348, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (350, 141, 1); 
+VALUES (348, 58, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (351, 144, 0.5); 
+VALUES (349, 0, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (351, 276, 0.5); 
+VALUES (349, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (351, 277, 0.5); 
+VALUES (349, 136, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (352, 5, 16); 
+VALUES (350, 110, 125); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (352, 42, 4); 
+VALUES (350, 69, 25.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (352, 90, 32); 
+VALUES (350, 68, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (352, 186, 0.25); 
+VALUES (351, 148, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (352, 111, 0.25); 
+VALUES (351, 152, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (353, 36, 1.5); 
+VALUES (351, 154, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (353, 16, 0.5); 
+VALUES (351, 14, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (353, 3, 4); 
+VALUES (352, 0, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (353, 53, 0.25); 
+VALUES (352, 20, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (354, 29, 1); 
+VALUES (352, 1, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (354, 2, 1); 
+VALUES (353, 51, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (354, 205, 67.75); 
+VALUES (353, 74, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (354, 278, 67.75); 
+VALUES (354, 213, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (354, 15, 75); 
+VALUES (354, 271, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (354, 37, 1); 
+VALUES (354, 212, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (355, 13, 7); 
+VALUES (355, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (355, 14, 4); 
+VALUES (355, 17, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (355, 3, 3); 
+VALUES (355, 91, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (356, 1, 1); 
+VALUES (356, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (356, 13, 1); 
+VALUES (356, 195, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (356, 7, 0.75); 
+VALUES (356, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (356, 81, 0.75); 
+VALUES (356, 69, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (356, 15, 1); 
+VALUES (357, 18, 2.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (356, 181, 1); 
+VALUES (357, 29, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (356, 90, 1); 
+VALUES (357, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (357, 0, 1.5); 
+VALUES (357, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (357, 103, 1); 
+VALUES (358, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (357, 278, 4); 
+VALUES (358, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (357, 68, 4); 
+VALUES (359, 260, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (358, 7, 0.5); 
+VALUES (359, 146, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (358, 13, 1.5); 
+VALUES (359, 144, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (358, 102, 0.25); 
+VALUES (359, 123, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (359, 13, 1.5); 
+VALUES (359, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (359, 98, 0.75); 
+VALUES (360, 260, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (359, 39, 0.75); 
+VALUES (360, 188, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (359, 73, 0.25); 
+VALUES (360, 272, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (359, 25, 0.25); 
+VALUES (360, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (360, 167, 8); 
+VALUES (361, 22, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (360, 41, 16); 
+VALUES (361, 104, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (360, 50, 2); 
+VALUES (361, 217, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (360, 96, 0.25); 
+VALUES (361, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (360, 15, 1); 
+VALUES (362, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (361, 93, 2); 
+VALUES (362, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (361, 41, 1); 
+VALUES (362, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (361, 58, 1); 
+VALUES (362, 172, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (361, 50, 8); 
+VALUES (362, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (361, 279, 1); 
+VALUES (363, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (362, 207, 1); 
+VALUES (363, 64, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (362, 100, 5); 
+VALUES (363, 22, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (363, 50, 64); 
+VALUES (363, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (363, 41, 48); 
+VALUES (364, 111, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (363, 140, 1); 
+VALUES (364, 70, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (363, 280, 1); 
+VALUES (364, 258, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (363, 141, 0.5); 
+VALUES (364, 79, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (364, 281, 2); 
+VALUES (364, 33, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (364, 27, 1); 
+VALUES (364, 22, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (364, 222, 1); 
+VALUES (364, 146, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (365, 2, 1); 
+VALUES (365, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (365, 43, 1); 
+VALUES (365, 87, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (365, 21, 1); 
+VALUES (365, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (365, 55, 2); 
+VALUES (365, 167, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (365, 282, 1); 
+VALUES (366, 21, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (366, 61, 1); 
+VALUES (366, 70, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (366, 13, 1); 
+VALUES (366, 95, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (366, 12, 1); 
+VALUES (367, 21, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (366, 17, 1); 
+VALUES (367, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (366, 283, 1); 
+VALUES (367, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (366, 35, 1); 
+VALUES (367, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (367, 55, 2); 
+VALUES (367, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (367, 183, 1); 
+VALUES (368, 111, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (367, 5, 1); 
+VALUES (368, 70, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (367, 2, 2); 
+VALUES (368, 156, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (368, 13, 2.5); 
+VALUES (368, 8, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (368, 39, 0.5); 
+VALUES (368, 146, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (368, 40, 0.5); 
+VALUES (368, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (368, 11, 1); 
+VALUES (369, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (369, 13, 2); 
+VALUES (369, 34, 4.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (369, 15, 1); 
+VALUES (369, 132, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (369, 50, 0.25); 
+VALUES (369, 14, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (369, 103, 1); 
+VALUES (370, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (369, 32, 1); 
+VALUES (370, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (370, 13, 1.5); 
+VALUES (370, 137, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (370, 16, 0.25); 
+VALUES (370, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (370, 160, 0.25); 
+VALUES (371, 273, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (370, 60, 1); 
+VALUES (371, 119, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (371, 56, 2); 
+VALUES (372, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (371, 15, 1); 
+VALUES (372, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (371, 50, 0.25); 
+VALUES (372, 36, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (371, 218, 3); 
+VALUES (372, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (371, 32, 1); 
+VALUES (372, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (371, 103, 1); 
+VALUES (373, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (372, 94, 2.25); 
+VALUES (373, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (372, 188, 1.25); 
+VALUES (373, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (372, 3, 1.25); 
+VALUES (373, 46, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (372, 39, 0.75); 
+VALUES (373, 82, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (372, 40, 0.25); 
+VALUES (373, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (372, 96, 0.25); 
+VALUES (374, 30, 34); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (373, 161, 2); 
+VALUES (374, 68, 4.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (373, 16, 1); 
+VALUES (374, 2, 60); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (373, 75, 1); 
+VALUES (374, 108, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (374, 12, 1.5); 
+VALUES (374, 236, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (374, 207, 0.75); 
+VALUES (374, 65, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (374, 61, 1); 
+VALUES (375, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (375, 2, 1.5); 
+VALUES (375, 2, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (375, 40, 0.75); 
+VALUES (375, 98, 10); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (375, 201, 1); 
+VALUES (375, 68, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (376, 94, 4); 
+VALUES (376, 118, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (376, 31, 4); 
+VALUES (376, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (376, 39, 1); 
+VALUES (376, 240, 67.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (376, 27, 8); 
+VALUES (376, 274, 67.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (376, 11, 1); 
+VALUES (376, 16, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (376, 284, 1); 
+VALUES (376, 111, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (377, 14, 1.5); 
+VALUES (377, 1, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (377, 3, 0.5); 
+VALUES (377, 213, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (377, 25, 0.25); 
+VALUES (377, 34, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (378, 0, 1.5); 
+VALUES (377, 3, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (378, 285, 2); 
+VALUES (378, 164, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (378, 3, 3); 
+VALUES (378, 227, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (379, 191, 1.5); 
+VALUES (378, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (379, 26, 5.5); 
+VALUES (378, 275, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (380, 286, 1.5); 
+VALUES (379, 207, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (380, 31, 1); 
+VALUES (379, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (381, 118, 1.5); 
+VALUES (379, 166, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (381, 9, 1); 
+VALUES (379, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 13, 0.5); 
+VALUES (379, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 1, 0.5); 
+VALUES (379, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 94, 0.5); 
+VALUES (380, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 69, 0.5); 
+VALUES (380, 116, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 2, 0.5); 
+VALUES (380, 51, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 49, 0.5); 
+VALUES (381, 70, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 136, 0.25); 
+VALUES (381, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 102, 1); 
+VALUES (381, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (382, 58, 1); 
+VALUES (381, 53, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (383, 161, 75); 
+VALUES (381, 276, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (383, 58, 2); 
+VALUES (381, 240, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (383, 3, 8); 
+VALUES (382, 166, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (383, 103, 3); 
+VALUES (382, 94, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (383, 27, 8); 
+VALUES (382, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (384, 287, 3); 
+VALUES (383, 18, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (384, 288, 0.5); 
+VALUES (383, 249, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (385, 2, 2); 
+VALUES (383, 34, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (385, 86, 1); 
+VALUES (383, 277, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (385, 160, 1); 
+VALUES (383, 278, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (386, 1, 2); 
+VALUES (384, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (386, 5, 8); 
+VALUES (384, 29, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (386, 17, 0.25); 
+VALUES (384, 227, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (386, 111, 1); 
+VALUES (385, 52, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (387, 289, 2); 
+VALUES (385, 132, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (387, 3, 2); 
+VALUES (386, 279, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (387, 68, 2); 
+VALUES (386, 53, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (387, 218, 1); 
+VALUES (387, 207, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (388, 37, 2); 
+VALUES (387, 22, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (388, 22, 2); 
+VALUES (387, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (388, 41, 4); 
+VALUES (388, 217, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (388, 216, 1); 
+VALUES (388, 280, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (389, 167, 8); 
+VALUES (389, 70, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (389, 95, 8); 
+VALUES (389, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (389, 28, 1); 
+VALUES (389, 6, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (390, 206, 12); 
+VALUES (389, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (390, 54, 12); 
+VALUES (390, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (391, 2, 2); 
+VALUES (390, 38, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (391, 79, 1); 
+VALUES (390, 90, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (392, 13, 1.5); 
+VALUES (391, 281, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (392, 66, 0.5); 
+VALUES (391, 62, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (392, 25, 0.25); 
+VALUES (391, 34, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (393, 43, 0.5); 
+VALUES (392, 282, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (393, 22, 1); 
+VALUES (392, 84, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (394, 13, 2.25); 
+VALUES (392, 283, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (394, 191, 2.25); 
+VALUES (392, 236, 10); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (395, 2, 2); 
+VALUES (392, 129, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (395, 171, 2); 
+VALUES (392, 4, 7); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (395, 290, 2); 
+VALUES (393, 111, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (395, 28, 1); 
+VALUES (393, 166, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (395, 111, 1); 
+VALUES (393, 250, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (396, 43, 0.5); 
+VALUES (393, 18, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (396, 21, 0.5); 
+VALUES (393, 17, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (396, 291, 0.5); 
+VALUES (393, 38, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (397, 286, 1); 
+VALUES (393, 68, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (397, 69, 1); 
+VALUES (394, 129, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (397, 15, 1); 
+VALUES (394, 68, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (398, 291, 1); 
+VALUES (394, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (398, 113, 1); 
+VALUES (394, 2, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (399, 161, 2); 
+VALUES (394, 284, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (399, 75, 5); 
+VALUES (395, 67, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (399, 28, 1); 
+VALUES (395, 68, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (400, 64, 0.5); 
+VALUES (395, 25, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (400, 2, 1); 
+VALUES (395, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (400, 11, 0.5); 
+VALUES (395, 86, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (400, 68, 0.25); 
+VALUES (396, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (401, 13, 1.5); 
+VALUES (396, 17, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (401, 69, 1.25); 
+VALUES (396, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (401, 15, 0.75); 
+VALUES (397, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (402, 82, 0.5); 
+VALUES (397, 279, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (402, 148, 0.25); 
+VALUES (397, 22, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (402, 114, 0.25); 
+VALUES (397, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (402, 44, 0.25); 
+VALUES (397, 285, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (402, 135, 0.25); 
+VALUES (398, 87, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (402, 24, 0.25); 
+VALUES (398, 171, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (402, 68, 0.5); 
+VALUES (398, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (402, 27, 0.25); 
+VALUES (399, 53, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (403, 125, 1.5); 
+VALUES (399, 16, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (403, 22, 8); 
+VALUES (399, 79, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (403, 50, 0.25); 
+VALUES (399, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (403, 216, 0.5); 
+VALUES (399, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (404, 68, 32); 
+VALUES (400, 213, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (404, 50, 12); 
+VALUES (400, 185, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (404, 27, 32); 
+VALUES (400, 10, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (404, 139, 0.5); 
+VALUES (401, 30, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (404, 34, 2); 
+VALUES (401, 196, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (405, 72, 16); 
+VALUES (401, 286, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (405, 94, 1.5); 
+VALUES (401, 22, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (406, 28, 8); 
+VALUES (402, 4, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (406, 94, 2); 
+VALUES (402, 287, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (406, 242, 2); 
+VALUES (402, 272, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (406, 39, 1.5); 
+VALUES (402, 98, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (407, 24, 0.5); 
+VALUES (402, 141, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (407, 180, 0.5); 
+VALUES (403, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (407, 160, 2); 
+VALUES (403, 83, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (408, 24, 0.5); 
+VALUES (403, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (408, 21, 0.5); 
+VALUES (404, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (408, 38, 0.5); 
+VALUES (404, 27, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (409, 88, 0.75); 
+VALUES (404, 142, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (409, 5, 0.75); 
+VALUES (404, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (409, 24, 0.25); 
+VALUES (404, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (410, 13, 1.5); 
+VALUES (405, 53, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (410, 7, 0.5); 
+VALUES (405, 228, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (410, 84, 0.5); 
+VALUES (405, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (411, 21, 0.75); 
+VALUES (405, 248, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (411, 56, 0.75); 
+VALUES (405, 229, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (411, 2, 0.75); 
+VALUES (405, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (411, 3, 3); 
+VALUES (406, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (412, 69, 0.75); 
+VALUES (406, 48, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (412, 13, 0.75); 
+VALUES (406, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (412, 27, 0.5); 
+VALUES (407, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (413, 13, 2.75); 
+VALUES (407, 17, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (413, 148, 1); 
+VALUES (407, 73, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (413, 15, 0.25); 
+VALUES (408, 30, 50.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (413, 16, 0.25); 
+VALUES (408, 2, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (414, 0, 2); 
+VALUES (408, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (414, 15, 1); 
+VALUES (408, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (414, 16, 0.25); 
+VALUES (408, 121, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (415, 2, 1); 
+VALUES (408, 62, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (415, 69, 1); 
+VALUES (408, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (415, 3, 1); 
+VALUES (409, 34, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (416, 67, 2); 
+VALUES (409, 22, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (416, 148, 1); 
+VALUES (409, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (416, 15, 2); 
+VALUES (410, 260, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (416, 218, 1); 
+VALUES (410, 22, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (417, 2, 75); 
+VALUES (410, 36, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (417, 50, 50); 
+VALUES (410, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (417, 273, 1.75); 
+VALUES (411, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (417, 292, 0.5); 
+VALUES (411, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (417, 221, 1); 
+VALUES (411, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (418, 293, 0.5); 
+VALUES (411, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (418, 50, 25.5); 
+VALUES (412, 62, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (418, 1, 17); 
+VALUES (412, 18, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (419, 44, 1.5); 
+VALUES (412, 166, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (419, 294, 12); 
+VALUES (412, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (420, 294, 12); 
+VALUES (412, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (420, 114, 3); 
+VALUES (413, 55, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (421, 118, 8); 
+VALUES (413, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (421, 171, 10); 
+VALUES (413, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (421, 258, 25); 
+VALUES (413, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (421, 295, 3); 
+VALUES (413, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (421, 4, 0.5); 
+VALUES (414, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (422, 13, 1.75); 
+VALUES (414, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (422, 51, 0.75); 
+VALUES (414, 288, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (422, 74, 3.5); 
+VALUES (415, 63, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (422, 296, 1); 
+VALUES (415, 69, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (423, 93, 0.25); 
+VALUES (415, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (423, 70, 0.5); 
+VALUES (415, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (424, 37, 1.5); 
+VALUES (416, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (424, 265, 0.75); 
+VALUES (416, 20, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (424, 39, 1.25); 
+VALUES (416, 5, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (424, 236, 0.75); 
+VALUES (417, 62, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (424, 18, 1); 
+VALUES (417, 18, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (424, 19, 1); 
+VALUES (417, 87, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (425, 29, 25.5); 
+VALUES (417, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (425, 2, 59.25); 
+VALUES (417, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (425, 101, 59.25); 
+VALUES (418, 4, 15); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (425, 3, 1); 
+VALUES (418, 98, 24); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (425, 68, 1); 
+VALUES (418, 17, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (426, 196, 0.5); 
+VALUES (418, 76, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (426, 146, 0.5); 
+VALUES (418, 289, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (427, 29, 2); 
+VALUES (418, 244, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (427, 9, 75); 
+VALUES (419, 18, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (427, 3, 0.5); 
+VALUES (419, 94, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (427, 62, 1); 
+VALUES (419, 17, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (428, 16, 0.5); 
+VALUES (419, 71, 2.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (428, 179, 0.5); 
+VALUES (419, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (429, 105, 0.5); 
+VALUES (419, 129, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (429, 196, 0.5); 
+VALUES (420, 255, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (429, 297, 0.5); 
+VALUES (420, 83, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (429, 131, 0.5); 
+VALUES (420, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (430, 13, 0.75); 
+VALUES (421, 111, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (430, 69, 0.75); 
+VALUES (421, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (430, 220, 0.75); 
+VALUES (421, 175, 12.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (430, 15, 0.75); 
+VALUES (421, 22, 12.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (430, 234, 0.25); 
+VALUES (421, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (431, 161, 50.75); 
+VALUES (422, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (431, 50, 8); 
+VALUES (422, 290, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (431, 58, 1); 
+VALUES (422, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (431, 103, 1); 
+VALUES (422, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (431, 245, 1); 
+VALUES (423, 275, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (431, 84, 4); 
+VALUES (423, 136, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (431, 6, 1); 
+VALUES (423, 269, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (432, 12, 1.5); 
+VALUES (424, 63, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (432, 13, 1.5); 
+VALUES (424, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (432, 66, 0.25); 
+VALUES (424, 38, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (432, 163, 0.25); 
+VALUES (424, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (432, 25, 0.25); 
+VALUES (425, 23, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (432, 127, 1); 
+VALUES (425, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (433, 188, 16); 
+VALUES (425, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (433, 15, 1); 
+VALUES (425, 38, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (433, 256, 0.25); 
+VALUES (426, 271, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (434, 289, 0.5); 
+VALUES (426, 191, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (434, 1, 1); 
+VALUES (426, 264, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (434, 39, 1); 
+VALUES (426, 291, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (434, 17, 0.25); 
+VALUES (426, 65, 22); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (434, 115, 1); 
+VALUES (427, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (435, 94, 2); 
+VALUES (427, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (435, 58, 0.5); 
+VALUES (427, 38, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (435, 17, 0.25); 
+VALUES (427, 292, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (435, 127, 1); 
+VALUES (428, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (436, 182, 3); 
+VALUES (428, 276, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (436, 5, 1); 
+VALUES (428, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (437, 22, 8); 
+VALUES (428, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (437, 144, 4); 
+VALUES (428, 222, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (437, 24, 4); 
+VALUES (429, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (437, 216, 1); 
+VALUES (429, 228, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (438, 10, 2); 
+VALUES (429, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (438, 17, 0.25); 
+VALUES (429, 293, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (438, 130, 1); 
+VALUES (429, 248, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (438, 5, 1); 
+VALUES (429, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (438, 111, 1); 
+VALUES (430, 130, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (439, 145, 1); 
+VALUES (430, 294, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (439, 104, 1); 
+VALUES (431, 215, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (440, 72, 0.5); 
+VALUES (431, 79, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (440, 71, 0.5); 
+VALUES (431, 22, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (441, 118, 1.5); 
+VALUES (431, 10, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (441, 9, 1); 
+VALUES (432, 1, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (441, 3, 1); 
+VALUES (432, 69, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (442, 10, 1.5); 
+VALUES (432, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (442, 160, 0.5); 
+VALUES (432, 62, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (442, 17, 0.25); 
+VALUES (433, 1, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (442, 130, 1); 
+VALUES (433, 267, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (442, 111, 1); 
+VALUES (433, 237, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (443, 2, 1); 
+VALUES (433, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (443, 101, 0.75); 
+VALUES (433, 295, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (443, 68, 1); 
+VALUES (433, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (443, 31, 1); 
+VALUES (434, 62, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (444, 118, 1.5); 
+VALUES (434, 80, 9); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (444, 11, 0.5); 
+VALUES (434, 296, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (444, 17, 0.25); 
+VALUES (435, 111, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (444, 58, 0.5); 
+VALUES (435, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (444, 127, 1); 
+VALUES (435, 53, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (445, 22, 1); 
+VALUES (435, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (445, 5, 0.5); 
+VALUES (435, 297, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (445, 69, 0.5); 
+VALUES (435, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (445, 84, 1); 
+VALUES (435, 163, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (446, 2, 2); 
+VALUES (435, 298, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (446, 3, 1); 
+VALUES (436, 55, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (447, 58, 1); 
+VALUES (436, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (447, 50, 0.5); 
+VALUES (436, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (447, 115, 10); 
+VALUES (436, 46, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (447, 41, 8); 
+VALUES (436, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (448, 2, 0.5); 
+VALUES (436, 47, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (448, 44, 0.5); 
+VALUES (437, 206, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (448, 136, 0.5); 
+VALUES (437, 89, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (449, 94, 2); 
+VALUES (437, 154, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (449, 3, 1); 
+VALUES (437, 22, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (449, 16, 1); 
+VALUES (437, 236, 6); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (437, 216, 6); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (437, 93, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (437, 108, 3); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (438, 67, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (438, 255, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (438, 30, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (438, 111, 25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (438, 62, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (438, 64, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (438, 22, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (438, 16, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (439, 299, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (439, 300, 0.75); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (439, 141, 2.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (439, 217, 2.75); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (439, 14, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (440, 63, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (440, 104, 3); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (440, 72, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (441, 62, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (441, 63, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (441, 36, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (441, 16, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (442, 30, 150); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (442, 2, 8); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (442, 68, 16); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (442, 121, 8); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (442, 32, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (442, 41, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (442, 31, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (442, 301, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (443, 18, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (443, 53, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (443, 4, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (443, 211, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (443, 36, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (443, 302, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (443, 146, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (443, 73, 3); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (444, 78, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (444, 99, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (444, 33, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (444, 22, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (444, 79, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (444, 303, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 296, 6); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 2, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 69, 16); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 63, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 21, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 183, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 163, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 295, 8); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 147, 6); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (445, 93, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (446, 227, 25.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (446, 22, 34); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (446, 286, 25.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (447, 128, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (447, 166, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (447, 174, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (448, 124, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (448, 20, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (448, 18, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (448, 29, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (449, 199, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (449, 88, 0.75); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (449, 38, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (449, 154, 3.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (449, 304, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (450, 1, 8); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (450, 305, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (450, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (450, 101, 1); 
+VALUES (451, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (450, 3, 3); 
+VALUES (451, 154, 12.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (450, 68, 3); 
+VALUES (451, 68, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (451, 147, 1); 
+VALUES (451, 2, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (451, 21, 1); 
+VALUES (452, 22, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (451, 13, 2); 
+VALUES (452, 111, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (451, 148, 0.5); 
+VALUES (452, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (452, 24, 1.5); 
+VALUES (452, 37, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (452, 160, 1.5); 
+VALUES (452, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (453, 43, 0.5); 
+VALUES (453, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (453, 104, 0.5); 
+VALUES (453, 16, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (453, 24, 0.5); 
+VALUES (453, 210, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (453, 131, 0.5); 
+VALUES (453, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (453, 85, 1); 
+VALUES (453, 296, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (454, 115, 12); 
+VALUES (454, 18, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (454, 203, 0.75); 
+VALUES (454, 8, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (454, 41, 4); 
+VALUES (454, 40, 3.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (455, 1, 2); 
+VALUES (454, 169, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (455, 173, 4); 
+VALUES (455, 102, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (455, 35, 1); 
+VALUES (455, 104, 2.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (456, 8, 2); 
+VALUES (455, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (456, 12, 0.25); 
+VALUES (456, 69, 48); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (456, 25, 0.25); 
+VALUES (456, 110, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (457, 2, 1); 
+VALUES (456, 108, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (457, 21, 1.5); 
+VALUES (456, 172, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (457, 43, 0.5); 
+VALUES (457, 57, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (458, 24, 1.5); 
+VALUES (457, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (458, 148, 1.5); 
+VALUES (457, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (458, 137, 1.5); 
+VALUES (457, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (459, 289, 0.5); 
+VALUES (458, 87, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (459, 94, 1); 
+VALUES (458, 128, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (459, 69, 0.5); 
+VALUES (458, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (459, 15, 1); 
+VALUES (459, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (459, 115, 1); 
+VALUES (459, 250, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (459, 96, 1); 
+VALUES (459, 94, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (460, 5, 16); 
+VALUES (459, 16, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (460, 166, 1); 
+VALUES (460, 20, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (460, 203, 0.5); 
+VALUES (460, 5, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (461, 12, 1); 
+VALUES (460, 130, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (461, 13, 1); 
+VALUES (461, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (461, 163, 0.25); 
+VALUES (461, 146, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (461, 102, 0.25); 
+VALUES (461, 172, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (461, 90, 1); 
+VALUES (461, 6, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (462, 94, 2); 
+VALUES (462, 306, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (462, 15, 0.5); 
+VALUES (462, 34, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (462, 16, 0.75); 
+VALUES (462, 22, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (462, 60, 1); 
+VALUES (462, 79, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (462, 34, 1); 
+VALUES (463, 4, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (463, 24, 1); 
+VALUES (463, 99, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (463, 53, 1); 
+VALUES (463, 307, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (463, 3, 1); 
+VALUES (463, 22, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (464, 176, 2.25); 
+VALUES (463, 33, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (464, 175, 1.5); 
+VALUES (463, 61, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (464, 6, 1); 
+VALUES (463, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (465, 67, 1.5); 
+VALUES (463, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (465, 136, 0.75); 
+VALUES (463, 44, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (465, 119, 0.5); 
+VALUES (464, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (465, 6, 3); 
+VALUES (464, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (465, 58, 1); 
+VALUES (464, 17, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (466, 49, 1); 
+VALUES (464, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (466, 15, 7); 
+VALUES (464, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (467, 231, 0.5); 
+VALUES (464, 14, 8); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (465, 227, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (465, 36, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (465, 41, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (465, 10, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (466, 34, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (466, 22, 2.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (466, 120, 5.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (466, 84, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (467, 33, 3.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (467, 90, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (467, 16, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (467, 13, 1); 
+VALUES (467, 79, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (467, 136, 2); 
+VALUES (468, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (467, 61, 1); 
+VALUES (468, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (467, 127, 1); 
+VALUES (468, 190, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (468, 5, 16); 
+VALUES (468, 17, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (468, 42, 2); 
+VALUES (468, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (468, 129, 0.25); 
+VALUES (468, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (468, 152, 2); 
+VALUES (469, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (469, 24, 0.5); 
+VALUES (469, 73, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (469, 180, 0.5); 
+VALUES (469, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (469, 160, 2); 
+VALUES (469, 62, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (470, 161, 0.5); 
+VALUES (469, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (470, 101, 1.5); 
+VALUES (469, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (470, 247, 0.5); 
+VALUES (470, 20, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (470, 3, 0.5); 
+VALUES (470, 308, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (471, 143, 25); 
+VALUES (470, 5, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (471, 41, 75); 
+VALUES (470, 254, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (471, 2, 12); 
+VALUES (470, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (472, 118, 1); 
+VALUES (471, 21, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (472, 7, 1); 
+VALUES (471, 205, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (472, 102, 0.25); 
+VALUES (471, 86, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (472, 40, 0.25); 
+VALUES (472, 4, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (473, 285, 46); 
+VALUES (472, 18, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (473, 3, 20); 
+VALUES (472, 309, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (473, 200, 4); 
+VALUES (472, 14, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (473, 129, 33); 
+VALUES (473, 53, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (473, 92, 0.25); 
+VALUES (473, 8, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (473, 39, 1); 
+VALUES (473, 17, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (474, 43, 1); 
+VALUES (473, 163, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (474, 2, 0.5); 
+VALUES (474, 19, 3.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (474, 267, 5); 
+VALUES (474, 222, 5.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (475, 277, 1); 
+VALUES (474, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (475, 144, 1); 
+VALUES (475, 78, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (475, 132, 1); 
+VALUES (475, 23, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (476, 22, 3); 
+VALUES (475, 72, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (476, 274, 0.25); 
+VALUES (475, 310, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (476, 239, 5); 
+VALUES (475, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (476, 50, 1); 
+VALUES (476, 5, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (476, 153, 1); 
+VALUES (476, 209, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (476, 28, 1); 
+VALUES (476, 34, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (477, 176, 2.25); 
+VALUES (476, 78, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (477, 81, 1.5); 
+VALUES (476, 37, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (477, 6, 0.25); 
+VALUES (477, 63, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (478, 2, 1.5); 
+VALUES (477, 71, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (478, 68, 3); 
+VALUES (477, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (478, 100, 1); 
+VALUES (478, 63, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (479, 22, 4); 
+VALUES (478, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (479, 5, 4); 
+VALUES (478, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (479, 50, 0.5); 
+VALUES (478, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (480, 50, 2.25); 
+VALUES (478, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (480, 202, 0.5); 
+VALUES (479, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (480, 37, 7); 
+VALUES (479, 2, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (480, 39, 3.25); 
+VALUES (479, 16, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (480, 100, 2.25); 
+VALUES (479, 51, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (480, 283, 1); 
+VALUES (479, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (481, 13, 2); 
+VALUES (479, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (481, 69, 0.5); 
+VALUES (480, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (482, 103, 3); 
+VALUES (480, 311, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (482, 2, 24); 
+VALUES (480, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (482, 50, 12); 
+VALUES (481, 87, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (483, 84, 1); 
+VALUES (481, 21, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (483, 24, 1); 
+VALUES (481, 114, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (483, 160, 1); 
+VALUES (481, 14, 23); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (484, 161, 75); 
+VALUES (481, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (484, 50, 4); 
+VALUES (481, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (484, 3, 8); 
+VALUES (482, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (484, 15, 8); 
+VALUES (482, 196, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (484, 92, 1); 
+VALUES (482, 116, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (484, 129, 1); 
+VALUES (482, 104, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (485, 22, 1); 
+VALUES (483, 217, 25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (485, 129, 1); 
+VALUES (483, 98, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (486, 57, 2); 
+VALUES (483, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (486, 76, 0.5); 
+VALUES (483, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (486, 58, 0.25); 
+VALUES (483, 121, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (486, 11, 0.5); 
+VALUES (483, 123, 34); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (487, 167, 8); 
+VALUES (483, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (487, 166, 1); 
+VALUES (484, 70, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (487, 3, 4); 
+VALUES (484, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (487, 95, 0.5); 
+VALUES (484, 274, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (487, 28, 6); 
+VALUES (484, 116, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (488, 226, 75); 
+VALUES (485, 260, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (488, 1, 1.5); 
+VALUES (485, 312, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (489, 43, 1); 
+VALUES (485, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (489, 145, 1); 
+VALUES (485, 13, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (489, 51, 1); 
+VALUES (486, 53, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (489, 21, 1); 
+VALUES (486, 228, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (490, 14, 1); 
+VALUES (486, 22, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (490, 3, 1); 
+VALUES (486, 17, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (490, 136, 1); 
+VALUES (486, 38, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (491, 1, 2); 
+VALUES (486, 163, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (491, 39, 0.5); 
+VALUES (487, 260, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (491, 19, 6); 
+VALUES (487, 29, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (491, 50, 0.25); 
+VALUES (487, 16, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (492, 167, 8); 
+VALUES (487, 73, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (492, 97, 8); 
+VALUES (488, 258, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (493, 38, 1.5); 
+VALUES (488, 75, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (493, 24, 0.75); 
+VALUES (488, 281, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (494, 2, 1.5); 
+VALUES (488, 27, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (494, 68, 4); 
+VALUES (488, 313, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (494, 31, 1); 
+VALUES (488, 3, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (495, 13, 1.5); 
+VALUES (488, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (495, 50, 0.5); 
+VALUES (488, 190, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (495, 15, 1.5); 
+VALUES (489, 69, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (495, 100, 4); 
+VALUES (489, 110, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (495, 103, 1); 
+VALUES (489, 108, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (495, 32, 1); 
+VALUES (489, 296, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (496, 1, 1.5); 
+VALUES (490, 195, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (496, 69, 0.5); 
+VALUES (490, 130, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (496, 39, 1.5); 
+VALUES (490, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (496, 50, 0.25); 
+VALUES (491, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (496, 127, 1); 
+VALUES (491, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (496, 28, 8); 
+VALUES (491, 20, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (497, 22, 0.5); 
+VALUES (491, 103, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (497, 101, 0.5); 
+VALUES (491, 314, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (498, 21, 1); 
+VALUES (492, 308, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (498, 291, 1); 
+VALUES (492, 69, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (498, 5, 1); 
+VALUES (493, 2, 20); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (499, 298, 12); 
+VALUES (493, 315, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (499, 206, 12); 
+VALUES (493, 1, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (499, 143, 12); 
+VALUES (493, 183, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (499, 28, 8); 
+VALUES (493, 68, 24); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (500, 21, 2); 
+VALUES (493, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (500, 55, 2); 
+VALUES (494, 252, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (500, 85, 1); 
+VALUES (494, 138, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (501, 207, 1); 
+VALUES (494, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (501, 100, 5); 
+VALUES (494, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (502, 1, 1.5); 
+VALUES (494, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (502, 70, 4); 
+VALUES (495, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (502, 39, 0.5); 
+VALUES (495, 36, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (502, 50, 0.25); 
+VALUES (495, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (503, 13, 2); 
+VALUES (495, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (503, 15, 1); 
+VALUES (495, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (503, 50, 0.25); 
+VALUES (496, 222, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (503, 218, 3); 
+VALUES (496, 83, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (503, 32, 1); 
+VALUES (496, 123, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (503, 103, 1); 
+VALUES (497, 29, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (504, 2, 0.75); 
+VALUES (497, 1, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (504, 233, 0.75); 
+VALUES (498, 316, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (504, 16, 1); 
+VALUES (498, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (504, 3, 1); 
+VALUES (498, 49, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (505, 26, 25); 
+VALUES (499, 33, 46); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (505, 115, 8); 
+VALUES (499, 73, 28); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (505, 50, 1); 
+VALUES (499, 22, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (505, 58, 1); 
+VALUES (499, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (505, 245, 1); 
+VALUES (499, 259, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (505, 6, 34); 
+VALUES (499, 51, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (505, 28, 1); 
+VALUES (500, 53, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (506, 31, 5); 
+VALUES (500, 17, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (506, 13, 1.5); 
+VALUES (500, 50, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (506, 96, 0.25); 
+VALUES (501, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (507, 13, 1.5); 
+VALUES (501, 146, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (507, 3, 1); 
+VALUES (501, 185, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (507, 15, 1); 
+VALUES (501, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (507, 299, 1); 
+VALUES (502, 250, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (507, 6, 1); 
+VALUES (502, 101, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (507, 296, 1); 
+VALUES (502, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (507, 90, 1); 
+VALUES (503, 317, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (508, 84, 1); 
+VALUES (503, 274, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (508, 69, 0.5); 
+VALUES (504, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (508, 58, 0.25); 
+VALUES (504, 119, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (509, 38, 2); 
+VALUES (504, 317, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (509, 64, 0.5); 
+VALUES (504, 116, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (509, 15, 1); 
+VALUES (505, 55, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (510, 22, 8); 
+VALUES (505, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (510, 300, 1.5); 
+VALUES (505, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (510, 50, 1); 
+VALUES (505, 30, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (511, 301, 1); 
+VALUES (505, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (511, 24, 0.5); 
+VALUES (506, 162, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (511, 3, 4); 
+VALUES (506, 297, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (511, 16, 0.5); 
+VALUES (506, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (512, 13, 1); 
+VALUES (507, 63, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (512, 81, 1); 
+VALUES (507, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (512, 7, 1); 
+VALUES (507, 2, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (513, 13, 1.75); 
+VALUES (507, 86, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (513, 302, 0.75); 
+VALUES (507, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (513, 303, 0.75); 
+VALUES (508, 70, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (513, 74, 2.75); 
+VALUES (508, 5, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (513, 11, 2); 
+VALUES (508, 58, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (513, 93, 1); 
+VALUES (508, 93, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (513, 19, 1); 
+VALUES (509, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (514, 276, 1); 
+VALUES (509, 171, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (514, 203, 12); 
+VALUES (509, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (514, 271, 0.5); 
+VALUES (510, 162, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (514, 304, 0.25); 
+VALUES (510, 68, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (514, 35, 22); 
+VALUES (510, 163, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (515, 2, 1.5); 
+VALUES (510, 318, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (515, 24, 1.5); 
+VALUES (511, 4, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (515, 8, 1.5); 
+VALUES (511, 224, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (515, 69, 1.5); 
+VALUES (511, 79, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (515, 68, 1); 
+VALUES (511, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (516, 161, 150); 
+VALUES (512, 319, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (516, 50, 8); 
+VALUES (512, 320, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (516, 41, 16); 
+VALUES (512, 171, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (516, 245, 8); 
+VALUES (513, 98, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (516, 103, 1); 
+VALUES (513, 191, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (516, 11, 1); 
+VALUES (513, 68, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (516, 58, 1); 
+VALUES (514, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (516, 305, 1); 
+VALUES (514, 210, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (517, 84, 1.5); 
+VALUES (514, 174, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (517, 306, 1.5); 
+VALUES (515, 185, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (518, 180, 0.5); 
+VALUES (515, 273, 12); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (518, 24, 0.5); 
+VALUES (516, 53, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (518, 69, 0.5); 
+VALUES (516, 31, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (518, 2, 0.5); 
+VALUES (516, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (518, 160, 1); 
+VALUES (516, 56, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (519, 115, 0.5); 
+VALUES (517, 241, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (519, 166, 1); 
+VALUES (517, 101, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (519, 167, 8); 
+VALUES (517, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (519, 5, 8); 
+VALUES (518, 321, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (519, 203, 1); 
+VALUES (518, 86, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (520, 1, 0.75); 
+VALUES (518, 104, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (520, 84, 0.75); 
+VALUES (518, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (520, 69, 0.75); 
+VALUES (518, 53, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (520, 11, 0.5); 
+VALUES (519, 5, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (521, 84, 1); 
+VALUES (519, 130, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (521, 1, 1); 
+VALUES (519, 29, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (521, 69, 1); 
+VALUES (520, 5, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (521, 15, 1); 
+VALUES (520, 322, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (522, 0, 3); 
+VALUES (520, 254, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (522, 39, 1.5); 
+VALUES (520, 323, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (522, 50, 1); 
+VALUES (520, 230, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (522, 117, 1); 
+VALUES (521, 152, 56.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (522, 75, 1); 
+VALUES (521, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (523, 94, 0.5); 
+VALUES (521, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (523, 190, 0.5); 
+VALUES (522, 209, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (524, 102, 0.25); 
+VALUES (522, 230, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (524, 13, 2); 
+VALUES (523, 16, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (525, 37, 1.5); 
+VALUES (523, 22, 5.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (525, 65, 1.5); 
+VALUES (523, 38, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (525, 117, 1); 
+VALUES (523, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (525, 27, 1); 
+VALUES (524, 62, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (525, 176, 1); 
+VALUES (524, 164, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (526, 307, 8); 
+VALUES (525, 83, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (526, 245, 2); 
+VALUES (525, 22, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (527, 28, 1); 
+VALUES (525, 71, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (527, 4, 1); 
+VALUES (525, 84, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (527, 231, 1); 
+VALUES (526, 211, 1.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (527, 2, 1); 
+VALUES (526, 35, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (527, 5, 1); 
+VALUES (526, 36, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (528, 110, 0.5); 
+VALUES (526, 17, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (528, 146, 0.5); 
+VALUES (527, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (529, 234, 3); 
+VALUES (527, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (529, 100, 1); 
+VALUES (527, 210, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (530, 0, 1.75); 
+VALUES (527, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (530, 173, 3.5); 
+VALUES (527, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (531, 298, 0.75); 
+VALUES (528, 111, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (531, 149, 0.25); 
+VALUES (528, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (532, 222, 1.5); 
+VALUES (528, 18, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (532, 180, 3); 
+VALUES (528, 8, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (532, 267, 2); 
+VALUES (528, 10, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (532, 4, 1); 
+VALUES (528, 76, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (532, 308, 4); 
+VALUES (529, 18, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (532, 216, 1); 
+VALUES (529, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (532, 127, 1); 
+VALUES (529, 2, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (532, 166, 1); 
+VALUES (529, 73, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (533, 59, 2.5); 
+VALUES (529, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (533, 84, 0.25); 
+VALUES (529, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (534, 118, 2); 
+VALUES (530, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (534, 84, 0.25); 
+VALUES (530, 87, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (534, 309, 0.25); 
+VALUES (530, 166, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (534, 103, 1); 
+VALUES (530, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (534, 19, 1); 
+VALUES (531, 38, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (535, 27, 46); 
+VALUES (531, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (535, 218, 28); 
+VALUES (531, 91, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (535, 3, 6); 
+VALUES (532, 51, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (535, 58, 1); 
+VALUES (532, 22, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (535, 307, 16); 
+VALUES (533, 63, 25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (535, 100, 75); 
+VALUES (533, 187, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (536, 13, 1.5); 
+VALUES (533, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (536, 69, 1); 
+VALUES (533, 31, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (536, 15, 0.25); 
+VALUES (534, 162, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (536, 16, 0.25); 
+VALUES (534, 298, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (536, 60, 1); 
+VALUES (535, 241, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (537, 43, 0.75); 
+VALUES (535, 196, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (537, 145, 0.75); 
+VALUES (535, 102, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (537, 148, 0.75); 
+VALUES (535, 116, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (538, 2, 1.75); 
+VALUES (535, 33, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (538, 310, 0.75); 
+VALUES (536, 230, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (538, 27, 0.75); 
+VALUES (536, 195, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (539, 37, 3); 
+VALUES (536, 324, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (539, 311, 1.5); 
+VALUES (536, 78, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (539, 312, 1.5); 
+VALUES (537, 325, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (539, 58, 0.5); 
+VALUES (537, 33, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (539, 6, 1); 
+VALUES (537, 258, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (540, 313, 0.25); 
+VALUES (538, 2, 2.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (540, 50, 0.25); 
+VALUES (538, 126, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (540, 314, 0.25); 
+VALUES (538, 163, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (540, 41, 0.25); 
+VALUES (538, 68, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (540, 56, 2); 
+VALUES (538, 69, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (540, 35, 1); 
+VALUES (538, 183, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (541, 13, 1); 
+VALUES (539, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (541, 315, 1); 
+VALUES (539, 10, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (541, 7, 1); 
+VALUES (540, 70, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (541, 90, 1); 
+VALUES (540, 142, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (542, 1, 1.5); 
+VALUES (541, 35, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (542, 69, 0.5); 
+VALUES (541, 260, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (542, 166, 1); 
+VALUES (541, 31, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (542, 39, 1.5); 
+VALUES (541, 2, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (542, 50, 0.25); 
+VALUES (541, 78, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (542, 127, 1); 
+VALUES (542, 62, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (543, 7, 1.5); 
+VALUES (542, 75, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (543, 118, 1.5); 
+VALUES (542, 58, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (543, 76, 0.25); 
+VALUES (542, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (543, 35, 1); 
+VALUES (543, 70, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (544, 72, 0.5); 
+VALUES (543, 16, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (544, 71, 0.5); 
+VALUES (543, 79, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (544, 316, 1); 
+VALUES (544, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (545, 145, 2); 
+VALUES (544, 62, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (545, 317, 6); 
+VALUES (544, 91, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (546, 1, 25); 
+VALUES (544, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (546, 306, 0.25); 
+VALUES (545, 255, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (546, 16, 0.25); 
+VALUES (545, 166, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (546, 58, 0.25); 
+VALUES (545, 210, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (547, 318, 4); 
+VALUES (545, 114, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (547, 19, 5); 
+VALUES (545, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (547, 31, 0.5); 
+VALUES (546, 247, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (547, 11, 0.5); 
+VALUES (546, 22, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (547, 94, 1.5); 
+VALUES (546, 116, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (548, 13, 1.75); 
+VALUES (546, 73, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (548, 88, 1.25); 
+VALUES (547, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (548, 24, 0.75); 
+VALUES (547, 2, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (548, 269, 1); 
+VALUES (547, 123, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (548, 319, 1); 
+VALUES (547, 326, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (549, 196, 0.5); 
+VALUES (548, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (549, 145, 0.5); 
+VALUES (548, 78, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (549, 2, 0.5); 
+VALUES (548, 46, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (550, 1, 1.75); 
+VALUES (548, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (550, 39, 1); 
+VALUES (548, 68, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (550, 40, 0.25); 
+VALUES (548, 326, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (550, 16, 0.25); 
+VALUES (549, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (551, 320, 0.5); 
+VALUES (549, 196, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (551, 321, 0.5); 
+VALUES (549, 22, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (551, 190, 0.25); 
+VALUES (549, 116, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (552, 118, 2.5); 
+VALUES (550, 55, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (552, 12, 0.5); 
+VALUES (550, 64, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (552, 35, 1); 
+VALUES (550, 31, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (553, 13, 1); 
+VALUES (550, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (553, 94, 1); 
+VALUES (551, 116, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (553, 2, 1); 
+VALUES (551, 123, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (553, 128, 1); 
+VALUES (551, 185, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (553, 69, 1); 
+VALUES (551, 224, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (553, 322, 1); 
+VALUES (552, 23, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (553, 136, 1); 
+VALUES (552, 311, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (553, 218, 3); 
+VALUES (552, 166, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (554, 112, 4); 
+VALUES (552, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (554, 50, 8); 
+VALUES (553, 327, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (554, 323, 1.25); 
+VALUES (553, 36, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (554, 41, 4); 
+VALUES (553, 33, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (554, 5, 1); 
+VALUES (554, 66, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (555, 24, 1); 
+VALUES (554, 185, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (555, 2, 1); 
+VALUES (554, 116, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (555, 131, 1); 
+VALUES (554, 144, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (555, 324, 1); 
+VALUES (555, 241, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (555, 206, 1); 
+VALUES (555, 116, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (556, 131, 1.5); 
+VALUES (555, 91, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (556, 135, 1.5); 
+VALUES (555, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (556, 27, 1.5); 
+VALUES (556, 4, 75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (556, 3, 1); 
+VALUES (556, 2, 50); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (556, 16, 1); 
+VALUES (556, 266, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (556, 325, 1); 
+VALUES (556, 328, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (557, 28, 8); 
+VALUES (556, 310, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (557, 2, 3); 
+VALUES (557, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (557, 285, 1.5); 
+VALUES (557, 185, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (557, 101, 1.5); 
+VALUES (557, 146, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (557, 35, 1); 
+VALUES (558, 79, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (558, 326, 0.5); 
+VALUES (558, 22, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (558, 11, 1); 
+VALUES (558, 33, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (558, 187, 2.5); 
+VALUES (558, 37, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (559, 257, 1.75); 
+VALUES (559, 2, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (559, 39, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (559, 327, 1); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (559, 328, 0.75); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (559, 73, 2); 
-
-INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (559, 284, 1); 
+VALUES (559, 68, 6); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
 VALUES (559, 329, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (560, 2, 2.5); 
+VALUES (559, 178, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (560, 12, 0.5); 
+VALUES (559, 54, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (560, 330, 1); 
+VALUES (559, 62, 8); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (560, 58, 1); 
+VALUES (559, 194, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (560, 197, 1); 
+VALUES (559, 330, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (561, 135, 0.5); 
+VALUES (560, 18, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (561, 1, 0.5); 
+VALUES (560, 75, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (561, 131, 0.5); 
+VALUES (560, 58, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (561, 30, 1); 
+VALUES (560, 93, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (561, 64, 1); 
+VALUES (561, 4, 16); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (561, 5, 3); 
+VALUES (561, 331, 3); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (561, 65, 1); 
+VALUES (561, 68, 24); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (561, 55, 8); 
+VALUES (562, 63, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (562, 13, 2); 
+VALUES (562, 207, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (562, 61, 1); 
+VALUES (562, 36, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (562, 17, 1); 
+VALUES (562, 16, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (562, 283, 1); 
+VALUES (562, 147, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (562, 35, 1); 
+VALUES (562, 32, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (563, 13, 1.5); 
+VALUES (563, 63, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (563, 84, 1); 
+VALUES (563, 62, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (563, 7, 1); 
+VALUES (563, 36, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (563, 218, 1); 
+VALUES (563, 41, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (564, 13, 2); 
+VALUES (564, 111, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (564, 15, 1); 
+VALUES (564, 4, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (564, 50, 0.25); 
+VALUES (564, 53, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (564, 16, 0.25); 
+VALUES (564, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (564, 32, 1); 
+VALUES (564, 36, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (564, 103, 1); 
+VALUES (564, 119, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (565, 13, 1.5); 
+VALUES (564, 185, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (565, 16, 0.25); 
+VALUES (564, 99, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (565, 17, 0.5); 
+VALUES (565, 4, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (565, 70, 3); 
+VALUES (565, 227, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (565, 115, 2); 
+VALUES (565, 157, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (565, 61, 1); 
+VALUES (565, 146, 2.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (566, 13, 1.5); 
+VALUES (565, 73, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (566, 69, 0.5); 
+VALUES (566, 207, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (566, 51, 0.5); 
+VALUES (566, 36, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (566, 102, 0.25); 
+VALUES (566, 41, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (566, 32, 1); 
+VALUES (567, 63, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (566, 35, 1); 
+VALUES (567, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (567, 118, 1.5); 
+VALUES (567, 17, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (567, 24, 0.75); 
+VALUES (567, 210, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (568, 24, 1); 
+VALUES (568, 130, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (568, 196, 1); 
+VALUES (568, 153, 10); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (568, 43, 1); 
+VALUES (568, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (568, 5, 2.5); 
+VALUES (569, 20, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (569, 13, 0.5); 
+VALUES (569, 29, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (569, 180, 0.5); 
+VALUES (569, 5, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (569, 160, 2); 
+VALUES (570, 18, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (569, 111, 1); 
+VALUES (570, 36, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (570, 2, 2); 
+VALUES (570, 8, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (570, 331, 2); 
+VALUES (570, 72, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (570, 68, 4); 
+VALUES (570, 88, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (570, 3, 4); 
+VALUES (570, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (571, 13, 2); 
+VALUES (571, 87, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (571, 58, 0.5); 
+VALUES (571, 23, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (571, 17, 0.25); 
+VALUES (571, 64, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (571, 41, 0.25); 
+VALUES (571, 65, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (571, 90, 1); 
+VALUES (572, 332, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (572, 128, 1.25); 
+VALUES (572, 22, 8.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (572, 23, 0.75); 
+VALUES (573, 227, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (572, 69, 0.75); 
+VALUES (573, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (572, 39, 0.75); 
+VALUES (573, 128, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (573, 23, 2); 
+VALUES (573, 16, 0.25); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (573, 69, 2); 
+VALUES (574, 34, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (573, 3, 2); 
+VALUES (574, 227, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (573, 85, 1); 
+VALUES (574, 14, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (574, 25, 0.25); 
+VALUES (574, 10, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (574, 121, 1); 
+VALUES (575, 5, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (574, 13, 1); 
+VALUES (575, 4, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (574, 7, 1); 
+VALUES (575, 281, 5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (575, 50, 0.25); 
+VALUES (576, 333, 1.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (575, 41, 0.5); 
+VALUES (576, 104, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (575, 15, 1); 
+VALUES (577, 34, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (575, 56, 2); 
+VALUES (577, 10, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (575, 35, 1); 
+VALUES (577, 22, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (576, 1, 0.75); 
+VALUES (578, 20, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (576, 84, 0.75); 
+VALUES (578, 103, 2); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (576, 58, 0.25); 
+VALUES (578, 37, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (576, 332, 0.5); 
+VALUES (579, 18, 1.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (577, 21, 0.5); 
+VALUES (579, 16, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (577, 43, 0.5); 
+VALUES (579, 210, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (577, 145, 0.5); 
+VALUES (580, 241, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (578, 2, 1.5); 
+VALUES (580, 18, 1); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (578, 15, 3); 
+VALUES (580, 40, 4); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (578, 210, 3); 
+VALUES (581, 260, 0.75); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (578, 17, 0.25); 
+VALUES (581, 17, 0.5); 
 
 INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
-VALUES (578, 103, 1); 
+VALUES (581, 14, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (581, 40, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (582, 63, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (582, 252, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (582, 22, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (582, 16, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (582, 91, 3); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (582, 65, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (583, 245, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (583, 34, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (583, 116, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (584, 70, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (584, 5, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (584, 147, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (585, 111, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (585, 46, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (585, 65, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (585, 68, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (586, 63, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (586, 36, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (586, 17, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (586, 2, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (586, 147, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (586, 86, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (587, 53, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (587, 11, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (588, 103, 24); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (588, 69, 8); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (588, 308, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (588, 3, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (588, 334, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (588, 277, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (588, 335, 15); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (589, 68, 6); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (589, 129, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (589, 336, 16); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (589, 16, 0.75); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (589, 44, 12); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (589, 2, 8); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (589, 33, 32); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (590, 1, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (590, 2, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (590, 37, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (590, 237, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (591, 245, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (591, 196, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (591, 119, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (591, 116, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (592, 98, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (592, 190, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (592, 217, 16); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (593, 0, 1.75); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (593, 34, 1.75); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (593, 116, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (594, 34, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (594, 20, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (594, 250, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (595, 247, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (595, 53, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (595, 36, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (595, 16, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (595, 98, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (595, 163, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (596, 162, 8); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (596, 190, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (596, 22, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (596, 297, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (596, 14, 6); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (597, 333, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (597, 36, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (597, 16, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (598, 4, 3); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (598, 312, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (598, 217, 6); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (598, 16, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (598, 154, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (599, 142, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (599, 79, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (599, 18, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (599, 146, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (599, 47, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (599, 56, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (600, 18, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (600, 116, 5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (600, 79, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (601, 166, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (601, 18, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (601, 210, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (601, 176, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (601, 174, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (601, 56, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (602, 99, 1.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (602, 186, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (602, 22, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (602, 33, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (602, 116, 4); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (603, 166, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (603, 18, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (603, 207, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (603, 16, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (603, 79, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (603, 46, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (604, 62, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (604, 63, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (604, 21, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (604, 31, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (604, 46, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (604, 47, 1); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (605, 103, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (605, 6, 25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (605, 21, 2); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (606, 66, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (606, 29, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (606, 119, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (606, 185, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (606, 99, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (606, 34, 0.25); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (606, 116, 0.5); 
+
+INSERT INTO drinkRequires(drinkId, ingredientId, quantity)
+VALUES (606, 33, 0.25); 
 
 INSERT INTO customer(fullName, dateOfBirth)
 VALUES ("Brennan Wilkes", "2020/1/1"); 

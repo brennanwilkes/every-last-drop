@@ -105,7 +105,7 @@ let versionOf;
 data.forEach((drink, i) => {
 	//{"id":0, "name": "old fashioned", "price": 10.0, "mixMethod": "stirred", "onIce": true, "glassID": 0, "versionOf": null, "rating": 8},
 	if(!drinkRecipe[drink.name]){
-		drinkRecipe[drink.name] = {id:rid, name:drink.name, price:drink.price, mixMethod:drink.mixMethod, onIce: drink.onIce, glassID:glasses[drink.glass].id ,versionOf: null, rating: drink.rating};
+		drinkRecipe[drink.name] = {id:rid, name:drink.name, price:drink.price, mixMethod:drink.mixMethod, onIce: drink.onIce, glassID:glasses[drink.glass].id ,versionOf: null, imgURL: drink.imgURL, rating: drink.rating};
 		rid++;
 	}
 });
