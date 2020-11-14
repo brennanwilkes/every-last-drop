@@ -5,7 +5,7 @@ const {database} = require(path.join(__dirname,"backend","database.js"));
 
 const searchQuery = {
 	name : "",
-	contains: "",
+	contains: [""],
 	orderedBy: "",
 	onIce: "",
 	mixMethod: "",
@@ -31,11 +31,14 @@ const searchQuery = {
 	sanitzize(){
 		Object.keys(this).forEach(key => {
 			if(typeof(this[key])=="string"){
-				console.log(key,this[key])
 				this[key] = `%${this[key].toLowerCase()}%`;
-				console.log(key,this[key],'\n')
 			}
 		});
+		this.contains = this.contains.map(c => `%${c.toLowerCase()}%`);
+
+		if(!this.contains || typeof(this.contains)!=="object" || !this.contains.length){
+			this.contains = [""];
+		}
 
 		if(typeof(this.rating)!=="number" || isNaN(this.rating)){
 			this.rating = 0;
@@ -51,7 +54,7 @@ const searchQuery = {
 			searchQuery.onIce,
 			searchQuery.name,
 			searchQuery.rating,
-			searchQuery.contains
+			...searchQuery.contains
 		];
 
 		if(searchQuery.percentage > 0 || searchQuery.liquor.length > 2){
@@ -102,6 +105,28 @@ server.route("drinks/advanced", req => {
 	//Filter by on mixMethod -> shaken / stirred
 	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe WHERE mixMethod=?)`,[searchQuery.mixMethod]);
 
+	/*
+	let containsSQL = searchQuery.contains.map(c => `ingredient.name LIKE ? OR `).join("");
+	containsSQL = containsSQL.substring(0,containsSQL.length-4);
+	*/
+	let containsSQL = `
+		SELECT drinkRequires.drinkId FROM drinkRequires
+		INNER JOIN ingredient
+			ON drinkRequires.ingredientId=ingredient.id
+		WHERE ingredient.name LIKE ?
+	`;
+
+	searchQuery.contains.slice(1).forEach((c, i) => {
+		containsSQL = ` SELECT drinkRequires.drinkId FROM drinkRequires
+		INNER JOIN ingredient
+			ON drinkRequires.ingredientId=ingredient.id
+		WHERE drinkRequires.drinkId IN
+			(${containsSQL})
+			AND ingredient.name LIKE ? `;
+	});
+
+	containsSQL = `(${containsSQL})groupContains`;
+
 
 
 	//Mutli Search by combining all of the above queries
@@ -125,8 +150,10 @@ server.route("drinks/advanced", req => {
 						ON ingredient.id=alcohol.id
 					INNER JOIN alcoholType
 						ON alcohol.percentage=alcoholType.percentage ` : ` `) + `
-				WHERE ingredient.name LIKE ? ` + (searchQuery.percentage > 0 || searchQuery.liquor.length > 2 ? `
-					AND alcohol.percentage>=?
+				INNER JOIN ${containsSQL}
+					ON groupContains.drinkId=drinkRequires.drinkId
+				` + (searchQuery.percentage > 0 || searchQuery.liquor.length > 2 ? `
+					WHERE alcohol.percentage>=?
 					AND alcoholType.liquor LIKE ?
 					`: ` `) + `
 			)group2
