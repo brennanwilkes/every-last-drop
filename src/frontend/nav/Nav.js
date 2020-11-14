@@ -59,7 +59,7 @@ class AdvancedSearchButton extends React.Component{
 			<button className="AdvancedSearch-btn btn btn-light py-2" type="button" onClick={this.props.expandCallback} data-toggle="collapse" data-target={`#${this.props.target}`}>
 				<FaSlidersH />
 			</button>
-		</>
+		</>;
 	}
 }
 
@@ -79,7 +79,7 @@ class MultiInput extends React.Component{
 				<div>
 					<input className={`form-control ${this.props.identifier}`} placeholder="Contains" onChange={this.props.callback} />
 					<button className="btn btn-success" onClick={event=>{
-						this.setState({copies:[...this.state.copies,""]})
+						this.setState({copies:[...this.state.copies,""]});
 					}}><FaPlusSquare size={28} /></button>
 				</div>
 				{
@@ -88,15 +88,16 @@ class MultiInput extends React.Component{
 							<input className={`form-control ${this.props.identifier} ${this.props.identifier}-c${i}`} value={this.state.copies[i]} placeholder="Contains" onChange={event=>{
 								let copies = this.state.copies;
 								copies[i] = event.target.value;
-								this.setState({copies:copies})
+								this.setState({copies:copies});
 
 								this.props.callback();
 							}} />
 							<button className="btn btn-danger" onClick={event=>{
-								let copies = this.state.copies;
+								let copies = this.state.copies.slice(0);
 								copies.splice(i,1);
-								this.setState({copies:copies})
-								this.props.callback();
+								this.props.callback(i);
+								this.setState({copies:copies});
+
 							}}><FaMinusSquare size={28} /></button>
 						</div>
 					</>)
@@ -128,6 +129,10 @@ class AdvancedSearchPannel extends React.Component{
 		let containsVal = []
 		for(let i=0;i<contains.length;i++){
 			containsVal.push(contains[i].value);
+		}
+
+		if(event!==undefined && typeof(event)=="number" && event < containsVal.length){
+			containsVal.splice(event,1);
 		}
 
 		this.props.callback({
