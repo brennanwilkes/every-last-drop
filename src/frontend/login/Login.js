@@ -26,6 +26,44 @@ class LoginHeader extends React.Component{
 	}
 }
 
+class FloatingLabel extends React.Component{
+
+	constructor(props){
+		super(props);
+		this.handleTextChange = this.handleTextChange.bind(this);
+
+		this.state = {
+			isActive: false,
+			text: ""
+		}
+	}
+
+	handleTextChange(event) {
+		this.setState({
+			isActive:event.target.value!=="",
+			text:event.target.value
+		});
+	}
+
+	render(){
+		return <>
+			<div className="floating-label">
+				<input
+					className="form-control form-control-secondary"
+					type={this.props.type}
+					id={this.props.id}
+					value={this.state.text}
+					onChange={this.handleTextChange} />
+
+				<label className={this.state.isActive ? "floating-label-active" : ""}>
+					{this.props.label}
+				</label>
+			</div>
+		</>;
+	}
+
+}
+
 class UserLogin extends React.Component{
 
 	constructor(props){
@@ -49,9 +87,9 @@ class UserLogin extends React.Component{
 				<SettingsButton callback={this.props.settingsCallback} size={32} offset={10} />
 				<LoginHeader text={"Every Last Drop"} />
 
-				<label>
-					<input id="name" className="form-control form-control-secondary" placeholder="Full Name" required autoFocus />
-				</label>
+
+
+				<FloatingLabel id="name" type="text" label="Full Name" />
 
 				<label>
 					<input type="date" id="dob" className="form-control form-control-secondary" required />
@@ -86,13 +124,8 @@ class AdminLogin extends React.Component{
 				<SettingsButton callback={this.props.settingsCallback} size={32} offset={10} />
 				<LoginHeader text={"ELD Admin Login"} />
 
-				<label>
-					<input id="username" className="form-control form-control-secondary" placeholder="Username" required autoFocus />
-				</label>
-
-				<label>
-					<input type="password" id="pass" className="form-control form-control-secondary" placeholder="Password" required />
-				</label>
+				<FloatingLabel id="username" type="text" label="Username" />
+				<FloatingLabel id="pass" type="password" label="Password" />
 
 				<LoginSubmit text={"Login to Dashboard"} />
 				<LoginFooter />

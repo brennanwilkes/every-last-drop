@@ -77,7 +77,7 @@ class MultiInput extends React.Component{
 		return <>
 			<div className="multiInput">
 				<div>
-					<input className={`form-control ${this.props.identifier}`} placeholder="Contains" onChange={this.props.callback} />
+					<input className={`form-control ${this.props.identifier}`} placeholder="Ingredient" onChange={this.props.callback} />
 					<button className="btn btn-success" onClick={event=>{
 						this.setState({copies:[...this.state.copies,""]});
 					}}><FaPlusSquare size={28} /></button>
@@ -85,7 +85,7 @@ class MultiInput extends React.Component{
 				{
 					this.state.copies.map((copy,i) => <>
 						<div>
-							<input className={`form-control ${this.props.identifier} ${this.props.identifier}-c${i}`} value={this.state.copies[i]} placeholder="Contains" onChange={event=>{
+							<input className={`form-control ${this.props.identifier} ${this.props.identifier}-c${i}`} value={this.state.copies[i]} placeholder="Ingredient" onChange={event=>{
 								let copies = this.state.copies;
 								copies[i] = event.target.value;
 								this.setState({copies:copies});
