@@ -37,7 +37,7 @@ class FloatingLabel extends React.Component{
 						}
 					}} />
 
-				<label className={this.state.isActive ? "floating-label-active" : ""}>
+				<label className={`pl-3 ${this.state.isActive ? "floating-label-active" : ""}`}>
 					{this.props.label}
 				</label>
 			</div>
