@@ -4,6 +4,8 @@ import "../bootstrap-import.js";
 import "./nav.css";
 import "./rangeSlider.css";
 
+import FloatingLabel from "../floatingLabel/FloatingLabel.js";
+
 import { FaSlidersH, FaPlusSquare, FaMinusSquare } from "react-icons/fa";
 
 class User extends React.Component{
@@ -77,7 +79,12 @@ class MultiInput extends React.Component{
 		return <>
 			<div className="multiInput">
 				<div>
-					<input className={`form-control ${this.props.identifier}`} placeholder="Ingredient" onChange={this.props.callback} />
+					<FloatingLabel
+						type="text"
+						label="Ingredient"
+						className={`form-control ${this.props.identifier}`}
+						onChange={this.props.callback} />
+
 					<button className="btn btn-success" onClick={event=>{
 						this.setState({copies:[...this.state.copies,""]});
 					}}><FaPlusSquare size={28} /></button>
@@ -92,6 +99,7 @@ class MultiInput extends React.Component{
 
 								this.props.callback();
 							}} />
+
 							<button className="btn btn-danger" onClick={event=>{
 								let copies = this.state.copies.slice(0);
 								copies.splice(i,1);
@@ -160,9 +168,14 @@ class AdvancedSearchPannel extends React.Component{
 				},250);
 			}}>
 				<div className="row py-2 justify-content-md-center">
-					<label className="col-md-9">
-						<input id="advName" className="form-control" placeholder="Name" onChange={this.updateSubmit} />
-					</label>
+					<div className="col-md-9">
+						<FloatingLabel
+							id="advName"
+							type="text"
+							label="Name"
+							className="form-control"
+							onChange={this.updateSubmit} />
+					</div>
 				</div>
 				<div className="row py-2 justify-content-md-center">
 					<div className="col-md-9">
@@ -229,9 +242,13 @@ class Search extends React.Component{
 				$(event.target).children().blur();
 			}}>
 				<AdvancedSearchButton target={this.props.advancedSearch} expandCallback={this.props.advancedSearchCallback} />
-				<input className="form-control" type="text" placeholder="Search" onChange={event => {
-					this.props.callback(event.target.value);
-				}} />
+				<FloatingLabel
+					type="text"
+					label="Search"
+					className="form-control"
+					onChange={event => {
+						this.props.callback(event.target.value);
+					}} />
 			</form>
 		</>;
 	}

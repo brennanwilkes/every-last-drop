@@ -54,7 +54,7 @@ class UserLogin extends React.Component{
 
 
 
-				<FloatingLabel id="name" type="text" label="Full Name" />
+				<FloatingLabel id="name" type="text" label="Full Name" className="form-control form-control-secondary" />
 
 				<label>
 					<input type="date" id="dob" className="form-control form-control-secondary" required />
@@ -89,8 +89,8 @@ class AdminLogin extends React.Component{
 				<SettingsButton callback={this.props.settingsCallback} size={32} offset={10} />
 				<LoginHeader text={"ELD Admin Login"} />
 
-				<FloatingLabel id="username" type="text" label="Username" />
-				<FloatingLabel id="pass" type="password" label="Password" />
+				<FloatingLabel id="username" type="text" label="Username" className="form-control form-control-secondary" />
+				<FloatingLabel id="pass" type="password" label="Password" className="form-control form-control-secondary" />
 
 				<LoginSubmit text={"Login to Dashboard"} />
 				<LoginFooter />

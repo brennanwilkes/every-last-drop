@@ -26,11 +26,16 @@ class FloatingLabel extends React.Component{
 		return <>
 			<div className="floating-label">
 				<input
-					className="form-control form-control-secondary"
+					className={`pb-1 pt-3 ${this.props.className}`}
 					type={this.props.type}
-					id={this.props.id}
+					id={this.props.id ? this.props.id : `floating-label${parseInt(Math.random()*1000)}`}
 					value={this.state.text}
-					onChange={this.handleTextChange} />
+					onChange={event => {
+						this.handleTextChange(event);
+						if(this.props.onChange){
+							this.props.onChange(event);
+						}
+					}} />
 
 				<label className={this.state.isActive ? "floating-label-active" : ""}>
 					{this.props.label}
