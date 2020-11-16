@@ -2,6 +2,7 @@ const path = require("path");
 const {server} = require(path.join(__dirname,"backend","server.js"));
 const {database} = require(path.join(__dirname,"backend","database.js"));
 
+const validateNum = (n,d=0) => (typeof(n)==="number" && !isNaN(n) ? n : d);
 
 const searchQuery = {
 	name : "",
@@ -11,8 +12,10 @@ const searchQuery = {
 	mixMethod: "",
 	percentage: 0,
 	rating: 0,
+	price: 100,
 	isSweet: "",
 	liquor: "",
+	glass: "",
 
 	reset(){
 		Object.keys(this).forEach(key => {
@@ -31,7 +34,7 @@ const searchQuery = {
 	sanitzize(){
 		Object.keys(this).forEach(key => {
 			if(typeof(this[key])=="string"){
-				this[key] = `%${this[key].toLowerCase()}%`;
+				this[key] = key==="glass" ? (this[key].length > 0 ? this[key].toLowerCase() : "%%" ) : `%${this[key].toLowerCase()}%`;
 			}
 		});
 		this.contains = this.contains.map(c => `%${c.toLowerCase()}%`);
@@ -40,12 +43,10 @@ const searchQuery = {
 			this.contains = [""];
 		}
 
-		if(typeof(this.rating)!=="number" || isNaN(this.rating)){
-			this.rating = 0;
-		}
-		if(typeof(this.percentage)!=="number" || isNaN(this.percentage)){
-			this.percentage = 0;
-		}
+		this.rating = validateNum(this.rating);
+		this.percentage = validateNum(this.percentage);
+		this.price = validateNum(this.price,100);
+
 	},
 
 	getArgs(){
@@ -54,6 +55,8 @@ const searchQuery = {
 			searchQuery.onIce,
 			searchQuery.name,
 			searchQuery.rating,
+			searchQuery.glass,
+			searchQuery.price,
 			...searchQuery.contains
 		];
 
@@ -89,26 +92,6 @@ server.route("drinks/advanced", req => {
 	searchQuery.update(req.body);
 	searchQuery.sanitzize();
 
-
-	//NAME SEARCH
-	//return database.get(`SELECT * FROM drinkRecipe WHERE name LIKE ?`,[searchQuery.name]);
-
-	//Contains search
-	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe INNER JOIN drinkRequires ON drinkRecipe.id=drinkRequires.drinkId INNER JOIN ingredient ON drinkRequires.ingredientId=ingredient.id WHERE ingredient.name LIKE ?`,[searchQuery.contains]);
-
-	//Filter by purchaser
-	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe INNER JOIN transaction ON drinkRecipe.id=transaction.drinkId WHERE UPPER(transaction.customerName) LIKE UPPER(?)`,[searchQuery.orderedBy]);
-
-	//Filter by on onIce
-	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe WHERE onIce LIKE ?)`,[searchQuery.onIce]);
-
-	//Filter by on mixMethod -> shaken / stirred
-	//return database.get(`SELECT DISTINCT drinkRecipe.* FROM drinkRecipe WHERE mixMethod=?)`,[searchQuery.mixMethod]);
-
-	/*
-	let containsSQL = searchQuery.contains.map(c => `ingredient.name LIKE ? OR `).join("");
-	containsSQL = containsSQL.substring(0,containsSQL.length-4);
-	*/
 	let containsSQL = `
 		SELECT drinkRequires.drinkId FROM drinkRequires
 		INNER JOIN ingredient
@@ -127,9 +110,7 @@ server.route("drinks/advanced", req => {
 
 	containsSQL = `(${containsSQL})groupContains`;
 
-
-
-	//Mutli Search by combining all of the above queries
+	//Mutli Search
 	return database.get(`
 		SELECT DISTINCT drinkRecipe.* FROM drinkRecipe
 		INNER JOIN (
@@ -142,6 +123,8 @@ server.route("drinks/advanced", req => {
 					AND onIce LIKE ?
 					AND name LIKE ?
 					AND rating>=?
+					AND glassID LIKE ?
+					AND price<=?
 				)group1
 					ON drinkRequires.drinkId=group1.id
 				INNER JOIN ingredient
@@ -177,10 +160,6 @@ server.route("drinks/advanced", req => {
 }, "post");
 
 
-
-
-
-
 //Search by name
 //Selection Query
 server.route("drinks", req => {
@@ -208,5 +187,7 @@ server.route("drinks/orderCount", req => {
 server.route("drinks/popular", req => {
 	return database.get(`SELECT drinkRecipe.* FROM (SELECT transaction.drinkId FROM transaction GROUP BY drinkId ORDER BY COUNT(drinkId) DESC)popular INNER JOIN drinkRecipe ON drinkId=id LIMIT 1`);
 });
+
+server.route("glasses", req => database.get(`SELECT * FROM glass`));
 
 server.start();

@@ -40,10 +40,12 @@ class Menu extends React.Component {
 		this.advancedSearchToggle = this.advancedSearchToggle.bind(this);
 
 		this.state = {
-			drinks: []
+			drinks: [],
+			glasses: []
 		};
 
 		axios.get("/drinks").then(res => this.setState({drinks:res.data}));
+		axios.get("/glasses").then(res => this.setState({glasses:res.data}));
 	}
 
 	componentDidMount(){
@@ -86,7 +88,8 @@ class Menu extends React.Component {
 			<Nav user={this.props.user}
 				searchCallback={this.search}
 				advSearchCallback={this.advSearch}
-				advancedSearchToggleCallback={this.advancedSearchToggle} />
+				advancedSearchToggleCallback={this.advancedSearchToggle}
+				glasses={this.state.glasses} />
 			<div className="container-fluid" id="menu">{
 				splitDrinks.map(r => {
 					return <>

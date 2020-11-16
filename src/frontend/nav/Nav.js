@@ -8,6 +8,9 @@ import FloatingLabel from "../floatingLabel/FloatingLabel.js";
 
 import { FaSlidersH, FaPlusSquare, FaMinusSquare } from "react-icons/fa";
 
+const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
+const capitalizePrimary = s => capitalize(s).replace("And","and").replace("Is","is").replace("The","the");
+
 class User extends React.Component{
 	render(){
 		return <button type="button" className="btn btn-outline-secondary btn-within-collapsable">{(!this.props.name) || this.props.name.length < 1 ? "Invalid User": this.props.name}</button>;
@@ -18,7 +21,7 @@ class RangeSlider extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			val: 0
+			val: (this.props.default ? this.props.default : 0)
 		}
 	}
 
@@ -92,12 +95,15 @@ class MultiInput extends React.Component{
 				{
 					this.state.copies.map((copy,i) => <>
 						<div>
-							<input className={`form-control ${this.props.identifier} ${this.props.identifier}-c${i}`} value={this.state.copies[i]} placeholder="Ingredient" onChange={event=>{
-								let copies = this.state.copies;
-								copies[i] = event.target.value;
-								this.setState({copies:copies});
+							<input
+								className={`form-control ${this.props.identifier} ${this.props.identifier}-c${i}`}
+								value={this.state.copies[i]}
+								onChange={event=>{
+									let copies = this.state.copies;
+									copies[i] = event.target.value;
+									this.setState({copies:copies});
 
-								this.props.callback();
+									this.props.callback();
 							}} />
 
 							<button className="btn btn-danger" onClick={event=>{
@@ -152,7 +158,9 @@ class AdvancedSearchPannel extends React.Component{
 			isSweet: $("#isSweet")[0].value,
 			liquor: $("#liquor")[0].value,
 			percentage: parseInt($("#percentage")[0].value),
-			rating: parseInt($("#rating")[0].value)/10 - 2
+			rating: parseInt($("#rating")[0].value)/10 - 2,
+			price: parseInt($("#price")[0].value)/4,
+			glass: $("#glass")[0].value,
 		});
 	}
 
@@ -229,6 +237,20 @@ class AdvancedSearchPannel extends React.Component{
 						<RangeSlider label="Minimum rating" outputMultipler={0.05} scale={20} id="rating" onChange={this.updateSubmit} />
 					</div>
 				</div>
+				<div className="row py-2 justify-content-md-center">
+					<div className="col-md-3">
+						<select className="form-control" id="glass" onChange={this.updateSubmit} >
+							<option value="">All Glasses</option>
+							{
+								this.props.glasses.map(g => <option value={g.id}>{capitalizePrimary(g.name)}</option>)
+							}
+
+						</select>
+					</div>
+					<div className="col-md-6">
+						<RangeSlider label="Maximum Price" default={100} outputMultipler={0.25} scale={4} id="price" onChange={this.updateSubmit} />
+					</div>
+				</div>
 			</form>
 		</>
 	}
@@ -283,7 +305,7 @@ class Nav extends React.Component{
 						<Search callback={this.props.searchCallback} advancedSearchCallback={this.props.advancedSearchToggleCallback} advancedSearch="advancedOptions"/>
 					</div>
 				</nav>
-				<AdvancedSearchPannel id="advancedOptions" name={this.props.user} callback={this.props.advSearchCallback}/>
+				<AdvancedSearchPannel id="advancedOptions" glasses={this.props.glasses} name={this.props.user} callback={this.props.advSearchCallback}/>
 			</div>
 		</>;
 	}
