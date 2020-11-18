@@ -47,7 +47,7 @@ class RangeSlider extends React.Component{
 							this.props.onChange();
 						}
 				}} />
-				<output className="output-val" id={`${this.props.id}-output`} value={this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)} >0</output>
+				<output className="output-val" id={`${this.props.id}-output`} value={this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)} >{this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)}</output>
 			</div>
 		</>
 	}

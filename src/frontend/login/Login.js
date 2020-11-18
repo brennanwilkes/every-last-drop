@@ -57,7 +57,7 @@ class UserLogin extends React.Component{
 				<FloatingLabel id="name" type="text" label="Full Name" className="form-control form-control-secondary" />
 
 				<label>
-					<input type="date" id="dob" className="form-control form-control-secondary" required />
+					<input type="date" id="dob" className="pb-1 pt-3 form-control form-control-secondary" required />
 				</label>
 
 				<LoginSubmit text={"Continue to Menu"} />
