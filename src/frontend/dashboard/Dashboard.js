@@ -31,7 +31,18 @@ class PopularDrink extends React.Component{
 		let d = this.props.drinkInfo;
 
 		return <>
-			<img className="popularImg col-md-2" src={d.imgURL} />
+			<img className="popularItem" src={d.imgURL} />
+		</>
+	}
+}
+
+class PopularIngr extends React.Component{
+	render(){
+		let i = this.props.ingrInfo;
+		return <>
+			<div className="popularItem">
+				<h1>{i.name}</h1>
+			</div>
 		</>
 	}
 }
@@ -44,10 +55,12 @@ class Dashboard extends React.Component {
 
 		this.state = {
 			orders : [],
-			popularDrinks : []
+			popularDrinks : [],
+			popularIngr : []
 		}
 		axios.get("/orders").then(res => this.setState({orders:res.data}));
-		axios.get("/drinks/popular").then(res => this.setState({popularDrinks:res.data}));
+		axios.get("/popular/drinks").then(res => this.setState({popularDrinks:res.data}));
+		axios.get("/popular/ingredients").then(res => this.setState({popularIngr:res.data}));
 	}
 
 	render() {
@@ -69,7 +82,7 @@ class Dashboard extends React.Component {
 						</tbody></table>
 					</div>
 					<div className="col-md-8 px-3">
-						<div className="p-3" id="popularDrinks"><div>
+						<div className="p-3 popularContainer" id="popularDrinks"><div>
 							{
 								this.state.popularDrinks.map(d => {
 									return <PopularDrink drinkInfo={d} />
@@ -77,9 +90,13 @@ class Dashboard extends React.Component {
 							}
 						</div></div>
 						<div className="row p-3">
-							<div id="popularIng">
-
-							</div>
+						<div className="p-3 popularContainer" id="popularIngr"><div>
+							{
+								this.state.popularIngr.map(i => {
+									return <PopularIngr ingrInfo={i} />
+								})
+							}
+						</div></div>
 						</div>
 					</div>
 				</div>
