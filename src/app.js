@@ -185,16 +185,15 @@ server.route("drinks/orderCount", req => {
 //Most ordered drink
 //Nested Aggregation query
 server.route("drinks/popular", req => {
-	return database.get(`SELECT drinkRecipe.* FROM (SELECT transaction.drinkId FROM transaction GROUP BY drinkId ORDER BY COUNT(drinkId) DESC)popular INNER JOIN drinkRecipe ON drinkId=id LIMIT 1`);
+	return database.get(`SELECT drinkRecipe.* FROM (SELECT transaction.drinkId FROM transaction GROUP BY drinkId ORDER BY COUNT(drinkId) DESC)popular INNER JOIN drinkRecipe ON drinkId=id LIMIT 10`);
 });
 
 server.route("glasses", req => database.get(`SELECT * FROM glass`));
 
 server.route("orders", req => database.get(`
-	SELECT * FROM transaction
-	INNER JOIN drinkRecipe
+	SELECT transaction.*, drinkRecipe.name, drinkRecipe.price
+	FROM transaction INNER JOIN drinkRecipe
 	ON transaction.drinkId=drinkRecipe.id
-`));
-
+	ORDER BY transaction.date DESC`));
 
 server.start();
