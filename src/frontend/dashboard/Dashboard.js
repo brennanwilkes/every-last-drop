@@ -10,6 +10,7 @@ const TRANSACTION_HEADERS = [
 	"Price"
 ]
 
+const cutoffString = (str,max) => str.length > max ? `${str.substring(0,max-3).trim()}...` : str;
 
 class Transaction extends React.Component{
 	render(){
@@ -17,8 +18,8 @@ class Transaction extends React.Component{
 		return <>
 			<tr>
 				<td>{t.date.substring(0,10)}</td>
-				<td>{t.customerName}</td>
-				<td>{t.name}</td>
+				<td>{cutoffString(t.customerName,10)}</td>
+				<td>{cutoffString(t.name,14)}</td>
 				<td>{`\$${t.price}`}</td>
 			</tr>
 		</>;
@@ -68,13 +69,13 @@ class Dashboard extends React.Component {
 						</tbody></table>
 					</div>
 					<div className="col-md-8 px-3">
-						<div className="row p-3" id="popularDrinks">
+						<div className="p-3" id="popularDrinks"><div>
 							{
 								this.state.popularDrinks.map(d => {
 									return <PopularDrink drinkInfo={d} />
 								})
 							}
-						</div>
+						</div></div>
 						<div className="row p-3">
 							<div id="popularIng">
 

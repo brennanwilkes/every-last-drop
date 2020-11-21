@@ -21,15 +21,24 @@
 
 #dashboard > .row:first-of-type > div{
 	height: 60vh;
+	overflow-y: scroll;
 }
 
 #transactions{
-	overflow-y: scroll;
 	width: 100%;
 }
 
-#dashboard > .row:first-of-type > div:last-of-type > div{
-	min-height: 30vh;
+#popularDrinks{
+	height: 30vh;
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#popularDrinks > div {
+	width: 100%;
+	display: flex;
 }
 
 #dashboard > .row:last-of-type{
@@ -46,10 +55,10 @@
 }
 
 .popularImg{
-	width: 125px;
-	height: 125px;
+	width: 25vh;
+	height: 25vh;
 	margin: 10px;
-	border: 1px solid black;
-	border-radius: 10px;
+	border: 2px solid black;
+	border-radius: 20px;
 	padding: 0;
 }
