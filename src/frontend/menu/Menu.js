@@ -11,10 +11,6 @@ const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, 
 
 class DrinkRecipe extends React.Component{
 
-	componentDidMount(){
-		//$(`#drinkRecipe-${this.props.drinkInfo.id}`).css("background-image",`url(${this.props.drinkInfo.imgURL})`);
-	}
-
 	render(){
 		return <>
 			<div className="drinkRecipe-wrapper"><div id={`drinkRecipe-${this.props.drinkInfo.id}`} className="drinkRecipe">

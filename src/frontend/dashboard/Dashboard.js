@@ -68,11 +68,18 @@ class Dashboard extends React.Component {
 		this.state = {
 			orders : [],
 			popularDrinks : [],
-			popularIngr : []
+			popularIngr : [],
+			lowStock: []
 		}
 		axios.get("/orders").then(res => this.setState({orders:res.data}));
 		axios.get("/popular/drinks").then(res => this.setState({popularDrinks:res.data}));
 		axios.get("/popular/ingredients").then(res => this.setState({popularIngr:res.data}));
+
+		axios.post('/ingredients',{
+			quantity: 1
+		}).then(res => {
+			this.setState({lowStock:res.data})
+		});
 	}
 
 	componentDidMount(){
@@ -130,11 +137,13 @@ class Dashboard extends React.Component {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-12 p-3 dashboardComponent">
-						<div id="inventory">
-
-						</div>
-					</div>
+					<div className="col-md-12 p-3 dashboardComponent popularContainer scrollable-x" id="inventory"><div>
+						{
+							this.state.lowStock.map(i => {
+								return <PopularIngr ingrInfo={i} />
+							})
+						}
+					</div></div>
 				</div>
 			</div>
 		</>;
