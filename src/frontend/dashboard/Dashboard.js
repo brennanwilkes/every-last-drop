@@ -3,6 +3,9 @@ import "../bootstrap-import.js";
 import axios from "axios";
 import "./dashboard.css";
 
+import computerImage from "../../../assets/computer-chip-stock.jpg";
+
+
 const TRANSACTION_HEADERS = [
 	"Date",
 	"Customer",
@@ -39,10 +42,16 @@ class PopularDrink extends React.Component{
 class PopularIngr extends React.Component{
 	render(){
 		let i = this.props.ingrInfo;
-		return <>
+		/*return <>
 			<div className="popularItem">
 				<h1>{i.name}</h1>
 			</div>
+		</>*/
+		return <>
+			<img
+				className="popularItem"
+				src={`https://www.thecocktaildb.com/images/ingredients/${i.name}.png`}
+				alt={`"${i.name}"`} />
 		</>
 	}
 }
@@ -63,11 +72,30 @@ class Dashboard extends React.Component {
 		axios.get("/popular/ingredients").then(res => this.setState({popularIngr:res.data}));
 	}
 
+	componentDidMount(){
+		$("main").css("backgroundImage",`url(${computerImage})`);
+		$("main").css("background-color","#00000080");
+		$("main").css("background-blend-mode","overlay");
+
+		setTimeout(event=>{
+			$(".scrollable-x").each((i,component) => {
+				component = $(component);
+				component.scrollLeft(component.width());
+				component.animate({ scrollLeft: "0" },1000);
+			});
+			$(".scrollable-y").each((i,component) => {
+				component = $(component);
+				component.scrollTop(component.height());
+				component.animate({ scrollTop: "0" },1000);
+			});
+		},100);
+	}
+
 	render() {
 		return <>
 			<div className="container-fluid p-3" id="dashboard">
 				<div className="row">
-					<div className="col-md-4 p-3">
+					<div className="col-md-4 p-3 dashboardComponent scrollable-y">
 						<table id="transactions"><thead>
 							<tr>{
 								TRANSACTION_HEADERS.map(h => {
@@ -82,26 +110,24 @@ class Dashboard extends React.Component {
 						</tbody></table>
 					</div>
 					<div className="col-md-8 px-3">
-						<div className="p-3 popularContainer" id="popularDrinks"><div>
+						<div className="p-3 popularContainer dashboardComponent scrollable-x" id="popularDrinks"><div>
 							{
 								this.state.popularDrinks.map(d => {
 									return <PopularDrink drinkInfo={d} />
 								})
 							}
 						</div></div>
-						<div className="row p-3">
-						<div className="p-3 popularContainer" id="popularIngr"><div>
+						<div className="p-3 popularContainer dashboardComponent scrollable-x" id="popularIngr"><div>
 							{
 								this.state.popularIngr.map(i => {
 									return <PopularIngr ingrInfo={i} />
 								})
 							}
 						</div></div>
-						</div>
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-12 p-3">
+					<div className="col-md-12 p-3 dashboardComponent">
 						<div id="inventory">
 
 						</div>
