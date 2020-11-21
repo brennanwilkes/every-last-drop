@@ -5,6 +5,7 @@ import "./dashboard.css";
 
 import computerImage from "../../../assets/computer-chip-stock.jpg";
 
+const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
 
 const TRANSACTION_HEADERS = [
 	"Date",
@@ -22,7 +23,7 @@ class Transaction extends React.Component{
 			<tr>
 				<td>{t.date.substring(0,10)}</td>
 				<td>{cutoffString(t.customerName,10)}</td>
-				<td>{cutoffString(t.name,14)}</td>
+				<td>{cutoffString(capitalize(t.name),14)}</td>
 				<td>{`\$${t.price}`}</td>
 			</tr>
 		</>;
@@ -34,7 +35,10 @@ class PopularDrink extends React.Component{
 		let d = this.props.drinkInfo;
 
 		return <>
-			<img className="popularItem" src={d.imgURL} />
+			<div className="popularWrapper">
+				<img className="popularItem" src={d.imgURL} />
+				<div><h3 className="h6" >{capitalize(d.name)}</h3></div>
+			</div>
 		</>
 	}
 }
@@ -42,16 +46,15 @@ class PopularDrink extends React.Component{
 class PopularIngr extends React.Component{
 	render(){
 		let i = this.props.ingrInfo;
-		/*return <>
-			<div className="popularItem">
-				<h1>{i.name}</h1>
-			</div>
-		</>*/
+
 		return <>
-			<img
-				className="popularItem"
-				src={`https://www.thecocktaildb.com/images/ingredients/${i.name}.png`}
-				alt={`"${i.name}"`} />
+			<div className="popularWrapper">
+				<img
+					className="popularItem"
+					src={`https://www.thecocktaildb.com/images/ingredients/${i.name}.png`}
+					alt={`"${i.name}.png"`} />
+				<div><h3 className="h6" >{capitalize(i.name)}</h3></div>
+			</div>
 		</>
 	}
 }

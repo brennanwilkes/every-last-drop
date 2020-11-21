@@ -30,6 +30,18 @@
 	width: 100%;
 }
 
+
+#transactions tr{
+	transition: transform 0.25s;
+	-webkit-transition: transform 0.25s;
+}
+
+
+#transactions tr:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
 .popularContainer{
 	height: 30vh;
 	overflow-x: auto;
@@ -67,6 +79,38 @@
 	border: 2px solid black;
 	border-radius: 20px;
 	padding: 0;
+}
+
+.popularWrapper{
+	position: relative;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+
+
+.popularWrapper:hover{
+	transform: scale(1.15);
+	cursor: pointer;
+}
+
+
+.popularWrapper > div {
+	position: absolute;
+	width: 25vh;
+	min-width: 25vh;
+	bottom: 10%;
+	text-align: center;
+	left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popularWrapper > div > h3{
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #FFFFFFB0;
+	width: fit-content;
+	min-width: 40%;
 }
 
 
