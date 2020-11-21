@@ -13,6 +13,7 @@ const searchQuery = {
 	percentage: 0,
 	rating: 0,
 	price: 100,
+	quantity: 1,
 	isSweet: "",
 	liquor: "",
 	glass: "",
@@ -46,6 +47,7 @@ const searchQuery = {
 		this.rating = validateNum(this.rating);
 		this.percentage = validateNum(this.percentage);
 		this.price = validateNum(this.price,100);
+		this.quantity = validateNum(this.quantity,1);
 
 	},
 
@@ -168,9 +170,20 @@ server.route("drinks", req => {
 	return database.get(`SELECT * FROM drinkRecipe WHERE name LIKE ?`,[searchQuery.name]);
 }, "post");
 
+//ingredients by quantity
+//Selection Query 2
+server.route("ingredients", req => {
+	searchQuery.update(req.body);
+	searchQuery.sanitzize();
+	return database.get(`SELECT ingredient.* from ingredient WHERE ingredient.quantity<?`,[searchQuery.quantity]);
+}, "post");
+
+
+
+
 //Highest rated drink
 //Aggregation query 1
-server.route("drinks/favourite", req => {
+server.route("favourite/drinks", req => {
 	return database.get(`SELECT drinkRecipe.* FROM drinkRecipe WHERE RATING = (SELECT MAX(RATING) FROM drinkRecipe)`);
 });
 
@@ -184,8 +197,14 @@ server.route("drinks/orderCount", req => {
 
 //Most ordered drink
 //Nested Aggregation query
-server.route("drinks/popular", req => {
-	return database.get(`SELECT drinkRecipe.* FROM (SELECT transaction.drinkId FROM transaction GROUP BY drinkId ORDER BY COUNT(drinkId) DESC)popular INNER JOIN drinkRecipe ON drinkId=id LIMIT 10`);
+server.route("popular/drinks", req => {
+	return database.get(`SELECT drinkRecipe.* FROM (SELECT transaction.drinkId FROM transaction GROUP BY drinkId ORDER BY COUNT(drinkId) DESC LIMIT 10)popular INNER JOIN drinkRecipe ON drinkId=id`);
+});
+
+//Most ordered ingredient
+//Nested Aggregation query
+server.route("popular/ingredients", req => {
+	return database.get(`SELECT ingredient.* FROM (SELECT drinkRequires.ingredientId FROM transaction INNER JOIN drinkRequires ON transaction.drinkId=drinkRequires.drinkId GROUP BY drinkRequires.ingredientId ORDER BY COUNT(drinkRequires.ingredientId) DESC LIMIT 25)popular INNER JOIN ingredient ON popular.ingredientId=ingredient.id`);
 });
 
 server.route("glasses", req => database.get(`SELECT * FROM glass`));
