@@ -190,4 +190,11 @@ server.route("drinks/popular", req => {
 
 server.route("glasses", req => database.get(`SELECT * FROM glass`));
 
+server.route("orders", req => database.get(`
+	SELECT * FROM transaction
+	INNER JOIN drinkRecipe
+	ON transaction.drinkId=drinkRecipe.id
+`));
+
+
 server.start();
