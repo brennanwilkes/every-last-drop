@@ -1,7 +1,7 @@
 const path = require("path")
 const fs = require('fs');
 
-const strWrap = val => typeof val === "string" ? `"${val}"` : val;
+const strWrap = val => typeof val === "string" && val.substring(0,4)!=="date" ? `"${val}"` : val;
 
 const splitTupleJSON = json => {
 	let tuple = {col: "", data:""};

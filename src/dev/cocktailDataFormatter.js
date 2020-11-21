@@ -61,24 +61,9 @@ let juiceFruit = [
 	{ fruitName: "lime cordial", isSweet: false }
 ];
 
-let customer = [
-	{fullName:"Brennan Wilkes", dateOfBirth: "2020/1/1"},
-	{fullName:"Charles Lewis", dateOfBirth: "2020/1/1"},
-	{fullName:"Mali Truong", dateOfBirth: "2020/1/1"},
-	{fullName:"Hazra Imran", dateOfBirth: "2020/1/1"},
-	{fullName:"Erik Jovanovic", dateOfBirth: "2020/1/1"}
-];
+let customer = [];
 
-let transaction = [
-	{date: "2020/10/20", drinkId: 0, customerName: "Brennan Wilkes"},
-	{date: "2020/10/21", drinkId: 1, customerName: "Brennan Wilkes"},
-	{date: "2020/10/22", drinkId: 1, customerName: "Brennan Wilkes"},
-	{date: "2020/10/23", drinkId: 1, customerName: "Brennan Wilkes"},
-	{date: "2020/10/23", drinkId: 0, customerName: "Brennan Wilkes"},
-	{date: "2020/10/24", drinkId: 4, customerName: "Mali Truong"},
-	{date: "2020/10/25", drinkId: 3, customerName: "Charles Lewis"},
-	{date: "2020/10/26", drinkId: 2, customerName: "Hazra Imran"}
-]
+let transaction = [];
 
 
 

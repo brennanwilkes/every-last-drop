@@ -1,0 +1,2913 @@
+{
+    "database": "everyLastDrop",
+    "customer": {
+        "order": 0,
+        "data": [
+            {
+                "fullName": "Anna Welch",
+                "dateOfBirth": "date(\"1985/10/17\")"
+            },
+            {
+                "fullName": "Diana Holland",
+                "dateOfBirth": "date(\"1945/11/6\")"
+            },
+            {
+                "fullName": "Jon Jennings",
+                "dateOfBirth": "date(\"1952/12/21\")"
+            },
+            {
+                "fullName": "Lola Graham",
+                "dateOfBirth": "date(\"1944/11/4\")"
+            },
+            {
+                "fullName": "Sophia Nelson",
+                "dateOfBirth": "date(\"1959/5/24\")"
+            },
+            {
+                "fullName": "Hailey Brewer",
+                "dateOfBirth": "date(\"1984/3/5\")"
+            },
+            {
+                "fullName": "Daryl Fuller",
+                "dateOfBirth": "date(\"1987/10/10\")"
+            },
+            {
+                "fullName": "Gloria Welch",
+                "dateOfBirth": "date(\"1966/3/15\")"
+            },
+            {
+                "fullName": "Herbert Gonzales",
+                "dateOfBirth": "date(\"1970/3/5\")"
+            },
+            {
+                "fullName": "Jacob Ramos",
+                "dateOfBirth": "date(\"1988/5/4\")"
+            },
+            {
+                "fullName": "Chris Gibson",
+                "dateOfBirth": "date(\"1945/1/14\")"
+            },
+            {
+                "fullName": "Peyton Russell",
+                "dateOfBirth": "date(\"1960/3/14\")"
+            },
+            {
+                "fullName": "Elmer Alvarez",
+                "dateOfBirth": "date(\"1969/4/14\")"
+            },
+            {
+                "fullName": "Judith Graves",
+                "dateOfBirth": "date(\"1986/12/23\")"
+            },
+            {
+                "fullName": "Benjamin Knight",
+                "dateOfBirth": "date(\"1970/11/18\")"
+            },
+            {
+                "fullName": "Danny Barnett",
+                "dateOfBirth": "date(\"1995/1/22\")"
+            },
+            {
+                "fullName": "Edith Fleming",
+                "dateOfBirth": "date(\"1974/1/19\")"
+            },
+            {
+                "fullName": "Mary Robinson",
+                "dateOfBirth": "date(\"1949/7/23\")"
+            },
+            {
+                "fullName": "Zoe Mackay",
+                "dateOfBirth": "date(\"1969/5/25\")"
+            },
+            {
+                "fullName": "Scarlett Shaw",
+                "dateOfBirth": "date(\"1991/5/13\")"
+            },
+            {
+                "fullName": "Michelle Jennings",
+                "dateOfBirth": "date(\"1984/10/11\")"
+            },
+            {
+                "fullName": "Jessie Hicks",
+                "dateOfBirth": "date(\"1945/6/30\")"
+            },
+            {
+                "fullName": "Dominic Addy",
+                "dateOfBirth": "date(\"1967/4/8\")"
+            },
+            {
+                "fullName": "Angel Ramirez",
+                "dateOfBirth": "date(\"1965/3/5\")"
+            },
+            {
+                "fullName": "Jacob Warren",
+                "dateOfBirth": "date(\"1969/4/30\")"
+            },
+            {
+                "fullName": "Mandy Simmmons",
+                "dateOfBirth": "date(\"1964/11/3\")"
+            },
+            {
+                "fullName": "Maeva Knight",
+                "dateOfBirth": "date(\"1950/1/8\")"
+            },
+            {
+                "fullName": "Earl Gray",
+                "dateOfBirth": "date(\"1980/5/29\")"
+            },
+            {
+                "fullName": "Maeva Lam",
+                "dateOfBirth": "date(\"1968/1/5\")"
+            },
+            {
+                "fullName": "Jeanne Brar",
+                "dateOfBirth": "date(\"1953/10/18\")"
+            },
+            {
+                "fullName": "Caitlin Jackson",
+                "dateOfBirth": "date(\"1974/1/10\")"
+            },
+            {
+                "fullName": "Benjamin Harris",
+                "dateOfBirth": "date(\"1986/3/12\")"
+            },
+            {
+                "fullName": "Jessie Mcdonalid",
+                "dateOfBirth": "date(\"1997/11/4\")"
+            },
+            {
+                "fullName": "Mason Ross",
+                "dateOfBirth": "date(\"1946/12/14\")"
+            },
+            {
+                "fullName": "Darrell Wade",
+                "dateOfBirth": "date(\"1997/6/4\")"
+            },
+            {
+                "fullName": "Jesse Mcdonalid",
+                "dateOfBirth": "date(\"1985/7/26\")"
+            },
+            {
+                "fullName": "Alfred Ramos",
+                "dateOfBirth": "date(\"1957/8/5\")"
+            },
+            {
+                "fullName": "Pearl Myers",
+                "dateOfBirth": "date(\"1944/10/6\")"
+            },
+            {
+                "fullName": "Kelly Morris",
+                "dateOfBirth": "date(\"1975/9/11\")"
+            },
+            {
+                "fullName": "Sofia Lo",
+                "dateOfBirth": "date(\"1981/2/1\")"
+            },
+            {
+                "fullName": "Bernard Ellis",
+                "dateOfBirth": "date(\"1988/8/27\")"
+            },
+            {
+                "fullName": "Molly Cunningham",
+                "dateOfBirth": "date(\"1952/5/15\")"
+            },
+            {
+                "fullName": "Billie Arnold",
+                "dateOfBirth": "date(\"1998/1/3\")"
+            },
+            {
+                "fullName": "Mason Brown",
+                "dateOfBirth": "date(\"1991/6/22\")"
+            },
+            {
+                "fullName": "Peter Andrews",
+                "dateOfBirth": "date(\"1983/8/30\")"
+            },
+            {
+                "fullName": "Ray Kuhn",
+                "dateOfBirth": "date(\"1993/11/6\")"
+            },
+            {
+                "fullName": "Beatrice Reed",
+                "dateOfBirth": "date(\"1986/6/16\")"
+            },
+            {
+                "fullName": "Anthony Gagné",
+                "dateOfBirth": "date(\"1995/9/3\")"
+            },
+            {
+                "fullName": "Delphine Sirko",
+                "dateOfBirth": "date(\"1956/4/30\")"
+            },
+            {
+                "fullName": "Benjamin Brar",
+                "dateOfBirth": "date(\"1973/4/19\")"
+            },
+            {
+                "fullName": "Jim Washington",
+                "dateOfBirth": "date(\"1982/3/11\")"
+            },
+            {
+                "fullName": "Douglas Hughes",
+                "dateOfBirth": "date(\"1988/11/2\")"
+            },
+            {
+                "fullName": "Morris Spencer",
+                "dateOfBirth": "date(\"1978/10/3\")"
+            },
+            {
+                "fullName": "Katrina Carter",
+                "dateOfBirth": "date(\"1949/8/9\")"
+            },
+            {
+                "fullName": "Rita Miller",
+                "dateOfBirth": "date(\"1955/12/27\")"
+            },
+            {
+                "fullName": "Catherine Hunt",
+                "dateOfBirth": "date(\"1992/7/18\")"
+            },
+            {
+                "fullName": "Simon Fortin",
+                "dateOfBirth": "date(\"1967/3/27\")"
+            },
+            {
+                "fullName": "Nicky Castro",
+                "dateOfBirth": "date(\"1998/2/15\")"
+            },
+            {
+                "fullName": "Kristin Flores",
+                "dateOfBirth": "date(\"1985/5/28\")"
+            },
+            {
+                "fullName": "Carolyn Wright",
+                "dateOfBirth": "date(\"1979/8/23\")"
+            },
+            {
+                "fullName": "Jar Watson",
+                "dateOfBirth": "date(\"1965/8/6\")"
+            },
+            {
+                "fullName": "Jeffrey Bailey",
+                "dateOfBirth": "date(\"1990/5/8\")"
+            },
+            {
+                "fullName": "Dawn Prescott",
+                "dateOfBirth": "date(\"1949/1/20\")"
+            },
+            {
+                "fullName": "Tristan Ouellet",
+                "dateOfBirth": "date(\"1989/4/26\")"
+            },
+            {
+                "fullName": "Joel Gonzales",
+                "dateOfBirth": "date(\"1965/8/19\")"
+            },
+            {
+                "fullName": "Aaron Jackson",
+                "dateOfBirth": "date(\"1991/6/7\")"
+            },
+            {
+                "fullName": "Julian Price",
+                "dateOfBirth": "date(\"1952/6/18\")"
+            },
+            {
+                "fullName": "Charles Kowalski",
+                "dateOfBirth": "date(\"1962/3/4\")"
+            },
+            {
+                "fullName": "Martha Lowe",
+                "dateOfBirth": "date(\"1961/5/16\")"
+            },
+            {
+                "fullName": "Juan Barrett",
+                "dateOfBirth": "date(\"1974/5/5\")"
+            },
+            {
+                "fullName": "Bobby Allen",
+                "dateOfBirth": "date(\"1976/3/12\")"
+            },
+            {
+                "fullName": "Bernice Little",
+                "dateOfBirth": "date(\"1992/4/4\")"
+            },
+            {
+                "fullName": "Arthur Côté",
+                "dateOfBirth": "date(\"1947/5/10\")"
+            },
+            {
+                "fullName": "Jade Kowalski",
+                "dateOfBirth": "date(\"1979/7/27\")"
+            },
+            {
+                "fullName": "Terra Beck",
+                "dateOfBirth": "date(\"1965/5/16\")"
+            },
+            {
+                "fullName": "Mildred Murphy",
+                "dateOfBirth": "date(\"1982/4/5\")"
+            },
+            {
+                "fullName": "Toni Dunn",
+                "dateOfBirth": "date(\"1967/3/20\")"
+            },
+            {
+                "fullName": "Olivia Lévesque",
+                "dateOfBirth": "date(\"1967/1/21\")"
+            },
+            {
+                "fullName": "Alyssa Carlson",
+                "dateOfBirth": "date(\"1990/10/19\")"
+            },
+            {
+                "fullName": "Art Wells",
+                "dateOfBirth": "date(\"1954/12/8\")"
+            },
+            {
+                "fullName": "Randy Mitchelle",
+                "dateOfBirth": "date(\"1985/3/10\")"
+            },
+            {
+                "fullName": "Ramon Fuller",
+                "dateOfBirth": "date(\"1968/8/28\")"
+            },
+            {
+                "fullName": "Nolan Gonzalez",
+                "dateOfBirth": "date(\"1955/3/21\")"
+            },
+            {
+                "fullName": "Jasmine Fortin",
+                "dateOfBirth": "date(\"1997/6/3\")"
+            },
+            {
+                "fullName": "Duane Nguyen",
+                "dateOfBirth": "date(\"1946/4/3\")"
+            },
+            {
+                "fullName": "Joan Daniels",
+                "dateOfBirth": "date(\"1966/5/27\")"
+            },
+            {
+                "fullName": "April Kennedy",
+                "dateOfBirth": "date(\"1979/2/15\")"
+            },
+            {
+                "fullName": "Paige Henry",
+                "dateOfBirth": "date(\"1990/4/20\")"
+            },
+            {
+                "fullName": "Zander Byrd",
+                "dateOfBirth": "date(\"1961/9/5\")"
+            },
+            {
+                "fullName": "Josef Moreno",
+                "dateOfBirth": "date(\"1994/4/10\")"
+            },
+            {
+                "fullName": "Theresa Stevens",
+                "dateOfBirth": "date(\"1960/8/27\")"
+            },
+            {
+                "fullName": "Ella Mendoza",
+                "dateOfBirth": "date(\"1977/10/25\")"
+            },
+            {
+                "fullName": "Avery Tremblay",
+                "dateOfBirth": "date(\"1953/1/29\")"
+            },
+            {
+                "fullName": "Alexis Gagnon",
+                "dateOfBirth": "date(\"1992/5/22\")"
+            },
+            {
+                "fullName": "Adam Roy",
+                "dateOfBirth": "date(\"1982/10/10\")"
+            },
+            {
+                "fullName": "Jerome Vargas",
+                "dateOfBirth": "date(\"1967/11/15\")"
+            },
+            {
+                "fullName": "Judy Dixon",
+                "dateOfBirth": "date(\"1972/7/11\")"
+            },
+            {
+                "fullName": "Vanessa Owens",
+                "dateOfBirth": "date(\"1968/10/1\")"
+            },
+            {
+                "fullName": "Jimmie Kuhn",
+                "dateOfBirth": "date(\"1977/12/26\")"
+            },
+            {
+                "fullName": "Benjamin French",
+                "dateOfBirth": "date(\"1981/1/12\")"
+            }
+        ]
+    },
+    "transaction": {
+        "order": 1,
+        "data": [
+            {
+                "date": "date(\"2020/10/4\")",
+                "drinkId": 604,
+                "customerName": "Rita Miller"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 308,
+                "customerName": "Michelle Jennings"
+            },
+            {
+                "date": "date(\"2020/11/15\")",
+                "drinkId": 227,
+                "customerName": "Jeanne Brar"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 92,
+                "customerName": "Maeva Lam"
+            },
+            {
+                "date": "date(\"2020/11/16\")",
+                "drinkId": 204,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/10/29\")",
+                "drinkId": 1,
+                "customerName": "Jacob Ramos"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 1,
+                "customerName": "Peyton Russell"
+            },
+            {
+                "date": "date(\"2020/10/27\")",
+                "drinkId": 530,
+                "customerName": "Jimmie Kuhn"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 8,
+                "customerName": "Mason Brown"
+            },
+            {
+                "date": "date(\"2020/10/8\")",
+                "drinkId": 288,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 153,
+                "customerName": "Angel Ramirez"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 170,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/11/15\")",
+                "drinkId": 253,
+                "customerName": "Judith Graves"
+            },
+            {
+                "date": "date(\"2020/10/7\")",
+                "drinkId": 19,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/11/8\")",
+                "drinkId": 390,
+                "customerName": "Kristin Flores"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 70,
+                "customerName": "Bernard Ellis"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 289,
+                "customerName": "Jessie Hicks"
+            },
+            {
+                "date": "date(\"2020/10/1\")",
+                "drinkId": 357,
+                "customerName": "Avery Tremblay"
+            },
+            {
+                "date": "date(\"2020/10/5\")",
+                "drinkId": 325,
+                "customerName": "Zoe Mackay"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 196,
+                "customerName": "Darrell Wade"
+            },
+            {
+                "date": "date(\"2020/10/25\")",
+                "drinkId": 44,
+                "customerName": "Jasmine Fortin"
+            },
+            {
+                "date": "date(\"2020/10/13\")",
+                "drinkId": 462,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 245,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/9/9\")",
+                "drinkId": 306,
+                "customerName": "Ray Kuhn"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 528,
+                "customerName": "Jeanne Brar"
+            },
+            {
+                "date": "date(\"2020/10/1\")",
+                "drinkId": 117,
+                "customerName": "Arthur Côté"
+            },
+            {
+                "date": "date(\"2020/10/9\")",
+                "drinkId": 412,
+                "customerName": "Nicky Castro"
+            },
+            {
+                "date": "date(\"2020/9/24\")",
+                "drinkId": 573,
+                "customerName": "Mason Brown"
+            },
+            {
+                "date": "date(\"2020/10/13\")",
+                "drinkId": 74,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 12,
+                "customerName": "Jessie Mcdonalid"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 567,
+                "customerName": "Adam Roy"
+            },
+            {
+                "date": "date(\"2020/10/25\")",
+                "drinkId": 133,
+                "customerName": "Maeva Knight"
+            },
+            {
+                "date": "date(\"2020/10/17\")",
+                "drinkId": 573,
+                "customerName": "Randy Mitchelle"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 479,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 243,
+                "customerName": "Vanessa Owens"
+            },
+            {
+                "date": "date(\"2020/10/31\")",
+                "drinkId": 77,
+                "customerName": "Juan Barrett"
+            },
+            {
+                "date": "date(\"2020/9/4\")",
+                "drinkId": 412,
+                "customerName": "Mandy Simmmons"
+            },
+            {
+                "date": "date(\"2020/11/20\")",
+                "drinkId": 403,
+                "customerName": "Judy Dixon"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 433,
+                "customerName": "Jade Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/2\")",
+                "drinkId": 423,
+                "customerName": "Alyssa Carlson"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 526,
+                "customerName": "Ramon Fuller"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 41,
+                "customerName": "Kelly Morris"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 491,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/14\")",
+                "drinkId": 66,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/10/5\")",
+                "drinkId": 162,
+                "customerName": "Kelly Morris"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 114,
+                "customerName": "Dominic Addy"
+            },
+            {
+                "date": "date(\"2020/10/23\")",
+                "drinkId": 397,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/10/29\")",
+                "drinkId": 62,
+                "customerName": "Rita Miller"
+            },
+            {
+                "date": "date(\"2020/11/10\")",
+                "drinkId": 37,
+                "customerName": "Duane Nguyen"
+            },
+            {
+                "date": "date(\"2020/11/6\")",
+                "drinkId": 376,
+                "customerName": "Alyssa Carlson"
+            },
+            {
+                "date": "date(\"2020/9/13\")",
+                "drinkId": 111,
+                "customerName": "Avery Tremblay"
+            },
+            {
+                "date": "date(\"2020/9/2\")",
+                "drinkId": 377,
+                "customerName": "Edith Fleming"
+            },
+            {
+                "date": "date(\"2020/9/13\")",
+                "drinkId": 523,
+                "customerName": "Jade Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/8\")",
+                "drinkId": 48,
+                "customerName": "Paige Henry"
+            },
+            {
+                "date": "date(\"2020/9/2\")",
+                "drinkId": 302,
+                "customerName": "Mason Brown"
+            },
+            {
+                "date": "date(\"2020/9/13\")",
+                "drinkId": 469,
+                "customerName": "Avery Tremblay"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 250,
+                "customerName": "Katrina Carter"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 493,
+                "customerName": "Caitlin Jackson"
+            },
+            {
+                "date": "date(\"2020/11/15\")",
+                "drinkId": 36,
+                "customerName": "Art Wells"
+            },
+            {
+                "date": "date(\"2020/9/8\")",
+                "drinkId": 546,
+                "customerName": "Judy Dixon"
+            },
+            {
+                "date": "date(\"2020/9/3\")",
+                "drinkId": 388,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/3\")",
+                "drinkId": 511,
+                "customerName": "Nolan Gonzalez"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 345,
+                "customerName": "Vanessa Owens"
+            },
+            {
+                "date": "date(\"2020/9/6\")",
+                "drinkId": 150,
+                "customerName": "Michelle Jennings"
+            },
+            {
+                "date": "date(\"2020/11/12\")",
+                "drinkId": 228,
+                "customerName": "Maeva Lam"
+            },
+            {
+                "date": "date(\"2020/11/5\")",
+                "drinkId": 40,
+                "customerName": "Joan Daniels"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 396,
+                "customerName": "Juan Barrett"
+            },
+            {
+                "date": "date(\"2020/9/5\")",
+                "drinkId": 353,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/10/16\")",
+                "drinkId": 166,
+                "customerName": "Anthony Gagné"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 519,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/9/1\")",
+                "drinkId": 57,
+                "customerName": "Jade Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 143,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 420,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/9/18\")",
+                "drinkId": 387,
+                "customerName": "Benjamin French"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 323,
+                "customerName": "Aaron Jackson"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 327,
+                "customerName": "Edith Fleming"
+            },
+            {
+                "date": "date(\"2020/9/13\")",
+                "drinkId": 272,
+                "customerName": "Josef Moreno"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 267,
+                "customerName": "Duane Nguyen"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 364,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 455,
+                "customerName": "April Kennedy"
+            },
+            {
+                "date": "date(\"2020/9/4\")",
+                "drinkId": 549,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/8\")",
+                "drinkId": 367,
+                "customerName": "Randy Mitchelle"
+            },
+            {
+                "date": "date(\"2020/9/14\")",
+                "drinkId": 454,
+                "customerName": "Joan Daniels"
+            },
+            {
+                "date": "date(\"2020/9/22\")",
+                "drinkId": 322,
+                "customerName": "Simon Fortin"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 418,
+                "customerName": "Michelle Jennings"
+            },
+            {
+                "date": "date(\"2020/10/16\")",
+                "drinkId": 79,
+                "customerName": "Jon Jennings"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 217,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/11/19\")",
+                "drinkId": 129,
+                "customerName": "Juan Barrett"
+            },
+            {
+                "date": "date(\"2020/9/9\")",
+                "drinkId": 308,
+                "customerName": "Art Wells"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 106,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 56,
+                "customerName": "Benjamin Harris"
+            },
+            {
+                "date": "date(\"2020/9/2\")",
+                "drinkId": 539,
+                "customerName": "Benjamin French"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 481,
+                "customerName": "Vanessa Owens"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 82,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/9/24\")",
+                "drinkId": 336,
+                "customerName": "Peyton Russell"
+            },
+            {
+                "date": "date(\"2020/11/20\")",
+                "drinkId": 472,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/11/2\")",
+                "drinkId": 405,
+                "customerName": "Benjamin French"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 542,
+                "customerName": "Bobby Allen"
+            },
+            {
+                "date": "date(\"2020/9/18\")",
+                "drinkId": 118,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 537,
+                "customerName": "Olivia Lévesque"
+            },
+            {
+                "date": "date(\"2020/10/25\")",
+                "drinkId": 588,
+                "customerName": "Theresa Stevens"
+            },
+            {
+                "date": "date(\"2020/9/20\")",
+                "drinkId": 477,
+                "customerName": "Anna Welch"
+            },
+            {
+                "date": "date(\"2020/9/7\")",
+                "drinkId": 501,
+                "customerName": "Anna Welch"
+            },
+            {
+                "date": "date(\"2020/9/5\")",
+                "drinkId": 387,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 580,
+                "customerName": "Michelle Jennings"
+            },
+            {
+                "date": "date(\"2020/10/31\")",
+                "drinkId": 523,
+                "customerName": "Beatrice Reed"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 457,
+                "customerName": "Maeva Lam"
+            },
+            {
+                "date": "date(\"2020/9/27\")",
+                "drinkId": 267,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 267,
+                "customerName": "Michelle Jennings"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 9,
+                "customerName": "Maeva Lam"
+            },
+            {
+                "date": "date(\"2020/9/22\")",
+                "drinkId": 442,
+                "customerName": "Toni Dunn"
+            },
+            {
+                "date": "date(\"2020/10/20\")",
+                "drinkId": 545,
+                "customerName": "Mildred Murphy"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 318,
+                "customerName": "Theresa Stevens"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 198,
+                "customerName": "Morris Spencer"
+            },
+            {
+                "date": "date(\"2020/10/22\")",
+                "drinkId": 550,
+                "customerName": "Mandy Simmmons"
+            },
+            {
+                "date": "date(\"2020/10/30\")",
+                "drinkId": 470,
+                "customerName": "Jessie Mcdonalid"
+            },
+            {
+                "date": "date(\"2020/10/13\")",
+                "drinkId": 564,
+                "customerName": "Nicky Castro"
+            },
+            {
+                "date": "date(\"2020/9/4\")",
+                "drinkId": 546,
+                "customerName": "Mildred Murphy"
+            },
+            {
+                "date": "date(\"2020/10/20\")",
+                "drinkId": 118,
+                "customerName": "Herbert Gonzales"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 600,
+                "customerName": "Caitlin Jackson"
+            },
+            {
+                "date": "date(\"2020/9/17\")",
+                "drinkId": 223,
+                "customerName": "Chris Gibson"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 70,
+                "customerName": "Aaron Jackson"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 64,
+                "customerName": "Jesse Mcdonalid"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 580,
+                "customerName": "Chris Gibson"
+            },
+            {
+                "date": "date(\"2020/9/21\")",
+                "drinkId": 583,
+                "customerName": "Aaron Jackson"
+            },
+            {
+                "date": "date(\"2020/9/13\")",
+                "drinkId": 296,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 91,
+                "customerName": "Caitlin Jackson"
+            },
+            {
+                "date": "date(\"2020/9/21\")",
+                "drinkId": 506,
+                "customerName": "Lola Graham"
+            },
+            {
+                "date": "date(\"2020/9/9\")",
+                "drinkId": 43,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 343,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 235,
+                "customerName": "Caitlin Jackson"
+            },
+            {
+                "date": "date(\"2020/9/7\")",
+                "drinkId": 48,
+                "customerName": "Hailey Brewer"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 180,
+                "customerName": "Jon Jennings"
+            },
+            {
+                "date": "date(\"2020/11/15\")",
+                "drinkId": 325,
+                "customerName": "Katrina Carter"
+            },
+            {
+                "date": "date(\"2020/10/15\")",
+                "drinkId": 45,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/9/19\")",
+                "drinkId": 90,
+                "customerName": "Chris Gibson"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 211,
+                "customerName": "Martha Lowe"
+            },
+            {
+                "date": "date(\"2020/10/1\")",
+                "drinkId": 294,
+                "customerName": "Lola Graham"
+            },
+            {
+                "date": "date(\"2020/10/22\")",
+                "drinkId": 397,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/10/26\")",
+                "drinkId": 546,
+                "customerName": "Carolyn Wright"
+            },
+            {
+                "date": "date(\"2020/11/4\")",
+                "drinkId": 301,
+                "customerName": "Josef Moreno"
+            },
+            {
+                "date": "date(\"2020/10/25\")",
+                "drinkId": 513,
+                "customerName": "Joel Gonzales"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 315,
+                "customerName": "Earl Gray"
+            },
+            {
+                "date": "date(\"2020/10/24\")",
+                "drinkId": 188,
+                "customerName": "Joel Gonzales"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 598,
+                "customerName": "Pearl Myers"
+            },
+            {
+                "date": "date(\"2020/9/5\")",
+                "drinkId": 18,
+                "customerName": "April Kennedy"
+            },
+            {
+                "date": "date(\"2020/11/10\")",
+                "drinkId": 237,
+                "customerName": "Ray Kuhn"
+            },
+            {
+                "date": "date(\"2020/10/23\")",
+                "drinkId": 280,
+                "customerName": "Scarlett Shaw"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 68,
+                "customerName": "Alyssa Carlson"
+            },
+            {
+                "date": "date(\"2020/10/18\")",
+                "drinkId": 68,
+                "customerName": "Benjamin Knight"
+            },
+            {
+                "date": "date(\"2020/10/31\")",
+                "drinkId": 300,
+                "customerName": "Kelly Morris"
+            },
+            {
+                "date": "date(\"2020/9/23\")",
+                "drinkId": 450,
+                "customerName": "Nicky Castro"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 456,
+                "customerName": "Jimmie Kuhn"
+            },
+            {
+                "date": "date(\"2020/9/7\")",
+                "drinkId": 462,
+                "customerName": "Judy Dixon"
+            },
+            {
+                "date": "date(\"2020/9/18\")",
+                "drinkId": 391,
+                "customerName": "Scarlett Shaw"
+            },
+            {
+                "date": "date(\"2020/10/8\")",
+                "drinkId": 250,
+                "customerName": "Earl Gray"
+            },
+            {
+                "date": "date(\"2020/10/31\")",
+                "drinkId": 319,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/10/24\")",
+                "drinkId": 354,
+                "customerName": "Jade Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 275,
+                "customerName": "Toni Dunn"
+            },
+            {
+                "date": "date(\"2020/11/13\")",
+                "drinkId": 382,
+                "customerName": "Rita Miller"
+            },
+            {
+                "date": "date(\"2020/11/20\")",
+                "drinkId": 476,
+                "customerName": "Nolan Gonzalez"
+            },
+            {
+                "date": "date(\"2020/9/1\")",
+                "drinkId": 198,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/9/22\")",
+                "drinkId": 516,
+                "customerName": "Jasmine Fortin"
+            },
+            {
+                "date": "date(\"2020/9/5\")",
+                "drinkId": 449,
+                "customerName": "Jade Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 416,
+                "customerName": "Aaron Jackson"
+            },
+            {
+                "date": "date(\"2020/10/23\")",
+                "drinkId": 474,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/10/2\")",
+                "drinkId": 437,
+                "customerName": "Mandy Simmmons"
+            },
+            {
+                "date": "date(\"2020/9/21\")",
+                "drinkId": 566,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/11/9\")",
+                "drinkId": 606,
+                "customerName": "Jerome Vargas"
+            },
+            {
+                "date": "date(\"2020/11/6\")",
+                "drinkId": 451,
+                "customerName": "Joel Gonzales"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 289,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 461,
+                "customerName": "Ray Kuhn"
+            },
+            {
+                "date": "date(\"2020/10/7\")",
+                "drinkId": 428,
+                "customerName": "Duane Nguyen"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 442,
+                "customerName": "Gloria Welch"
+            },
+            {
+                "date": "date(\"2020/9/3\")",
+                "drinkId": 7,
+                "customerName": "Jerome Vargas"
+            },
+            {
+                "date": "date(\"2020/9/24\")",
+                "drinkId": 283,
+                "customerName": "Billie Arnold"
+            },
+            {
+                "date": "date(\"2020/9/4\")",
+                "drinkId": 281,
+                "customerName": "Rita Miller"
+            },
+            {
+                "date": "date(\"2020/11/16\")",
+                "drinkId": 50,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/9/24\")",
+                "drinkId": 297,
+                "customerName": "Benjamin Knight"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 57,
+                "customerName": "Mary Robinson"
+            },
+            {
+                "date": "date(\"2020/10/1\")",
+                "drinkId": 63,
+                "customerName": "Martha Lowe"
+            },
+            {
+                "date": "date(\"2020/10/27\")",
+                "drinkId": 437,
+                "customerName": "Ray Kuhn"
+            },
+            {
+                "date": "date(\"2020/9/8\")",
+                "drinkId": 461,
+                "customerName": "Rita Miller"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 360,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 421,
+                "customerName": "Anthony Gagné"
+            },
+            {
+                "date": "date(\"2020/11/7\")",
+                "drinkId": 301,
+                "customerName": "Anthony Gagné"
+            },
+            {
+                "date": "date(\"2020/9/5\")",
+                "drinkId": 334,
+                "customerName": "Ramon Fuller"
+            },
+            {
+                "date": "date(\"2020/11/6\")",
+                "drinkId": 209,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 45,
+                "customerName": "Jar Watson"
+            },
+            {
+                "date": "date(\"2020/9/27\")",
+                "drinkId": 584,
+                "customerName": "Peter Andrews"
+            },
+            {
+                "date": "date(\"2020/10/17\")",
+                "drinkId": 446,
+                "customerName": "Earl Gray"
+            },
+            {
+                "date": "date(\"2020/10/30\")",
+                "drinkId": 463,
+                "customerName": "Alexis Gagnon"
+            },
+            {
+                "date": "date(\"2020/9/15\")",
+                "drinkId": 415,
+                "customerName": "Edith Fleming"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 365,
+                "customerName": "Benjamin French"
+            },
+            {
+                "date": "date(\"2020/10/23\")",
+                "drinkId": 383,
+                "customerName": "Scarlett Shaw"
+            },
+            {
+                "date": "date(\"2020/10/1\")",
+                "drinkId": 271,
+                "customerName": "Nicky Castro"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 13,
+                "customerName": "Catherine Hunt"
+            },
+            {
+                "date": "date(\"2020/9/7\")",
+                "drinkId": 229,
+                "customerName": "Alexis Gagnon"
+            },
+            {
+                "date": "date(\"2020/9/16\")",
+                "drinkId": 521,
+                "customerName": "Edith Fleming"
+            },
+            {
+                "date": "date(\"2020/9/1\")",
+                "drinkId": 460,
+                "customerName": "Simon Fortin"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 302,
+                "customerName": "April Kennedy"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 360,
+                "customerName": "Jim Washington"
+            },
+            {
+                "date": "date(\"2020/10/23\")",
+                "drinkId": 442,
+                "customerName": "Mildred Murphy"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 554,
+                "customerName": "Katrina Carter"
+            },
+            {
+                "date": "date(\"2020/9/5\")",
+                "drinkId": 140,
+                "customerName": "Benjamin Knight"
+            },
+            {
+                "date": "date(\"2020/10/4\")",
+                "drinkId": 377,
+                "customerName": "Diana Holland"
+            },
+            {
+                "date": "date(\"2020/10/8\")",
+                "drinkId": 154,
+                "customerName": "Jeanne Brar"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 245,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 498,
+                "customerName": "Herbert Gonzales"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 48,
+                "customerName": "Carolyn Wright"
+            },
+            {
+                "date": "date(\"2020/9/22\")",
+                "drinkId": 228,
+                "customerName": "Jessie Hicks"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 381,
+                "customerName": "Peter Andrews"
+            },
+            {
+                "date": "date(\"2020/10/27\")",
+                "drinkId": 21,
+                "customerName": "Kelly Morris"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 280,
+                "customerName": "Hailey Brewer"
+            },
+            {
+                "date": "date(\"2020/11/7\")",
+                "drinkId": 376,
+                "customerName": "Earl Gray"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 318,
+                "customerName": "Douglas Hughes"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 331,
+                "customerName": "Jimmie Kuhn"
+            },
+            {
+                "date": "date(\"2020/11/10\")",
+                "drinkId": 493,
+                "customerName": "Michelle Jennings"
+            },
+            {
+                "date": "date(\"2020/9/30\")",
+                "drinkId": 145,
+                "customerName": "Avery Tremblay"
+            },
+            {
+                "date": "date(\"2020/10/20\")",
+                "drinkId": 180,
+                "customerName": "Jerome Vargas"
+            },
+            {
+                "date": "date(\"2020/9/21\")",
+                "drinkId": 26,
+                "customerName": "Bernard Ellis"
+            },
+            {
+                "date": "date(\"2020/9/12\")",
+                "drinkId": 225,
+                "customerName": "Billie Arnold"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 286,
+                "customerName": "Mandy Simmmons"
+            },
+            {
+                "date": "date(\"2020/9/22\")",
+                "drinkId": 177,
+                "customerName": "Aaron Jackson"
+            },
+            {
+                "date": "date(\"2020/9/25\")",
+                "drinkId": 538,
+                "customerName": "Herbert Gonzales"
+            },
+            {
+                "date": "date(\"2020/10/24\")",
+                "drinkId": 125,
+                "customerName": "Edith Fleming"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 573,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/11/16\")",
+                "drinkId": 160,
+                "customerName": "Zoe Mackay"
+            },
+            {
+                "date": "date(\"2020/11/2\")",
+                "drinkId": 481,
+                "customerName": "Ray Kuhn"
+            },
+            {
+                "date": "date(\"2020/10/20\")",
+                "drinkId": 557,
+                "customerName": "Randy Mitchelle"
+            },
+            {
+                "date": "date(\"2020/9/13\")",
+                "drinkId": 288,
+                "customerName": "Ella Mendoza"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 42,
+                "customerName": "Douglas Hughes"
+            },
+            {
+                "date": "date(\"2020/9/6\")",
+                "drinkId": 388,
+                "customerName": "Jacob Ramos"
+            },
+            {
+                "date": "date(\"2020/9/28\")",
+                "drinkId": 258,
+                "customerName": "Caitlin Jackson"
+            },
+            {
+                "date": "date(\"2020/9/20\")",
+                "drinkId": 464,
+                "customerName": "Michelle Jennings"
+            },
+            {
+                "date": "date(\"2020/10/17\")",
+                "drinkId": 400,
+                "customerName": "Delphine Sirko"
+            },
+            {
+                "date": "date(\"2020/11/14\")",
+                "drinkId": 357,
+                "customerName": "Delphine Sirko"
+            },
+            {
+                "date": "date(\"2020/9/5\")",
+                "drinkId": 264,
+                "customerName": "Alexis Gagnon"
+            },
+            {
+                "date": "date(\"2020/9/8\")",
+                "drinkId": 19,
+                "customerName": "Ramon Fuller"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 426,
+                "customerName": "Bernice Little"
+            },
+            {
+                "date": "date(\"2020/9/13\")",
+                "drinkId": 308,
+                "customerName": "Gloria Welch"
+            },
+            {
+                "date": "date(\"2020/9/7\")",
+                "drinkId": 517,
+                "customerName": "Chris Gibson"
+            },
+            {
+                "date": "date(\"2020/10/18\")",
+                "drinkId": 529,
+                "customerName": "Elmer Alvarez"
+            },
+            {
+                "date": "date(\"2020/11/9\")",
+                "drinkId": 219,
+                "customerName": "Diana Holland"
+            },
+            {
+                "date": "date(\"2020/11/19\")",
+                "drinkId": 88,
+                "customerName": "Catherine Hunt"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 490,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/11/12\")",
+                "drinkId": 520,
+                "customerName": "Judith Graves"
+            },
+            {
+                "date": "date(\"2020/10/4\")",
+                "drinkId": 423,
+                "customerName": "Art Wells"
+            },
+            {
+                "date": "date(\"2020/11/20\")",
+                "drinkId": 572,
+                "customerName": "Peter Andrews"
+            },
+            {
+                "date": "date(\"2020/11/15\")",
+                "drinkId": 163,
+                "customerName": "Rita Miller"
+            },
+            {
+                "date": "date(\"2020/10/7\")",
+                "drinkId": 94,
+                "customerName": "Alyssa Carlson"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 188,
+                "customerName": "Judith Graves"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 208,
+                "customerName": "Hailey Brewer"
+            },
+            {
+                "date": "date(\"2020/10/16\")",
+                "drinkId": 565,
+                "customerName": "Vanessa Owens"
+            },
+            {
+                "date": "date(\"2020/9/24\")",
+                "drinkId": 236,
+                "customerName": "Katrina Carter"
+            },
+            {
+                "date": "date(\"2020/9/20\")",
+                "drinkId": 100,
+                "customerName": "Aaron Jackson"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 527,
+                "customerName": "Michelle Jennings"
+            },
+            {
+                "date": "date(\"2020/10/7\")",
+                "drinkId": 58,
+                "customerName": "Delphine Sirko"
+            },
+            {
+                "date": "date(\"2020/9/15\")",
+                "drinkId": 222,
+                "customerName": "Judith Graves"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 361,
+                "customerName": "Dominic Addy"
+            },
+            {
+                "date": "date(\"2020/9/6\")",
+                "drinkId": 65,
+                "customerName": "Elmer Alvarez"
+            },
+            {
+                "date": "date(\"2020/10/5\")",
+                "drinkId": 520,
+                "customerName": "Daryl Fuller"
+            },
+            {
+                "date": "date(\"2020/9/15\")",
+                "drinkId": 557,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/9/9\")",
+                "drinkId": 144,
+                "customerName": "Herbert Gonzales"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 60,
+                "customerName": "Terra Beck"
+            },
+            {
+                "date": "date(\"2020/11/2\")",
+                "drinkId": 290,
+                "customerName": "Sofia Lo"
+            },
+            {
+                "date": "date(\"2020/9/21\")",
+                "drinkId": 257,
+                "customerName": "Olivia Lévesque"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 53,
+                "customerName": "Carolyn Wright"
+            },
+            {
+                "date": "date(\"2020/11/7\")",
+                "drinkId": 352,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 490,
+                "customerName": "Kristin Flores"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 279,
+                "customerName": "Alyssa Carlson"
+            },
+            {
+                "date": "date(\"2020/9/24\")",
+                "drinkId": 96,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 568,
+                "customerName": "Peter Andrews"
+            },
+            {
+                "date": "date(\"2020/9/28\")",
+                "drinkId": 457,
+                "customerName": "Peyton Russell"
+            },
+            {
+                "date": "date(\"2020/10/7\")",
+                "drinkId": 541,
+                "customerName": "Catherine Hunt"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 371,
+                "customerName": "Nolan Gonzalez"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 444,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 150,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/10/5\")",
+                "drinkId": 492,
+                "customerName": "April Kennedy"
+            },
+            {
+                "date": "date(\"2020/10/27\")",
+                "drinkId": 355,
+                "customerName": "Angel Ramirez"
+            },
+            {
+                "date": "date(\"2020/11/6\")",
+                "drinkId": 272,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 431,
+                "customerName": "Gloria Welch"
+            },
+            {
+                "date": "date(\"2020/9/20\")",
+                "drinkId": 372,
+                "customerName": "Josef Moreno"
+            },
+            {
+                "date": "date(\"2020/10/4\")",
+                "drinkId": 118,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/11/13\")",
+                "drinkId": 180,
+                "customerName": "Paige Henry"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 316,
+                "customerName": "Olivia Lévesque"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 181,
+                "customerName": "Pearl Myers"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 605,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 97,
+                "customerName": "Jasmine Fortin"
+            },
+            {
+                "date": "date(\"2020/11/2\")",
+                "drinkId": 531,
+                "customerName": "Zoe Mackay"
+            },
+            {
+                "date": "date(\"2020/9/25\")",
+                "drinkId": 508,
+                "customerName": "Terra Beck"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 539,
+                "customerName": "Elmer Alvarez"
+            },
+            {
+                "date": "date(\"2020/10/26\")",
+                "drinkId": 87,
+                "customerName": "Mildred Murphy"
+            },
+            {
+                "date": "date(\"2020/11/16\")",
+                "drinkId": 156,
+                "customerName": "Mary Robinson"
+            },
+            {
+                "date": "date(\"2020/11/2\")",
+                "drinkId": 526,
+                "customerName": "Zoe Mackay"
+            },
+            {
+                "date": "date(\"2020/10/25\")",
+                "drinkId": 229,
+                "customerName": "Jacob Ramos"
+            },
+            {
+                "date": "date(\"2020/9/9\")",
+                "drinkId": 231,
+                "customerName": "Nicky Castro"
+            },
+            {
+                "date": "date(\"2020/9/22\")",
+                "drinkId": 337,
+                "customerName": "Olivia Lévesque"
+            },
+            {
+                "date": "date(\"2020/11/5\")",
+                "drinkId": 570,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/9/30\")",
+                "drinkId": 132,
+                "customerName": "Bobby Allen"
+            },
+            {
+                "date": "date(\"2020/11/2\")",
+                "drinkId": 357,
+                "customerName": "Alfred Ramos"
+            },
+            {
+                "date": "date(\"2020/10/18\")",
+                "drinkId": 584,
+                "customerName": "Ray Kuhn"
+            },
+            {
+                "date": "date(\"2020/10/30\")",
+                "drinkId": 348,
+                "customerName": "Sofia Lo"
+            },
+            {
+                "date": "date(\"2020/9/14\")",
+                "drinkId": 319,
+                "customerName": "Dawn Prescott"
+            },
+            {
+                "date": "date(\"2020/11/19\")",
+                "drinkId": 304,
+                "customerName": "Jacob Ramos"
+            },
+            {
+                "date": "date(\"2020/10/16\")",
+                "drinkId": 326,
+                "customerName": "Billie Arnold"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 509,
+                "customerName": "Caitlin Jackson"
+            },
+            {
+                "date": "date(\"2020/10/2\")",
+                "drinkId": 594,
+                "customerName": "Peyton Russell"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 171,
+                "customerName": "Jon Jennings"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 108,
+                "customerName": "Diana Holland"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 226,
+                "customerName": "Jade Kowalski"
+            },
+            {
+                "date": "date(\"2020/11/9\")",
+                "drinkId": 380,
+                "customerName": "Scarlett Shaw"
+            },
+            {
+                "date": "date(\"2020/9/1\")",
+                "drinkId": 306,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/10/13\")",
+                "drinkId": 259,
+                "customerName": "Martha Lowe"
+            },
+            {
+                "date": "date(\"2020/10/14\")",
+                "drinkId": 216,
+                "customerName": "Joan Daniels"
+            },
+            {
+                "date": "date(\"2020/9/25\")",
+                "drinkId": 404,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/9/6\")",
+                "drinkId": 226,
+                "customerName": "Adam Roy"
+            },
+            {
+                "date": "date(\"2020/9/4\")",
+                "drinkId": 438,
+                "customerName": "Vanessa Owens"
+            },
+            {
+                "date": "date(\"2020/9/21\")",
+                "drinkId": 198,
+                "customerName": "Maeva Lam"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 169,
+                "customerName": "Earl Gray"
+            },
+            {
+                "date": "date(\"2020/10/26\")",
+                "drinkId": 491,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 68,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/27\")",
+                "drinkId": 398,
+                "customerName": "Kelly Morris"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 164,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 520,
+                "customerName": "Toni Dunn"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 144,
+                "customerName": "Bernard Ellis"
+            },
+            {
+                "date": "date(\"2020/9/20\")",
+                "drinkId": 572,
+                "customerName": "Jar Watson"
+            },
+            {
+                "date": "date(\"2020/10/18\")",
+                "drinkId": 153,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 399,
+                "customerName": "Angel Ramirez"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 432,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 398,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/11/5\")",
+                "drinkId": 230,
+                "customerName": "Delphine Sirko"
+            },
+            {
+                "date": "date(\"2020/11/12\")",
+                "drinkId": 263,
+                "customerName": "Ray Kuhn"
+            },
+            {
+                "date": "date(\"2020/9/28\")",
+                "drinkId": 123,
+                "customerName": "Benjamin Knight"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 404,
+                "customerName": "Jesse Mcdonalid"
+            },
+            {
+                "date": "date(\"2020/9/29\")",
+                "drinkId": 597,
+                "customerName": "Mandy Simmmons"
+            },
+            {
+                "date": "date(\"2020/9/27\")",
+                "drinkId": 462,
+                "customerName": "Molly Cunningham"
+            },
+            {
+                "date": "date(\"2020/11/7\")",
+                "drinkId": 542,
+                "customerName": "Theresa Stevens"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 214,
+                "customerName": "April Kennedy"
+            },
+            {
+                "date": "date(\"2020/11/2\")",
+                "drinkId": 69,
+                "customerName": "Alexis Gagnon"
+            },
+            {
+                "date": "date(\"2020/9/9\")",
+                "drinkId": 425,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/9/12\")",
+                "drinkId": 23,
+                "customerName": "Arthur Côté"
+            },
+            {
+                "date": "date(\"2020/9/17\")",
+                "drinkId": 317,
+                "customerName": "Earl Gray"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 259,
+                "customerName": "Arthur Côté"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 475,
+                "customerName": "Jacob Ramos"
+            },
+            {
+                "date": "date(\"2020/10/2\")",
+                "drinkId": 192,
+                "customerName": "Caitlin Jackson"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 121,
+                "customerName": "Catherine Hunt"
+            },
+            {
+                "date": "date(\"2020/10/22\")",
+                "drinkId": 80,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/9/25\")",
+                "drinkId": 300,
+                "customerName": "Edith Fleming"
+            },
+            {
+                "date": "date(\"2020/11/6\")",
+                "drinkId": 212,
+                "customerName": "Jimmie Kuhn"
+            },
+            {
+                "date": "date(\"2020/10/20\")",
+                "drinkId": 564,
+                "customerName": "Maeva Knight"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 278,
+                "customerName": "Nicky Castro"
+            },
+            {
+                "date": "date(\"2020/11/10\")",
+                "drinkId": 41,
+                "customerName": "Elmer Alvarez"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 114,
+                "customerName": "Billie Arnold"
+            },
+            {
+                "date": "date(\"2020/10/28\")",
+                "drinkId": 125,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/9/3\")",
+                "drinkId": 416,
+                "customerName": "Benjamin French"
+            },
+            {
+                "date": "date(\"2020/9/17\")",
+                "drinkId": 436,
+                "customerName": "Vanessa Owens"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 224,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/10/20\")",
+                "drinkId": 579,
+                "customerName": "Angel Ramirez"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 193,
+                "customerName": "Joan Daniels"
+            },
+            {
+                "date": "date(\"2020/9/30\")",
+                "drinkId": 343,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/15\")",
+                "drinkId": 517,
+                "customerName": "Kelly Morris"
+            },
+            {
+                "date": "date(\"2020/11/13\")",
+                "drinkId": 482,
+                "customerName": "Angel Ramirez"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 273,
+                "customerName": "Mason Brown"
+            },
+            {
+                "date": "date(\"2020/9/28\")",
+                "drinkId": 539,
+                "customerName": "Toni Dunn"
+            },
+            {
+                "date": "date(\"2020/10/23\")",
+                "drinkId": 449,
+                "customerName": "Jimmie Kuhn"
+            },
+            {
+                "date": "date(\"2020/9/18\")",
+                "drinkId": 166,
+                "customerName": "Pearl Myers"
+            },
+            {
+                "date": "date(\"2020/9/18\")",
+                "drinkId": 392,
+                "customerName": "Mandy Simmmons"
+            },
+            {
+                "date": "date(\"2020/9/21\")",
+                "drinkId": 214,
+                "customerName": "Benjamin French"
+            },
+            {
+                "date": "date(\"2020/10/22\")",
+                "drinkId": 466,
+                "customerName": "Katrina Carter"
+            },
+            {
+                "date": "date(\"2020/9/10\")",
+                "drinkId": 529,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/9/18\")",
+                "drinkId": 217,
+                "customerName": "Jimmie Kuhn"
+            },
+            {
+                "date": "date(\"2020/11/13\")",
+                "drinkId": 107,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/9/16\")",
+                "drinkId": 11,
+                "customerName": "Juan Barrett"
+            },
+            {
+                "date": "date(\"2020/10/8\")",
+                "drinkId": 468,
+                "customerName": "Bernice Little"
+            },
+            {
+                "date": "date(\"2020/11/18\")",
+                "drinkId": 63,
+                "customerName": "Benjamin French"
+            },
+            {
+                "date": "date(\"2020/10/1\")",
+                "drinkId": 427,
+                "customerName": "Darrell Wade"
+            },
+            {
+                "date": "date(\"2020/10/18\")",
+                "drinkId": 507,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/9/19\")",
+                "drinkId": 523,
+                "customerName": "Joan Daniels"
+            },
+            {
+                "date": "date(\"2020/11/21\")",
+                "drinkId": 368,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/11/16\")",
+                "drinkId": 546,
+                "customerName": "Kelly Morris"
+            },
+            {
+                "date": "date(\"2020/9/3\")",
+                "drinkId": 190,
+                "customerName": "Nicky Castro"
+            },
+            {
+                "date": "date(\"2020/11/8\")",
+                "drinkId": 364,
+                "customerName": "Jeanne Brar"
+            },
+            {
+                "date": "date(\"2020/9/23\")",
+                "drinkId": 132,
+                "customerName": "Alyssa Carlson"
+            },
+            {
+                "date": "date(\"2020/10/12\")",
+                "drinkId": 501,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/10/15\")",
+                "drinkId": 307,
+                "customerName": "Elmer Alvarez"
+            },
+            {
+                "date": "date(\"2020/10/10\")",
+                "drinkId": 539,
+                "customerName": "Caitlin Jackson"
+            },
+            {
+                "date": "date(\"2020/9/6\")",
+                "drinkId": 293,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/9/15\")",
+                "drinkId": 217,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/9/15\")",
+                "drinkId": 162,
+                "customerName": "Juan Barrett"
+            },
+            {
+                "date": "date(\"2020/11/9\")",
+                "drinkId": 49,
+                "customerName": "Jerome Vargas"
+            },
+            {
+                "date": "date(\"2020/10/9\")",
+                "drinkId": 69,
+                "customerName": "Scarlett Shaw"
+            },
+            {
+                "date": "date(\"2020/10/26\")",
+                "drinkId": 417,
+                "customerName": "Judith Graves"
+            },
+            {
+                "date": "date(\"2020/9/20\")",
+                "drinkId": 1,
+                "customerName": "Toni Dunn"
+            },
+            {
+                "date": "date(\"2020/9/4\")",
+                "drinkId": 215,
+                "customerName": "Maeva Lam"
+            },
+            {
+                "date": "date(\"2020/9/3\")",
+                "drinkId": 84,
+                "customerName": "Herbert Gonzales"
+            },
+            {
+                "date": "date(\"2020/10/5\")",
+                "drinkId": 58,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/10/26\")",
+                "drinkId": 90,
+                "customerName": "Arthur Côté"
+            },
+            {
+                "date": "date(\"2020/11/18\")",
+                "drinkId": 442,
+                "customerName": "Dawn Prescott"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 520,
+                "customerName": "Art Wells"
+            },
+            {
+                "date": "date(\"2020/9/13\")",
+                "drinkId": 268,
+                "customerName": "Anthony Gagné"
+            },
+            {
+                "date": "date(\"2020/9/6\")",
+                "drinkId": 226,
+                "customerName": "Mildred Murphy"
+            },
+            {
+                "date": "date(\"2020/9/14\")",
+                "drinkId": 30,
+                "customerName": "Earl Gray"
+            },
+            {
+                "date": "date(\"2020/9/24\")",
+                "drinkId": 109,
+                "customerName": "Kristin Flores"
+            },
+            {
+                "date": "date(\"2020/10/7\")",
+                "drinkId": 390,
+                "customerName": "Catherine Hunt"
+            },
+            {
+                "date": "date(\"2020/10/13\")",
+                "drinkId": 137,
+                "customerName": "Alfred Ramos"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 526,
+                "customerName": "Morris Spencer"
+            },
+            {
+                "date": "date(\"2020/9/14\")",
+                "drinkId": 83,
+                "customerName": "Beatrice Reed"
+            },
+            {
+                "date": "date(\"2020/10/5\")",
+                "drinkId": 217,
+                "customerName": "Terra Beck"
+            },
+            {
+                "date": "date(\"2020/9/18\")",
+                "drinkId": 280,
+                "customerName": "Judith Graves"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 436,
+                "customerName": "Jesse Mcdonalid"
+            },
+            {
+                "date": "date(\"2020/10/1\")",
+                "drinkId": 419,
+                "customerName": "Herbert Gonzales"
+            },
+            {
+                "date": "date(\"2020/11/8\")",
+                "drinkId": 75,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/9/17\")",
+                "drinkId": 132,
+                "customerName": "Hailey Brewer"
+            },
+            {
+                "date": "date(\"2020/11/13\")",
+                "drinkId": 207,
+                "customerName": "Aaron Jackson"
+            },
+            {
+                "date": "date(\"2020/11/9\")",
+                "drinkId": 410,
+                "customerName": "Billie Arnold"
+            },
+            {
+                "date": "date(\"2020/10/30\")",
+                "drinkId": 237,
+                "customerName": "Simon Fortin"
+            },
+            {
+                "date": "date(\"2020/11/20\")",
+                "drinkId": 352,
+                "customerName": "Duane Nguyen"
+            },
+            {
+                "date": "date(\"2020/9/1\")",
+                "drinkId": 61,
+                "customerName": "Jon Jennings"
+            },
+            {
+                "date": "date(\"2020/11/13\")",
+                "drinkId": 398,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/10/2\")",
+                "drinkId": 590,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 530,
+                "customerName": "Ella Mendoza"
+            },
+            {
+                "date": "date(\"2020/9/23\")",
+                "drinkId": 240,
+                "customerName": "Delphine Sirko"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 21,
+                "customerName": "Dominic Addy"
+            },
+            {
+                "date": "date(\"2020/9/27\")",
+                "drinkId": 187,
+                "customerName": "Nolan Gonzalez"
+            },
+            {
+                "date": "date(\"2020/10/4\")",
+                "drinkId": 159,
+                "customerName": "Peter Andrews"
+            },
+            {
+                "date": "date(\"2020/10/2\")",
+                "drinkId": 374,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 296,
+                "customerName": "Judy Dixon"
+            },
+            {
+                "date": "date(\"2020/9/16\")",
+                "drinkId": 236,
+                "customerName": "Maeva Knight"
+            },
+            {
+                "date": "date(\"2020/9/22\")",
+                "drinkId": 374,
+                "customerName": "Sophia Nelson"
+            },
+            {
+                "date": "date(\"2020/9/14\")",
+                "drinkId": 431,
+                "customerName": "Molly Cunningham"
+            },
+            {
+                "date": "date(\"2020/11/8\")",
+                "drinkId": 217,
+                "customerName": "Hailey Brewer"
+            },
+            {
+                "date": "date(\"2020/10/29\")",
+                "drinkId": 557,
+                "customerName": "Theresa Stevens"
+            },
+            {
+                "date": "date(\"2020/10/15\")",
+                "drinkId": 280,
+                "customerName": "Kelly Morris"
+            },
+            {
+                "date": "date(\"2020/9/7\")",
+                "drinkId": 353,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/10/7\")",
+                "drinkId": 406,
+                "customerName": "Alfred Ramos"
+            },
+            {
+                "date": "date(\"2020/11/20\")",
+                "drinkId": 450,
+                "customerName": "Jim Washington"
+            },
+            {
+                "date": "date(\"2020/11/4\")",
+                "drinkId": 93,
+                "customerName": "Alexis Gagnon"
+            },
+            {
+                "date": "date(\"2020/10/15\")",
+                "drinkId": 1,
+                "customerName": "Jacob Warren"
+            },
+            {
+                "date": "date(\"2020/11/14\")",
+                "drinkId": 215,
+                "customerName": "Alyssa Carlson"
+            },
+            {
+                "date": "date(\"2020/11/2\")",
+                "drinkId": 505,
+                "customerName": "Paige Henry"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 318,
+                "customerName": "Mason Brown"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 438,
+                "customerName": "Vanessa Owens"
+            },
+            {
+                "date": "date(\"2020/11/21\")",
+                "drinkId": 478,
+                "customerName": "Duane Nguyen"
+            },
+            {
+                "date": "date(\"2020/10/25\")",
+                "drinkId": 576,
+                "customerName": "Theresa Stevens"
+            },
+            {
+                "date": "date(\"2020/11/1\")",
+                "drinkId": 56,
+                "customerName": "Jeanne Brar"
+            },
+            {
+                "date": "date(\"2020/10/2\")",
+                "drinkId": 270,
+                "customerName": "Peter Andrews"
+            },
+            {
+                "date": "date(\"2020/9/23\")",
+                "drinkId": 545,
+                "customerName": "Jade Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/7\")",
+                "drinkId": 215,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/10/29\")",
+                "drinkId": 492,
+                "customerName": "Hailey Brewer"
+            },
+            {
+                "date": "date(\"2020/9/8\")",
+                "drinkId": 48,
+                "customerName": "Tristan Ouellet"
+            },
+            {
+                "date": "date(\"2020/11/8\")",
+                "drinkId": 240,
+                "customerName": "Benjamin French"
+            },
+            {
+                "date": "date(\"2020/10/23\")",
+                "drinkId": 525,
+                "customerName": "Mason Ross"
+            },
+            {
+                "date": "date(\"2020/11/15\")",
+                "drinkId": 134,
+                "customerName": "Benjamin Harris"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 129,
+                "customerName": "Kristin Flores"
+            },
+            {
+                "date": "date(\"2020/11/3\")",
+                "drinkId": 540,
+                "customerName": "Daryl Fuller"
+            },
+            {
+                "date": "date(\"2020/9/3\")",
+                "drinkId": 124,
+                "customerName": "April Kennedy"
+            },
+            {
+                "date": "date(\"2020/10/1\")",
+                "drinkId": 32,
+                "customerName": "Zoe Mackay"
+            },
+            {
+                "date": "date(\"2020/9/14\")",
+                "drinkId": 231,
+                "customerName": "Benjamin Knight"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 466,
+                "customerName": "Angel Ramirez"
+            },
+            {
+                "date": "date(\"2020/9/5\")",
+                "drinkId": 136,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/10/27\")",
+                "drinkId": 606,
+                "customerName": "Jeffrey Bailey"
+            },
+            {
+                "date": "date(\"2020/11/19\")",
+                "drinkId": 329,
+                "customerName": "Ella Mendoza"
+            },
+            {
+                "date": "date(\"2020/10/29\")",
+                "drinkId": 94,
+                "customerName": "Maeva Lam"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 183,
+                "customerName": "Rita Miller"
+            },
+            {
+                "date": "date(\"2020/10/8\")",
+                "drinkId": 15,
+                "customerName": "Zander Byrd"
+            },
+            {
+                "date": "date(\"2020/10/3\")",
+                "drinkId": 12,
+                "customerName": "Diana Holland"
+            },
+            {
+                "date": "date(\"2020/11/10\")",
+                "drinkId": 454,
+                "customerName": "Alfred Ramos"
+            },
+            {
+                "date": "date(\"2020/11/17\")",
+                "drinkId": 43,
+                "customerName": "Judith Graves"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 476,
+                "customerName": "Jar Watson"
+            },
+            {
+                "date": "date(\"2020/9/4\")",
+                "drinkId": 543,
+                "customerName": "Chris Gibson"
+            },
+            {
+                "date": "date(\"2020/9/28\")",
+                "drinkId": 220,
+                "customerName": "Jerome Vargas"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 371,
+                "customerName": "Avery Tremblay"
+            },
+            {
+                "date": "date(\"2020/10/18\")",
+                "drinkId": 506,
+                "customerName": "Dominic Addy"
+            },
+            {
+                "date": "date(\"2020/9/30\")",
+                "drinkId": 572,
+                "customerName": "Nicky Castro"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 335,
+                "customerName": "Bernard Ellis"
+            },
+            {
+                "date": "date(\"2020/11/18\")",
+                "drinkId": 593,
+                "customerName": "Zoe Mackay"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 91,
+                "customerName": "Duane Nguyen"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 249,
+                "customerName": "Martha Lowe"
+            },
+            {
+                "date": "date(\"2020/11/13\")",
+                "drinkId": 327,
+                "customerName": "Peyton Russell"
+            },
+            {
+                "date": "date(\"2020/11/15\")",
+                "drinkId": 356,
+                "customerName": "Adam Roy"
+            },
+            {
+                "date": "date(\"2020/10/8\")",
+                "drinkId": 241,
+                "customerName": "Avery Tremblay"
+            },
+            {
+                "date": "date(\"2020/9/9\")",
+                "drinkId": 284,
+                "customerName": "April Kennedy"
+            },
+            {
+                "date": "date(\"2020/10/26\")",
+                "drinkId": 561,
+                "customerName": "Randy Mitchelle"
+            },
+            {
+                "date": "date(\"2020/11/10\")",
+                "drinkId": 363,
+                "customerName": "Joan Daniels"
+            },
+            {
+                "date": "date(\"2020/10/13\")",
+                "drinkId": 312,
+                "customerName": "Mary Robinson"
+            },
+            {
+                "date": "date(\"2020/10/21\")",
+                "drinkId": 514,
+                "customerName": "Jessie Mcdonalid"
+            },
+            {
+                "date": "date(\"2020/11/11\")",
+                "drinkId": 112,
+                "customerName": "Douglas Hughes"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 58,
+                "customerName": "Danny Barnett"
+            },
+            {
+                "date": "date(\"2020/11/14\")",
+                "drinkId": 145,
+                "customerName": "Douglas Hughes"
+            },
+            {
+                "date": "date(\"2020/9/26\")",
+                "drinkId": 18,
+                "customerName": "Hailey Brewer"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 93,
+                "customerName": "Peyton Russell"
+            },
+            {
+                "date": "date(\"2020/10/4\")",
+                "drinkId": 209,
+                "customerName": "Bobby Allen"
+            },
+            {
+                "date": "date(\"2020/11/8\")",
+                "drinkId": 301,
+                "customerName": "Herbert Gonzales"
+            },
+            {
+                "date": "date(\"2020/10/15\")",
+                "drinkId": 292,
+                "customerName": "Duane Nguyen"
+            },
+            {
+                "date": "date(\"2020/10/19\")",
+                "drinkId": 298,
+                "customerName": "Paige Henry"
+            },
+            {
+                "date": "date(\"2020/10/11\")",
+                "drinkId": 186,
+                "customerName": "Charles Kowalski"
+            },
+            {
+                "date": "date(\"2020/10/22\")",
+                "drinkId": 574,
+                "customerName": "Jim Washington"
+            },
+            {
+                "date": "date(\"2020/10/17\")",
+                "drinkId": 561,
+                "customerName": "Gloria Welch"
+            },
+            {
+                "date": "date(\"2020/9/11\")",
+                "drinkId": 42,
+                "customerName": "Maeva Lam"
+            }
+        ]
+    }
+}
