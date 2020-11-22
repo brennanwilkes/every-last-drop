@@ -30,7 +30,8 @@ class App extends React.Component {
 				? <Login
 					toDash={ loginInfo => this.setState({
 						md: AppMode.DASHBOARD,
-						user: loginInfo.user
+						user: loginInfo.user,
+						pass: loginInfo.pass
 					}) }
 					toMenu={ loginInfo => this.setState({
 						md: AppMode.MENU,
@@ -39,7 +40,7 @@ class App extends React.Component {
 					}) }
 				/>
 				: ((this.state.md === AppMode.DASHBOARD)
-				? <Dashboard />
+				? <Dashboard userName={this.state.user} userPass={this.state.pass} />
 				: <Menu user={this.state.user} /> )
 			}
 		</>;

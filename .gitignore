@@ -4,6 +4,7 @@ package-lock.json
 public/bundle.js
 public/bundle.js.map
 public/*.jpg
+.env
 
 
 ################# MACOS #################

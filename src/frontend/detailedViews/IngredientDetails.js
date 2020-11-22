@@ -40,6 +40,8 @@ class IngredientDetails extends React.Component {
 		this.props.orderCallback().then(res => {
 			this.forceUpdate();
 
+			this.props.parentUpdate();
+
 			axios.post('/ingredient',{
 				id: `${this.props.ingredientId}`
 			}).then(res => {

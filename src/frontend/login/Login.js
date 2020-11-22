@@ -77,7 +77,8 @@ class AdminLogin extends React.Component{
 	login(event){
 		event.preventDefault();
 		this.props.toDash({
-			user: $("#username")[0].value
+			user: $("#username")[0].value,
+			pass: $("#pass")[0].value
 		});
 	}
 

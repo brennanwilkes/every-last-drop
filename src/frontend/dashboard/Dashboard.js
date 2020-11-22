@@ -91,6 +91,7 @@ class Dashboard extends React.Component {
 		this.updateDetailedDrink = this.updateDetailedDrink.bind(this);
 		this.updateDetailedIngrident = this.updateDetailedIngrident.bind(this);
 		this.orderIngredient = this.orderIngredient.bind(this);
+		this.updateRefresh = this.updateRefresh.bind(this);
 
 
 		this.state = {
@@ -100,12 +101,18 @@ class Dashboard extends React.Component {
 			lowStock: [],
 			detailedDrink: undefined,
 			detailedIngredient: undefined,
+			userName: this.props.userName,
+			userPass: this.props.userPass
 		}
+
+		this.updateRefresh();
+	}
+
+	updateRefresh(){
 		axios.get("/orders").then(res => this.setState({orders:res.data}));
 		axios.get("/popular/drinks").then(res => this.setState({popularDrinks:res.data}));
 		axios.get("/popular/ingredients").then(res => this.setState({popularIngr:res.data}));
 		axios.get("/ingredients").then(res => this.setState({lowStock:res.data}));
-
 	}
 
 	componentDidMount(){
@@ -137,7 +144,9 @@ class Dashboard extends React.Component {
 
 	orderIngredient(){
 		return axios.post('/order',{
-			id: `${this.state.detailedIngredient}`
+			id: `${this.state.detailedIngredient}`,
+			userName: this.state.userName,
+			userPass: this.state.userPass
 		})
 	}
 
@@ -185,8 +194,16 @@ class Dashboard extends React.Component {
 						}
 					</div></div>
 				</div>
-				<DrinkDetails drinkId={this.state.detailedDrink} changeIngredient={this.updateDetailedIngrident} changeDrink={this.updateDetailedDrink} />
-				<IngredientDetails ingredientId={this.state.detailedIngredient} changeIngredient={this.updateDetailedIngrident} orderCallback={this.orderIngredient}/>
+				<DrinkDetails
+					drinkId={this.state.detailedDrink}
+					changeIngredient={this.updateDetailedIngrident}
+					changeDrink={this.updateDetailedDrink}
+					parentUpdate={this.updateRefresh} />
+				<IngredientDetails
+					ingredientId={this.state.detailedIngredient}
+					changeIngredient={this.updateDetailedIngrident}
+					orderCallback={this.orderIngredient}
+					parentUpdate={this.updateRefresh} />
 			</div>
 		</>;
 	}

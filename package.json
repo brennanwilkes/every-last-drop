@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node .",
-		"sql-setup":"run-s gen-sql gen-transaction-sql sql-init sql-insert-data sql-insert-transactions",
+		"sql-setup": "run-s gen-sql gen-transaction-sql sql-init sql-insert-data sql-insert-transactions",
 		"sql-init": "node src/dev/run-script-os/run-script-os-custom-index.js sql-init",
 		"sql-init:linux": "sh src/build/linux-sql-init.sh",
 		"sql-init:darwin": "sh src/build/darwin-sql-init.sh",
@@ -52,6 +52,7 @@
 		"babel-loader": "^8.1.0",
 		"bootstrap": "^5.0.0-alpha2",
 		"css-loader": "^5.0.0",
+		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
 		"jquery": "^3.5.1",
 		"mariadb": "^2.4.2",

@@ -1,4 +1,9 @@
 const path = require("path");
+
+require('dotenv').config();
+const ADMIN_USER = process.env.ADMIN_USER;
+const ADMIN_PASS = process.env.ADMIN_PASS;
+
 const {server} = require(path.join(__dirname,"backend","server.js"));
 const {database} = require(path.join(__dirname,"backend","database.js"));
 
@@ -249,9 +254,17 @@ server.route("orders", req => database.get(`
 //Order ingredient by ingredient Id
 //UPDATE query
 server.route("order", req => {
-	searchQuery.update(req.body);
-	searchQuery.sanitzize();
-	return database.get(`UPDATE ingredient SET ingredient.quantity=ingredient.quantity+10 WHERE ingredient.id=?`,[searchQuery.id]);
+	if(req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
+		searchQuery.update(req.body);
+		searchQuery.sanitzize();
+		return database.get(`UPDATE ingredient SET ingredient.quantity=ingredient.quantity+10 WHERE ingredient.id=?`,[searchQuery.id]);
+	}
+	else{
+		console.log("Invalid login attempt");
+		return new Promise((res,rej)=> {
+			rej("Invalid credentials");
+		});
+	}
 }, "post");
 
 server.start();
