@@ -31,13 +31,13 @@
 }
 
 
-#transactions tr{
+#transactions tbody tr{
 	transition: transform 0.25s;
 	-webkit-transition: transform 0.25s;
 }
 
 
-#transactions tr:hover{
+#transactions tbody tr:hover{
 	transform: scale(1.05);
 	cursor: pointer;
 }
