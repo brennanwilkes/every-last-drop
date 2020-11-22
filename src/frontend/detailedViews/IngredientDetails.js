@@ -14,6 +14,7 @@ class IngredientDetails extends React.Component {
 	constructor(props){
 		super(props);
 		this.updateRefresh = this.updateRefresh.bind(this);
+		this.deleteIngredient = this.deleteIngredient.bind(this);
 
 		this.state = {
 			id : this.props.ingredientId,
@@ -49,6 +50,15 @@ class IngredientDetails extends React.Component {
 					details:res.data[0]
 				})
 			});
+		});
+	}
+
+	deleteIngredient(){
+		this.props.deleteCallback().then(res => {
+			this.forceUpdate();
+			this.setState({id:undefined});
+			this.props.changeIngredient(undefined);
+			this.props.parentUpdate();
 		});
 	}
 
@@ -100,11 +110,8 @@ class IngredientDetails extends React.Component {
 					</div>
 				</div>
 				<div className="row justify-content-end mt-auto">
-					<button className="col-md-4 btn btn-success text-white" onClick={this.updateRefresh}><h3>ORDER</h3></button>
-				</div>
-				<div className="row justify-content-end mt-auto">
-					<button className="col-md-2 btn btn-warning text-white"><h3>EDIT</h3></button>
-					<button className="col-md-2 btn btn-danger"><h3>DELETE</h3></button>
+					<button className="col-md-2 btn btn-success text-white" onClick={this.updateRefresh}><h3>ORDER</h3></button>
+					<button className="col-md-2 btn btn-danger" onClick={this.deleteIngredient}><h3>DELETE</h3></button>
 				</div>
 			</div>
 		</>;

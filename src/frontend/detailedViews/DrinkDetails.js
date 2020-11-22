@@ -13,6 +13,7 @@ class DrinkDetails extends React.Component {
 
 	constructor(props){
 		super(props);
+		this.deleteDrink = this.deleteDrink.bind(this);
 
 		this.state = {
 			id : this.props.drinkId,
@@ -20,6 +21,14 @@ class DrinkDetails extends React.Component {
 			ingredients : [],
 			ingredientHeader : []
 		}
+	}
+
+	deleteDrink(){
+		this.props.deleteCallback().then(res => {
+			this.setState({id:undefined});
+			this.props.changeDrink(undefined);
+			this.props.parentUpdate();
+		});
 	}
 
 	componentDidUpdate(prevProps){
@@ -117,8 +126,7 @@ class DrinkDetails extends React.Component {
 					</div>
 				</div>
 				<div className="row justify-content-end mt-auto">
-					<button className="col-md-2 btn btn-warning text-white"><h3>EDIT</h3></button>
-					<button className="col-md-2 btn btn-danger"><h3>DELETE</h3></button>
+					<button className="col-md-4 btn btn-danger" onClick={this.deleteDrink}><h3>DELETE</h3></button>
 				</div>
 			</div>
 		</>;

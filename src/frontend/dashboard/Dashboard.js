@@ -91,6 +91,8 @@ class Dashboard extends React.Component {
 		this.updateDetailedDrink = this.updateDetailedDrink.bind(this);
 		this.updateDetailedIngrident = this.updateDetailedIngrident.bind(this);
 		this.orderIngredient = this.orderIngredient.bind(this);
+		this.deleteIngredient = this.deleteIngredient.bind(this);
+		this.deleteDrink = this.deleteDrink.bind(this);
 		this.updateRefresh = this.updateRefresh.bind(this);
 
 
@@ -105,10 +107,18 @@ class Dashboard extends React.Component {
 			userPass: this.props.userPass
 		}
 
-		this.updateRefresh();
+		this.updateRefresh(true);
 	}
 
-	updateRefresh(){
+	updateRefresh(firstTime=false){
+		if(!firstTime){
+			this.setState({
+				orders : [],
+				popularDrinks : [],
+				popularIngr : [],
+				lowStock: []
+			});
+		}
 		axios.get("/orders").then(res => this.setState({orders:res.data}));
 		axios.get("/popular/drinks").then(res => this.setState({popularDrinks:res.data}));
 		axios.get("/popular/ingredients").then(res => this.setState({popularIngr:res.data}));
@@ -145,6 +155,20 @@ class Dashboard extends React.Component {
 	orderIngredient(){
 		return axios.post('/order',{
 			id: `${this.state.detailedIngredient}`,
+			userName: this.state.userName,
+			userPass: this.state.userPass
+		})
+	}
+	deleteIngredient(){
+		return axios.post('/delete/ingredient',{
+			id: `${this.state.detailedIngredient}`,
+			userName: this.state.userName,
+			userPass: this.state.userPass
+		})
+	}
+	deleteDrink(){
+		return axios.post('/delete/drink',{
+			id: `${this.state.detailedDrink}`,
 			userName: this.state.userName,
 			userPass: this.state.userPass
 		})
@@ -197,12 +221,14 @@ class Dashboard extends React.Component {
 				<DrinkDetails
 					drinkId={this.state.detailedDrink}
 					changeIngredient={this.updateDetailedIngrident}
+					deleteCallback={this.deleteDrink}
 					changeDrink={this.updateDetailedDrink}
 					parentUpdate={this.updateRefresh} />
 				<IngredientDetails
 					ingredientId={this.state.detailedIngredient}
 					changeIngredient={this.updateDetailedIngrident}
 					orderCallback={this.orderIngredient}
+					deleteCallback={this.deleteIngredient}
 					parentUpdate={this.updateRefresh} />
 			</div>
 		</>;

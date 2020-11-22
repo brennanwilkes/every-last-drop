@@ -39,13 +39,13 @@ CREATE TABLE drinkRecipe (
 	`price` FLOAT NOT NULL,
 	`mixMethod` VARCHAR(50) NOT NULL,
 	`onIce` BOOLEAN NOT NULL,
-	`glassID` INT NOT NULL,
+	`glassID` INT,
 	`versionOf` INT,
 	`imgURL` VARCHAR(255),
 	`rating` INT,
 	PRIMARY KEY (id),
-	FOREIGN KEY (versionOf) REFERENCES drinkRecipe(id),
-	FOREIGN KEY (glassId) REFERENCES glass(id),
+	FOREIGN KEY (versionOf) REFERENCES drinkRecipe(id) ON DELETE SET NULL,
+	FOREIGN KEY (glassId) REFERENCES glass(id) ON DELETE SET NULL,
 	FOREIGN KEY (rating) REFERENCES drinkRating(rating)
 ) COLLATE='utf8_bin';
 
@@ -71,7 +71,7 @@ CREATE TABLE drinkRequires(
 	`ingredientId` INT NOT NULL,
 	`quantity` FLOAT NOT NULL,
 	PRIMARY KEY (drinkId, ingredientId),
-	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id),
+	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id) ON DELETE CASCADE,
 	FOREIGN KEY (ingredientId) REFERENCES ingredient(id)
 ) COLLATE='utf8_bin';
 
@@ -86,11 +86,11 @@ CREATE TABLE alcoholType (
 CREATE TABLE alcohol (
 	`id` INT NOT NULL UNIQUE,
 	`percentage` FLOAT NOT NULL,
-	`glassId` INT NOT NULL,
+	`glassId` INT,
 	PRIMARY KEY (id),
 	FOREIGN KEY (id) REFERENCES ingredient(id) ON DELETE CASCADE,
 	FOREIGN KEY (percentage) REFERENCES alcoholType(percentage) ON DELETE CASCADE,
-	FOREIGN KEY (glassId) REFERENCES glass(id)
+	FOREIGN KEY (glassId) REFERENCES glass(id) ON DELETE SET NULL
 ) COLLATE='utf8_bin';
 
 /* Juice Fruit */
@@ -132,7 +132,7 @@ CREATE TABLE transaction (
 	`drinkId` INT NOT NULL,
 	`customerName` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (id),
-	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id),
+	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id) ON DELETE CASCADE,
 	FOREIGN KEY (customerName) REFERENCES customer(fullName)
 ) COLLATE='utf8_bin';
 
@@ -147,3 +147,13 @@ CREATE trigger quantityUpdateCheck
 	FOR EACH ROW
 INSERT IGNORE INTO ingredientAvailable(quantity, isAvailable)
 VALUES (NEW.quantity,NEW.quantity>0);
+
+CREATE trigger requiresIntegrity
+	BEFORE DELETE ON ingredient
+	FOR EACH ROW
+DELETE FROM drinkRequires WHERE drinkRequires.ingredientId=OLD.id;
+
+CREATE trigger recipeIntegrity
+	BEFORE DELETE ON drinkRequires
+	FOR EACH ROW
+DELETE FROM drinkRecipe WHERE drinkRecipe.id=OLD.drinkId;

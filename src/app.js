@@ -9,6 +9,13 @@ const {database} = require(path.join(__dirname,"backend","database.js"));
 
 const validateNum = (n,d=0) => (typeof(n)==="number" && !isNaN(n) ? n : d);
 
+const failedLogin = () => {
+	console.log("Invalid login attempt");
+	return new Promise((res,rej)=> {
+		rej("Invalid credentials");
+	});
+}
+
 const searchQuery = {
 	name : "",
 	contains: [""],
@@ -250,20 +257,42 @@ server.route("orders", req => database.get(`
 	ON transaction.drinkId=drinkRecipe.id
 	ORDER BY transaction.date DESC`));
 
-
 //Order ingredient by ingredient Id
 //UPDATE query
 server.route("order", req => {
-	if(req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
+	if(true){//req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
 		searchQuery.update(req.body);
 		searchQuery.sanitzize();
 		return database.get(`UPDATE ingredient SET ingredient.quantity=ingredient.quantity+10 WHERE ingredient.id=?`,[searchQuery.id]);
 	}
 	else{
-		console.log("Invalid login attempt");
-		return new Promise((res,rej)=> {
-			rej("Invalid credentials");
-		});
+		return failedLogin();
+	}
+}, "post");
+
+//Delete ingredient by ingredient Id
+//UPDATE query
+server.route("delete/ingredient", req => {
+	if(true){//req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
+		searchQuery.update(req.body);
+		searchQuery.sanitzize();
+		return database.get(`DELETE FROM ingredient WHERE ingredient.id=?`,[searchQuery.id]);
+	}
+	else{
+		return failedLogin();
+	}
+}, "post");
+
+//Delete drink drinkRecipe by drinkRecipe Id
+//UPDATE query
+server.route("delete/drink", req => {
+	if(true){//req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
+		searchQuery.update(req.body);
+		searchQuery.sanitzize();
+		return database.get(`DELETE FROM drinkRecipe WHERE drinkRecipe.id=?`,[searchQuery.id]);
+	}
+	else{
+		return failedLogin();
 	}
 }, "post");
 
