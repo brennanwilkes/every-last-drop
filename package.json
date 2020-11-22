@@ -23,7 +23,7 @@
 		"sql-insert-transactions:default": "\"\\Program Files\\MariaDB 10.5\\bin\\mariadb.exe\" --defaults-extra-file=config\\sql-login < data\\transaction-data.sql",
 		"gen-m3-sql": "node src/dev/jsonToSql.js ./data/sample-m3.json ./data/sample-m3.sql",
 		"scrape-data": "echo '[' > data/sample-data.json ; node src/dev/cocktailDataCollector.js >> data/sample-data.json; truncate -s-2 data/sample-data.json ; echo ']' >> data/sample-data.json ; node src/dev/cocktailDataFormatter.js data/sample-data.json",
-		"gen-transactions": "node src/dev/transactionGenerator.js 500 100 data/transaction-data.json",
+		"gen-transactions": "node src/dev/transactionGenerator.js 500 100 data/transaction-data.json ./data/sample-data.json",
 		"gen-transaction-sql": "node src/dev/jsonToSql.js ./data/transaction-data.json ./data/transaction-data.sql",
 		"gen-sql": "node src/dev/jsonToSql.js ./data/sample-data.json ./data/sample-data.sql",
 		"sql-status": "node src/dev/run-script-os/run-script-os-custom-index.js sql-status",

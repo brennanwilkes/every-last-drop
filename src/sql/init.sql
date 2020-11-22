@@ -135,3 +135,9 @@ CREATE TABLE transaction (
 	FOREIGN KEY (drinkId) REFERENCES drinkRecipe(id),
 	FOREIGN KEY (customerName) REFERENCES customer(fullName)
 ) COLLATE='utf8_bin';
+
+CREATE OR REPLACE trigger quantityCheck
+	BEFORE INSERT ON ingredient
+	FOR EACH ROW
+INSERT IGNORE INTO ingredientAvailable(quantity, isAvailable)
+VALUES (NEW.quantity,NEW.quantity>0);

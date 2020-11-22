@@ -1,1802 +1,1802 @@
 USE everyLastDrop;
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Anna Welch", date("1985/10/17")); 
+VALUES ("Randy Walters", date("1976/9/12")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Diana Holland", date("1945/11/6")); 
+VALUES ("Carole Simpson", date("1967/12/1")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jon Jennings", date("1952/12/21")); 
+VALUES ("Mason Scott", date("1948/10/1")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Lola Graham", date("1944/11/4")); 
+VALUES ("Aiden Bailey", date("1986/8/19")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Sophia Nelson", date("1959/5/24")); 
+VALUES ("Craig Reyes", date("1976/4/30")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Hailey Brewer", date("1984/3/5")); 
+VALUES ("Lola Beck", date("1961/10/1")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Daryl Fuller", date("1987/10/10")); 
+VALUES ("Kristina Porter", date("1958/9/13")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Gloria Welch", date("1966/3/15")); 
+VALUES ("Kelly Webb", date("1967/10/22")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Herbert Gonzales", date("1970/3/5")); 
+VALUES ("Tyrone Carr", date("1956/9/30")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jacob Ramos", date("1988/5/4")); 
+VALUES ("Lucy Perez", date("1953/1/7")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Chris Gibson", date("1945/1/14")); 
+VALUES ("Cecil Gonzales", date("1988/7/15")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Peyton Russell", date("1960/3/14")); 
+VALUES ("Felix Grant", date("1969/6/27")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Elmer Alvarez", date("1969/4/14")); 
+VALUES ("Adam Lavoie", date("1951/10/28")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Judith Graves", date("1986/12/23")); 
+VALUES ("Kirk Montgomery", date("1967/3/21")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Benjamin Knight", date("1970/11/18")); 
+VALUES ("Vicki Davies", date("1982/1/22")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Danny Barnett", date("1995/1/22")); 
+VALUES ("Gerry Diaz", date("1946/8/8")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Edith Fleming", date("1974/1/19")); 
+VALUES ("Ethel Castro", date("1951/1/21")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Mary Robinson", date("1949/7/23")); 
+VALUES ("Wyatt Medina", date("1951/3/16")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Zoe Mackay", date("1969/5/25")); 
+VALUES ("Joel Mitchelle", date("1953/6/13")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Scarlett Shaw", date("1991/5/13")); 
+VALUES ("Sharlene Price", date("1993/1/25")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Michelle Jennings", date("1984/10/11")); 
+VALUES ("Rita Ray", date("1952/7/7")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jessie Hicks", date("1945/6/30")); 
+VALUES ("Dominic Novak", date("1989/3/18")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Dominic Addy", date("1967/4/8")); 
+VALUES ("James Thompson", date("1979/12/12")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Angel Ramirez", date("1965/3/5")); 
+VALUES ("Amelia Patel", date("1995/11/11")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jacob Warren", date("1969/4/30")); 
+VALUES ("Florence Jones", date("1996/6/18")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Mandy Simmmons", date("1964/11/3")); 
+VALUES ("Brett Woods", date("1987/3/16")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Maeva Knight", date("1950/1/8")); 
+VALUES ("Brielle Kowalski", date("1961/10/19")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Earl Gray", date("1980/5/29")); 
+VALUES ("Sofia Morrison", date("1945/11/15")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Maeva Lam", date("1968/1/5")); 
+VALUES ("Malik Patel", date("1987/9/1")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jeanne Brar", date("1953/10/18")); 
+VALUES ("Rebecca Obrien", date("1971/6/24")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Caitlin Jackson", date("1974/1/10")); 
+VALUES ("Zackary French", date("1992/10/25")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Benjamin Harris", date("1986/3/12")); 
+VALUES ("Gilbert Wells", date("1946/11/12")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jessie Mcdonalid", date("1997/11/4")); 
+VALUES ("Ethel Nelson", date("1979/7/14")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Mason Ross", date("1946/12/14")); 
+VALUES ("Noah Park", date("1978/7/14")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Darrell Wade", date("1997/6/4")); 
+VALUES ("Tomothy Terry", date("1993/6/3")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jesse Mcdonalid", date("1985/7/26")); 
+VALUES ("Lonnie Barnett", date("1987/8/19")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Alfred Ramos", date("1957/8/5")); 
+VALUES ("Megan Liu", date("1975/8/28")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Pearl Myers", date("1944/10/6")); 
+VALUES ("Rita Fox", date("1955/7/20")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Kelly Morris", date("1975/9/11")); 
+VALUES ("Wendy Castro", date("1962/10/5")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Sofia Lo", date("1981/2/1")); 
+VALUES ("Mattie Ellis", date("1956/3/21")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Bernard Ellis", date("1988/8/27")); 
+VALUES ("Darryl Ross", date("1987/9/23")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Molly Cunningham", date("1952/5/15")); 
+VALUES ("Terra Bates", date("1947/1/17")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Billie Arnold", date("1998/1/3")); 
+VALUES ("Frank Kelley", date("1960/9/24")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Mason Brown", date("1991/6/22")); 
+VALUES ("Grace Myers", date("1976/8/21")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Peter Andrews", date("1983/8/30")); 
+VALUES ("Marc Davis", date("1993/6/24")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Ray Kuhn", date("1993/11/6")); 
+VALUES ("Leo Wong", date("1977/5/28")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Beatrice Reed", date("1986/6/16")); 
+VALUES ("Alicia Sirko", date("1958/4/21")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Anthony Gagné", date("1995/9/3")); 
+VALUES ("Thomas Carroll", date("1988/12/17")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Delphine Sirko", date("1956/4/30")); 
+VALUES ("Rita Hernandez", date("1952/1/6")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Benjamin Brar", date("1973/4/19")); 
+VALUES ("Emma Byrd", date("1991/4/1")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jim Washington", date("1982/3/11")); 
+VALUES ("Lucas Singh", date("1982/5/20")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Douglas Hughes", date("1988/11/2")); 
+VALUES ("Ivan Cunningham", date("1977/1/20")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Morris Spencer", date("1978/10/3")); 
+VALUES ("Lily Scott", date("1984/8/20")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Katrina Carter", date("1949/8/9")); 
+VALUES ("Oscar Morales", date("1964/9/8")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Rita Miller", date("1955/12/27")); 
+VALUES ("Maria Hunter", date("1957/7/5")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Catherine Hunt", date("1992/7/18")); 
+VALUES ("Matthew Morin", date("1951/5/17")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Simon Fortin", date("1967/3/27")); 
+VALUES ("Philip Peterson", date("1957/2/23")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Nicky Castro", date("1998/2/15")); 
+VALUES ("Albert Bell", date("1971/11/16")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Kristin Flores", date("1985/5/28")); 
+VALUES ("Kelly Simmmons", date("1954/9/3")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Carolyn Wright", date("1979/8/23")); 
+VALUES ("Sylvia Gray", date("1968/10/9")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jar Watson", date("1965/8/6")); 
+VALUES ("Kelly Allen", date("1950/4/18")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jeffrey Bailey", date("1990/5/8")); 
+VALUES ("Brandie Brewer", date("1992/5/2")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Dawn Prescott", date("1949/1/20")); 
+VALUES ("Harper Ma", date("1971/7/7")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Tristan Ouellet", date("1989/4/26")); 
+VALUES ("Noah Williams", date("1994/10/9")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Joel Gonzales", date("1965/8/19")); 
+VALUES ("Carol Ramos", date("1968/10/13")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Aaron Jackson", date("1991/6/7")); 
+VALUES ("Eva Ryan", date("1952/5/30")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Julian Price", date("1952/6/18")); 
+VALUES ("Patricia Stewart", date("1979/12/22")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Charles Kowalski", date("1962/3/4")); 
+VALUES ("Eva Macdonald", date("1995/7/30")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Martha Lowe", date("1961/5/16")); 
+VALUES ("Jasmine Ginnish", date("1998/8/9")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Juan Barrett", date("1974/5/5")); 
+VALUES ("Kristin Fox", date("1957/2/13")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Bobby Allen", date("1976/3/12")); 
+VALUES ("Aiden Roy", date("1985/10/20")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Bernice Little", date("1992/4/4")); 
+VALUES ("Lonnie Day", date("1995/3/1")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Arthur Côté", date("1947/5/10")); 
+VALUES ("Tonya Chavez", date("1988/7/22")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jade Kowalski", date("1979/7/27")); 
+VALUES ("Avery Kowalski", date("1949/6/7")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Terra Beck", date("1965/5/16")); 
+VALUES ("Zachary Gilbert", date("1960/2/10")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Mildred Murphy", date("1982/4/5")); 
+VALUES ("Emily Jackson", date("1998/3/12")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Toni Dunn", date("1967/3/20")); 
+VALUES ("Luis Walker", date("1981/6/12")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Olivia Lévesque", date("1967/1/21")); 
+VALUES ("Cody Gutierrez", date("1974/3/11")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Alyssa Carlson", date("1990/10/19")); 
+VALUES ("Francis Pena", date("1974/3/18")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Art Wells", date("1954/12/8")); 
+VALUES ("Jay Byrd", date("1995/1/23")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Randy Mitchelle", date("1985/3/10")); 
+VALUES ("Theresa Walker", date("1945/7/15")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Ramon Fuller", date("1968/8/28")); 
+VALUES ("Robert Simpson", date("1984/9/25")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Nolan Gonzalez", date("1955/3/21")); 
+VALUES ("Victor Hart", date("1966/1/19")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jasmine Fortin", date("1997/6/3")); 
+VALUES ("Marcia Edwards", date("1949/4/12")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Duane Nguyen", date("1946/4/3")); 
+VALUES ("Esther Alexander", date("1980/10/21")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Joan Daniels", date("1966/5/27")); 
+VALUES ("Tom Gonzales", date("1946/7/19")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("April Kennedy", date("1979/2/15")); 
+VALUES ("Jim Gonzales", date("1949/6/25")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Paige Henry", date("1990/4/20")); 
+VALUES ("Emma Pierce", date("1965/4/27")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Zander Byrd", date("1961/9/5")); 
+VALUES ("Janet Cook", date("1956/7/18")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Josef Moreno", date("1994/4/10")); 
+VALUES ("Andrew Wright", date("1959/2/7")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Theresa Stevens", date("1960/8/27")); 
+VALUES ("Lauren Martin", date("1945/10/18")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Ella Mendoza", date("1977/10/25")); 
+VALUES ("Terrence Craig", date("1974/10/5")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Avery Tremblay", date("1953/1/29")); 
+VALUES ("Chad Watts", date("1993/8/18")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Alexis Gagnon", date("1992/5/22")); 
+VALUES ("Mary Ross", date("1948/7/3")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Adam Roy", date("1982/10/10")); 
+VALUES ("Seth Robinson", date("1980/8/28")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jerome Vargas", date("1967/11/15")); 
+VALUES ("Tiffany King", date("1975/6/22")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Judy Dixon", date("1972/7/11")); 
+VALUES ("Mario Barrett", date("1956/8/5")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Vanessa Owens", date("1968/10/1")); 
+VALUES ("Joan Jones", date("1984/3/8")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Jimmie Kuhn", date("1977/12/26")); 
+VALUES ("Eleanor Peterson", date("1956/4/12")); 
 
 INSERT INTO customer(fullName, dateOfBirth)
-VALUES ("Benjamin French", date("1981/1/12")); 
+VALUES ("Lauren Graham", date("1954/9/25")); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/4"), 604, "Rita Miller"); 
+VALUES (date("2020/9/8"), 493, "Felix Grant"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 308, "Michelle Jennings"); 
+VALUES (date("2020/9/3"), 593, "Lauren Martin"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/15"), 227, "Jeanne Brar"); 
+VALUES (date("2020/9/23"), 59, "Eva Ryan"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 92, "Maeva Lam"); 
+VALUES (date("2020/11/4"), 549, "Victor Hart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/16"), 204, "Mason Ross"); 
+VALUES (date("2020/10/10"), 570, "Leo Wong"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/29"), 1, "Jacob Ramos"); 
+VALUES (date("2020/9/4"), 280, "Brielle Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 1, "Peyton Russell"); 
+VALUES (date("2020/10/8"), 223, "Florence Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/27"), 530, "Jimmie Kuhn"); 
+VALUES (date("2020/11/21"), 234, "Carole Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 8, "Mason Brown"); 
+VALUES (date("2020/10/8"), 381, "Amelia Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/8"), 288, "Jeffrey Bailey"); 
+VALUES (date("2020/10/28"), 540, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 153, "Angel Ramirez"); 
+VALUES (date("2020/10/16"), 82, "Joel Mitchelle"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 170, "Jacob Warren"); 
+VALUES (date("2020/11/21"), 70, "Alicia Sirko"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/15"), 253, "Judith Graves"); 
+VALUES (date("2020/10/26"), 581, "Kelly Allen"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/7"), 19, "Mason Ross"); 
+VALUES (date("2020/11/14"), 484, "Maria Hunter"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/8"), 390, "Kristin Flores"); 
+VALUES (date("2020/9/4"), 382, "Joel Mitchelle"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 70, "Bernard Ellis"); 
+VALUES (date("2020/11/7"), 3, "Brielle Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 289, "Jessie Hicks"); 
+VALUES (date("2020/9/4"), 529, "Gilbert Wells"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/1"), 357, "Avery Tremblay"); 
+VALUES (date("2020/9/21"), 505, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/5"), 325, "Zoe Mackay"); 
+VALUES (date("2020/9/1"), 280, "Joan Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 196, "Darrell Wade"); 
+VALUES (date("2020/11/1"), 492, "Eleanor Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/25"), 44, "Jasmine Fortin"); 
+VALUES (date("2020/9/6"), 97, "Mattie Ellis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/13"), 462, "Mason Ross"); 
+VALUES (date("2020/10/6"), 209, "Mario Barrett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 245, "Danny Barnett"); 
+VALUES (date("2020/11/5"), 169, "Gilbert Wells"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/9"), 306, "Ray Kuhn"); 
+VALUES (date("2020/10/13"), 457, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 528, "Jeanne Brar"); 
+VALUES (date("2020/11/10"), 568, "Eva Ryan"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/1"), 117, "Arthur Côté"); 
+VALUES (date("2020/10/24"), 58, "Mason Scott"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/9"), 412, "Nicky Castro"); 
+VALUES (date("2020/11/18"), 362, "Wendy Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/24"), 573, "Mason Brown"); 
+VALUES (date("2020/10/10"), 285, "Kirk Montgomery"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/13"), 74, "Mason Ross"); 
+VALUES (date("2020/9/1"), 335, "Tom Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 12, "Jessie Mcdonalid"); 
+VALUES (date("2020/10/18"), 408, "Seth Robinson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 567, "Adam Roy"); 
+VALUES (date("2020/9/6"), 182, "Mario Barrett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/25"), 133, "Maeva Knight"); 
+VALUES (date("2020/10/3"), 359, "Terrence Craig"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/17"), 573, "Randy Mitchelle"); 
+VALUES (date("2020/9/13"), 82, "Leo Wong"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 479, "Jacob Warren"); 
+VALUES (date("2020/9/1"), 378, "Matthew Morin"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 243, "Vanessa Owens"); 
+VALUES (date("2020/10/26"), 107, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/31"), 77, "Juan Barrett"); 
+VALUES (date("2020/9/2"), 354, "Wyatt Medina"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/4"), 412, "Mandy Simmmons"); 
+VALUES (date("2020/9/17"), 169, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/20"), 403, "Judy Dixon"); 
+VALUES (date("2020/10/29"), 176, "Philip Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 433, "Jade Kowalski"); 
+VALUES (date("2020/9/3"), 561, "Tonya Chavez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/2"), 423, "Alyssa Carlson"); 
+VALUES (date("2020/11/6"), 102, "Tonya Chavez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 526, "Ramon Fuller"); 
+VALUES (date("2020/10/25"), 281, "Aiden Bailey"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 41, "Kelly Morris"); 
+VALUES (date("2020/11/20"), 559, "Carol Ramos"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 491, "Charles Kowalski"); 
+VALUES (date("2020/11/10"), 479, "Tonya Chavez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/14"), 66, "Sophia Nelson"); 
+VALUES (date("2020/10/24"), 336, "Rita Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/5"), 162, "Kelly Morris"); 
+VALUES (date("2020/10/19"), 103, "Thomas Carroll"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 114, "Dominic Addy"); 
+VALUES (date("2020/9/30"), 375, "Carole Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/23"), 397, "Danny Barnett"); 
+VALUES (date("2020/11/2"), 408, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/29"), 62, "Rita Miller"); 
+VALUES (date("2020/9/3"), 133, "Kelly Simmmons"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/10"), 37, "Duane Nguyen"); 
+VALUES (date("2020/9/12"), 533, "Emma Pierce"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/6"), 376, "Alyssa Carlson"); 
+VALUES (date("2020/10/29"), 452, "Eva Ryan"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/13"), 111, "Avery Tremblay"); 
+VALUES (date("2020/9/5"), 180, "Cecil Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/2"), 377, "Edith Fleming"); 
+VALUES (date("2020/10/18"), 515, "Lonnie Day"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/13"), 523, "Jade Kowalski"); 
+VALUES (date("2020/10/1"), 194, "Tom Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/8"), 48, "Paige Henry"); 
+VALUES (date("2020/9/24"), 594, "Darryl Ross"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/2"), 302, "Mason Brown"); 
+VALUES (date("2020/9/11"), 606, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/13"), 469, "Avery Tremblay"); 
+VALUES (date("2020/9/10"), 72, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 250, "Katrina Carter"); 
+VALUES (date("2020/10/4"), 18, "Frank Kelley"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 493, "Caitlin Jackson"); 
+VALUES (date("2020/9/4"), 335, "Tyrone Carr"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/15"), 36, "Art Wells"); 
+VALUES (date("2020/9/21"), 410, "Lola Beck"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/8"), 546, "Judy Dixon"); 
+VALUES (date("2020/10/3"), 256, "Lonnie Day"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/3"), 388, "Charles Kowalski"); 
+VALUES (date("2020/9/6"), 205, "Emma Pierce"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/3"), 511, "Nolan Gonzalez"); 
+VALUES (date("2020/9/25"), 93, "Ethel Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 345, "Vanessa Owens"); 
+VALUES (date("2020/9/16"), 107, "Joel Mitchelle"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/6"), 150, "Michelle Jennings"); 
+VALUES (date("2020/11/18"), 83, "Cecil Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/12"), 228, "Maeva Lam"); 
+VALUES (date("2020/10/21"), 588, "Janet Cook"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/5"), 40, "Joan Daniels"); 
+VALUES (date("2020/9/10"), 207, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 396, "Juan Barrett"); 
+VALUES (date("2020/10/4"), 473, "Terra Bates"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/5"), 353, "Danny Barnett"); 
+VALUES (date("2020/9/19"), 593, "Eleanor Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/16"), 166, "Anthony Gagné"); 
+VALUES (date("2020/11/10"), 492, "Adam Lavoie"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 519, "Jacob Warren"); 
+VALUES (date("2020/9/9"), 436, "Wendy Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/1"), 57, "Jade Kowalski"); 
+VALUES (date("2020/10/25"), 206, "Gerry Diaz"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 143, "Zander Byrd"); 
+VALUES (date("2020/10/31"), 410, "Mason Scott"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 420, "Tristan Ouellet"); 
+VALUES (date("2020/10/17"), 96, "Janet Cook"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/18"), 387, "Benjamin French"); 
+VALUES (date("2020/10/4"), 308, "Kristina Porter"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 323, "Aaron Jackson"); 
+VALUES (date("2020/9/22"), 258, "Tyrone Carr"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 327, "Edith Fleming"); 
+VALUES (date("2020/10/8"), 562, "Dominic Novak"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/13"), 272, "Josef Moreno"); 
+VALUES (date("2020/11/19"), 423, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 267, "Duane Nguyen"); 
+VALUES (date("2020/10/15"), 590, "Lonnie Barnett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 364, "Charles Kowalski"); 
+VALUES (date("2020/9/25"), 346, "Gerry Diaz"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 455, "April Kennedy"); 
+VALUES (date("2020/10/27"), 556, "Noah Williams"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/4"), 549, "Charles Kowalski"); 
+VALUES (date("2020/10/6"), 561, "Eva Ryan"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/8"), 367, "Randy Mitchelle"); 
+VALUES (date("2020/11/10"), 343, "Kirk Montgomery"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/14"), 454, "Joan Daniels"); 
+VALUES (date("2020/10/17"), 596, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/22"), 322, "Simon Fortin"); 
+VALUES (date("2020/10/6"), 380, "Kristin Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 418, "Michelle Jennings"); 
+VALUES (date("2020/11/16"), 240, "Emma Pierce"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/16"), 79, "Jon Jennings"); 
+VALUES (date("2020/9/7"), 354, "James Thompson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 217, "Danny Barnett"); 
+VALUES (date("2020/9/8"), 278, "Victor Hart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/19"), 129, "Juan Barrett"); 
+VALUES (date("2020/9/29"), 278, "Kristin Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/9"), 308, "Art Wells"); 
+VALUES (date("2020/9/29"), 452, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 106, "Charles Kowalski"); 
+VALUES (date("2020/11/17"), 7, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 56, "Benjamin Harris"); 
+VALUES (date("2020/11/7"), 546, "Esther Alexander"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/2"), 539, "Benjamin French"); 
+VALUES (date("2020/9/20"), 369, "Ivan Cunningham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 481, "Vanessa Owens"); 
+VALUES (date("2020/10/4"), 67, "Kelly Simmmons"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 82, "Jeffrey Bailey"); 
+VALUES (date("2020/11/6"), 221, "Lucas Singh"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/24"), 336, "Peyton Russell"); 
+VALUES (date("2020/9/2"), 594, "Grace Myers"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/20"), 472, "Sophia Nelson"); 
+VALUES (date("2020/10/13"), 601, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/2"), 405, "Benjamin French"); 
+VALUES (date("2020/9/11"), 356, "Ivan Cunningham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 542, "Bobby Allen"); 
+VALUES (date("2020/10/12"), 237, "Randy Walters"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/18"), 118, "Charles Kowalski"); 
+VALUES (date("2020/11/20"), 408, "Rebecca Obrien"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 537, "Olivia Lévesque"); 
+VALUES (date("2020/10/6"), 345, "Emma Pierce"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/25"), 588, "Theresa Stevens"); 
+VALUES (date("2020/10/9"), 72, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/20"), 477, "Anna Welch"); 
+VALUES (date("2020/9/25"), 588, "Noah Williams"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/7"), 501, "Anna Welch"); 
+VALUES (date("2020/9/14"), 332, "Tiffany King"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/5"), 387, "Jacob Warren"); 
+VALUES (date("2020/9/1"), 426, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 580, "Michelle Jennings"); 
+VALUES (date("2020/9/13"), 420, "Sofia Morrison"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/31"), 523, "Beatrice Reed"); 
+VALUES (date("2020/10/10"), 356, "Eleanor Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 457, "Maeva Lam"); 
+VALUES (date("2020/10/25"), 153, "Luis Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/27"), 267, "Mason Ross"); 
+VALUES (date("2020/10/17"), 265, "Eleanor Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 267, "Michelle Jennings"); 
+VALUES (date("2020/10/17"), 208, "Jay Byrd"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 9, "Maeva Lam"); 
+VALUES (date("2020/9/4"), 387, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/22"), 442, "Toni Dunn"); 
+VALUES (date("2020/10/22"), 272, "Patricia Stewart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/20"), 545, "Mildred Murphy"); 
+VALUES (date("2020/9/1"), 537, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 318, "Theresa Stevens"); 
+VALUES (date("2020/10/11"), 413, "Noah Williams"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 198, "Morris Spencer"); 
+VALUES (date("2020/9/27"), 67, "Matthew Morin"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/22"), 550, "Mandy Simmmons"); 
+VALUES (date("2020/10/24"), 245, "Terrence Craig"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/30"), 470, "Jessie Mcdonalid"); 
+VALUES (date("2020/10/1"), 148, "Maria Hunter"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/13"), 564, "Nicky Castro"); 
+VALUES (date("2020/9/3"), 53, "Lauren Martin"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/4"), 546, "Mildred Murphy"); 
+VALUES (date("2020/10/5"), 74, "Tyrone Carr"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/20"), 118, "Herbert Gonzales"); 
+VALUES (date("2020/10/7"), 361, "Felix Grant"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 600, "Caitlin Jackson"); 
+VALUES (date("2020/9/16"), 319, "Sofia Morrison"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/17"), 223, "Chris Gibson"); 
+VALUES (date("2020/9/28"), 174, "Joan Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 70, "Aaron Jackson"); 
+VALUES (date("2020/9/1"), 572, "Joel Mitchelle"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 64, "Jesse Mcdonalid"); 
+VALUES (date("2020/9/13"), 118, "Lucas Singh"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 580, "Chris Gibson"); 
+VALUES (date("2020/9/14"), 5, "Kristin Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/21"), 583, "Aaron Jackson"); 
+VALUES (date("2020/9/25"), 387, "Darryl Ross"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/13"), 296, "Tristan Ouellet"); 
+VALUES (date("2020/9/29"), 548, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 91, "Caitlin Jackson"); 
+VALUES (date("2020/10/10"), 372, "Amelia Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/21"), 506, "Lola Graham"); 
+VALUES (date("2020/9/17"), 245, "Noah Williams"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/9"), 43, "Danny Barnett"); 
+VALUES (date("2020/9/7"), 531, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 343, "Charles Kowalski"); 
+VALUES (date("2020/9/12"), 260, "Randy Walters"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 235, "Caitlin Jackson"); 
+VALUES (date("2020/9/29"), 325, "Harper Ma"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/7"), 48, "Hailey Brewer"); 
+VALUES (date("2020/10/12"), 149, "Cecil Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 180, "Jon Jennings"); 
+VALUES (date("2020/9/7"), 448, "Randy Walters"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/15"), 325, "Katrina Carter"); 
+VALUES (date("2020/10/6"), 247, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/15"), 45, "Tristan Ouellet"); 
+VALUES (date("2020/10/18"), 445, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/19"), 90, "Chris Gibson"); 
+VALUES (date("2020/9/22"), 522, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 211, "Martha Lowe"); 
+VALUES (date("2020/9/6"), 95, "Lucy Perez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/1"), 294, "Lola Graham"); 
+VALUES (date("2020/9/6"), 456, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/22"), 397, "Jeffrey Bailey"); 
+VALUES (date("2020/11/17"), 205, "Joan Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/26"), 546, "Carolyn Wright"); 
+VALUES (date("2020/9/20"), 286, "Lucas Singh"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/4"), 301, "Josef Moreno"); 
+VALUES (date("2020/9/27"), 555, "Marc Davis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/25"), 513, "Joel Gonzales"); 
+VALUES (date("2020/10/24"), 157, "Tomothy Terry"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 315, "Earl Gray"); 
+VALUES (date("2020/10/14"), 142, "Brandie Brewer"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/24"), 188, "Joel Gonzales"); 
+VALUES (date("2020/10/6"), 126, "Tonya Chavez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 598, "Pearl Myers"); 
+VALUES (date("2020/10/12"), 29, "Esther Alexander"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/5"), 18, "April Kennedy"); 
+VALUES (date("2020/9/15"), 134, "Terrence Craig"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/10"), 237, "Ray Kuhn"); 
+VALUES (date("2020/10/23"), 531, "Kelly Simmmons"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/23"), 280, "Scarlett Shaw"); 
+VALUES (date("2020/11/9"), 107, "Rita Ray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 68, "Alyssa Carlson"); 
+VALUES (date("2020/10/16"), 200, "Randy Walters"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/18"), 68, "Benjamin Knight"); 
+VALUES (date("2020/9/23"), 501, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/31"), 300, "Kelly Morris"); 
+VALUES (date("2020/11/17"), 113, "Darryl Ross"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/23"), 450, "Nicky Castro"); 
+VALUES (date("2020/9/28"), 481, "Zachary Gilbert"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 456, "Jimmie Kuhn"); 
+VALUES (date("2020/11/7"), 414, "Jim Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/7"), 462, "Judy Dixon"); 
+VALUES (date("2020/9/4"), 404, "Kristina Porter"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/18"), 391, "Scarlett Shaw"); 
+VALUES (date("2020/9/2"), 147, "Sharlene Price"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/8"), 250, "Earl Gray"); 
+VALUES (date("2020/9/18"), 51, "Zackary French"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/31"), 319, "Zander Byrd"); 
+VALUES (date("2020/9/17"), 469, "Zackary French"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/24"), 354, "Jade Kowalski"); 
+VALUES (date("2020/10/21"), 454, "Wendy Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 275, "Toni Dunn"); 
+VALUES (date("2020/10/18"), 229, "Lucy Perez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/13"), 382, "Rita Miller"); 
+VALUES (date("2020/9/15"), 259, "Wendy Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/20"), 476, "Nolan Gonzalez"); 
+VALUES (date("2020/10/3"), 117, "Theresa Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/1"), 198, "Sophia Nelson"); 
+VALUES (date("2020/9/16"), 186, "Aiden Bailey"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/22"), 516, "Jasmine Fortin"); 
+VALUES (date("2020/10/2"), 181, "Ethel Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/5"), 449, "Jade Kowalski"); 
+VALUES (date("2020/9/21"), 450, "Zackary French"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 416, "Aaron Jackson"); 
+VALUES (date("2020/11/9"), 537, "Sylvia Gray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/23"), 474, "Tristan Ouellet"); 
+VALUES (date("2020/9/28"), 539, "Chad Watts"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/2"), 437, "Mandy Simmmons"); 
+VALUES (date("2020/10/17"), 65, "Rebecca Obrien"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/21"), 566, "Tristan Ouellet"); 
+VALUES (date("2020/10/18"), 173, "Lauren Martin"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/9"), 606, "Jerome Vargas"); 
+VALUES (date("2020/11/16"), 550, "Tomothy Terry"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/6"), 451, "Joel Gonzales"); 
+VALUES (date("2020/11/2"), 355, "Lily Scott"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 289, "Zander Byrd"); 
+VALUES (date("2020/10/2"), 540, "Frank Kelley"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 461, "Ray Kuhn"); 
+VALUES (date("2020/9/29"), 128, "Robert Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/7"), 428, "Duane Nguyen"); 
+VALUES (date("2020/11/6"), 521, "Darryl Ross"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 442, "Gloria Welch"); 
+VALUES (date("2020/10/6"), 268, "Emma Pierce"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/3"), 7, "Jerome Vargas"); 
+VALUES (date("2020/9/12"), 499, "Kelly Allen"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/24"), 283, "Billie Arnold"); 
+VALUES (date("2020/9/21"), 226, "Mason Scott"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/4"), 281, "Rita Miller"); 
+VALUES (date("2020/10/10"), 121, "Ethel Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/16"), 50, "Mason Ross"); 
+VALUES (date("2020/10/22"), 133, "Ivan Cunningham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/24"), 297, "Benjamin Knight"); 
+VALUES (date("2020/10/26"), 282, "Carole Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 57, "Mary Robinson"); 
+VALUES (date("2020/9/16"), 168, "Brandie Brewer"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/1"), 63, "Martha Lowe"); 
+VALUES (date("2020/9/2"), 403, "Noah Park"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/27"), 437, "Ray Kuhn"); 
+VALUES (date("2020/11/20"), 404, "Kirk Montgomery"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/8"), 461, "Rita Miller"); 
+VALUES (date("2020/10/2"), 104, "Noah Williams"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 360, "Jeffrey Bailey"); 
+VALUES (date("2020/11/8"), 345, "Aiden Roy"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 421, "Anthony Gagné"); 
+VALUES (date("2020/11/13"), 342, "Terrence Craig"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/7"), 301, "Anthony Gagné"); 
+VALUES (date("2020/9/5"), 50, "Marc Davis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/5"), 334, "Ramon Fuller"); 
+VALUES (date("2020/11/8"), 373, "Rita Hernandez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/6"), 209, "Sophia Nelson"); 
+VALUES (date("2020/10/7"), 583, "Carol Ramos"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 45, "Jar Watson"); 
+VALUES (date("2020/9/14"), 452, "Mattie Ellis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/27"), 584, "Peter Andrews"); 
+VALUES (date("2020/10/26"), 579, "Cody Gutierrez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/17"), 446, "Earl Gray"); 
+VALUES (date("2020/9/15"), 538, "Janet Cook"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/30"), 463, "Alexis Gagnon"); 
+VALUES (date("2020/9/2"), 384, "Lonnie Barnett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/15"), 415, "Edith Fleming"); 
+VALUES (date("2020/11/16"), 316, "Zackary French"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 365, "Benjamin French"); 
+VALUES (date("2020/10/4"), 329, "Theresa Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/23"), 383, "Scarlett Shaw"); 
+VALUES (date("2020/9/26"), 23, "Noah Park"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/1"), 271, "Nicky Castro"); 
+VALUES (date("2020/10/18"), 508, "Leo Wong"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 13, "Catherine Hunt"); 
+VALUES (date("2020/9/4"), 563, "Albert Bell"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/7"), 229, "Alexis Gagnon"); 
+VALUES (date("2020/10/15"), 483, "Mario Barrett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/16"), 521, "Edith Fleming"); 
+VALUES (date("2020/9/8"), 43, "Gerry Diaz"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/1"), 460, "Simon Fortin"); 
+VALUES (date("2020/11/4"), 482, "Sylvia Gray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 302, "April Kennedy"); 
+VALUES (date("2020/10/16"), 336, "Tyrone Carr"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 360, "Jim Washington"); 
+VALUES (date("2020/10/24"), 271, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/23"), 442, "Mildred Murphy"); 
+VALUES (date("2020/10/24"), 322, "Victor Hart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 554, "Katrina Carter"); 
+VALUES (date("2020/10/1"), 356, "Ethel Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/5"), 140, "Benjamin Knight"); 
+VALUES (date("2020/10/23"), 149, "Rita Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/4"), 377, "Diana Holland"); 
+VALUES (date("2020/11/14"), 499, "Gilbert Wells"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/8"), 154, "Jeanne Brar"); 
+VALUES (date("2020/9/12"), 430, "Lonnie Day"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 245, "Jacob Warren"); 
+VALUES (date("2020/11/15"), 495, "Albert Bell"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 498, "Herbert Gonzales"); 
+VALUES (date("2020/11/20"), 524, "Jay Byrd"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 48, "Carolyn Wright"); 
+VALUES (date("2020/11/8"), 275, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/22"), 228, "Jessie Hicks"); 
+VALUES (date("2020/10/10"), 80, "Kristin Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 381, "Peter Andrews"); 
+VALUES (date("2020/9/16"), 544, "Thomas Carroll"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/27"), 21, "Kelly Morris"); 
+VALUES (date("2020/9/10"), 126, "Dominic Novak"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 280, "Hailey Brewer"); 
+VALUES (date("2020/10/14"), 196, "Adam Lavoie"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/7"), 376, "Earl Gray"); 
+VALUES (date("2020/10/16"), 202, "Jay Byrd"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 318, "Douglas Hughes"); 
+VALUES (date("2020/9/24"), 531, "Victor Hart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 331, "Jimmie Kuhn"); 
+VALUES (date("2020/9/10"), 279, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/10"), 493, "Michelle Jennings"); 
+VALUES (date("2020/10/8"), 268, "Thomas Carroll"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/30"), 145, "Avery Tremblay"); 
+VALUES (date("2020/10/7"), 42, "Alicia Sirko"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/20"), 180, "Jerome Vargas"); 
+VALUES (date("2020/11/5"), 546, "Emma Pierce"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/21"), 26, "Bernard Ellis"); 
+VALUES (date("2020/9/13"), 156, "Grace Myers"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/12"), 225, "Billie Arnold"); 
+VALUES (date("2020/10/14"), 476, "Kelly Allen"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 286, "Mandy Simmmons"); 
+VALUES (date("2020/9/2"), 137, "Cody Gutierrez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/22"), 177, "Aaron Jackson"); 
+VALUES (date("2020/9/5"), 287, "Joan Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/25"), 538, "Herbert Gonzales"); 
+VALUES (date("2020/9/3"), 34, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/24"), 125, "Edith Fleming"); 
+VALUES (date("2020/11/7"), 330, "Sylvia Gray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 573, "Mason Ross"); 
+VALUES (date("2020/9/24"), 254, "Leo Wong"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/16"), 160, "Zoe Mackay"); 
+VALUES (date("2020/11/17"), 307, "Marc Davis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/2"), 481, "Ray Kuhn"); 
+VALUES (date("2020/9/29"), 494, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/20"), 557, "Randy Mitchelle"); 
+VALUES (date("2020/9/14"), 453, "Tom Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/13"), 288, "Ella Mendoza"); 
+VALUES (date("2020/10/7"), 574, "Gilbert Wells"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 42, "Douglas Hughes"); 
+VALUES (date("2020/9/8"), 394, "Felix Grant"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/6"), 388, "Jacob Ramos"); 
+VALUES (date("2020/10/3"), 230, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/28"), 258, "Caitlin Jackson"); 
+VALUES (date("2020/9/28"), 45, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/20"), 464, "Michelle Jennings"); 
+VALUES (date("2020/9/26"), 266, "Avery Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/17"), 400, "Delphine Sirko"); 
+VALUES (date("2020/9/6"), 402, "Emily Jackson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/14"), 357, "Delphine Sirko"); 
+VALUES (date("2020/10/18"), 309, "Lonnie Day"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/5"), 264, "Alexis Gagnon"); 
+VALUES (date("2020/11/7"), 403, "Lauren Graham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/8"), 19, "Ramon Fuller"); 
+VALUES (date("2020/11/5"), 373, "Craig Reyes"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 426, "Bernice Little"); 
+VALUES (date("2020/10/25"), 450, "Ethel Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/13"), 308, "Gloria Welch"); 
+VALUES (date("2020/9/28"), 365, "Florence Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/7"), 517, "Chris Gibson"); 
+VALUES (date("2020/11/16"), 564, "Noah Williams"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/18"), 529, "Elmer Alvarez"); 
+VALUES (date("2020/10/1"), 546, "Theresa Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/9"), 219, "Diana Holland"); 
+VALUES (date("2020/10/2"), 316, "Esther Alexander"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/19"), 88, "Catherine Hunt"); 
+VALUES (date("2020/11/15"), 58, "Andrew Wright"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 490, "Zander Byrd"); 
+VALUES (date("2020/11/1"), 606, "Rita Ray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/12"), 520, "Judith Graves"); 
+VALUES (date("2020/9/28"), 313, "Leo Wong"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/4"), 423, "Art Wells"); 
+VALUES (date("2020/10/11"), 326, "Maria Hunter"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/20"), 572, "Peter Andrews"); 
+VALUES (date("2020/11/4"), 183, "Rita Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/15"), 163, "Rita Miller"); 
+VALUES (date("2020/10/25"), 446, "Ivan Cunningham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/7"), 94, "Alyssa Carlson"); 
+VALUES (date("2020/9/3"), 25, "Theresa Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 188, "Judith Graves"); 
+VALUES (date("2020/10/9"), 577, "Tomothy Terry"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 208, "Hailey Brewer"); 
+VALUES (date("2020/9/27"), 87, "Oscar Morales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/16"), 565, "Vanessa Owens"); 
+VALUES (date("2020/10/6"), 338, "Sylvia Gray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/24"), 236, "Katrina Carter"); 
+VALUES (date("2020/11/9"), 376, "Lily Scott"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/20"), 100, "Aaron Jackson"); 
+VALUES (date("2020/9/3"), 108, "Grace Myers"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 527, "Michelle Jennings"); 
+VALUES (date("2020/9/5"), 526, "Emma Byrd"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/7"), 58, "Delphine Sirko"); 
+VALUES (date("2020/11/12"), 298, "Ethel Nelson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/15"), 222, "Judith Graves"); 
+VALUES (date("2020/11/2"), 365, "Tomothy Terry"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 361, "Dominic Addy"); 
+VALUES (date("2020/10/28"), 455, "Lauren Martin"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/6"), 65, "Elmer Alvarez"); 
+VALUES (date("2020/9/22"), 603, "Theresa Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/5"), 520, "Daryl Fuller"); 
+VALUES (date("2020/11/19"), 573, "Carol Ramos"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/15"), 557, "Sophia Nelson"); 
+VALUES (date("2020/10/29"), 173, "Theresa Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/9"), 144, "Herbert Gonzales"); 
+VALUES (date("2020/9/29"), 272, "Joel Mitchelle"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 60, "Terra Beck"); 
+VALUES (date("2020/11/19"), 171, "Aiden Bailey"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/2"), 290, "Sofia Lo"); 
+VALUES (date("2020/10/18"), 190, "Kelly Allen"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/21"), 257, "Olivia Lévesque"); 
+VALUES (date("2020/9/9"), 129, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 53, "Carolyn Wright"); 
+VALUES (date("2020/10/9"), 131, "Amelia Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/7"), 352, "Jacob Warren"); 
+VALUES (date("2020/11/1"), 515, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 490, "Kristin Flores"); 
+VALUES (date("2020/9/25"), 16, "Janet Cook"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 279, "Alyssa Carlson"); 
+VALUES (date("2020/10/4"), 534, "Wyatt Medina"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/24"), 96, "Danny Barnett"); 
+VALUES (date("2020/9/26"), 54, "Joel Mitchelle"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 568, "Peter Andrews"); 
+VALUES (date("2020/11/7"), 540, "Sharlene Price"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/28"), 457, "Peyton Russell"); 
+VALUES (date("2020/10/31"), 211, "Felix Grant"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/7"), 541, "Catherine Hunt"); 
+VALUES (date("2020/11/21"), 283, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 371, "Nolan Gonzalez"); 
+VALUES (date("2020/9/28"), 237, "Carole Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 444, "Charles Kowalski"); 
+VALUES (date("2020/11/6"), 148, "Tiffany King"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 150, "Jacob Warren"); 
+VALUES (date("2020/10/8"), 333, "Terrence Craig"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/5"), 492, "April Kennedy"); 
+VALUES (date("2020/10/27"), 231, "Randy Walters"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/27"), 355, "Angel Ramirez"); 
+VALUES (date("2020/11/5"), 286, "Chad Watts"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/6"), 272, "Sophia Nelson"); 
+VALUES (date("2020/9/19"), 346, "James Thompson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 431, "Gloria Welch"); 
+VALUES (date("2020/10/2"), 161, "Kelly Simmmons"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/20"), 372, "Josef Moreno"); 
+VALUES (date("2020/10/13"), 594, "Sofia Morrison"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/4"), 118, "Mason Ross"); 
+VALUES (date("2020/10/7"), 186, "Tom Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/13"), 180, "Paige Henry"); 
+VALUES (date("2020/9/20"), 18, "Kristin Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 316, "Olivia Lévesque"); 
+VALUES (date("2020/11/8"), 285, "Tiffany King"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 181, "Pearl Myers"); 
+VALUES (date("2020/11/19"), 406, "Harper Ma"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 605, "Sophia Nelson"); 
+VALUES (date("2020/9/5"), 72, "Cody Gutierrez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 97, "Jasmine Fortin"); 
+VALUES (date("2020/9/13"), 531, "Mario Barrett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/2"), 531, "Zoe Mackay"); 
+VALUES (date("2020/9/27"), 377, "Mario Barrett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/25"), 508, "Terra Beck"); 
+VALUES (date("2020/10/26"), 265, "Maria Hunter"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 539, "Elmer Alvarez"); 
+VALUES (date("2020/11/2"), 40, "Jay Byrd"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/26"), 87, "Mildred Murphy"); 
+VALUES (date("2020/11/4"), 516, "Wyatt Medina"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/16"), 156, "Mary Robinson"); 
+VALUES (date("2020/9/22"), 470, "Lucy Perez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/2"), 526, "Zoe Mackay"); 
+VALUES (date("2020/11/9"), 19, "Thomas Carroll"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/25"), 229, "Jacob Ramos"); 
+VALUES (date("2020/9/21"), 33, "Rita Ray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/9"), 231, "Nicky Castro"); 
+VALUES (date("2020/10/19"), 290, "Rita Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/22"), 337, "Olivia Lévesque"); 
+VALUES (date("2020/11/1"), 308, "Eleanor Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/5"), 570, "Jeffrey Bailey"); 
+VALUES (date("2020/10/12"), 174, "Eleanor Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/30"), 132, "Bobby Allen"); 
+VALUES (date("2020/10/29"), 124, "Oscar Morales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/2"), 357, "Alfred Ramos"); 
+VALUES (date("2020/10/20"), 25, "Ethel Nelson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/18"), 584, "Ray Kuhn"); 
+VALUES (date("2020/11/9"), 276, "Marc Davis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/30"), 348, "Sofia Lo"); 
+VALUES (date("2020/11/14"), 606, "Gilbert Wells"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/14"), 319, "Dawn Prescott"); 
+VALUES (date("2020/10/16"), 325, "Kelly Simmmons"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/19"), 304, "Jacob Ramos"); 
+VALUES (date("2020/10/27"), 470, "Sofia Morrison"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/16"), 326, "Billie Arnold"); 
+VALUES (date("2020/11/16"), 238, "Zachary Gilbert"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 509, "Caitlin Jackson"); 
+VALUES (date("2020/10/14"), 397, "Avery Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/2"), 594, "Peyton Russell"); 
+VALUES (date("2020/10/11"), 538, "Leo Wong"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 171, "Jon Jennings"); 
+VALUES (date("2020/9/17"), 525, "Marcia Edwards"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 108, "Diana Holland"); 
+VALUES (date("2020/11/6"), 134, "Rita Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 226, "Jade Kowalski"); 
+VALUES (date("2020/9/27"), 589, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/9"), 380, "Scarlett Shaw"); 
+VALUES (date("2020/9/25"), 78, "Janet Cook"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/1"), 306, "Danny Barnett"); 
+VALUES (date("2020/11/3"), 514, "Jasmine Ginnish"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/13"), 259, "Martha Lowe"); 
+VALUES (date("2020/9/6"), 559, "Emma Pierce"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/14"), 216, "Joan Daniels"); 
+VALUES (date("2020/10/27"), 360, "Andrew Wright"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/25"), 404, "Charles Kowalski"); 
+VALUES (date("2020/10/26"), 498, "Lucas Singh"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/6"), 226, "Adam Roy"); 
+VALUES (date("2020/11/13"), 118, "Rita Ray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/4"), 438, "Vanessa Owens"); 
+VALUES (date("2020/9/7"), 108, "Ethel Nelson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/21"), 198, "Maeva Lam"); 
+VALUES (date("2020/10/20"), 174, "Dominic Novak"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 169, "Earl Gray"); 
+VALUES (date("2020/11/14"), 338, "Florence Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/26"), 491, "Jacob Warren"); 
+VALUES (date("2020/10/19"), 130, "Craig Reyes"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 68, "Charles Kowalski"); 
+VALUES (date("2020/9/16"), 125, "Adam Lavoie"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/27"), 398, "Kelly Morris"); 
+VALUES (date("2020/9/22"), 511, "Ethel Nelson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 164, "Charles Kowalski"); 
+VALUES (date("2020/9/3"), 213, "Robert Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 520, "Toni Dunn"); 
+VALUES (date("2020/9/11"), 5, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 144, "Bernard Ellis"); 
+VALUES (date("2020/9/9"), 576, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/20"), 572, "Jar Watson"); 
+VALUES (date("2020/11/5"), 315, "Kristin Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/18"), 153, "Mason Ross"); 
+VALUES (date("2020/10/16"), 309, "Kirk Montgomery"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 399, "Angel Ramirez"); 
+VALUES (date("2020/11/19"), 246, "Mason Scott"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 432, "Mason Ross"); 
+VALUES (date("2020/11/9"), 58, "Ivan Cunningham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 398, "Sophia Nelson"); 
+VALUES (date("2020/10/21"), 509, "Albert Bell"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/5"), 230, "Delphine Sirko"); 
+VALUES (date("2020/10/6"), 233, "Sylvia Gray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/12"), 263, "Ray Kuhn"); 
+VALUES (date("2020/10/1"), 259, "Francis Pena"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/28"), 123, "Benjamin Knight"); 
+VALUES (date("2020/9/23"), 397, "Marcia Edwards"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 404, "Jesse Mcdonalid"); 
+VALUES (date("2020/10/18"), 239, "Victor Hart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/29"), 597, "Mandy Simmmons"); 
+VALUES (date("2020/9/25"), 289, "Rita Hernandez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/27"), 462, "Molly Cunningham"); 
+VALUES (date("2020/9/9"), 148, "Andrew Wright"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/7"), 542, "Theresa Stevens"); 
+VALUES (date("2020/11/5"), 218, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 214, "April Kennedy"); 
+VALUES (date("2020/10/10"), 392, "Brandie Brewer"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/2"), 69, "Alexis Gagnon"); 
+VALUES (date("2020/11/20"), 505, "Tonya Chavez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/9"), 425, "Mason Ross"); 
+VALUES (date("2020/9/5"), 370, "Andrew Wright"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/12"), 23, "Arthur Côté"); 
+VALUES (date("2020/9/5"), 347, "Lonnie Barnett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/17"), 317, "Earl Gray"); 
+VALUES (date("2020/10/26"), 422, "Rita Ray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 259, "Arthur Côté"); 
+VALUES (date("2020/10/30"), 4, "Aiden Bailey"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 475, "Jacob Ramos"); 
+VALUES (date("2020/9/20"), 326, "Jim Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/2"), 192, "Caitlin Jackson"); 
+VALUES (date("2020/10/2"), 544, "Andrew Wright"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 121, "Catherine Hunt"); 
+VALUES (date("2020/10/14"), 12, "Lily Scott"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/22"), 80, "Tristan Ouellet"); 
+VALUES (date("2020/9/1"), 201, "Lauren Graham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/25"), 300, "Edith Fleming"); 
+VALUES (date("2020/10/11"), 506, "Lauren Martin"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/6"), 212, "Jimmie Kuhn"); 
+VALUES (date("2020/11/4"), 449, "Sylvia Gray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/20"), 564, "Maeva Knight"); 
+VALUES (date("2020/9/18"), 579, "Terrence Craig"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 278, "Nicky Castro"); 
+VALUES (date("2020/11/14"), 569, "Terra Bates"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/10"), 41, "Elmer Alvarez"); 
+VALUES (date("2020/11/20"), 169, "Craig Reyes"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 114, "Billie Arnold"); 
+VALUES (date("2020/9/26"), 240, "Mario Barrett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/28"), 125, "Zander Byrd"); 
+VALUES (date("2020/11/1"), 605, "Noah Park"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/3"), 416, "Benjamin French"); 
+VALUES (date("2020/11/1"), 203, "Florence Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/17"), 436, "Vanessa Owens"); 
+VALUES (date("2020/10/21"), 597, "Tonya Chavez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 224, "Zander Byrd"); 
+VALUES (date("2020/9/23"), 291, "Thomas Carroll"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/20"), 579, "Angel Ramirez"); 
+VALUES (date("2020/9/17"), 603, "Brielle Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 193, "Joan Daniels"); 
+VALUES (date("2020/10/18"), 425, "Aiden Roy"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/30"), 343, "Charles Kowalski"); 
+VALUES (date("2020/11/10"), 468, "Jim Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/15"), 517, "Kelly Morris"); 
+VALUES (date("2020/9/5"), 199, "Felix Grant"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/13"), 482, "Angel Ramirez"); 
+VALUES (date("2020/11/11"), 256, "Gerry Diaz"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 273, "Mason Brown"); 
+VALUES (date("2020/9/23"), 385, "Randy Walters"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/28"), 539, "Toni Dunn"); 
+VALUES (date("2020/10/9"), 586, "Victor Hart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/23"), 449, "Jimmie Kuhn"); 
+VALUES (date("2020/10/12"), 359, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/18"), 166, "Pearl Myers"); 
+VALUES (date("2020/9/12"), 144, "Chad Watts"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/18"), 392, "Mandy Simmmons"); 
+VALUES (date("2020/9/28"), 528, "Leo Wong"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/21"), 214, "Benjamin French"); 
+VALUES (date("2020/9/4"), 6, "Jay Byrd"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/22"), 466, "Katrina Carter"); 
+VALUES (date("2020/11/13"), 517, "Ivan Cunningham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/10"), 529, "Jacob Warren"); 
+VALUES (date("2020/9/2"), 495, "Brielle Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/18"), 217, "Jimmie Kuhn"); 
+VALUES (date("2020/9/16"), 587, "Kelly Allen"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/13"), 107, "Zander Byrd"); 
+VALUES (date("2020/10/26"), 442, "Luis Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/16"), 11, "Juan Barrett"); 
+VALUES (date("2020/11/3"), 97, "Joel Mitchelle"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/8"), 468, "Bernice Little"); 
+VALUES (date("2020/9/13"), 282, "Luis Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/18"), 63, "Benjamin French"); 
+VALUES (date("2020/10/11"), 419, "Florence Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/1"), 427, "Darrell Wade"); 
+VALUES (date("2020/10/17"), 82, "Eleanor Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/18"), 507, "Tristan Ouellet"); 
+VALUES (date("2020/9/4"), 277, "Victor Hart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/19"), 523, "Joan Daniels"); 
+VALUES (date("2020/9/27"), 372, "Luis Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/21"), 368, "Charles Kowalski"); 
+VALUES (date("2020/10/12"), 389, "Brandie Brewer"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/16"), 546, "Kelly Morris"); 
+VALUES (date("2020/10/31"), 65, "Emma Pierce"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/3"), 190, "Nicky Castro"); 
+VALUES (date("2020/9/25"), 365, "Tom Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/8"), 364, "Jeanne Brar"); 
+VALUES (date("2020/10/21"), 474, "Craig Reyes"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/23"), 132, "Alyssa Carlson"); 
+VALUES (date("2020/11/5"), 381, "Andrew Wright"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/12"), 501, "Mason Ross"); 
+VALUES (date("2020/9/30"), 291, "Joan Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/15"), 307, "Elmer Alvarez"); 
+VALUES (date("2020/10/10"), 280, "Sofia Morrison"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/10"), 539, "Caitlin Jackson"); 
+VALUES (date("2020/11/7"), 219, "Noah Williams"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/6"), 293, "Jacob Warren"); 
+VALUES (date("2020/9/15"), 430, "Albert Bell"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/15"), 217, "Tristan Ouellet"); 
+VALUES (date("2020/9/12"), 133, "Lauren Graham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/15"), 162, "Juan Barrett"); 
+VALUES (date("2020/9/4"), 485, "Lola Beck"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/9"), 49, "Jerome Vargas"); 
+VALUES (date("2020/9/4"), 498, "Ethel Castro"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/9"), 69, "Scarlett Shaw"); 
+VALUES (date("2020/9/12"), 496, "Lucas Singh"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/26"), 417, "Judith Graves"); 
+VALUES (date("2020/9/16"), 166, "Lonnie Barnett"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/20"), 1, "Toni Dunn"); 
+VALUES (date("2020/11/5"), 551, "Albert Bell"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/4"), 215, "Maeva Lam"); 
+VALUES (date("2020/11/21"), 398, "Aiden Bailey"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/3"), 84, "Herbert Gonzales"); 
+VALUES (date("2020/11/20"), 301, "Amelia Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/5"), 58, "Zander Byrd"); 
+VALUES (date("2020/11/8"), 0, "Victor Hart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/26"), 90, "Arthur Côté"); 
+VALUES (date("2020/10/12"), 588, "Theresa Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/18"), 442, "Dawn Prescott"); 
+VALUES (date("2020/9/22"), 387, "Philip Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 520, "Art Wells"); 
+VALUES (date("2020/11/2"), 258, "Lauren Graham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/13"), 268, "Anthony Gagné"); 
+VALUES (date("2020/11/1"), 75, "Tyrone Carr"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/6"), 226, "Mildred Murphy"); 
+VALUES (date("2020/9/23"), 322, "Rita Hernandez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/14"), 30, "Earl Gray"); 
+VALUES (date("2020/9/10"), 197, "Avery Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/24"), 109, "Kristin Flores"); 
+VALUES (date("2020/11/4"), 313, "Jay Byrd"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/7"), 390, "Catherine Hunt"); 
+VALUES (date("2020/11/8"), 550, "Tom Gonzales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/13"), 137, "Alfred Ramos"); 
+VALUES (date("2020/9/11"), 404, "Kristina Porter"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 526, "Morris Spencer"); 
+VALUES (date("2020/9/15"), 51, "Aiden Bailey"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/14"), 83, "Beatrice Reed"); 
+VALUES (date("2020/9/13"), 454, "Wyatt Medina"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/5"), 217, "Terra Beck"); 
+VALUES (date("2020/10/29"), 63, "Mattie Ellis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/18"), 280, "Judith Graves"); 
+VALUES (date("2020/10/22"), 150, "Noah Williams"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 436, "Jesse Mcdonalid"); 
+VALUES (date("2020/10/10"), 367, "Zachary Gilbert"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/1"), 419, "Herbert Gonzales"); 
+VALUES (date("2020/9/30"), 37, "Rebecca Obrien"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/8"), 75, "Sophia Nelson"); 
+VALUES (date("2020/10/12"), 271, "Kristin Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/17"), 132, "Hailey Brewer"); 
+VALUES (date("2020/10/21"), 527, "Tiffany King"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/13"), 207, "Aaron Jackson"); 
+VALUES (date("2020/10/11"), 122, "Kristina Porter"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/9"), 410, "Billie Arnold"); 
+VALUES (date("2020/10/10"), 343, "Darryl Ross"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/30"), 237, "Simon Fortin"); 
+VALUES (date("2020/10/29"), 322, "Gerry Diaz"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/20"), 352, "Duane Nguyen"); 
+VALUES (date("2020/11/10"), 411, "Ethel Nelson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/1"), 61, "Jon Jennings"); 
+VALUES (date("2020/10/17"), 152, "Oscar Morales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/13"), 398, "Danny Barnett"); 
+VALUES (date("2020/9/14"), 250, "Darryl Ross"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/2"), 590, "Mason Ross"); 
+VALUES (date("2020/10/31"), 368, "Emily Jackson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 530, "Ella Mendoza"); 
+VALUES (date("2020/9/25"), 358, "Brandie Brewer"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/23"), 240, "Delphine Sirko"); 
+VALUES (date("2020/10/3"), 418, "Esther Alexander"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 21, "Dominic Addy"); 
+VALUES (date("2020/11/6"), 573, "Oscar Morales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/27"), 187, "Nolan Gonzalez"); 
+VALUES (date("2020/11/18"), 203, "Luis Walker"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/4"), 159, "Peter Andrews"); 
+VALUES (date("2020/10/4"), 165, "Brielle Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/2"), 374, "Jeffrey Bailey"); 
+VALUES (date("2020/10/7"), 606, "Alicia Sirko"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 296, "Judy Dixon"); 
+VALUES (date("2020/9/24"), 521, "James Thompson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/16"), 236, "Maeva Knight"); 
+VALUES (date("2020/10/25"), 575, "Eva Macdonald"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/22"), 374, "Sophia Nelson"); 
+VALUES (date("2020/10/22"), 136, "Sofia Morrison"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/14"), 431, "Molly Cunningham"); 
+VALUES (date("2020/10/14"), 147, "Marc Davis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/8"), 217, "Hailey Brewer"); 
+VALUES (date("2020/10/18"), 231, "Terrence Craig"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/29"), 557, "Theresa Stevens"); 
+VALUES (date("2020/9/25"), 390, "Adam Lavoie"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/15"), 280, "Kelly Morris"); 
+VALUES (date("2020/11/5"), 40, "Ivan Cunningham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/7"), 353, "Zander Byrd"); 
+VALUES (date("2020/9/17"), 246, "Esther Alexander"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/7"), 406, "Alfred Ramos"); 
+VALUES (date("2020/10/30"), 115, "Wyatt Medina"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/20"), 450, "Jim Washington"); 
+VALUES (date("2020/11/14"), 383, "Tonya Chavez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/4"), 93, "Alexis Gagnon"); 
+VALUES (date("2020/10/25"), 137, "Dominic Novak"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/15"), 1, "Jacob Warren"); 
+VALUES (date("2020/11/20"), 155, "Carole Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/14"), 215, "Alyssa Carlson"); 
+VALUES (date("2020/9/12"), 267, "Cody Gutierrez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/2"), 505, "Paige Henry"); 
+VALUES (date("2020/9/1"), 141, "Mattie Ellis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 318, "Mason Brown"); 
+VALUES (date("2020/10/31"), 211, "Kristin Fox"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 438, "Vanessa Owens"); 
+VALUES (date("2020/11/1"), 382, "Philip Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/21"), 478, "Duane Nguyen"); 
+VALUES (date("2020/11/6"), 224, "Robert Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/25"), 576, "Theresa Stevens"); 
+VALUES (date("2020/10/5"), 510, "Frank Kelley"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/1"), 56, "Jeanne Brar"); 
+VALUES (date("2020/10/25"), 574, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/2"), 270, "Peter Andrews"); 
+VALUES (date("2020/11/6"), 483, "Brandie Brewer"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/23"), 545, "Jade Kowalski"); 
+VALUES (date("2020/11/2"), 354, "Darryl Ross"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/7"), 215, "Jeffrey Bailey"); 
+VALUES (date("2020/10/28"), 123, "Adam Lavoie"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/29"), 492, "Hailey Brewer"); 
+VALUES (date("2020/10/25"), 406, "Darryl Ross"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/8"), 48, "Tristan Ouellet"); 
+VALUES (date("2020/9/28"), 304, "Malik Patel"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/8"), 240, "Benjamin French"); 
+VALUES (date("2020/10/6"), 445, "Janet Cook"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/23"), 525, "Mason Ross"); 
+VALUES (date("2020/10/2"), 199, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/15"), 134, "Benjamin Harris"); 
+VALUES (date("2020/10/17"), 327, "Chad Watts"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 129, "Kristin Flores"); 
+VALUES (date("2020/9/13"), 523, "Ivan Cunningham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/3"), 540, "Daryl Fuller"); 
+VALUES (date("2020/10/2"), 31, "Carol Ramos"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/3"), 124, "April Kennedy"); 
+VALUES (date("2020/11/4"), 227, "Sylvia Gray"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/1"), 32, "Zoe Mackay"); 
+VALUES (date("2020/11/10"), 422, "Carol Ramos"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/14"), 231, "Benjamin Knight"); 
+VALUES (date("2020/10/1"), 494, "Zachary Gilbert"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 466, "Angel Ramirez"); 
+VALUES (date("2020/10/3"), 83, "Sofia Morrison"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/5"), 136, "Jeffrey Bailey"); 
+VALUES (date("2020/10/28"), 449, "Alicia Sirko"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/27"), 606, "Jeffrey Bailey"); 
+VALUES (date("2020/9/14"), 561, "Emily Jackson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/19"), 329, "Ella Mendoza"); 
+VALUES (date("2020/9/15"), 545, "Andrew Wright"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/29"), 94, "Maeva Lam"); 
+VALUES (date("2020/9/11"), 518, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 183, "Rita Miller"); 
+VALUES (date("2020/10/20"), 184, "Tiffany King"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/8"), 15, "Zander Byrd"); 
+VALUES (date("2020/10/23"), 591, "Randy Walters"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/3"), 12, "Diana Holland"); 
+VALUES (date("2020/9/26"), 504, "Janet Cook"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/10"), 454, "Alfred Ramos"); 
+VALUES (date("2020/9/8"), 483, "Felix Grant"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/17"), 43, "Judith Graves"); 
+VALUES (date("2020/9/16"), 258, "Emma Byrd"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 476, "Jar Watson"); 
+VALUES (date("2020/9/16"), 488, "Carole Simpson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/4"), 543, "Chris Gibson"); 
+VALUES (date("2020/10/6"), 429, "Megan Liu"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/28"), 220, "Jerome Vargas"); 
+VALUES (date("2020/9/16"), 242, "Philip Peterson"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 371, "Avery Tremblay"); 
+VALUES (date("2020/9/11"), 439, "Avery Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/18"), 506, "Dominic Addy"); 
+VALUES (date("2020/9/20"), 348, "Harper Ma"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/30"), 572, "Nicky Castro"); 
+VALUES (date("2020/9/26"), 571, "Rita Hernandez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 335, "Bernard Ellis"); 
+VALUES (date("2020/10/6"), 198, "Gerry Diaz"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/18"), 593, "Zoe Mackay"); 
+VALUES (date("2020/11/6"), 490, "Avery Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 91, "Duane Nguyen"); 
+VALUES (date("2020/9/26"), 186, "Vicki Davies"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 249, "Martha Lowe"); 
+VALUES (date("2020/9/21"), 548, "Matthew Morin"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/13"), 327, "Peyton Russell"); 
+VALUES (date("2020/9/15"), 207, "Kelly Allen"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/15"), 356, "Adam Roy"); 
+VALUES (date("2020/11/21"), 399, "Kelly Simmmons"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/8"), 241, "Avery Tremblay"); 
+VALUES (date("2020/10/10"), 445, "Oscar Morales"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/9"), 284, "April Kennedy"); 
+VALUES (date("2020/9/10"), 144, "Cody Gutierrez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/26"), 561, "Randy Mitchelle"); 
+VALUES (date("2020/10/12"), 168, "Cody Gutierrez"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/10"), 363, "Joan Daniels"); 
+VALUES (date("2020/10/24"), 256, "Patricia Stewart"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/13"), 312, "Mary Robinson"); 
+VALUES (date("2020/9/8"), 188, "Megan Liu"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/21"), 514, "Jessie Mcdonalid"); 
+VALUES (date("2020/10/14"), 546, "Sharlene Price"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/11"), 112, "Douglas Hughes"); 
+VALUES (date("2020/9/23"), 481, "Carol Ramos"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 58, "Danny Barnett"); 
+VALUES (date("2020/11/15"), 279, "Mattie Ellis"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/14"), 145, "Douglas Hughes"); 
+VALUES (date("2020/9/24"), 598, "Joan Jones"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/26"), 18, "Hailey Brewer"); 
+VALUES (date("2020/10/10"), 26, "Andrew Wright"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 93, "Peyton Russell"); 
+VALUES (date("2020/10/24"), 335, "Lauren Graham"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/4"), 209, "Bobby Allen"); 
+VALUES (date("2020/11/15"), 194, "Brett Woods"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/11/8"), 301, "Herbert Gonzales"); 
+VALUES (date("2020/10/8"), 182, "Sharlene Price"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/15"), 292, "Duane Nguyen"); 
+VALUES (date("2020/10/2"), 129, "Rebecca Obrien"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/19"), 298, "Paige Henry"); 
+VALUES (date("2020/9/11"), 444, "Lola Beck"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/11"), 186, "Charles Kowalski"); 
+VALUES (date("2020/11/6"), 137, "Zackary French"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/22"), 574, "Jim Washington"); 
+VALUES (date("2020/9/8"), 214, "Zackary French"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/10/17"), 561, "Gloria Welch"); 
+VALUES (date("2020/11/10"), 545, "Avery Kowalski"); 
 
 INSERT INTO transaction(date, drinkId, customerName)
-VALUES (date("2020/9/11"), 42, "Maeva Lam"); 
+VALUES (date("2020/11/6"), 345, "Esther Alexander"); 
 

@@ -13,7 +13,6 @@ const searchQuery = {
 	percentage: 0,
 	rating: 0,
 	price: 100,
-	quantity: 1,
 	isSweet: "",
 	liquor: "",
 	glass: "",
@@ -47,7 +46,6 @@ const searchQuery = {
 		this.rating = validateNum(this.rating);
 		this.percentage = validateNum(this.percentage);
 		this.price = validateNum(this.price,100);
-		this.quantity = validateNum(this.quantity,1);
 
 	},
 
@@ -173,10 +171,8 @@ server.route("drinks", req => {
 //ingredients by quantity
 //Selection Query 2
 server.route("ingredients", req => {
-	searchQuery.update(req.body);
-	searchQuery.sanitzize();
-	return database.get(`SELECT ingredient.* from ingredient WHERE ingredient.quantity<?`,[searchQuery.quantity]);
-}, "post");
+	return database.get(`SELECT ingredient.* from ingredient INNER JOIN ingredientAvailable ON ingredient.quantity=ingredientAvailable.quantity WHERE ingredientAvailable.isAvailable=false`);
+});
 
 
 

@@ -74,12 +74,8 @@ class Dashboard extends React.Component {
 		axios.get("/orders").then(res => this.setState({orders:res.data}));
 		axios.get("/popular/drinks").then(res => this.setState({popularDrinks:res.data}));
 		axios.get("/popular/ingredients").then(res => this.setState({popularIngr:res.data}));
+		axios.get("/ingredients").then(res => this.setState({lowStock:res.data}));
 
-		axios.post('/ingredients',{
-			quantity: 1
-		}).then(res => {
-			this.setState({lowStock:res.data})
-		});
 	}
 
 	componentDidMount(){

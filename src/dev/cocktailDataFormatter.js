@@ -28,16 +28,7 @@ let drinkRating = [
 ];
 
 let ingredientAvailable =[
-	{quantity:0,isAvailable:false},
-	{quantity:1,isAvailable:true},
-	{quantity:2,isAvailable:true},
-	{quantity:3,isAvailable:true},
-	{quantity:4,isAvailable:true},
-	{quantity:5,isAvailable:true},
-	{quantity:6,isAvailable:true},
-	{quantity:7,isAvailable:true},
-	{quantity:8,isAvailable:true},
-	{quantity:9,isAvailable:true}
+
 ];
 
 let juiceFruit = [
@@ -74,7 +65,7 @@ data.forEach((drink, i) => {
 	drink.ingredients.forEach((ingr, i) => {
 		//{"id":0,"name":"whiskey", "quantity" : 1},
 		if(!ingredients[ingr.name]){
-			ingredients[ingr.name] = {id:iid,name:ingr.name,quantity:parseInt(Math.random()*10)};
+			ingredients[ingr.name] = {id:iid,name:ingr.name,quantity:parseInt(Math.random()*50)};
 			ingredientsData[iid] = ingr;
 			ingredientsData[iid].origId = ingredientsData[iid].id;
 			ingredientsData[iid].id = iid;
