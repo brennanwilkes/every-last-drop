@@ -4,6 +4,7 @@ import axios from "axios";
 import "./dashboard.css";
 
 import DrinkDetails from "../detailedViews/DrinkDetails.js";
+import IngredientDetails from "../detailedViews/IngredientDetails.js";
 
 import computerImage from "../../../assets/computer-chip-stock.jpg";
 
@@ -60,16 +61,22 @@ class PopularDrink extends React.Component{
 }
 
 class PopularIngr extends React.Component{
+	constructor(props){
+		super(props);
+
+		this.state = this.props.ingrInfo;
+	}
 	render(){
-		let i = this.props.ingrInfo;
 
 		return <>
-			<div className="popularWrapper">
+			<div className="popularWrapper" onClick={event=>{
+				this.props.clickCallback(this.state.id);
+			}}>
 				<img
 					className="popularItem"
-					src={`https://www.thecocktaildb.com/images/ingredients/${i.name}.png`}
-					alt={`"${i.name}.png"`} />
-				<div><h3 className="h6 bg-secondary" >{capitalize(i.name)}</h3></div>
+					src={`https://www.thecocktaildb.com/images/ingredients/${this.state.name}.png`}
+					alt={`"${this.state.name}.png"`} />
+				<div><h3 className="h6 bg-secondary" >{capitalize(this.state.name)}</h3></div>
 			</div>
 		</>
 	}
@@ -82,6 +89,8 @@ class Dashboard extends React.Component {
 		super(props);
 
 		this.updateDetailedDrink = this.updateDetailedDrink.bind(this);
+		this.updateDetailedIngrident = this.updateDetailedIngrident.bind(this);
+		this.orderIngredient = this.orderIngredient.bind(this);
 
 
 		this.state = {
@@ -89,7 +98,8 @@ class Dashboard extends React.Component {
 			popularDrinks : [],
 			popularIngr : [],
 			lowStock: [],
-			detailedDrink: undefined
+			detailedDrink: undefined,
+			detailedIngredient: undefined,
 		}
 		axios.get("/orders").then(res => this.setState({orders:res.data}));
 		axios.get("/popular/drinks").then(res => this.setState({popularDrinks:res.data}));
@@ -121,6 +131,16 @@ class Dashboard extends React.Component {
 		this.setState({detailedDrink:id});
 	}
 
+	updateDetailedIngrident(id){
+		this.setState({detailedIngredient:id});
+	}
+
+	orderIngredient(){
+		return axios.post('/order',{
+			id: `${this.state.detailedIngredient}`
+		})
+	}
+
 	render(){
 		return <>
 			<div className="container-fluid p-3" id="dashboard">
@@ -150,7 +170,7 @@ class Dashboard extends React.Component {
 						<div className="p-3 popularContainer dashboardComponent text-light bg-dark scrollable-x" id="popularIngr"><div>
 							{
 								this.state.popularIngr.map(i => {
-									return <PopularIngr ingrInfo={i} />
+									return <PopularIngr ingrInfo={i} clickCallback={this.updateDetailedIngrident} />
 								})
 							}
 						</div></div>
@@ -160,12 +180,13 @@ class Dashboard extends React.Component {
 					<div className="col-md-12 p-3 dashboardComponent bg-dark text-light popularContainer scrollable-x" id="inventory"><div>
 						{
 							this.state.lowStock.map(i => {
-								return <PopularIngr ingrInfo={i} />
+								return <PopularIngr ingrInfo={i} clickCallback={this.updateDetailedIngrident} />
 							})
 						}
 					</div></div>
 				</div>
-				<DrinkDetails drinkId={this.state.detailedDrink} changeDrink={this.updateDetailedDrink} />
+				<DrinkDetails drinkId={this.state.detailedDrink} changeIngredient={this.updateDetailedIngrident} changeDrink={this.updateDetailedDrink} />
+				<IngredientDetails ingredientId={this.state.detailedIngredient} changeIngredient={this.updateDetailedIngrident} orderCallback={this.orderIngredient}/>
 			</div>
 		</>;
 	}

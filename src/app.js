@@ -194,6 +194,21 @@ server.route("ingredients", req => {
 		LEFT JOIN alcoholType ON alcohol.percentage=alcoholType.percentage`,[searchQuery.id]);
 }, "post");
 
+//ingredient by ingredient Id
+//Selection Query 3
+server.route("ingredient", req => {
+	searchQuery.update(req.body);
+	searchQuery.sanitzize();
+	return database.get(`
+		SELECT ingredient.*, alcohol.glassId, glass.name as glassName, alcoholType.*, juiceFruit.* from ingredient
+		LEFT JOIN alcohol ON ingredient.id=alcohol.id
+		LEFT JOIN juice ON ingredient.id=juice.id
+		LEFT JOIN juiceFruit ON juice.fruitName=juiceFruit.fruitName
+		LEFT JOIN alcoholType ON alcohol.percentage=alcoholType.percentage
+		LEFT JOIN glass ON alcohol.glassId=glass.id
+		WHERE ingredient.id=?`,[searchQuery.id]);
+}, "post");
+
 
 
 //Highest rated drink
@@ -229,5 +244,14 @@ server.route("orders", req => database.get(`
 	FROM transaction INNER JOIN drinkRecipe
 	ON transaction.drinkId=drinkRecipe.id
 	ORDER BY transaction.date DESC`));
+
+
+//Order ingredient by ingredient Id
+//UPDATE query
+server.route("order", req => {
+	searchQuery.update(req.body);
+	searchQuery.sanitzize();
+	return database.get(`UPDATE ingredient SET ingredient.quantity=ingredient.quantity+10 WHERE ingredient.id=?`,[searchQuery.id]);
+}, "post");
 
 server.start();

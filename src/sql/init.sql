@@ -136,8 +136,14 @@ CREATE TABLE transaction (
 	FOREIGN KEY (customerName) REFERENCES customer(fullName)
 ) COLLATE='utf8_bin';
 
-CREATE OR REPLACE trigger quantityCheck
+CREATE trigger quantityCheck
 	BEFORE INSERT ON ingredient
+	FOR EACH ROW
+INSERT IGNORE INTO ingredientAvailable(quantity, isAvailable)
+VALUES (NEW.quantity,NEW.quantity>0);
+
+CREATE trigger quantityUpdateCheck
+	BEFORE UPDATE ON ingredient
 	FOR EACH ROW
 INSERT IGNORE INTO ingredientAvailable(quantity, isAvailable)
 VALUES (NEW.quantity,NEW.quantity>0);

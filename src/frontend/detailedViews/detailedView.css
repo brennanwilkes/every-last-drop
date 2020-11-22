@@ -25,44 +25,64 @@
 	padding: 16px;
 }
 
-.drinkDetail > .row:nth-child(3){
+.detailedView > .row:nth-child(3){
 	height: 70%;
 }
 
-.drinkDetail > .row:nth-child(3) > div{
+.detailedView > .row:nth-child(3) > div{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 }
 
-.drinkDetail > .row:nth-child(3) > div:first-child > div{
+.detailedView > .row:nth-child(3) > div:first-child > div{
 	display:flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	width: 90%;
 	border-radius: 1vmin;
 }
-.drinkDetail > .row:nth-child(3) > div:first-child > div > div{
+
+.detailedView > .row:nth-child(3) > div:first-child > div > *, .detailedView button h3{
+	margin: 0;
+}
+
+.detailedView > .row:nth-child(3) > div:first-child > div > *:first-child{
+	margin-left: 15%;
+}
+
+.detailedView > .row:nth-child(3) > div:first-child > div > *:last-child{
+	margin-right: 15%;
+}
+
+.detailedView > .row:nth-child(3) > div:first-child > div > div{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.drinkDetail > .row:nth-child(3) > div:first-child > div > *{
-	margin: 0;
-}
-
-.drinkDetail > .row:nth-child(3) > div:first-child > div > div:hover{
+.detailedView > .row:nth-child(3) > div:first-child > div > div:hover{
 	cursor: default;
 }
-.drinkDetail > .row:nth-child(3) > div:first-child > div > div:hover a{
+.detailedView > .row:nth-child(3) > div:first-child > div > div:hover a{
 	cursor: pointer;
 }
 
-.drinkDetail img{
+.detailedView img{
 	width: 90%;
 	height: auto;
 	border-radius: 1vmin;
 	border: 4px solid #6c757d;
+}
+
+.detailedView > .row:nth-child(4){
+	position: fixed;
+	bottom: 12.5%;
+	width: 85%;
+}
+.detailedView > .row:last-child{
+	position: fixed;
+	bottom: 7.5%;
+	width: 85%;
 }

@@ -101,7 +101,12 @@ class DrinkDetails extends React.Component {
 								return <>
 									<tr>
 										<td>{`${ingr.quantityInDrink} oz`}</td>
-										<td><a className="text-light" href="" >{capitalize(ingr.name)}</a></td>
+										<td><a className="text-light" href="" onClick={event=>{
+											event.preventDefault();
+											this.setState({id:undefined});
+											this.props.changeDrink(undefined);
+											this.props.changeIngredient(ingr.id);
+										}}>{capitalize(ingr.name)}</a></td>
 									</tr>
 								</>
 							})
@@ -111,13 +116,10 @@ class DrinkDetails extends React.Component {
 						<img src={this.state.details.imgURL} alt={this.state.details.name}/>
 					</div>
 				</div>
-
-				{/*<h1>{this.state.details.name}</h1>
-				<table><thead><tr>{
-					this.state.ingredientHeader.map(h => <th>{h}</th>)
-				}</tr></thead><tbody>{
-					this.state.ingredients.map(ingr => <tr><td>{ingr.name}</td></tr>)
-				}</tbody></table>*/}
+				<div className="row justify-content-end mt-auto">
+					<button className="col-md-2 btn btn-warning text-white"><h3>EDIT</h3></button>
+					<button className="col-md-2 btn btn-danger"><h3>DELETE</h3></button>
+				</div>
 			</div>
 		</>;
 	}
