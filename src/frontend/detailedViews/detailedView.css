@@ -1,0 +1,68 @@
+.detailedView-off{
+	display: none;
+}
+
+.detailedView{
+	position: absolute;
+	margin: 5vh 5vw;
+	width: 90vw;
+	height: 90vh;
+	z-index: 5;
+	border-radius: 5vmin;
+	border: 4px solid #6c757d;
+}
+
+.detailedView h1{
+	text-align: center;
+}
+
+.drinkDetail table{
+	text-align: center;
+	border-radius: 1vmin;
+}
+
+.drinkDetail th, .drinkDetail td{
+	padding: 16px;
+}
+
+.drinkDetail > .row:nth-child(3){
+	height: 70%;
+}
+
+.drinkDetail > .row:nth-child(3) > div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.drinkDetail > .row:nth-child(3) > div:first-child > div{
+	display:flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 90%;
+	border-radius: 1vmin;
+}
+.drinkDetail > .row:nth-child(3) > div:first-child > div > div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.drinkDetail > .row:nth-child(3) > div:first-child > div > *{
+	margin: 0;
+}
+
+.drinkDetail > .row:nth-child(3) > div:first-child > div > div:hover{
+	cursor: default;
+}
+.drinkDetail > .row:nth-child(3) > div:first-child > div > div:hover a{
+	cursor: pointer;
+}
+
+.drinkDetail img{
+	width: 90%;
+	height: auto;
+	border-radius: 1vmin;
+	border: 4px solid #6c757d;
+}

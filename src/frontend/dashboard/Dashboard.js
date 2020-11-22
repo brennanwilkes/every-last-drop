@@ -3,6 +3,8 @@ import "../bootstrap-import.js";
 import axios from "axios";
 import "./dashboard.css";
 
+import DrinkDetails from "../detailedViews/DrinkDetails.js";
+
 import computerImage from "../../../assets/computer-chip-stock.jpg";
 
 const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
@@ -17,27 +19,41 @@ const TRANSACTION_HEADERS = [
 const cutoffString = (str,max) => str.length > max ? `${str.substring(0,max-3).trim()}...` : str;
 
 class Transaction extends React.Component{
+	constructor(props){
+		super(props);
+
+		this.state = this.props.transactionInfo;
+	}
+
 	render(){
-		let t = this.props.transactionInfo;
 		return <>
-			<tr>
-				<td>{t.date.substring(0,10)}</td>
-				<td>{cutoffString(t.customerName,10)}</td>
-				<td>{cutoffString(capitalize(t.name),14)}</td>
-				<td>{`\$${t.price}`}</td>
+			<tr onClick={event=>{
+				this.props.clickCallback(this.state.drinkId);
+			}}>
+				<td>{this.state.date.substring(0,10)}</td>
+				<td>{cutoffString(this.state.customerName,10)}</td>
+				<td>{cutoffString(capitalize(this.state.name),14)}</td>
+				<td>{`\$${this.state.price}`}</td>
 			</tr>
 		</>;
 	}
 }
 
 class PopularDrink extends React.Component{
+	constructor(props){
+		super(props);
+
+		this.state = this.props.drinkInfo;
+	}
+
 	render(){
-		let d = this.props.drinkInfo;
 
 		return <>
-			<div className="popularWrapper">
-				<img className="popularItem" src={d.imgURL} />
-				<div><h3 className="h6" >{capitalize(d.name)}</h3></div>
+			<div className="popularWrapper" onClick={event=>{
+				this.props.clickCallback(this.state.id);
+			}}>
+				<img className="popularItem" src={this.state.imgURL} />
+				<div><h3 className="h6 bg-secondary" >{capitalize(this.state.name)}</h3></div>
 			</div>
 		</>
 	}
@@ -53,7 +69,7 @@ class PopularIngr extends React.Component{
 					className="popularItem"
 					src={`https://www.thecocktaildb.com/images/ingredients/${i.name}.png`}
 					alt={`"${i.name}.png"`} />
-				<div><h3 className="h6" >{capitalize(i.name)}</h3></div>
+				<div><h3 className="h6 bg-secondary" >{capitalize(i.name)}</h3></div>
 			</div>
 		</>
 	}
@@ -65,11 +81,15 @@ class Dashboard extends React.Component {
 	constructor(props){
 		super(props);
 
+		this.updateDetailedDrink = this.updateDetailedDrink.bind(this);
+
+
 		this.state = {
 			orders : [],
 			popularDrinks : [],
 			popularIngr : [],
-			lowStock: []
+			lowStock: [],
+			detailedDrink: undefined
 		}
 		axios.get("/orders").then(res => this.setState({orders:res.data}));
 		axios.get("/popular/drinks").then(res => this.setState({popularDrinks:res.data}));
@@ -97,33 +117,37 @@ class Dashboard extends React.Component {
 		},100);
 	}
 
-	render() {
+	updateDetailedDrink(id){
+		this.setState({detailedDrink:id});
+	}
+
+	render(){
 		return <>
 			<div className="container-fluid p-3" id="dashboard">
 				<div className="row">
-					<div className="col-md-4 p-3 dashboardComponent scrollable-y">
-						<table id="transactions"><thead>
+					<div className="col-md-4 p-3 dashboardComponent bg-dark scrollable-y">
+						<table id="transactions"><thead className="text-light">
 							<tr>{
 								TRANSACTION_HEADERS.map(h => {
 									return <th>{h}</th>
 								})
-							}</tr></thead><tbody>
+							}</tr></thead><tbody className="text-muted">
 							{
 								this.state.orders.map(t => {
-									return <Transaction transactionInfo={t} />
+									return <Transaction transactionInfo={t} clickCallback={this.updateDetailedDrink} />
 								})
 							}
 						</tbody></table>
 					</div>
 					<div className="col-md-8 px-3">
-						<div className="p-3 popularContainer dashboardComponent scrollable-x" id="popularDrinks"><div>
+						<div className="p-3 popularContainer dashboardComponent text-light bg-dark scrollable-x" id="popularDrinks"><div>
 							{
 								this.state.popularDrinks.map(d => {
-									return <PopularDrink drinkInfo={d} />
+									return <PopularDrink drinkInfo={d} clickCallback={this.updateDetailedDrink} />
 								})
 							}
 						</div></div>
-						<div className="p-3 popularContainer dashboardComponent scrollable-x" id="popularIngr"><div>
+						<div className="p-3 popularContainer dashboardComponent text-light bg-dark scrollable-x" id="popularIngr"><div>
 							{
 								this.state.popularIngr.map(i => {
 									return <PopularIngr ingrInfo={i} />
@@ -133,7 +157,7 @@ class Dashboard extends React.Component {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-12 p-3 dashboardComponent popularContainer scrollable-x" id="inventory"><div>
+					<div className="col-md-12 p-3 dashboardComponent bg-dark text-light popularContainer scrollable-x" id="inventory"><div>
 						{
 							this.state.lowStock.map(i => {
 								return <PopularIngr ingrInfo={i} />
@@ -141,6 +165,7 @@ class Dashboard extends React.Component {
 						}
 					</div></div>
 				</div>
+				<DrinkDetails drinkId={this.state.detailedDrink} changeDrink={this.updateDetailedDrink} />
 			</div>
 		</>;
 	}

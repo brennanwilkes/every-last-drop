@@ -30,7 +30,6 @@
 	width: 100%;
 }
 
-
 #transactions tbody tr{
 	transition: transform 0.25s;
 	-webkit-transition: transform 0.25s;
@@ -60,9 +59,8 @@
 }
 
 .dashboardComponent{
-	background-color: #BBBBBBB0;
 	border-radius: 2vmin;
-	border: 4px solid black;
+	border: 4px solid #6c757d;
 }
 
 #inventory{
@@ -76,7 +74,6 @@
 	height: 25vh;
 	min-height: 25vh;
 	margin: 10px;
-	border: 2px solid black;
 	border-radius: 20px;
 	padding: 0;
 }
@@ -108,7 +105,6 @@
 .popularWrapper > div > h3{
 	padding: 8px;
 	border-radius: 4px;
-	background-color: #FFFFFFB0;
 	width: fit-content;
 	min-width: 40%;
 }

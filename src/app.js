@@ -16,6 +16,7 @@ const searchQuery = {
 	isSweet: "",
 	liquor: "",
 	glass: "",
+	id: "",
 
 	reset(){
 		Object.keys(this).forEach(key => {
@@ -34,7 +35,7 @@ const searchQuery = {
 	sanitzize(){
 		Object.keys(this).forEach(key => {
 			if(typeof(this[key])=="string"){
-				this[key] = key==="glass" ? (this[key].length > 0 ? this[key].toLowerCase() : "%%" ) : `%${this[key].toLowerCase()}%`;
+				this[key] = key==="glass"||key==="id" ? (this[key].length > 0 ? this[key].toLowerCase() : "%%" ) : `%${this[key].toLowerCase()}%`;
 			}
 		});
 		this.contains = this.contains.map(c => `%${c.toLowerCase()}%`);
@@ -160,12 +161,16 @@ server.route("drinks/advanced", req => {
 }, "post");
 
 
-//Search by name
+//Search by name or id
 //Selection Query
 server.route("drinks", req => {
 	searchQuery.update(req.body);
 	searchQuery.sanitzize();
-	return database.get(`SELECT * FROM drinkRecipe WHERE name LIKE ?`,[searchQuery.name]);
+	return database.get(`SELECT drinkRecipe.*,
+		parent.name as versionOfName FROM drinkRecipe
+		LEFT JOIN (SELECT drinkRecipe.* FROM drinkRecipe)parent
+		ON drinkRecipe.versionOf=parent.id
+		WHERE drinkRecipe.name LIKE ? AND drinkRecipe.id LIKE ?`,[searchQuery.name,searchQuery.id]);
 }, "post");
 
 //ingredients by quantity
@@ -174,6 +179,20 @@ server.route("ingredients", req => {
 	return database.get(`SELECT ingredient.* from ingredient INNER JOIN ingredientAvailable ON ingredient.quantity=ingredientAvailable.quantity WHERE ingredientAvailable.isAvailable=false`);
 });
 
+//ingredients by drink Id
+//Selection Query 3
+server.route("ingredients", req => {
+	searchQuery.update(req.body);
+	searchQuery.sanitzize();
+	return database.get(`SELECT drinkRequires.quantity AS quantityInDrink, ingredient.*, alcohol.glassId, alcoholType.*, juiceFruit.* FROM
+		(SELECT drinkRecipe.id FROM drinkRecipe WHERE drinkRecipe.id=?)queriedDrink
+		INNER JOIN drinkRequires ON queriedDrink.id=drinkRequires.drinkId
+		INNER JOIN ingredient ON drinkRequires.ingredientId=ingredient.id
+		LEFT JOIN alcohol ON ingredient.id=alcohol.id
+		LEFT JOIN juice ON ingredient.id=juice.id
+		LEFT JOIN juiceFruit ON juice.fruitName=juiceFruit.fruitName
+		LEFT JOIN alcoholType ON alcohol.percentage=alcoholType.percentage`,[searchQuery.id]);
+}, "post");
 
 
 
