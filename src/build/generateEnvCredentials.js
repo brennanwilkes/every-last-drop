@@ -14,8 +14,6 @@ rl.question("Please enter a username to use for this application: ", function(us
 ADMIN_PASS=${pass}
 `;
 
-	console.log(AUTH)
-
 		fs.writeFile(path.join(__dirname,"..","..",".env"), AUTH, function (err) {
 			if (err){
 				throw err;

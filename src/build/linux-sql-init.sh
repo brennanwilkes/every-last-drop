@@ -4,8 +4,8 @@ if [ "$?" -ne 0 ]; then
 	mariadb --version 2>/dev/null >/dev/null
 
 	if [ "$?" -eq 0 ]; then
-		sudo mariadb -u root -p < src/sql/init.sql;
-		sudo mariadb -u root -p < config/.sqlUserEnv;
+		sudo mariadb -u root < src/sql/init.sql;
+		sudo mariadb -u root < config/.sqlUserEnv;
 	else
 		echo "mariadb is not installed. Try:"
 		echo "'sudo apt install mariadb-server'";

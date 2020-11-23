@@ -5,7 +5,7 @@ if [ "$?" -ne 0 ]; then
 	mariadb --version 2>/dev/null >/dev/null
 
 	if [ "$?" -eq 0 ]; then
-		sudo mariadb -u root -p < "$1"
+		sudo mariadb -u root < "$1"
 	else
 		echo "mariadb is not installed. Try:"
 		echo "'sudo apt install mariadb-server'";
