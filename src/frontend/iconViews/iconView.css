@@ -1,0 +1,40 @@
+.iconItem{
+	width: 25vh;
+	min-width: 25vh;
+	height: 25vh;
+	min-height: 25vh;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 0;
+}
+
+.iconWrapper{
+	position: relative;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+
+
+.iconWrapper:hover{
+	transform: scale(1.15);
+	cursor: pointer;
+}
+
+
+.iconWrapper > div {
+	position: absolute;
+	width: 25vh;
+	min-width: 25vh;
+	bottom: 10%;
+	text-align: center;
+	left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.iconWrapper > div > h3{
+	padding: 8px;
+	border-radius: 4px;
+	width: fit-content;
+	min-width: 40%;
+}

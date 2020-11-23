@@ -8,7 +8,7 @@ class SettingsButton extends React.Component {
 
 	render() {
 		return <>
-			<button className="settings-button btn btn-lg" onClick={this.props.callback} style={{
+			<button className="settings-button text-secondary btn btn-lg" onClick={this.props.callback} style={{
 				width:this.props.size+"px",
 				height:this.props.size+"px",
 				right:this.props.offset+"px",

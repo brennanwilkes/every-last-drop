@@ -24,7 +24,7 @@ class LoginSubmit extends React.Component{
 
 class LoginHeader extends React.Component{
 	render(){
-		return <h1 className="h1 mb-4 font-weight-normal">{this.props.text}</h1>
+		return <h1 className="h1 login-header mb-4">{this.props.text}</h1>
 	}
 }
 

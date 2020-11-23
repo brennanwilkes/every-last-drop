@@ -1,47 +1,6 @@
-.drinkRecipe{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	padding:5%;
-
-	background-size: contain;
-	overflow: hidden;
-
-}
-
-.drinkRecipe-wrapper{
-	border: 4px solid grey;
-	background-color: #FFFFFFC0;
-
-	position: relative;
-	width: 80%;
-
-	border-radius: 2vmin;
-
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
-
-	overflow: hidden;
-}
-
-.drinkRecipe-wrapper:hover{
-	transform: scale(1.15);
-	cursor: pointer;
-}
-
-.drinkRecipe-wrapper:after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
-}
-
 main{
 	width: auto;
+	overflow-x: hidden;
 }
 
 #menu{
@@ -64,4 +23,26 @@ main{
 .my-10per{
 	margin-top: 12.5%;
 	margin-bottom: 12.5%;
+}
+
+#menu .iconItem{
+	border: 2px solid #343a40;
+}
+
+#menu .iconItem{
+	height: 20vh;
+	min-height: 20vh;
+}
+
+#menu .iconItem, #menu .menuIconWrapper > .iconWrapper > div{
+	width: 20vh;
+	min-width: 20vh;
+}
+
+.menuIconWrapper{
+	padding: 24px auto;
+}
+
+#menu ~ .detailedView{
+	top: 3.5%;
 }

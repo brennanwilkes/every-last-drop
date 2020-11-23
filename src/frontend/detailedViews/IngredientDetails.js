@@ -109,10 +109,14 @@ class IngredientDetails extends React.Component {
 						<img src={`https://www.thecocktaildb.com/images/ingredients/${this.state.details.name}.png`} alt={this.state.details.name}/>
 					</div>
 				</div>
-				<div className="row justify-content-end mt-auto">
-					<button className="col-md-2 btn btn-success text-white" onClick={this.updateRefresh}><h3>ORDER</h3></button>
-					<button className="col-md-2 btn btn-danger" onClick={this.deleteIngredient}><h3>DELETE</h3></button>
-				</div>
+				{
+					(this.props.deleteCallback ? <>
+						<div className="row justify-content-end mt-auto">
+							<button className="col-md-2 btn btn-success text-white" onClick={this.updateRefresh}><h3>ORDER</h3></button>
+							<button className="col-md-2 btn btn-danger" onClick={this.deleteIngredient}><h3>DELETE</h3></button>
+						</div>
+					</> : <></>)
+				}
 			</div>
 		</>;
 	}

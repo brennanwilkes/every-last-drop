@@ -3,7 +3,9 @@
 }
 
 .detailedView{
-	position: absolute;
+	position: fixed;
+	left: 0;
+	top: 0;
 	margin: 5vh 5vw;
 	width: 90vw;
 	height: 90vh;

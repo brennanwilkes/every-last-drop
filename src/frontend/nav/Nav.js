@@ -296,9 +296,6 @@ class Nav extends React.Component{
 								<a className="nav-link" href=".">Home</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href=".">Link</a>
-							</li>
-							<li className="nav-item">
 								<User name={this.props.user} />
 							</li>
 						</ul>

@@ -126,8 +126,19 @@ class DrinkDetails extends React.Component {
 					</div>
 				</div>
 				<div className="row justify-content-end mt-auto">
-					<button className="col-md-4 btn btn-danger" onClick={this.deleteDrink}><h3>DELETE</h3></button>
+					{
+						(this.props.deleteCallback ? <>
+							<button className="col-md-4 btn btn-danger" onClick={this.deleteDrink}>
+								<h3>DELETE</h3>
+							</button>
+						</> : <>
+							<button className="col-md-4 btn btn-success" onClick={e => this.props.orderCallback(this.state.id)}>
+								<h3>ORDER</h3>
+							</button>
+						</>)
+					}
 				</div>
+
 			</div>
 		</>;
 	}

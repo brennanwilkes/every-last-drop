@@ -32,6 +32,7 @@ const searchQuery = {
 	id: "",
 	userName: "",
 	userDob: "1970-01-01",
+	drinkId: 0,
 
 
 	reset(){
@@ -66,6 +67,7 @@ const searchQuery = {
 		this.rating = validateNum(this.rating);
 		this.percentage = validateNum(this.percentage);
 		this.price = validateNum(this.price,100);
+		this.drinkId = validateNum(this.drinkId,0);
 
 	},
 
@@ -101,7 +103,7 @@ server.init();
 
 //Get all drinks
 //Projection query
-server.route("drinks", req => database.get(`SELECT * FROM drinkRecipe`));
+server.route("drinks", req => database.get(`SELECT * FROM drinkRecipe LIMIT 100`));
 
 //Advanced search
 //Join query
@@ -175,7 +177,7 @@ server.route("drinks/advanced", req => {
 				ON ingredient.id=juice.id
 			INNER JOIN juiceFruit
 				ON juice.fruitName=juiceFruit.fruitName
-				AND juiceFruit.isSweet LIKE ? `: ` `),searchQuery.getArgs());
+				AND juiceFruit.isSweet LIKE ? `: ` `) + " LIMIT 100",searchQuery.getArgs());
 
 }, "post");
 
@@ -230,14 +232,10 @@ server.route("ingredient", req => {
 
 
 
-//Highest rated drink
-//Aggregation query 1
-server.route("favourite/drinks", req => {
-	return database.get(`SELECT drinkRecipe.* FROM drinkRecipe WHERE RATING = (SELECT MAX(RATING) FROM drinkRecipe)`);
-});
+
 
 //Number of drinks ordered by specific user
-//Aggregation query 2
+//Aggregation query 1
 server.route("drinks/orderCount", req => {
 	searchQuery.update(req.body);
 	searchQuery.sanitzize();
@@ -245,7 +243,7 @@ server.route("drinks/orderCount", req => {
 },"post");
 
 //Most ordered drink
-//Nested Aggregation query
+//Aggregation query 2
 server.route("popular/drinks", req => {
 	return database.get(`SELECT drinkRecipe.* FROM (SELECT transaction.drinkId FROM transaction GROUP BY drinkId ORDER BY COUNT(drinkId) DESC LIMIT 10)popular INNER JOIN drinkRecipe ON drinkId=id`);
 });
@@ -309,6 +307,14 @@ server.route("customer", req => {
 	searchQuery.update(req.body);
 	searchQuery.sanitzize();
 	return database.insert("customer",{fullName:searchQuery.userName,dateOfBirth:searchQuery.userDob},true);
+}, "post");
+
+//Order a drink
+//INSERT query
+server.route("purchase", req => {
+	searchQuery.update(req.body);
+	searchQuery.sanitzize();
+	return database.insert("transaction",{date:moment().format("YYYY-MM-DD"),drinkId:searchQuery.drinkId,customerName:searchQuery.userName});
 }, "post");
 
 server.start();

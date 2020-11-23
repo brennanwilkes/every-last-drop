@@ -1,32 +1,23 @@
 import React from "react";
 import "../bootstrap-import.js";
 import axios from "axios";
+import moment from "moment";
 
 import barImage from "../../../assets/bar-stock.jpg";
 
 import "./menu.css";
 import Nav from "../nav/Nav.js";
 
+import DrinkDetails from "../detailedViews/DrinkDetails.js";
+import DrinkIcon from "../iconViews/DrinkIcon.js";
+import IngredientDetails from "../detailedViews/IngredientDetails.js";
+import IngredientIcon from "../iconViews/IngredientIcon.js";
+
+import DetailedViewController from "../detailedViews/DetailedViewController.js";
+
 const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
 
-class DrinkRecipe extends React.Component{
-
-	render(){
-		return <>
-			<div className="drinkRecipe-wrapper"><div id={`drinkRecipe-${this.props.drinkInfo.id}`} className="drinkRecipe">
-				<h2 className="h6" >{
-					`Drink: ${capitalize(this.props.drinkInfo.name)}`
-				}</h2>
-
-				<h2 className="h6" >{
-					`Price: $${this.props.drinkInfo.price}`
-				}</h2>
-			</div></div>
-		</>;
-	}
-}
-
-class Menu extends React.Component {
+class Menu extends DetailedViewController {
 
 	constructor(props){
 		super(props);
@@ -34,14 +25,26 @@ class Menu extends React.Component {
 		this.search = this.search.bind(this);
 		this.advSearch = this.advSearch.bind(this);
 		this.advancedSearchToggle = this.advancedSearchToggle.bind(this);
+		this.orderDrink = this.orderDrink.bind(this);
 
 		this.state = {
 			drinks: [],
-			glasses: []
+			glasses: [],
+			detailedDrink: undefined,
+			detailedIngredient: undefined
 		};
 
 		axios.get("/drinks").then(res => this.setState({drinks:res.data}));
 		axios.get("/glasses").then(res => this.setState({glasses:res.data}));
+	}
+
+	orderDrink(id){
+		axios.post('/purchase',{
+			drinkId: id,
+			userName: this.props.user
+		}).then(res => {
+			console.log(res);
+		});
 	}
 
 	componentDidMount(){
@@ -55,7 +58,8 @@ class Menu extends React.Component {
 		axios.post('/drinks',{
 			name: query
 		}).then(res => {
-			this.setState({drinks:res.data})
+			this.setState({drinks:[]});
+			this.setState({drinks:res.data});
 		});
 	}
 
@@ -69,7 +73,8 @@ class Menu extends React.Component {
 
 	advSearch(query){
 		axios.post('/drinks/advanced',query).then(res => {
-			this.setState({drinks:res.data})
+			this.setState({drinks:[]});
+			this.setState({drinks:res.data});
 		});
 	}
 
@@ -93,7 +98,9 @@ class Menu extends React.Component {
 							r.map(d => {
 								return <>
 									<div className="col-sm-6 col-md-4 col-xl-2 d-flex justify-content-center mb-4">
-										<DrinkRecipe drinkInfo={d} />
+										<div className="menuIconWrapper">
+											<DrinkIcon drinkInfo={d} clickCallback={this.updateDetailedDrink} />
+										</div>
 									</div>
 								</>
 							})
@@ -101,7 +108,15 @@ class Menu extends React.Component {
 					</>;
 				})
 			}</div>
-		</>;
+			<DrinkDetails
+				drinkId={this.state.detailedDrink}
+				changeIngredient={this.updateDetailedIngrident}
+				changeDrink={this.updateDetailedDrink}
+				orderCallback={this.orderDrink} />
+			<IngredientDetails
+				ingredientId={this.state.detailedIngredient}
+				changeIngredient={this.updateDetailedIngrident} />
+		</>
 	}
 }
 export default Menu;

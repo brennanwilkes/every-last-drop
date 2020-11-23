@@ -4,7 +4,11 @@ import axios from "axios";
 import "./dashboard.css";
 
 import DrinkDetails from "../detailedViews/DrinkDetails.js";
+import DrinkIcon from "../iconViews/DrinkIcon.js";
 import IngredientDetails from "../detailedViews/IngredientDetails.js";
+import IngredientIcon from "../iconViews/IngredientIcon.js";
+
+import DetailedViewController from "../detailedViews/DetailedViewController.js";
 
 import computerImage from "../../../assets/computer-chip-stock.jpg";
 
@@ -40,56 +44,11 @@ class Transaction extends React.Component{
 	}
 }
 
-class PopularDrink extends React.Component{
-	constructor(props){
-		super(props);
-
-		this.state = this.props.drinkInfo;
-	}
-
-	render(){
-
-		return <>
-			<div className="popularWrapper" onClick={event=>{
-				this.props.clickCallback(this.state.id);
-			}}>
-				<img className="popularItem" src={this.state.imgURL} />
-				<div><h3 className="h6 bg-secondary" >{capitalize(this.state.name)}</h3></div>
-			</div>
-		</>
-	}
-}
-
-class PopularIngr extends React.Component{
-	constructor(props){
-		super(props);
-
-		this.state = this.props.ingrInfo;
-	}
-	render(){
-
-		return <>
-			<div className="popularWrapper" onClick={event=>{
-				this.props.clickCallback(this.state.id);
-			}}>
-				<img
-					className="popularItem"
-					src={`https://www.thecocktaildb.com/images/ingredients/${this.state.name}.png`}
-					alt={`"${this.state.name}.png"`} />
-				<div><h3 className="h6 bg-secondary" >{capitalize(this.state.name)}</h3></div>
-			</div>
-		</>
-	}
-}
-
-
-class Dashboard extends React.Component {
+class Dashboard extends DetailedViewController {
 
 	constructor(props){
 		super(props);
 
-		this.updateDetailedDrink = this.updateDetailedDrink.bind(this);
-		this.updateDetailedIngrident = this.updateDetailedIngrident.bind(this);
 		this.orderIngredient = this.orderIngredient.bind(this);
 		this.deleteIngredient = this.deleteIngredient.bind(this);
 		this.deleteDrink = this.deleteDrink.bind(this);
@@ -144,14 +103,6 @@ class Dashboard extends React.Component {
 		},100);
 	}
 
-	updateDetailedDrink(id){
-		this.setState({detailedDrink:id});
-	}
-
-	updateDetailedIngrident(id){
-		this.setState({detailedIngredient:id});
-	}
-
 	orderIngredient(){
 		return axios.post('/order',{
 			id: `${this.state.detailedIngredient}`,
@@ -193,27 +144,27 @@ class Dashboard extends React.Component {
 						</tbody></table>
 					</div>
 					<div className="col-md-8 px-3">
-						<div className="p-3 popularContainer dashboardComponent text-light bg-dark scrollable-x" id="popularDrinks"><div>
+						<div className="p-3 iconContainer dashboardComponent text-light bg-dark scrollable-x" id="popularDrinks"><div>
 							{
 								this.state.popularDrinks.map(d => {
-									return <PopularDrink drinkInfo={d} clickCallback={this.updateDetailedDrink} />
+									return <DrinkIcon drinkInfo={d} clickCallback={this.updateDetailedDrink} />
 								})
 							}
 						</div></div>
-						<div className="p-3 popularContainer dashboardComponent text-light bg-dark scrollable-x" id="popularIngr"><div>
+						<div className="p-3 iconContainer dashboardComponent text-light bg-dark scrollable-x" id="popularIngr"><div>
 							{
 								this.state.popularIngr.map(i => {
-									return <PopularIngr ingrInfo={i} clickCallback={this.updateDetailedIngrident} />
+									return <IngredientIcon ingrInfo={i} clickCallback={this.updateDetailedIngrident} />
 								})
 							}
 						</div></div>
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-12 p-3 dashboardComponent bg-dark text-light popularContainer scrollable-x" id="inventory"><div>
+					<div className="col-md-12 p-3 dashboardComponent bg-dark text-light iconContainer scrollable-x" id="inventory"><div>
 						{
 							this.state.lowStock.map(i => {
-								return <PopularIngr ingrInfo={i} clickCallback={this.updateDetailedIngrident} />
+								return <IngredientIcon ingrInfo={i} clickCallback={this.updateDetailedIngrident} />
 							})
 						}
 					</div></div>
