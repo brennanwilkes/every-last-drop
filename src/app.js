@@ -314,7 +314,48 @@ server.route("customer", req => {
 server.route("purchase", req => {
 	searchQuery.update(req.body);
 	searchQuery.sanitzize();
-	return database.insert("transaction",{date:moment().format("YYYY-MM-DD"),drinkId:searchQuery.drinkId,customerName:searchQuery.userName});
+
+	return new Promise((resolve,reject)=> {
+		database.get(`
+			SELECT drinkRequires.drinkId, drinkRequires.ingredientId, drinkRequires.quantity as quantityInDrink, ingredientAvailable.* FROM drinkRequires
+			INNER JOIN ingredient ON drinkRequires.ingredientId=ingredient.id
+			INNER JOIN ingredientAvailable ON ingredient.quantity=ingredientAvailable.quantity
+			WHERE drinkRequires.drinkId=?`,[searchQuery.drinkId])
+		.then(getRes => {
+			if(getRes.reduce((status,nextIngr) => status * nextIngr.isAvailable,1)){
+
+				database.insert("transaction",{
+					date:moment().format("YYYY-MM-DD"),
+					drinkId:searchQuery.drinkId,
+					customerName:searchQuery.userName})
+				.then(orderRes => {
+
+					let sqlPromises = []
+					let sqlQuery;
+					getRes.forEach((ingr, i) => {
+						sqlQuery = database.get(
+							`UPDATE ingredient SET ingredient.quantity=? WHERE ingredient.id=?`,[
+								Math.max(0,parseInt(Math.ceil(ingr.quantity)) - parseInt(Math.ceil(ingr.quantityInDrink))),
+								ingr.ingredientId]);
+						sqlPromises.push(sqlQuery);
+					});
+
+					Promise.all(sqlPromises).then(res => {
+						resolve(orderRes);
+					}).catch( err => {
+						reject(err);
+					})
+				}).catch(err => {
+					reject(err);
+				})
+			}
+			else{
+				reject("Drink not available")
+			}
+		}).catch(err=>{
+			reject(err);
+		})
+	});
 }, "post");
 
 server.start();
