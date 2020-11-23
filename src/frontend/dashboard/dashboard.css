@@ -101,15 +101,30 @@ div {
 		overflow-x: hidden;
 		margin-top: 10vh;
 		margin-bottom: 10vh;
-		max-height: 60vh
+		max-height: 60vh;
+		align-items:baseline;
+		text-align: center;
 	}
+
 	.iconContainer > div{
 		flex-direction: column;
 	}
+
 	#dashboard > .row > div{
 		overflow-y: hidden;
 	}
+
 	#dashboard > .row > div:last-of-type{
 		height: 100%;
 	}
+
+	#dashboard{
+		margin-top: 20%;
+	}
+
+	.iconWrapper > div{
+		width: 100% !important;
+		left: 0 !important;
+	}
+
 }

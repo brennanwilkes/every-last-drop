@@ -35,6 +35,9 @@ class IngredientDetails extends React.Component {
 				})
 			});
 		}
+		else if(this.props.ingredientId === undefined && this.state.id !== undefined){
+			this.setState({id:undefined});
+		}
 	}
 
 	updateRefresh(){
@@ -64,10 +67,10 @@ class IngredientDetails extends React.Component {
 
 	render() {
 		return <>
-			<div className={`detailedView drinkDetail text-light bg-dark p-4 container-fluid detailedView-${this.state.id===undefined ? "off" : "on"}`}>
+			<div className={`detailedView ingredientDetail text-light bg-dark p-4 container-fluid detailedView-${this.state.id===undefined ? "off" : "on"}`}>
 				<div className="row">
 					<div className="col-md-1">
-						<button className="btn btn-danger" id="closeDetailedView" onClick={event => {
+						<button className="btn btn-danger closeDetailedView" onClick={event => {
 							this.setState({id:undefined});
 							this.props.changeIngredient(undefined);
 						}}>
@@ -109,14 +112,14 @@ class IngredientDetails extends React.Component {
 						<img src={`https://www.thecocktaildb.com/images/ingredients/${this.state.details.name}.png`} alt={this.state.details.name}/>
 					</div>
 				</div>
-				{
-					(this.props.deleteCallback ? <>
-						<div className="row justify-content-end mt-auto">
+					<div className="row justify-content-end mt-auto">
+					{
+						(this.props.deleteCallback ? <>
 							<button className="col-md-2 btn btn-success text-white" onClick={this.updateRefresh}><h3>ORDER</h3></button>
 							<button className="col-md-2 btn btn-danger" onClick={this.deleteIngredient}><h3>DELETE</h3></button>
-						</div>
-					</> : <></>)
-				}
+						</> : <></>)
+					}
+				</div>
 			</div>
 		</>;
 	}

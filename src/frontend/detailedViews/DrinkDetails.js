@@ -52,6 +52,9 @@ class DrinkDetails extends React.Component {
 				})
 			});
 		}
+		else if(this.props.drinkId === undefined && this.state.id !== undefined){
+			this.setState({id:undefined});
+		}
 	}
 
 	render() {
@@ -59,7 +62,7 @@ class DrinkDetails extends React.Component {
 			<div className={`detailedView drinkDetail text-light bg-dark p-4 container-fluid detailedView-${this.state.id===undefined ? "off" : "on"}`}>
 				<div className="row">
 					<div className="col-md-1">
-						<button className="btn btn-danger" id="closeDetailedView" onClick={event => {
+						<button className="btn btn-danger closeDetailedView" onClick={event => {
 							this.setState({id:undefined});
 							this.props.changeDrink(undefined);
 						}}>

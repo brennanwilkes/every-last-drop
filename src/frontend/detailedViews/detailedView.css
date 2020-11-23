@@ -84,3 +84,33 @@
 	bottom: 7.5%;
 	width: 85%;
 }
+
+@media (max-width: 768px) {
+
+	.detailedView{
+		overflow-y: auto;
+		margin: 7.5vh 5vw;
+		width: 90vw;
+		height: 90vh;
+	}
+
+	.detailedView > .row:last-child{
+		left: 7.5%;
+	}
+
+	.closeDetailedView{
+		width: 100%;
+	}
+
+	.detailedView > .row > div > div, .detailedView > .row > div{
+		margin-bottom: 10%;
+	}
+
+	.detailedView img{
+		margin-bottom: 25%;
+	}
+
+	.ingredientDetail img{
+		margin-bottom: 40%;
+	}
+}

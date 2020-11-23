@@ -77,6 +77,7 @@ class Menu extends DetailedViewController {
 		$("main").css("background-color","#00000080");
 		$("main").css("background-blend-mode","overlay");
 		$("#menu").css("marginTop","7.5%");
+		this.advancedSearchToggle();
 	}
 
 	search(query){
@@ -94,6 +95,11 @@ class Menu extends DetailedViewController {
 				marginTop: `${$("#nav-wrapper").height() + 50}px`
 			},200);
 		},250);
+
+		this.setState({
+			detailedDrink: undefined,
+			detailedIngredient: undefined
+		});
 	}
 
 	advSearch(query){
