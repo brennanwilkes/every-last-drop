@@ -3,9 +3,9 @@ cat /etc/os-release | head -n1 | grep '[aA]mazon' >/dev/null
 if [ "$?" -ne 0 ]; then
 	#NON AMAZON LINUX
 	mariadb --version 2>/dev/null >/dev/null
-	
+
 	if [ "$?" -eq 0 ]; then
-		sudo mariadb --defaults-extra-file=config/sql-login;
+		sudo mariadb -u root -p;
 	else
 		echo "mariadb is not installed. Try:"
 		echo "'sudo apt install mariadb-server'";
@@ -15,7 +15,7 @@ else
 	sudo service mysql start >/dev/null 2>/dev/null
 	mariadb --version 2>/dev/null >/dev/null
 	if [ "$?" -eq 0 ]; then
-		mariadb --defaults-extra-file=config/sql-login;
+		mariadb -u root;
 	else
 		echo "mariadb is not installed. Try:"
 		echo "'sh ./src/build/amazon-install-mariadb.sh'";

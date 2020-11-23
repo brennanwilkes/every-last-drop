@@ -5,6 +5,7 @@ public/bundle.js
 public/bundle.js.map
 public/*.jpg
 .env
+config/.sqlUserEnv
 
 
 ################# MACOS #################

@@ -2,5 +2,5 @@
 	"host": "localhost",
 	"database": "everyLastDrop",
 	"port": 8080,
-	"verbose": true
+	"verbose": false
 }

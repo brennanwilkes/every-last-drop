@@ -1,19 +1,18 @@
 const mariadb = require('mariadb');
 const path = require("path");
+require('dotenv').config();
 var fs = require('fs')
 
 //Pull utility functions from server.js
 const {print,CONFIG} = require(path.join(__dirname,"server.js"));
 
-//Get SQL User data from sql config file
-const SQL_CONFIG_DATA = fs.readFileSync(path.join(__dirname,"..", "..","config","sql-login")).toString().trim().split('\n');
 
 /*
 	Database connection object
 */
 exports.database = {
-	username: SQL_CONFIG_DATA[1].split("=")[1],
-	password: SQL_CONFIG_DATA[2].split("=")[1],
+	username: process.env.ADMIN_USER,
+	password: process.env.ADMIN_PASS,
 	database: CONFIG["database"],
 	hostname: CONFIG["host"],
 	connectionLimit: 5,

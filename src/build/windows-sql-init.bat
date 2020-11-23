@@ -9,3 +9,4 @@ exit
 :run
 net start MariaDB
 "\Program Files\MariaDB 10.5\bin\mariadb.exe" -u root -p < src\sql\init.sql
+"\Program Files\MariaDB 10.5\bin\mariadb.exe" -u root -p < config\.sqlUserEnv

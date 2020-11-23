@@ -12,9 +12,6 @@ CREATE DATABASE everyLastDrop;
 	our app to use.
 */
 
-GRANT all privileges ON everyLastDrop.* TO 'group12'@'localhost' IDENTIFIED BY 'cpsc2221';
-FLUSH PRIVILEGES;
-
 /* Set active database */
 USE everyLastDrop;
 
