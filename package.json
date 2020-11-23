@@ -32,7 +32,8 @@
 		"dev": "run-p watch dev:server",
 		"dev:server": "nodemon .",
 		"watch": "webpack --config src/webpack.config.js --watch",
-		"build:frontend": "webpack --config src/webpack.config.js"
+		"build:frontend": "webpack --config src/webpack.config.js",
+		"project-setup": "run-s sql-setup build:frontend"
 	},
 	"repository": {
 		"type": "git",
