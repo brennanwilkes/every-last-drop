@@ -124,7 +124,11 @@ class Menu extends DetailedViewController {
 								return <>
 									<div className="col-sm-6 col-md-4 col-xl-2 d-flex justify-content-center mb-4">
 										<div className="menuIconWrapper">
-											<DrinkIcon drinkInfo={d} clickCallback={this.updateDetailedDrink} />
+											<DrinkIcon drinkInfo={d} clickCallback={id=>{
+												$("#advancedOptions").removeClass("show");
+												this.advancedSearchToggle();
+												this.updateDetailedDrink(id);
+											}} />
 										</div>
 									</div>
 								</>

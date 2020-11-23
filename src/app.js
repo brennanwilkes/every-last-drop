@@ -265,7 +265,7 @@ server.route("orders", req => database.get(`
 //Order ingredient by ingredient Id
 //UPDATE query
 server.route("order", req => {
-	if(true){//req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
+	if(req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
 		searchQuery.update(req.body);
 		searchQuery.sanitzize();
 		return database.get(`UPDATE ingredient SET ingredient.quantity=ingredient.quantity+10 WHERE ingredient.id=?`,[searchQuery.id]);
@@ -278,7 +278,7 @@ server.route("order", req => {
 //Delete ingredient by ingredient Id
 //DELETE query
 server.route("delete/ingredient", req => {
-	if(true){//req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
+	if(req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
 		searchQuery.update(req.body);
 		searchQuery.sanitzize();
 		return database.get(`DELETE FROM ingredient WHERE ingredient.id=?`,[searchQuery.id]);
@@ -291,7 +291,7 @@ server.route("delete/ingredient", req => {
 //Delete drink drinkRecipe by drinkRecipe Id
 //DELETE query
 server.route("delete/drink", req => {
-	if(true){//req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
+	if(req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
 		searchQuery.update(req.body);
 		searchQuery.sanitzize();
 		return database.get(`DELETE FROM drinkRecipe WHERE drinkRecipe.id=?`,[searchQuery.id]);

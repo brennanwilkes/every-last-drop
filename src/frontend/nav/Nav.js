@@ -89,7 +89,9 @@ class MultiInput extends React.Component{
 						onChange={this.props.callback} />
 
 					<button className="btn btn-success" onClick={event=>{
-						this.setState({copies:[...this.state.copies,""]});
+						if(this.state.copies.length < 7){
+							this.setState({copies:[...this.state.copies,""]});
+						}
 					}}><FaPlusSquare size={28} /></button>
 				</div>
 				{

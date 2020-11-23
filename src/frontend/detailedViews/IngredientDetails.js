@@ -50,7 +50,7 @@ class IngredientDetails extends React.Component {
 					details:res.data[0]
 				})
 			});
-		});
+		}).catch(err=>{});
 	}
 
 	deleteIngredient(){
@@ -59,7 +59,7 @@ class IngredientDetails extends React.Component {
 			this.setState({id:undefined});
 			this.props.changeIngredient(undefined);
 			this.props.parentUpdate();
-		});
+		}).catch(err=>{});
 	}
 
 	render() {

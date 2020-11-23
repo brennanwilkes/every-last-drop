@@ -18,6 +18,7 @@
 .iconWrapper:hover{
 	transform: scale(1.15);
 	cursor: pointer;
+	z-index: 3;
 }
 
 

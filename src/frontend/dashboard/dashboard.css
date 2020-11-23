@@ -49,7 +49,7 @@
 	align-items: center;
 	justify-content: center;
 }
-.iconContainer > div {
+.iconContainer > div:not(.FloatingSectionLabel) {
 	width: 100%;
 	display: flex;
 }
@@ -61,6 +61,7 @@
 .dashboardComponent{
 	border-radius: 2vmin;
 	border: 4px solid #6c757d;
+	position: relative;
 }
 
 #inventory{
@@ -78,6 +79,19 @@ div {
 	scrollbar-width: none;  /* Firefox */
 }
 
+
+.adminNavBar{
+	border-bottom: 4px solid #6c757d;
+}
+
+.FloatingSectionLabel{
+	border: 4px solid #343a40;
+	border-radius: 1.25vmin;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
 
 
 @media (max-width: 768px) {

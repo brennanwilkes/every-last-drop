@@ -73,6 +73,7 @@
 
 .detailedView img{
 	width: 90%;
+	max-width: 500px;
 	height: auto;
 	border-radius: 1vmin;
 	border: 4px solid #6c757d;

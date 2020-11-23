@@ -34,6 +34,7 @@ class UserLogin extends React.Component{
 	constructor(props){
 		super(props);
 		this.login = this.login.bind(this);
+		this.componentDidMount = this.componentDidMount.bind(this);
 	}
 
 	login(event){
@@ -41,6 +42,14 @@ class UserLogin extends React.Component{
 		this.props.toMenu({
 			user: $("#name")[0].value,
 			dob: $("#dob")[0].value
+		});
+	}
+
+	componentDidMount(){
+		$("form").keypress(event => {
+			if(event.which == 10 || event.which == 13) {
+				this.login(event);
+			}
 		});
 	}
 
@@ -72,6 +81,7 @@ class AdminLogin extends React.Component{
 	constructor(props){
 		super(props);
 		this.login = this.login.bind(this);
+		this.componentDidMount = this.componentDidMount.bind(this);
 	}
 
 	login(event){
@@ -79,6 +89,14 @@ class AdminLogin extends React.Component{
 		this.props.toDash({
 			user: $("#username")[0].value,
 			pass: $("#pass")[0].value
+		});
+	}
+
+	componentDidMount(){
+		$("form").keypress(event => {
+			if(event.which == 10 || event.which == 13) {
+				this.login(event);
+			}
 		});
 	}
 

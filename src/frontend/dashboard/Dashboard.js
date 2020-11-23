@@ -44,6 +44,16 @@ class Transaction extends React.Component{
 	}
 }
 
+class FloatingSectionLabel extends React.Component{
+	render(){
+		return <>
+			<div className="FloatingSectionLabel p-1 text-light bg-secondary">
+				{this.props.text}
+			</div>
+		</>
+	}
+}
+
 class Dashboard extends DetailedViewController {
 
 	constructor(props){
@@ -127,9 +137,21 @@ class Dashboard extends DetailedViewController {
 
 	render(){
 		return <>
+			<div className="fixed-top" id="nav-wrapper">
+				<nav className="adminNavBar navbar navbar-dark bg-dark py-0">
+					<a className="navbar-brand ml-3 nav-brand-item" href=".">Every Last Drop</a>
+					<ul className="mr-3 ml-3 navbar-nav mr-auto">
+						<li className="nav-item active">
+							<a className="nav-link" href=".">Home</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
 			<div className="container-fluid p-3" id="dashboard">
 				<div className="row">
 					<div className="col-md-4 p-3 dashboardComponent bg-dark scrollable-y">
+						<FloatingSectionLabel text="Orders" />
 						<table id="transactions"><thead className="text-light">
 							<tr>{
 								TRANSACTION_HEADERS.map(h => {
@@ -144,14 +166,18 @@ class Dashboard extends DetailedViewController {
 						</tbody></table>
 					</div>
 					<div className="col-md-8 px-3">
-						<div className="p-3 iconContainer dashboardComponent text-light bg-dark scrollable-x" id="popularDrinks"><div>
+						<div className="p-3 iconContainer dashboardComponent text-light bg-dark scrollable-x" id="popularDrinks">
+							<FloatingSectionLabel text="Popular Drinks" />
+							<div>
 							{
 								this.state.popularDrinks.map(d => {
 									return <DrinkIcon drinkInfo={d} clickCallback={this.updateDetailedDrink} />
 								})
 							}
 						</div></div>
-						<div className="p-3 iconContainer dashboardComponent text-light bg-dark scrollable-x" id="popularIngr"><div>
+						<div className="p-3 iconContainer dashboardComponent text-light bg-dark scrollable-x" id="popularIngr">
+							<FloatingSectionLabel text="Popular Ingredients" />
+							<div>
 							{
 								this.state.popularIngr.map(i => {
 									return <IngredientIcon ingrInfo={i} clickCallback={this.updateDetailedIngrident} />
@@ -161,7 +187,9 @@ class Dashboard extends DetailedViewController {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-12 p-3 dashboardComponent bg-dark text-light iconContainer scrollable-x" id="inventory"><div>
+					<div className="col-md-12 p-3 dashboardComponent bg-dark text-light iconContainer scrollable-x" id="inventory">
+						<FloatingSectionLabel text="Out of Stock" />
+						<div>
 						{
 							this.state.lowStock.map(i => {
 								return <IngredientIcon ingrInfo={i} clickCallback={this.updateDetailedIngrident} />

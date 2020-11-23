@@ -28,7 +28,7 @@ class DrinkDetails extends React.Component {
 			this.setState({id:undefined});
 			this.props.changeDrink(undefined);
 			this.props.parentUpdate();
-		});
+		}).catch(err=>{});
 	}
 
 	componentDidUpdate(prevProps){
