@@ -132,8 +132,10 @@ class DrinkDetails extends React.Component {
 								<h3>DELETE</h3>
 							</button>
 						</> : <>
-							<button className="col-md-4 btn btn-success" onClick={e => this.props.orderCallback(this.state.id)}>
-								<h3>ORDER</h3>
+							<button className={`col-md-4 btn btn-${this.props.orderButtonMd}`} onClick={e => this.props.orderCallback(this.state.id)}>
+								<h3>
+									{this.props.orderButtonContent}
+								</h3>
 							</button>
 						</>)
 					}

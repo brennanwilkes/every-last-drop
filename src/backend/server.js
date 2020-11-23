@@ -29,6 +29,7 @@ exports.server = {
 				res.send(data);
 				res.end();
 			}).catch(error => {
+				res.status(409);
 				res.send("<h1>Internal Error</h1><br>"+error);
 				res.end();
 			});

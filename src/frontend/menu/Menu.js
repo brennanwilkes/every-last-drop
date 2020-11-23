@@ -31,7 +31,9 @@ class Menu extends DetailedViewController {
 			drinks: [],
 			glasses: [],
 			detailedDrink: undefined,
-			detailedIngredient: undefined
+			detailedIngredient: undefined,
+			orderButtonMd: "success",
+			orderButtonContent: "ORDER"
 		};
 
 		axios.get("/drinks").then(res => this.setState({drinks:res.data}));
@@ -39,11 +41,34 @@ class Menu extends DetailedViewController {
 	}
 
 	orderDrink(id){
+
+		this.setState({
+			orderButtonMd: "secondary",
+			orderButtonContent: "PROCESSING"
+		});
+
 		axios.post('/purchase',{
 			drinkId: id,
 			userName: this.props.user
 		}).then(res => {
-			console.log(res);
+
+			setTimeout(() => {
+				this.setState({
+					orderButtonMd: "success",
+					orderButtonContent: "SUCCESS"
+				});
+			},500);
+
+			setTimeout(() => {
+				if(this.state.orderButtonContent === "SUCCESS"){
+					this.setState({orderButtonContent: "ORDER"})
+				}
+			},3000);
+		}).catch(err => {
+			this.setState({
+				orderButtonMd: "danger",
+				orderButtonContent: "OUT OF STOCK"
+			});
 		});
 	}
 
@@ -111,8 +136,16 @@ class Menu extends DetailedViewController {
 			<DrinkDetails
 				drinkId={this.state.detailedDrink}
 				changeIngredient={this.updateDetailedIngrident}
-				changeDrink={this.updateDetailedDrink}
-				orderCallback={this.orderDrink} />
+				changeDrink={id => {
+					this.setState({
+						orderButtonMd: "success",
+						orderButtonContent: "ORDER"
+					});
+					this.updateDetailedDrink(id);
+				}}
+				orderCallback={this.orderDrink}
+				orderButtonMd={this.state.orderButtonMd}
+				orderButtonContent={this.state.orderButtonContent} />
 			<IngredientDetails
 				ingredientId={this.state.detailedIngredient}
 				changeIngredient={this.updateDetailedIngrident} />
