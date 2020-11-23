@@ -1,5 +1,6 @@
 import React from "react";
 import "./bootstrap-import.js";
+import axios from "axios";
 
 import Login from "./login/Login.js";
 import Dashboard from "./dashboard/Dashboard.js";
@@ -19,7 +20,8 @@ class App extends React.Component {
 		this.state = {
 			md : AppMode.LOGIN,
 			user: undefined,
-			dob: undefined
+			dob: undefined,
+			pass: undefined
 		}
 	}
 
@@ -33,11 +35,17 @@ class App extends React.Component {
 						user: loginInfo.user,
 						pass: loginInfo.pass
 					}) }
-					toMenu={ loginInfo => this.setState({
-						md: AppMode.MENU,
-						user: loginInfo.user,
-						dob: loginInfo.dob
-					}) }
+					toMenu={ loginInfo => {
+						this.setState({
+							md: AppMode.MENU,
+							user: loginInfo.user,
+							dob: loginInfo.dob
+						});
+						axios.post('/customer',{
+							userName: loginInfo.user,
+							userDob: loginInfo.dob
+						})
+					}}
 				/>
 				: ((this.state.md === AppMode.DASHBOARD)
 				? <Dashboard userName={this.state.user} userPass={this.state.pass} />

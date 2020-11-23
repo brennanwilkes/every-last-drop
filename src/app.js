@@ -1,4 +1,5 @@
 const path = require("path");
+const moment = require("moment");
 
 require('dotenv').config();
 const ADMIN_USER = process.env.ADMIN_USER;
@@ -29,6 +30,9 @@ const searchQuery = {
 	liquor: "",
 	glass: "",
 	id: "",
+	userName: "",
+	userDob: "1970-01-01",
+
 
 	reset(){
 		Object.keys(this).forEach(key => {
@@ -46,7 +50,7 @@ const searchQuery = {
 	},
 	sanitzize(){
 		Object.keys(this).forEach(key => {
-			if(typeof(this[key])=="string"){
+			if(typeof(this[key])=="string" && key!=="userDob" && key!=="userName" ){
 				this[key] = key==="glass"||key==="id" ? (this[key].length > 0 ? this[key].toLowerCase() : "%%" ) : `%${this[key].toLowerCase()}%`;
 			}
 		});
@@ -55,6 +59,9 @@ const searchQuery = {
 		if(!this.contains || typeof(this.contains)!=="object" || !this.contains.length){
 			this.contains = [""];
 		}
+
+		this.userDob = moment(this.userDob, 'YYYY/MM/DD').isValid() ? moment(this.userDob,'YYYY-MM-DD').format("YYYY-MM-DD") : "1970-01-01";
+		this.userName = this.userName.length > 0 ? this.userName : "Unknown Name";
 
 		this.rating = validateNum(this.rating);
 		this.percentage = validateNum(this.percentage);
@@ -271,7 +278,7 @@ server.route("order", req => {
 }, "post");
 
 //Delete ingredient by ingredient Id
-//UPDATE query
+//DELETE query
 server.route("delete/ingredient", req => {
 	if(true){//req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
 		searchQuery.update(req.body);
@@ -284,7 +291,7 @@ server.route("delete/ingredient", req => {
 }, "post");
 
 //Delete drink drinkRecipe by drinkRecipe Id
-//UPDATE query
+//DELETE query
 server.route("delete/drink", req => {
 	if(true){//req.body.userName === ADMIN_USER && req.body.userPass === ADMIN_PASS){
 		searchQuery.update(req.body);
@@ -294,6 +301,14 @@ server.route("delete/drink", req => {
 	else{
 		return failedLogin();
 	}
+}, "post");
+
+//Add a new customer
+//INSERT query
+server.route("customer", req => {
+	searchQuery.update(req.body);
+	searchQuery.sanitzize();
+	return database.insert("customer",{fullName:searchQuery.userName,dateOfBirth:searchQuery.userDob},true);
 }, "post");
 
 server.start();

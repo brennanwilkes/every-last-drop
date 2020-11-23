@@ -51,7 +51,7 @@ exports.database = {
 		return res;
 	},
 
-	async insert(table,tuple){
+	async insert(table,tuple,ignore=false){
 		const conn = await this.connect();
 
 		let header = "";
@@ -62,7 +62,7 @@ exports.database = {
 			values += "?, ";
 			data.push(tuple[key])
 		});
-		let sql = `INSERT INTO ${table}(${header.substring(0,header.length-2)})`;
+		let sql = `INSERT ${ignore?"IGNORE ":""}INTO ${table}(${header.substring(0,header.length-2)})`;
 		sql += `VALUES (${values.substring(0,values.length-2)});`;
 
 		print(`Inserting ${JSON.stringify(tuple,null,4)} into ${this.database}`)
