@@ -6,6 +6,8 @@ The complete database management system for the small bar, or bar owner. Every L
 
 **Preamble**  
 
+This is a markdown file, and should be read online on the project github page: https://github.com/brennanwilkes/every-last-drop#every-last-drop or in a markdown reader of your choice such as https://dillinger.io/, https://markdownlivepreview.com/, or any website or application which can read markdown files.  
+
 You will be prompted to enter your password a number of times during the installation. This password should be the password of the user account you are logged in as, or your sudo password for linux OS's. Any failed password attempts will likely require a reinstall.  
 
 If you have a choice of multiple computers to install Every Last Drop on, I highly recommend choosing a non-windows device, as the Windows installation is much longer, more tricky, and less robust due to the nature of Windows software.
