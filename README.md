@@ -8,7 +8,7 @@ The complete database management system for the small bar, or bar owner. Every L
 
 You will be prompted to enter your password a number of times during the installation. This password should be the password of the user account you are logged in as, or your sudo password for linux OS's. Any failed password attempts will likely require a reinstall.  
 
-If you have a choice of multiple computers to install Every Last Drop on, I highly recommend choosing a non-windows device, as the Windows installation is much longer, more tricky, and less robust, due to the nature of Windows software.
+If you have a choice of multiple computers to install Every Last Drop on, I highly recommend choosing a non-windows device, as the Windows installation is much longer, more tricky, and less robust due to the nature of Windows software.
 
 That being said, the *full* installation, setup, and deployment pipeline has been rigorously developed and tested for Ubuntu 20.04, Amazon Cloud 9 EC2 Linux 1, MAC OSX 10.14: "Mojave", and 10.15: "Catalina", as well as Windows 10, so installation for those operating systems should be possible and successful. If you are installing for an operating system not mentioned above, or are having difficulties with the installation process in general, please feel free to contact me at [bwilkes00@mylangara.ca](mailto:bwilkes00@mylangara.ca) and I would be more than happy to assist with the process, as I wrote most of the installation steps and scripts by hand.
 
@@ -16,7 +16,7 @@ That being said, the *full* installation, setup, and deployment pipeline has bee
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg width=40px height=40px> **Acquire Every Last Drop**
 
-> If you have downloaded Every Last Drop from D2L, make a note of where it is located on your system.
+> If you have downloaded Every Last Drop from D2L, make a note of where it is located on your system.  
 > If you have not already downloaded the Every Last Drop project, you can clone the github repository to your system. Simply type the following in a console (terminal, CMD Prompt, etc)  
 
 ```sh
