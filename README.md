@@ -17,7 +17,7 @@ That being said, the *full* installation, setup, and deployment pipeline has bee
 <img src=https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg width=40px height=40px> **Acquire Every Last Drop**
 
 > If you have downloaded Every Last Drop from D2L, make a note of where it is located on your system.  
-> If you have not already downloaded the Every Last Drop project, you can clone the github repository to your system. Simply type the following in a console (terminal, CMD Prompt, etc)  
+> However if you have *not* already downloaded the Every Last Drop project, you can clone the github repository to your system. Simply type the following in a console (terminal, CMD Prompt, etc)  
 
 ```sh
 git clone https://github.com/brennanwilkes/every-last-drop.git
