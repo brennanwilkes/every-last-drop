@@ -19,9 +19,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 . ~/.bashrc
 nvm install node
 ```
-> After following the below instructions for cloning the repo and installing npm, run the following mariadb installer script
+> Run the following mariadb installer script
 ```sh
-sh ./src/build/amazon-install-mariadb.sh
+curl -L 'https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/src/build/amazon-install-mariadb.sh' | sh
 ```
 
 
