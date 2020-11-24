@@ -1,6 +1,31 @@
 # Every Last Drop
 
-The complete database management system for the small bar, or bar owner. Every Last Drop manages the bar's inventory, orders, and sales, as well as featuring multi-user support for default customer users, and credential-required manager and admin users.
+The complete database management system for the small bar, or bar owner. Every Last Drop manages the bar's inventory, orders, and sales, as well as featuring multi-user support for default customer users, and credential-required manager and admin users.  
+
+---
+
+**Preamble**  
+
+You will be prompted to enter your password a number of times during the installation. This password should be the password of the user account you are logged in as, or your sudo password for linux OS's. Any failed password attempts will likely require a reinstall.  
+
+If you have a choice of multiple computers to install Every Last Drop on, I highly recommend choosing a non-windows device, as the Windows installation is much longer, more tricky, and less robust, due to the nature of Windows software.
+
+That being said, the *full* installation, setup, and deployment pipeline has been rigorously developed and tested for Ubuntu 20.04, Amazon Cloud 9 EC2 Linux 1, MAC OSX 10.14: "Mojave", and 10.15: "Catalina", as well as Windows 10, so installation for those operating systems should be possible and successful. If you are installing for an operating system not mentioned above, or are having difficulties with the installation process in general, please feel free to contact me at [bwilkes00@mylangara.ca](mailto:bwilkes00@mylangara.ca) and I would be more than happy to assist with the process, as I wrote most of the installation steps and scripts by hand.
+
+---
+
+<img src=https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg width=40px height=40px> **Acquire Every Last Drop**
+
+> If you have downloaded Every Last Drop from D2L, make a note of where it is located on your system.
+> If you have not already downloaded the Every Last Drop project, you can clone the github repository to your system. Simply type the following in a console (terminal, CMD Prompt, etc)  
+
+```sh
+git clone https://github.com/brennanwilkes/every-last-drop.git
+```
+OR if you have an ssh key setup
+```sh
+git clone git@github.com:brennanwilkes/every-last-drop.git
+```
 
 ---
 
@@ -13,33 +38,32 @@ The complete database management system for the small bar, or bar owner. Every L
 > You know how to do that already
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg width=60px height=40px> **Amazon EC2 Linux**
+
+> Open a new terminal  
+> Run the following installer script
 ```sh
-sudo yum -y update
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-. ~/.bashrc
-nvm install node
+curl -L 'https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/src/build/amazon-fullinstall.sh' | sh
 ```
-> Run the following mariadb installer script
+
+> Navigate to the Every Last Drop project folder. This may look like:  
 ```sh
-curl -L 'https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/src/build/amazon-install-mariadb.sh' | sh
+cd ~/enviornment/every-last-drop
 ```
 
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg width=40px height=40px> **MAC**
 
 > <kbd>⌘ Command</kbd> + <kbd>Space</kbd>  
-> Type "terminal"
+> Type "terminal"  
 
+> Run the following installer script, following all instructions given to you  
 ```sh
-xcode-select --install
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/src/build/darwin-fullinstall.sh
 ```
-> Follow the instructions both give you
+
+> Navigate to the Every Last Drop project folder. This may look like:  
 ```sh
-brew update
-brew install node
-brew install mariadb
-cd ~/Desktop
+cd ~/Desktop/every-last-drop
 ```
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Windows_Logo_1995.svg/1181px-Windows_Logo_1995.svg.png width=60px height=40px> **Windows**
@@ -57,29 +81,21 @@ cd ~/Desktop
 > If you change installation directory to something other than "\Program Files\MariaDB\" then you will also have to update the installation scripts.
 > If you install a different version of MariaDB other than 10.5, you'll have to update the installation scripts.
 
+> I *cannot* stress this enough. If you install a different verison of MariaDB, or install it to a different location, the dev and build scripts to set up the project will *not* be able to correctly locate MariaDB, and will need to be updated.
+
 > <kbd>⊞ Windows</kbd>
 > Type "cmd"  
 > Right click  
-> "Run as administrator"
+> "Run as administrator"  
+
+> Navigate to the Every Last Drop project folder. This may look like:  
 
 ```cmd
-cd %USERPROFILE%\Desktop
+cd %USERPROFILE%\Desktop\every-last-drop
 ```
 OR depending on your system, if you use OneDrive
 ```cmd
-cd %USERPROFILE%\OneDrive\Desktop
-```
-
----
-
-<img src=https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg width=40px height=40px> **Clone the repo**
-
-```sh
-git clone https://github.com/brennanwilkes/every-last-drop.git
-```
-OR if you have an ssh key setup
-```sh
-git clone git@github.com:brennanwilkes/every-last-drop.git
+cd %USERPROFILE%\OneDrive\Desktop\every-last-drop
 ```
 
 ---
@@ -87,7 +103,6 @@ git clone git@github.com:brennanwilkes/every-last-drop.git
 <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1280px-Npm-logo.svg.png width=40px height=20px> **Install NPM packages**
 
 ```sh
-cd every-last-drop
 npm install
 ```
 
@@ -95,8 +110,17 @@ npm install
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png width=40px height=20px> **Usage**
 
+> Run the setup script.  
+> This will begin by asking you to enter a username and password for the project. This is *not* your system user and password. This is a username and password for MariaDB to use, as well as your login details for the Every Last Drop admin pannel. It can be whatever you choose, but please note it down. This information may reside on foreign servers, and if you are deploying to the web, will not be encrypted in traffic, so it should likely not be a password you use elsewhere.  
+> After this initial username/password prompt, all futher prompts for simply a "password" are for your *system* password, not the new password you just created.
+
 ```sh
 npm run project-setup
+```
+
+And that's it! You have successfully installed and setup Every Last Drop! To start the application, simply run the following command:  
+```sh
 npm start
 ```
 
+If you have left the config as it is out of the box, navigating to `localhost:8080` in your browser will bring you to the application. Should you wish a different port, this can be changed in the config/ files.
