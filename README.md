@@ -72,7 +72,7 @@ cd ~/Desktop/every-last-drop
 > Click "Windows Installer"  
 > Double click the installer  
 > <kbd>Run</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Next</kbd> + <kbd>Yes install dependencies</kbd> <kbd>Next</kbd> + <kbd>Install</kbd> + <kbd>Finish</kbd>  
-> Download the Windows msi from this link: https://downloads.mariadb.org/interstitial/mariadb-10.5.6/winx64-packages/mariadb-10.5.6-winx64.msi/from/https%3A//mirror.its.dal.ca/mariadb/  
+> Download the Windows msi from this link: https://downloads.mariadb.org/interstitial/mariadb-10.5.6/winx64-packages/mariadb-10.5.6-winx64.msi/from/https%3A//archive.mariadb.org/  
 > Install mariaDB by following these steps: https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/  
 
 > Ensure that you select "Database instance"  
