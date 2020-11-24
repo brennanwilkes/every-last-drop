@@ -83,9 +83,7 @@ cd ~/Desktop/every-last-drop
 
 > I *cannot* stress this enough. If you install a different verison of MariaDB, or install it to a different location, the dev and build scripts to set up the project will *not* be able to correctly locate MariaDB, and will need to be updated.  
 
-> <kbd>⊞ Windows</kbd>  
-> Type "cmd"  
-> Right click  
+> <kbd>⊞ Windows</kbd> + Type "cmd"  
 > "Run as administrator"  
 
 > Navigate to the Every Last Drop project folder. This *may* look like:  
