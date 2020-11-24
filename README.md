@@ -45,7 +45,7 @@ git clone git@github.com:brennanwilkes/every-last-drop.git
 curl -L 'https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/src/build/amazon-fullinstall.sh' | sh
 ```
 
-> Navigate to the Every Last Drop project folder. This may look like:  
+> Navigate to the Every Last Drop project folder. This *may* look like:  
 ```sh
 cd ~/enviornment/every-last-drop
 ```
@@ -61,7 +61,7 @@ cd ~/enviornment/every-last-drop
 curl -L 'https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/src/build/darwin-fullinstall.sh' | sh
 ```
 
-> Navigate to the Every Last Drop project folder. This may look like:  
+> Navigate to the Every Last Drop project folder. This *may* look like:  
 ```sh
 cd ~/Desktop/every-last-drop
 ```
@@ -75,20 +75,20 @@ cd ~/Desktop/every-last-drop
 > Download the Windows msi from this link: https://downloads.mariadb.org/interstitial/mariadb-10.5.6/winx64-packages/mariadb-10.5.6-winx64.msi/from/https%3A//mirror.its.dal.ca/mariadb/  
 > Install mariaDB by following these steps: https://mariadb.com/kb/en/installing-mariadb-msi-packages-on-windows/  
 
-> Ensure that you select "Database instance"
+> Ensure that you select "Database instance"  
 > Unless you know what you're doing, leave the defaults as is.  
 > If you change the process name to something other than "MariaDB" you will have to also update further installation scripts, so best to leave as is.  
-> If you change installation directory to something other than "\Program Files\MariaDB\" then you will also have to update the installation scripts.
-> If you install a different version of MariaDB other than 10.5, you'll have to update the installation scripts.
+> If you change installation directory to something other than "\Program Files\MariaDB\" then you will also have to update the installation scripts.  
+> If you install a different version of MariaDB other than 10.5, you'll have to update the installation scripts.  
 
-> I *cannot* stress this enough. If you install a different verison of MariaDB, or install it to a different location, the dev and build scripts to set up the project will *not* be able to correctly locate MariaDB, and will need to be updated.
+> I *cannot* stress this enough. If you install a different verison of MariaDB, or install it to a different location, the dev and build scripts to set up the project will *not* be able to correctly locate MariaDB, and will need to be updated.  
 
-> <kbd>⊞ Windows</kbd>
+> <kbd>⊞ Windows</kbd>  
 > Type "cmd"  
 > Right click  
 > "Run as administrator"  
 
-> Navigate to the Every Last Drop project folder. This may look like:  
+> Navigate to the Every Last Drop project folder. This *may* look like:  
 
 ```cmd
 cd %USERPROFILE%\Desktop\every-last-drop
