@@ -109,7 +109,7 @@ npm install
 <img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png width=40px height=20px> **Usage**
 
 > Run the setup script.  
-> This will begin by asking you to enter a username and password for the project. This is *not* your system user and password. This is a username and password for MariaDB to use, as well as your login details for the Every Last Drop admin pannel. It can be whatever you choose, but please note it down. This information may reside on foreign servers, and if you are deploying to the web, will not be encrypted in traffic, so it should likely not be a password you use elsewhere.  
+> This will begin by asking you to enter a username and password for the project. This is *not* your system user and password. This is a username and password for MariaDB to use, as well as your login details for the Every Last Drop admin pannel. It can be whatever you choose, but please note it down. If you are deploying to the web, this data may not be encrypted in traffic, so it should likely not be a password you use elsewhere.  
 > After this initial username/password prompt, all futher prompts for simply a "password" are for your *system* password, not the new password you just created.
 
 ```sh
