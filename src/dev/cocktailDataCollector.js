@@ -1,17 +1,45 @@
+//Brennan Wilkes
+
+//Includes
 const axios = require('axios');
 
+//URL's for thecocktaildb.com API's
 const ranURL = "https://www.thecocktaildb.com/api/json/v2/9973533/random.php";
 const alcURL = "https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?a=Alcoholic";
 const drinkURL = "https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=";
 const letURL = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?f=";
 const ingrURL = "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?i=";
 
+/**
+	Rounds a number to the nearest quarter
+	@param {number} num Number to round
+	@returns {number} num rounded to nearest quarter
+	@memberof dev
+*/
 const roundQ = num => (Math.ceil(num * 4) / 4).toFixed(2);
 
+/**
+	Class representation of a drink recipe scraped from an API
+	@class
+	@memberof dev
+*/
 class DrinkRecipe{
+
+	/**
+		Initializes a drink recipe object with a scraped JSON from the API
+		Performs regex validation and speculative parsing.
+		@constructor
+		@param {object} data JSON data from API
+	*/
 	constructor(data){
+
+		//Set drink ID. Note this is the API ID, not the final ID in the everyLastDrop database
 		this.id = data.idDrink;
+
+		//Drink name
 		this.name = data.strDrink.toLowerCase();
+
+		//Glass name. Converts to common desired names for uniformity.
 		this.glass = data.strGlass.toLowerCase()
 								.replace(/ [gG]lass$/, "")
 								.replace(/old-fashioned/g,'rocks')
@@ -22,24 +50,31 @@ class DrinkRecipe{
 								.replace(/white wine/g,'wine')
 								.replace(/whiskey sour/g,'coupe')
 								.replace(/cocktail/g,'coupe');
+
+		//Auto mixmethod detection. Searches the instructions for the word shake, impling a shaken drink
 		this.mixMethod = (data.strInstructions.toLowerCase().includes("shake") ? "shaken" : "stirred");
 
+		//Hardcoded on ice detection based on glass type.
 		if(["coupe","shot","nick and nora","champagne flute"].some(el => this.glass.includes(el))){
 			this.onIce = false;
 		}
 		else if(["rocks","hurricane","punch bowl"].some(el => this.glass.includes(el))){
 			this.onIce = true;
 		}
+
+		//If all else fails, search instructions and ingredients for the word ice.
 		else{
 			this.onIce = data.strInstructions.toLowerCase().includes("ice") || new Array(15).map(i => data[`strIngredient${i+1}`]).join(" ").includes("ice");
 		}
 
-
+		//Generate random price and rating
 		this.price = 10 + Math.floor(Math.random()*5)*2;
 		this.rating = 2 + Math.floor(Math.random()*4)*2;
 
+		//Record img URL
 		this.imgURL = data.strDrinkThumb;
 
+		//Parse out ingredients
 		this.ingredients = [];
 		let ingAmt, ingName;
 		for(let i=1;i<16;i++){
@@ -49,23 +84,32 @@ class DrinkRecipe{
 				let origName = ingName;
 				ingAmt = data[`strMeasure${i}`];
 
+				//Check if amt field exists and is of the correct type
 				try{
 					let temp = ingAmt.replace("a","b");
 				}
 				catch{
 					ingAmt = "1";
 				}
+
+				//Check if name field exists and is of the correct type
 				try{
 					let temp = ingName.replace("a","b");
 				}
 				catch{
+
+					//If ingredient name doesn't exist, drop record of it.
 					continue
 				}
 
+				//Rounds all digits to the nearest quarter
 				ingAmt = ingAmt.replace(/(\d+)\/(\d+)/,(str,num,denom) => roundQ(parseFloat(num)/parseFloat(denom)));
 				ingAmt = ingAmt.replace(/(\d+) (\d+\.\d+)/,(str,whole,fract) => roundQ(parseFloat(whole)+parseFloat(fract)));
+
+				//Replaces ranged amounts with their maximum
 				ingAmt = ingAmt.replace(/(\d+.*\d*) *- *(\d+.*\d*)/,(str,low,high) => high);
 
+				//Auto unit conversion to standard OZ
 				ingAmt = ingAmt.replace(/(\d+.*\d*).* L .*/,(str,amt) => roundQ(parseFloat(amt)*33.814));
 				ingAmt = ingAmt.replace(/(\d+.*\d*).*[mM][lL].*/,(str,amt) => roundQ(parseFloat(amt)*0.033814));
 				ingAmt = ingAmt.replace(/(\d+.*\d*).*[cL][lL].*/,(str,amt) => roundQ(parseFloat(amt)*0.33814));
@@ -79,20 +123,30 @@ class DrinkRecipe{
 				ingAmt = ingAmt.replace(/(\d+.*\d*).*splash.*/,(str,amt) => roundQ(parseFloat(amt)/5));
 				ingAmt = ingAmt.replace(/(\d+.*\d*).*cup.*/,(str,amt) => roundQ(parseFloat(amt)*8));
 				ingAmt = ingAmt.replace(/(\d+.*\d*).*glass.*/,(str,amt) => roundQ(parseFloat(amt)*8));
+
+				//Minimal amounts
 				ingAmt = ingAmt.replace(/.*dash.*/,(str,amt) => roundQ(0.25));
 				ingAmt = ingAmt.replace(/.*pinch.*/,(str,amt) => roundQ(0.25));
 				ingAmt = ingAmt.replace(/.*splash.*/,(str,amt) => roundQ(0.25));
+
+				//Strip any remaining non digit characters
 				ingAmt = ingAmt.replace(/[^0-9\.]+/g, '');
+
+				//If no amount specified, assume standard 1.
 				if(ingAmt.length < 1){
 					ingAmt = 1;
 				}
+
+				//Force convert to floating point
 				ingAmt = parseFloat(ingAmt);
 
+				//Name cleanup
 				ingName = ingName.toLowerCase();
 				ingName = ingName.replace('-',' ');
 				ingName = ingName.replace(/[fF]resh /, "");
 				ingName = ingName.replace(/ [fF]resh/, "");
 
+				//Record ingredient
 				this.ingredients.push({
 					searchQuery: origName,
 					name: ingName,
@@ -102,12 +156,23 @@ class DrinkRecipe{
 		}
 	}
 
+	/**
+		Queries the API for information about an ingredient, then outputs it to be caught and recorded (OS level)
+		@param {number} i index of ingredient. Defaults to 0
+	*/
 	getIngInfoThenOutput(i=0){
+
+		//Create a queue of promises to resolve
 		const axiosQueue = [];
 		for(let i=0;i<this.ingredients.length;i++){
+
+			//Append a new axios request
+			//Either lookup data from cache, or request from API
 			axiosQueue.push(
 				(ingredientCache[this.ingredients[i].name]
 					? new Promise((res,rej)=>{
+
+						//If ingredient has already been discovered and cached, simply lookup and resolve.
 						this.ingredients[i].id = ingredientCache[this.ingredients[i].name].id;
 						this.ingredients[i].type = ingredientCache[this.ingredients[i].name].type;
 						this.ingredients[i].isAlcohol = ingredientCache[this.ingredients[i].name].isAlcohol;
@@ -117,11 +182,15 @@ class DrinkRecipe{
 					: axios.get(`${ingrURL}${this.ingredients[i].searchQuery.replace(" ","%20")}`)
 							.then(res => {
 								if(ingredientCache[this.ingredients[i].name]){
+
+									//If ingredient has already been discovered and cached, simply lookup and resolve.
 									this.ingredients[i].id = ingredientCache[this.ingredients[i].name].id;
 									this.ingredients[i].type = ingredientCache[this.ingredients[i].name].type;
 									this.ingredients[i].isAlcohol = ingredientCache[this.ingredients[i].name].isAlcohol;
 									this.ingredients[i].percentage = ingredientCache[this.ingredients[i].name].percentage;
 								}
+
+								//Record and cache new data from API
 								else if(res.data.ingredients && res.data.ingredients.length > 0){
 									let details = res.data.ingredients[0];
 									this.ingredients[i].id = parseInt(details.idIngredient);
@@ -129,6 +198,7 @@ class DrinkRecipe{
 									this.ingredients[i].isAlcohol = details.strAlcohol==="Yes";
 									this.ingredients[i].percentage = details.strABV ? parseFloat(details.strABV) : 0;
 
+									//Auto alcohol percentage and type detection and parsing
 									if(this.ingredients[i].percentage === 0){
 										if(this.ingredients[i].type.toLowerCase().includes("wine")){
 											this.ingredients[i].isAlcohol = true;
@@ -155,13 +225,16 @@ class DrinkRecipe{
 											this.ingredients[i].isAlcohol = true;
 											this.ingredients[i].percentage = 17.5;
 										}
-
 									}
 
+									//Update cache with new discovered information.
+									//This is important as the API rejects many (~2%) requests with 404 or 409
 									ingredientCache[this.ingredients[i].name] = this.ingredients[i];
-
 								}
 							}).catch(err=>{
+
+								//On failure, try one more time to search the cache, incase new information has
+								//been discovered since previous check
 								if(ingredientCache[this.ingredients[i].name]){
 									this.ingredients[i].id = ingredientCache[this.ingredients[i].name].id;
 									this.ingredients[i].type = ingredientCache[this.ingredients[i].name].type;
@@ -172,39 +245,48 @@ class DrinkRecipe{
 				)
 			)
 		}
+		//When all ingredient lookups have been resolved, output a JSON representation of the drink recipe to be handled at OS level
 		Promise.all(axiosQueue).then(res=>{
 			console.log(`${JSON.stringify(this,false,4)},`);
 		}).catch(err=>{});
 	}
 }
 
+//Create ingredient cache
 var ingredientCache = [];
 
+//Iterate over lettered and numbered pages of API. Weird I know.
 let d;
-
 let letters = [];
 for(let l=0;l<26;l++){
 	letters.push(String.fromCharCode(97+l));
 }
 letters = [...letters,0,1,2,3,4,5,6,7,8,9];
-
 letters.forEach((letter, i) => {
+
+	//Query API for list of drinks beginning with letter or digit.
 	axios.get(letURL+letter).then(res => {
+
+		//Ignore failed requests
 		if(!res.data.drinks){
 			return;
 		}
+
+		//Iterate over discovered drinks
 		res.data.drinks.forEach((drink, i) => {
 
+			//Query API for specific drink
 			axios.get(`${drinkURL}${drink.idDrink}`).then(res => {
 
+				//Iterate over any possible duplicates
 				res.data.drinks.forEach((details, i) => {
-					d = new DrinkRecipe(details)
 
+					//Parse drink data
+					d = new DrinkRecipe(details);
+
+					//If drink parsing was successful, parse ingredients and output
 					if(d.glass.length > 0 ){
-
-						d.getIngInfoThenOutput()
-
-
+						d.getIngInfoThenOutput();
 					}
 				});
 			}).catch(err=>{});

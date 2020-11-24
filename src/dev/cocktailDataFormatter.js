@@ -1,24 +1,34 @@
+//Brennan Wilkes
+
+//Includes
 const path = require("path")
 const fs = require('fs');
 
+//Argument validation
 if(process.argv.length < 3){
 	console.error("Invalid arguments");
 	process.exit(1);
 }
 
+/*
+	Cocktail data to format. This data should be the result
+	of the cocktailDataCollector script.
+*/
 const data = require(path.join("..", "..", process.argv[2]));
 
-
+//Iterate over glasses
 let glasses = [];
 let gid = 0;
 data.forEach((drink, i) => {
-	//{"id":0, "name": "rocks"}
 	if(!glasses[drink.glass]){
+
+		//Crate id/name tuple
 		glasses[drink.glass] = {id:gid,name:drink.glass};
 		gid++;
 	}
 });
 
+//Hardcode rating descriptions tuples
 let drinkRating = [
 	{rating:2, popularity: "never ordered"},
 	{rating:4, popularity: "unpopular"},
@@ -27,10 +37,7 @@ let drinkRating = [
 	{rating:10, popularity: "fan favourite"}
 ];
 
-let ingredientAvailable =[
-
-];
-
+//Hardcode fruit sweetness tuples
 let juiceFruit = [
 	{ fruitName: "lemon", isSweet: false },
 	{ fruitName: "grape", isSweet: true },
@@ -52,18 +59,17 @@ let juiceFruit = [
 	{ fruitName: "lime cordial", isSweet: false }
 ];
 
-let customer = [];
-
-let transaction = [];
-
-
-
 let ingredients = [];
 let ingredientsData = [];
 let iid = 0;
+
+//Iterate over Drinks
 data.forEach((drink, i) => {
+
+	//Iterate over ingredients
 	drink.ingredients.forEach((ingr, i) => {
-		//{"id":0,"name":"whiskey", "quantity" : 1},
+
+		//If it doesn't exist cache ingredient tuple with random initial quantity
 		if(!ingredients[ingr.name]){
 			ingredients[ingr.name] = {id:iid,name:ingr.name,quantity:parseInt(Math.random()*50)};
 			ingredientsData[iid] = ingr;
@@ -74,34 +80,44 @@ data.forEach((drink, i) => {
 	});
 });
 
-
 let drinkRecipe = [];
 let rid = 0;
 let versionOf;
+
+//Iterate over Drinks
 data.forEach((drink, i) => {
-	//{"id":0, "name": "old fashioned", "price": 10.0, "mixMethod": "stirred", "onIce": true, "glassID": 0, "versionOf": null, "rating": 8},
+
+	//If it doesn't exist cache drink tuple
 	if(!drinkRecipe[drink.name]){
 		drinkRecipe[drink.name] = {id:rid, name:drink.name, price:drink.price, mixMethod:drink.mixMethod, onIce: drink.onIce, glassID:glasses[drink.glass].id ,versionOf: null, imgURL: drink.imgURL, rating: drink.rating};
 		rid++;
 	}
 });
 
+//Iterate over each cached drink recipe
 Object.keys(drinkRecipe).map(key=>drinkRecipe[key]).forEach((drink, i) => {
+
+	//initialize versionOf to null
 	versionOf = null;
 	Object.keys(drinkRecipe).map(key=>drinkRecipe[key]).forEach((drinkV, i) => {
+
+		//Check all other drink names and check for substring matches.
+		//When a match is found, link version of to it.
 		if(drink.name.toLowerCase().includes(drinkV.name.toLowerCase()) && drink.id !== drinkV.id){
 			drinkRecipe[drink.name].versionOf = drinkV.id;
 		}
 	});
 });
 
-
-
-
 let drinkRequires = [];
+
+//Iterate over Drinks
 data.forEach((drink, i) => {
+
+	//Iterate over ingredients
 	drink.ingredients.forEach((ingr, i) => {
-		//{"drinkId":0, "ingredientId": 0, "quantity": 1.5},
+
+		//Track duplicates. (Some data has duplicate ingredients listed)
 		let dup = false;
 		drinkRequires.forEach((dr, i) => {
 			if(dr.drinkId === drinkRecipe[drink.name].id && dr.ingredientId === ingredients[ingr.name].id){
@@ -109,6 +125,8 @@ data.forEach((drink, i) => {
 			}
 		});
 		if(!dup){
+
+			//Record all unique copies as a drink requires tuple
 			drinkRequires.push({
 				drinkId:drinkRecipe[drink.name].id,
 				ingredientId:ingredients[ingr.name].id,
@@ -127,10 +145,15 @@ let juice = [];
 let garnish = [];
 let glassForDrink;
 
+//Iterate over ingredients
 Object.keys(ingredientsData).map(ing=>ingredientsData[ing]).forEach((ingr, i) => {
+
+	//Initialize empty ingredient types
 	if(!ingr.type){
 		ingr.type = "";
 	}
+
+	//Auto detect common glass types for common alcohols
 	if(ingr.isAlcohol){
 		if(["beer","stout","cider"].some(el => ingr.type.toLowerCase().includes(el))){
 			glassForDrink = "beer";
@@ -144,15 +167,24 @@ Object.keys(ingredientsData).map(ing=>ingredientsData[ing]).forEach((ingr, i) =>
 		else{
 			glassForDrink = "shot";
 		}
+
+		//Record alcohol tuple
 		alcohol.push({id:ingr.id,percentage:parseInt(ingr.percentage),glassId:glasses[glassForDrink].id});
+
+		//Set liquor/liqueur types based on precentages
 		if(!alcoholType[parseInt(ingr.percen)]){
-			//{"percentage": 50.0, "liquor": true, "liqueur": false},
 			alcoholType[parseInt(ingr.percentage)] = {percentage: parseInt(ingr.percentage), liquor: parseInt(ingr.percentage) > 20, liqueur: ingr.percentage <= 20};
 		}
 
 	}
+
+	//Auto detect juices
 	else if(ingr.name.toLowerCase().includes("juice") || ingr.type.toLowerCase().includes("juice")){
+
+		//Record juice tuple
 		juice.push({id:ingr.id,fruitName:ingr.name.replace(/ [jJ]uice/, "").replace(/[jJ]uice /, "")})
+
+		//Search for common juice fruits
 		let inJuiceFruit = false;
 		juiceFruit.forEach((jf, i) => {
 			if(jf.fruitName == ingr.name.replace(/ [jJ]uice/, "").replace(/[jJ]uice /, "")){
@@ -160,15 +192,21 @@ Object.keys(ingredientsData).map(ing=>ingredientsData[ing]).forEach((ingr, i) =>
 			}
 		});
 		if(!inJuiceFruit){
+
+			//Record unique juice fruit tuples
 			juiceFruit.push({fruitName: ingr.name.replace(/ [jJ]uice/, "").replace(/[jJ]uice /, ""), isSweet:false});
 		}
 	}
 
+	//Auto detect garnishes
 	else if(["garnish","flower","confectionery","fruit"].some(el => ingr.type.toLowerCase().includes(el)||ingr.name.toLowerCase().includes(el))){
+
+		//Record garnish tuples
 		garnish.push({id:ingr.id,foodName:ingr.name,placement:"in glass"});
 	}
 });
 
+//Format alcohol records
 alcoholTypeAdjusted = [];
 alcoholType.forEach((type, i) => {
 	if(type){
@@ -176,6 +214,7 @@ alcoholType.forEach((type, i) => {
 	}
 });
 
+//Format data into a JSON representation which jsonToSql can understand
 let outputData = {
 	database: "everyLastDrop",
 	glass: {
@@ -193,7 +232,7 @@ let outputData = {
 	},
 	ingredientAvailable: {
 		order: 3,
-		data: ingredientAvailable
+		data: []
 	},
 	ingredient: {
 		order: 4,
@@ -225,15 +264,15 @@ let outputData = {
 	},
 	customer: {
 		order: 11,
-		data: customer
+		data: []
 	},
 	transaction: {
 		order: 12,
-		data: transaction
+		data: []
 	}
 }
 
-
+//Write to output file
 fs.writeFile(process.argv[2], JSON.stringify(outputData,false,4), (err) => {
 	if (err) throw err;
 });
