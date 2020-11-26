@@ -1,12 +1,17 @@
+/* Brennan Wilkes */
+
 @media (max-width: 768px) {
+
 	.show .btn-within-collapsable {
 		margin-bottom: 1rem;
 	}
+
 	#nav-wrapper form{
 		padding-left: 4vw;
 		padding-right: 4vw;
 	}
 }
+
 .nav-brand-item{
 	margin-right: -0.5rem;
 }

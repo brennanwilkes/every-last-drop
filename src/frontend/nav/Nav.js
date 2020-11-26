@@ -1,23 +1,53 @@
+//Brennan Wilkes
+
+//Imports
 import React from "react";
 import "../bootstrap-import.js";
+import { FaSlidersH, FaPlusSquare, FaMinusSquare } from "react-icons/fa";
 
 import "./nav.css";
 import "./rangeSlider.css";
-
 import FloatingLabel from "../floatingLabel/FloatingLabel.js";
 
-import { FaSlidersH, FaPlusSquare, FaMinusSquare } from "react-icons/fa";
-
+//Capitalization one liner with regex
 const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
+
+//Un-capitalizes non-primary words
+//What is my english lol
 const capitalizePrimary = s => capitalize(s).replace("And","and").replace("Is","is").replace("The","the");
 
+/**
+	Username button
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class User extends React.Component{
+
+	/**
+		Renders out a button with the provided name, or "Invalid User" as a default
+	*/
 	render(){
-		return <button type="button" className="btn btn-outline-secondary btn-within-collapsable">{(!this.props.name) || this.props.name.length < 1 ? "Invalid User": this.props.name}</button>;
+		return <>
+			<button type="button" className="btn btn-outline-secondary btn-within-collapsable">{
+				(!this.props.name) || this.props.name.length < 1 ? "Invalid User": this.props.name
+			}</button>;
+		</>
 	}
 }
 
+/**
+	A custom controlled slider input
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class RangeSlider extends React.Component{
+
+	/**
+		Initializes state
+		@param {any[]} props Should have a default value, label , id, scale and output multipler
+	*/
 	constructor(props){
 		super(props);
 		this.state = {
@@ -25,6 +55,10 @@ class RangeSlider extends React.Component{
 		}
 	}
 
+	/**
+		Renders a div wrapped range input, with auto updating output value.
+		Manipulates output according to prop parameters
+	*/
 	render(){
 		return <>
 			<div className="range">
@@ -47,29 +81,59 @@ class RangeSlider extends React.Component{
 							this.props.onChange();
 						}
 				}} />
-				<output className="output-val" id={`${this.props.id}-output`} value={this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)} >{this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)}</output>
+				<output
+					className="output-val"
+					id={`${this.props.id}-output`}
+					value={this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)} >{
+						this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)
+				}</output>
 			</div>
 		</>
 	}
 }
 
-
+/**
+	Auto detailed search button
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class AdvancedSearchButton extends React.Component{
+
+	/**
+		Renders a detailed button with a Fa Slider icon if a target is provided
+		Will call expandCallback on click
+	*/
 	render(){
 		if(!this.props.target){
 			return <></>;
 		}
 
 		return <>
-			<button className="AdvancedSearch-btn btn btn-light py-2" type="button" onClick={this.props.expandCallback} data-toggle="collapse" data-target={`#${this.props.target}`}>
+			<button
+				className="AdvancedSearch-btn btn btn-light py-2"
+				type="button"
+				onClick={this.props.expandCallback}
+				data-toggle="collapse"
+				data-target={`#${this.props.target}`}>
 				<FaSlidersH />
 			</button>
 		</>;
 	}
 }
 
+/**
+	A self controlling, auto additonal input controller
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class MultiInput extends React.Component{
 
+	/**
+		Initializes state
+		@param {any[]} Must contain an identifier and on change callback
+	*/
 	constructor(props){
 		super(props);
 
@@ -78,6 +142,10 @@ class MultiInput extends React.Component{
 		};
 	}
 
+	/**
+		Renders out a list of inputs with auto + and - buttons for adjusting the amount of inputs.
+		Will automatically control values, and run on change callbacks when any change.
+	*/
 	render(){
 		return <>
 			<div className="multiInput">
@@ -88,7 +156,7 @@ class MultiInput extends React.Component{
 						className={`form-control ${this.props.identifier}`}
 						onChange={this.props.callback} />
 
-					<button className="btn btn-success" onClick={event=>{
+					<button className="btn btn-success" onClick={event => {
 						if(this.state.copies.length < 7){
 							this.setState({copies:[...this.state.copies,""]});
 						}
@@ -123,14 +191,27 @@ class MultiInput extends React.Component{
 	}
 }
 
-
+/**
+	Collapsable advanced search pannel with all the parameters required to search for drinks.
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class AdvancedSearchPannel extends React.Component{
 
+	/**
+		Binds methods
+		@param {any[]} props
+	*/
 	constructor(props){
 		super(props);
 		this.updateSubmit = this.updateSubmit.bind(this);
 	}
 
+	/**
+		Sets up event listener for hitting enter while in an input.
+		On enter, will unfocus the target input.
+	*/
 	componentDidMount(){
 		$("input").keypress(function(e) {
 			if(e.which == 10 || e.which == 13) {
@@ -139,18 +220,25 @@ class AdvancedSearchPannel extends React.Component{
 		});
 	}
 
+	/**
+		Parses and manipulates input values before providing them to the given onchange callback
+		@param {object} event Sneakilly can be a index to pop from the contains array
+	*/
 	updateSubmit(event){
 
+		//Get contains values as an array
 		let contains = $(".containsIng");
 		let containsVal = []
 		for(let i=0;i<contains.length;i++){
 			containsVal.push(contains[i].value);
 		}
 
+		//Special callback param for removing last contains value
 		if(event!==undefined && typeof(event)=="number" && event < containsVal.length){
 			containsVal.splice(event,1);
 		}
 
+		//Run callback with manipulated values
 		this.props.callback({
 			name: $("#advName")[0].value,
 			contains: containsVal,
@@ -166,7 +254,10 @@ class AdvancedSearchPannel extends React.Component{
 		});
 	}
 
-
+	/**
+		Renders out the full panel. Contains all inputs and connecting callback methods.
+		Is fully collapsable and mobile friendly
+	*/
 	render(){
 		return <>
 			<form className="collapse bg-dark form-group py-3" id={this.props.id} onSubmit={event=>{
@@ -258,7 +349,18 @@ class AdvancedSearchPannel extends React.Component{
 	}
 }
 
+/**
+	Self contained and controlling search bar
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class Search extends React.Component{
+
+	/**
+		Renders out a search bar input siblinged to an advanced search toggler.
+		Connects them with callback methods.
+	*/
 	render(){
 		return <>
 			<form className="form-inline p-0 mx-3" onSubmit={event => {
@@ -278,9 +380,18 @@ class Search extends React.Component{
 	}
 }
 
-
+/**
+	Main navigation component for the menu
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class Nav extends React.Component{
 
+	/**
+		Renders out a mobile friendly, collapsable nav bar with all search elements nested correctly.
+		Connects navigation elements with callback methods
+	*/
 	render(){
 		return <>
 			<div className="fixed-top" id="nav-wrapper">
@@ -308,6 +419,6 @@ class Nav extends React.Component{
 			</div>
 		</>;
 	}
-
 }
+
 export default Nav;

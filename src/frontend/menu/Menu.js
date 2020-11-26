@@ -1,3 +1,5 @@
+//Brennan Wilkes
+
 import React from "react";
 import "../bootstrap-import.js";
 import axios from "axios";
@@ -7,16 +9,18 @@ import barImage from "../../../assets/bar-stock.jpg";
 
 import "./menu.css";
 import Nav from "../nav/Nav.js";
-
 import DrinkDetails from "../detailedViews/DrinkDetails.js";
 import DrinkIcon from "../iconViews/DrinkIcon.js";
 import IngredientDetails from "../detailedViews/IngredientDetails.js";
 import IngredientIcon from "../iconViews/IngredientIcon.js";
-
 import DetailedViewController from "../detailedViews/DetailedViewController.js";
 
+//capitalization one liner using regex
 const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
 
+/**
+
+*/
 class Menu extends DetailedViewController {
 
 	constructor(props){

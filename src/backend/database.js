@@ -20,7 +20,7 @@ const {print,CONFIG} = require(path.join(__dirname,"server.js"));
 	@class
 	@memberof backend
 */
-exports.database = {
+const database = {
 
 	/**
 		MariaDB username with admin privileges.
@@ -184,3 +184,5 @@ exports.database = {
 		if (this.connection) return this.connection.end();
 	},
 };
+
+exports.database = database;

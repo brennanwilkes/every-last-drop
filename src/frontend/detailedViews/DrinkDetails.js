@@ -1,16 +1,30 @@
+//Brennan Wilkes
+
+//Imports
 import React from "react";
 import "../bootstrap-import.js";
 import axios from "axios";
-import "./detailedView.css";
-
 import { FaWindowClose, FaCheckSquare } from "react-icons/fa";
 
+import "./detailedView.css";
 
+//Capitalization one liner using regex
 const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
 
-
+/**
+	A detailed view pannel for a drink recipe.
+	Future versions should instead extend a shared detailed component
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class DrinkDetails extends React.Component {
 
+	/**
+		Initializes state and binds methods
+		@param {any[]} props Should contain an drinkId, an order drink callback method, a delete callback method, and parental update and change methods.
+		@constructor
+	*/
 	constructor(props){
 		super(props);
 		this.deleteDrink = this.deleteDrink.bind(this);
@@ -23,19 +37,39 @@ class DrinkDetails extends React.Component {
 		}
 	}
 
+	/**
+		Button click callback for deletion. Updates self and parent.
+	*/
 	deleteDrink(){
+
+		//Run provided deletion callback method
 		this.props.deleteCallback().then(res => {
+
+			//Update self details and id
 			this.setState({id:undefined});
+
+			//Tell parent to reset drink data member
 			this.props.changeDrink(undefined);
+
+			//Tell parent to update
 			this.props.parentUpdate();
 		}).catch(err=>{});
 	}
 
+	/**
+		Component update callback. Checks for drink ID changes
+		and refreshes the drink details
+		@param {any[]} prevProps
+	*/
 	componentDidUpdate(prevProps){
+
+		//Ensure drink ID has changed
 		if(prevProps.drinkId !== this.props.drinkId && this.props.drinkId !== undefined){
 
+			//Update self drink id
 			this.setState({id:this.props.drinkId});
 
+			//Refresh drink details with DB call
 			axios.post('/drinks',{
 				id: `${this.props.drinkId}`
 			}).then(res => {
@@ -43,6 +77,8 @@ class DrinkDetails extends React.Component {
 					details:res.data[0]
 				})
 			});
+
+			//Refresh ingredient details of new drink
 			axios.post('/ingredients',{
 				id: `${this.props.drinkId}`
 			}).then(res => {
@@ -52,11 +88,17 @@ class DrinkDetails extends React.Component {
 				})
 			});
 		}
+
+		//Close component
 		else if(this.props.drinkId === undefined && this.state.id !== undefined){
 			this.setState({id:undefined});
 		}
 	}
 
+	/**
+		Renders out a fullscreen pannel with all the drink details.
+		Contains functionality to delete and order
+	*/
 	render() {
 		return <>
 			<div className={`detailedView drinkDetail text-light bg-dark p-4 container-fluid detailedView-${this.state.id===undefined ? "off" : "on"}`}>

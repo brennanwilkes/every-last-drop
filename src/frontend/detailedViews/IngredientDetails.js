@@ -1,16 +1,30 @@
+//Brennan Wilkes
+
+//Imports
 import React from "react";
 import "../bootstrap-import.js";
 import axios from "axios";
-import "./detailedView.css";
-
 import { FaWindowClose, FaCheckSquare } from "react-icons/fa";
 
+import "./detailedView.css";
 
+//Capitalization one liner using regex
 const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
 
-
+/**
+	A detailed view pannel for an ingredient.
+	Future versions should instead extend a shared detailed component
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class IngredientDetails extends React.Component {
 
+	/**
+		Initializes state and binds methods
+		@param {any[]} props Should contain an ingredientId, an order callback method, a delete callback method, and parental update and change methods.
+		@constructor
+	*/
 	constructor(props){
 		super(props);
 		this.updateRefresh = this.updateRefresh.bind(this);
@@ -22,11 +36,20 @@ class IngredientDetails extends React.Component {
 		}
 	}
 
+	/**
+		Component update callback. Checks for ingredient ID changes
+		and refreshes the ingredient details
+		@param {any[]} prevProps
+	*/
 	componentDidUpdate(prevProps){
+
+		//Check for changes
 		if(prevProps.ingredientId !== this.props.ingredientId && this.props.ingredientId !== undefined){
 
+			//Update state id
 			this.setState({id:this.props.ingredientId});
 
+			//Refresh ingredient details from DB call
 			axios.post('/ingredient',{
 				id: `${this.props.ingredientId}`
 			}).then(res => {
@@ -35,17 +58,29 @@ class IngredientDetails extends React.Component {
 				})
 			});
 		}
+
+		//Essentially hides self
 		else if(this.props.ingredientId === undefined && this.state.id !== undefined){
 			this.setState({id:undefined});
 		}
 	}
 
+	/**
+		Refreshes current details for new changes.
+		Used as a button callback
+	*/
 	updateRefresh(){
+
+		//Run the provided order callback
 		this.props.orderCallback().then(res => {
+
+			//Ensure react updates the DOM
 			this.forceUpdate();
 
+			//Update the parent controller
 			this.props.parentUpdate();
 
+			//Refresh details
 			axios.post('/ingredient',{
 				id: `${this.props.ingredientId}`
 			}).then(res => {
@@ -56,15 +91,32 @@ class IngredientDetails extends React.Component {
 		}).catch(err=>{});
 	}
 
+	/**
+		Button click callback for deletion. Updates self and parent.
+	*/
 	deleteIngredient(){
+
+		//Run provided deletion callback method
 		this.props.deleteCallback().then(res => {
+
+			//Force React to update the DOM
 			this.forceUpdate();
+
+			//Update self details and id
 			this.setState({id:undefined});
+
+			//Tell parent to reset ingredient data member
 			this.props.changeIngredient(undefined);
+
+			//Tell parent to update
 			this.props.parentUpdate();
 		}).catch(err=>{});
 	}
 
+	/**
+		Renders out a fullscreen pannel with all the ingredient details.
+		Contains functionality to delete, update, and order ingredients.
+	*/
 	render() {
 		return <>
 			<div className={`detailedView ingredientDetail text-light bg-dark p-4 container-fluid detailedView-${this.state.id===undefined ? "off" : "on"}`}>

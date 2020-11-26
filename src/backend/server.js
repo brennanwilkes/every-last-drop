@@ -32,7 +32,7 @@ exports.print = print
 	@class
 	@memberof backend
 */
-exports.server = {
+const server = {
 
 	/**
 		Port to use. Defaults to a "PORT" env variable if set (For heroku and other deployment methods),
@@ -125,3 +125,5 @@ exports.server = {
 		});
 	}
 }
+
+exports.server = server;
