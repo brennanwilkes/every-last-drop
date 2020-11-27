@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: AppMode</title>
+    <title>JSDoc: Class: MultiInput</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: AppMode</h1>
+    <h1 class="page-title">Class: MultiInput</h1>
 
     
 
@@ -28,7 +28,10 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>AppMode<span class="signature">()</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>
+            <span class="ancestors"><a href="frontend.html">frontend</a>~</span>MultiInput<span class="signature">(Must)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">A self controlling, auto additonal input controller</div>
         
     
 </header>
@@ -39,9 +42,11 @@
         
 
     
+    <h2>Constructor</h2>
+    
 
     
-    <h4 class="name" id="AppMode"><span class="type-signature"></span>new AppMode<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="MultiInput"><span class="type-signature"></span>new MultiInput<span class="signature">(Must)</span><span class="type-signature"></span></h4>
     
 
     
@@ -49,11 +54,176 @@
 
 
 <div class="description">
-    Application mode state enum
-	Values consist of:
-		LOGIN
-		DASHBOARD
-		MENU
+    Initializes state
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Must</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;any></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">contain an identifier and on change callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="frontend_nav_Nav.js.html">frontend/nav/Nav.js</a>, <a href="frontend_nav_Nav.js.html#line137">line 137</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li>React.Component</li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="render"><span class="type-signature"></span>render<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Renders out a list of inputs with auto + and - buttons for adjusting the amount of inputs.
+		Will automatically control values, and run on change callbacks when any change.
 </div>
 
 
@@ -97,7 +267,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="frontend_App.js.html">frontend/App.js</a>, <a href="frontend_App.js.html#line27">line 27</a>
+        <a href="frontend_nav_Nav.js.html">frontend/nav/Nav.js</a>, <a href="frontend_nav_Nav.js.html#line149">line 149</a>
     </li></ul></dd>
     
 
@@ -127,23 +297,7 @@
 
 
 
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
+        
     
 
     

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: frontend/menu/Menu.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: frontend/menu/Menu.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Brennan Wilkes
+
+import React from "react";
+import "../bootstrap-import.js";
+import axios from "axios";
+import moment from "moment";
+
+import barImage from "../../../assets/bar-stock.jpg";
+
+import "./menu.css";
+import Nav from "../nav/Nav.js";
+import DrinkDetails from "../detailedViews/DrinkDetails.js";
+import DrinkIcon from "../iconViews/DrinkIcon.js";
+import IngredientDetails from "../detailedViews/IngredientDetails.js";
+import IngredientIcon from "../iconViews/IngredientIcon.js";
+import DetailedViewController from "../detailedViews/DetailedViewController.js";
+
+//capitalization one liner using regex
+const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
+
+/**
+	Customer menu component.
+	Connects all other customer visible frontend components together including
+	navigation, search and advanced search, handling search results and displaying
+	them as icons, expanding those icons into detailed views, and handling
+	ordering and deleting of items.
+	@class
+	@memberof frontend
+	@extends {@link DetailedViewController}
+*/
+class Menu extends DetailedViewController {
+
+	/**
+		Initializes state, binds methods, and queries database for initial data.
+		@param {any[]} props Should contain a username
+	*/
+	constructor(props){
+		super(props);
+
+		this.search = this.search.bind(this);
+		this.advSearch = this.advSearch.bind(this);
+		this.advancedSearchToggle = this.advancedSearchToggle.bind(this);
+		this.orderDrink = this.orderDrink.bind(this);
+
+		this.state = {
+			drinks: [],
+			glasses: [],
+			detailedDrink: undefined,
+			detailedIngredient: undefined,
+			orderButtonMd: "success",
+			orderButtonContent: "ORDER"
+		};
+
+		//Query for drinks
+		axios.get("/drinks").then(res => this.setState({drinks:res.data}));
+
+		//Query for glasses
+		axios.get("/glasses").then(res => this.setState({glasses:res.data}));
+	}
+
+	/**
+		Callback for drink ordering events.
+		Updates state, runs queries and updates ORDER button
+		@param {number} id ID of drink to order
+	*/
+	orderDrink(id){
+
+		//Update order button
+		this.setState({
+			orderButtonMd: "secondary",
+			orderButtonContent: "PROCESSING"
+		});
+
+		//Query database
+		axios.post('/purchase',{
+			drinkId: id,
+			userName: this.props.user
+		}).then(res => {
+
+			//On a slight delay, update button. This delay is for a more responsive feeling interface
+			setTimeout(() => {
+				this.setState({
+					orderButtonMd: "success",
+					orderButtonContent: "SUCCESS"
+				});
+			},500);
+
+			//Reset button
+			setTimeout(() => {
+				if(this.state.orderButtonContent === "SUCCESS"){
+					this.setState({orderButtonContent: "ORDER"})
+				}
+			},3000);
+		}).catch(err => {
+
+			//Reflect insertion failure
+			this.setState({
+				orderButtonMd: "danger",
+				orderButtonContent: "OUT OF STOCK"
+			});
+		});
+	}
+
+	/**
+		Updates the main application background image to ensure it's set correctly
+	*/
+	componentDidMount(){
+		$("main").css("backgroundImage",`url(${barImage})`);
+		$("main").css("background-color","#00000080");
+		$("main").css("background-blend-mode","overlay");
+		$("#menu").css("marginTop","7.5%");
+
+		//Trigger margin-top autoadjustment
+		this.advancedSearchToggle();
+	}
+
+	/**
+		Basic search callback
+		@param {string} name Name of drink to search for
+	*/
+	search(query){
+		axios.post('/drinks',{
+			name: query
+		}).then(res => {
+
+			//Fixes a weird react bug
+			this.setState({drinks:[]});
+
+			//Update state data
+			this.setState({drinks:res.data});
+		});
+	}
+
+	/**
+		Callback to be run on component mount and advanced search toggle.
+		Updates the page's top margin to accurately reflect the change in
+		fixed navigation size
+	*/
+	advancedSearchToggle(){
+		setTimeout(()=>{
+			$("#menu").animate({
+				marginTop: `${$("#nav-wrapper").height() + 50}px`
+			},200);
+		},250);
+
+		//Auto hides detailed views on advanced search toggle
+		this.setState({
+			detailedDrink: undefined,
+			detailedIngredient: undefined
+		});
+	}
+
+	/**
+		Advanced search callback
+		@param {object} query Contains all the data from AdvancedSearch to send to the database
+	*/
+	advSearch(query){
+		axios.post('/drinks/advanced',query).then(res => {
+			this.setState({drinks:[]});
+			this.setState({drinks:res.data});
+		});
+	}
+
+	/**
+		Renders out the menu
+		Renders a navigation bar, rows of 6 drink icons, and hidden drink and
+		ingredient detailed view components.
+	*/
+	render() {
+
+		//Split the drinks list into subgroups of 6 to insert into rows.
+		let splitDrinks = [];
+		for(let i=0;i&lt;this.state.drinks.length;i+=6){
+			splitDrinks.push(this.state.drinks.slice(i,i+6));
+		}
+
+		return &lt;>
+			&lt;Nav user={this.props.user}
+				searchCallback={this.search}
+				advSearchCallback={this.advSearch}
+				advancedSearchToggleCallback={this.advancedSearchToggle}
+				glasses={this.state.glasses} />
+			&lt;div className="container-fluid" id="menu">{
+				splitDrinks.map(r => {
+					return &lt;>
+						&lt;div className="row">{
+							r.map(d => {
+								return &lt;>
+									&lt;div className="col-sm-6 col-md-4 col-xl-2 d-flex justify-content-center mb-4">
+										&lt;div className="menuIconWrapper">
+											&lt;DrinkIcon drinkInfo={d} clickCallback={id=>{
+												$("#advancedOptions").removeClass("show");
+												this.advancedSearchToggle();
+												this.updateDetailedDrink(id);
+											}} />
+										&lt;/div>
+									&lt;/div>
+								&lt;/>
+							})
+						}&lt;/div>
+					&lt;/>;
+				})
+			}&lt;/div>
+			&lt;DrinkDetails
+				drinkId={this.state.detailedDrink}
+				changeIngredient={this.updateDetailedIngrident}
+				changeDrink={id => {
+					this.setState({
+						orderButtonMd: "success",
+						orderButtonContent: "ORDER"
+					});
+					this.updateDetailedDrink(id);
+				}}
+				orderCallback={this.orderDrink}
+				orderButtonMd={this.state.orderButtonMd}
+				orderButtonContent={this.state.orderButtonContent} />
+			&lt;IngredientDetails
+				ingredientId={this.state.detailedIngredient}
+				changeIngredient={this.updateDetailedIngrident} />
+		&lt;/>
+	}
+}
+export default Menu;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="app.html">app</a></li><li><a href="backend.html">backend</a></li><li><a href="dev.html">dev</a></li><li><a href="frontend.html">frontend</a></li></ul><h3>Classes</h3><ul><li><a href="app.searchQuery.html">searchQuery</a></li><li><a href="backend.database.html">database</a></li><li><a href="backend.server.html">server</a></li><li><a href="dev.DrinkRecipe.html">DrinkRecipe</a></li><li><a href="frontend.AdminLogin.html">AdminLogin</a></li><li><a href="frontend.AdvancedSearchButton.html">AdvancedSearchButton</a></li><li><a href="frontend.AdvancedSearchPannel.html">AdvancedSearchPannel</a></li><li><a href="frontend.App.html">App</a></li><li><a href="frontend.Dashboard.html">Dashboard</a></li><li><a href="frontend.DetailedViewController.html">DetailedViewController</a></li><li><a href="frontend.DrinkDetails.html">DrinkDetails</a></li><li><a href="frontend.DrinkIcon.html">DrinkIcon</a></li><li><a href="frontend.DynamicBackground.html">DynamicBackground</a></li><li><a href="frontend.FloatingLabel.html">FloatingLabel</a></li><li><a href="frontend.FloatingSectionLabel.html">FloatingSectionLabel</a></li><li><a href="frontend.IngredientDetails.html">IngredientDetails</a></li><li><a href="frontend.IngredientIcon.html">IngredientIcon</a></li><li><a href="frontend.Login.html">Login</a></li><li><a href="frontend.LoginFooter.html">LoginFooter</a></li><li><a href="frontend.LoginHeader.html">LoginHeader</a></li><li><a href="frontend.LoginSubmit.html">LoginSubmit</a></li><li><a href="frontend.Menu.html">Menu</a></li><li><a href="frontend.MultiInput.html">MultiInput</a></li><li><a href="frontend.Nav.html">Nav</a></li><li><a href="frontend.RadioSelector.html">RadioSelector</a></li><li><a href="frontend.RangeSlider.html">RangeSlider</a></li><li><a href="frontend.Search.html">Search</a></li><li><a href="frontend.SettingsButton.html">SettingsButton</a></li><li><a href="frontend.Transaction.html">Transaction</a></li><li><a href="frontend.User.html">User</a></li><li><a href="frontend.UserLogin.html">UserLogin</a></li><li><a href="frontend_App.AppMode.html">AppMode</a></li></ul><h3>Global</h3><ul><li><a href="global.html#cutoffString">cutoffString</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Thu Nov 26 2020 21:21:39 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

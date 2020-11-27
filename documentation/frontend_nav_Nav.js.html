@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: frontend/nav/Nav.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: frontend/nav/Nav.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Brennan Wilkes
+
+//Imports
+import React from "react";
+import "../bootstrap-import.js";
+import { FaSlidersH, FaPlusSquare, FaMinusSquare } from "react-icons/fa";
+
+import "./nav.css";
+import "./rangeSlider.css";
+import FloatingLabel from "../floatingLabel/FloatingLabel.js";
+
+//Capitalization one liner with regex
+const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
+
+//Un-capitalizes non-primary words
+//What is my english lol
+const capitalizePrimary = s => capitalize(s).replace("And","and").replace("Is","is").replace("The","the");
+
+/**
+	Username button
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class User extends React.Component{
+
+	/**
+		Renders out a button with the provided name, or "Invalid User" as a default
+	*/
+	render(){
+		return &lt;>
+			&lt;button type="button" className="btn btn-outline-secondary btn-within-collapsable">{
+				(!this.props.name) || this.props.name.length &lt; 1 ? "Invalid User": this.props.name
+			}&lt;/button>;
+		&lt;/>
+	}
+}
+
+/**
+	A custom controlled slider input
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class RangeSlider extends React.Component{
+
+	/**
+		Initializes state
+		@param {any[]} props Should have a default value, label , id, scale and output multipler
+	*/
+	constructor(props){
+		super(props);
+		this.state = {
+			val: (this.props.default ? this.props.default : 0)
+		}
+	}
+
+	/**
+		Renders a div wrapped range input, with auto updating output value.
+		Manipulates output according to prop parameters
+	*/
+	render(){
+		return &lt;>
+			&lt;div className="range">
+				&lt;output className="output-label" >{this.props.label}&lt;/output>
+				&lt;input
+					type="range"
+					className="form-control py-0"
+					id={this.props.id}
+					name="range"
+					value={this.state.val}
+					onChange={(event) => {
+
+						let rounded = Math.round(event.target.value/this.props.scale)*this.props.scale;
+						let prev = this.state.val;
+						this.setState({val:rounded});
+						$(`#${this.props.id}-output`)[0].value=rounded * (this.props.outputMultipler?this.props.outputMultipler: 1);
+						$(`#${this.props.id}`)[0].value=rounded;
+
+						if(rounded !== prev){
+							this.props.onChange();
+						}
+				}} />
+				&lt;output
+					className="output-val"
+					id={`${this.props.id}-output`}
+					value={this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)} >{
+						this.state.val * (this.props.outputMultipler?this.props.outputMultipler: 1)
+				}&lt;/output>
+			&lt;/div>
+		&lt;/>
+	}
+}
+
+/**
+	Auto detailed search button
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class AdvancedSearchButton extends React.Component{
+
+	/**
+		Renders a detailed button with a Fa Slider icon if a target is provided
+		Will call expandCallback on click
+	*/
+	render(){
+		if(!this.props.target){
+			return &lt;>&lt;/>;
+		}
+
+		return &lt;>
+			&lt;button
+				className="AdvancedSearch-btn btn btn-light py-2"
+				type="button"
+				onClick={this.props.expandCallback}
+				data-toggle="collapse"
+				data-target={`#${this.props.target}`}>
+				&lt;FaSlidersH />
+			&lt;/button>
+		&lt;/>;
+	}
+}
+
+/**
+	A self controlling, auto additonal input controller
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class MultiInput extends React.Component{
+
+	/**
+		Initializes state
+		@param {any[]} Must contain an identifier and on change callback
+	*/
+	constructor(props){
+		super(props);
+
+		this.state = {
+			copies: []
+		};
+	}
+
+	/**
+		Renders out a list of inputs with auto + and - buttons for adjusting the amount of inputs.
+		Will automatically control values, and run on change callbacks when any change.
+	*/
+	render(){
+		return &lt;>
+			&lt;div className="multiInput">
+				&lt;div>
+					&lt;FloatingLabel
+						type="text"
+						label="Ingredient"
+						className={`form-control ${this.props.identifier}`}
+						onChange={this.props.callback} />
+
+					&lt;button className="btn btn-success" onClick={event => {
+						if(this.state.copies.length &lt; 7){
+							this.setState({copies:[...this.state.copies,""]});
+						}
+					}}>&lt;FaPlusSquare size={28} />&lt;/button>
+				&lt;/div>
+				{
+					this.state.copies.map((copy,i) => &lt;>
+						&lt;div>
+							&lt;input
+								className={`form-control ${this.props.identifier} ${this.props.identifier}-c${i}`}
+								value={this.state.copies[i]}
+								onChange={event=>{
+									let copies = this.state.copies;
+									copies[i] = event.target.value;
+									this.setState({copies:copies});
+
+									this.props.callback();
+							}} />
+
+							&lt;button className="btn btn-danger" onClick={event=>{
+								let copies = this.state.copies.slice(0);
+								copies.splice(i,1);
+								this.props.callback(i);
+								this.setState({copies:copies});
+
+							}}>&lt;FaMinusSquare size={28} />&lt;/button>
+						&lt;/div>
+					&lt;/>)
+				}
+			&lt;/div>
+		&lt;/>;
+	}
+}
+
+/**
+	Collapsable advanced search pannel with all the parameters required to search for drinks.
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class AdvancedSearchPannel extends React.Component{
+
+	/**
+		Binds methods
+		@param {any[]} props
+	*/
+	constructor(props){
+		super(props);
+		this.updateSubmit = this.updateSubmit.bind(this);
+	}
+
+	/**
+		Sets up event listener for hitting enter while in an input.
+		On enter, will unfocus the target input.
+	*/
+	componentDidMount(){
+		$("input").keypress(function(e) {
+			if(e.which == 10 || e.which == 13) {
+				$(e.target).blur();
+			}
+		});
+	}
+
+	/**
+		Parses and manipulates input values before providing them to the given onchange callback
+		@param {object} event Sneakilly can be a index to pop from the contains array
+	*/
+	updateSubmit(event){
+
+		//Get contains values as an array
+		let contains = $(".containsIng");
+		let containsVal = []
+		for(let i=0;i&lt;contains.length;i++){
+			containsVal.push(contains[i].value);
+		}
+
+		//Special callback param for removing last contains value
+		if(event!==undefined &amp;&amp; typeof(event)=="number" &amp;&amp; event &lt; containsVal.length){
+			containsVal.splice(event,1);
+		}
+
+		//Run callback with manipulated values
+		this.props.callback({
+			name: $("#advName")[0].value,
+			contains: containsVal,
+			mixMethod: $("#mixMethod")[0].value,
+			onIce: $("#onIce")[0].value,
+			orderedBy: $("#orderedBy")[0].value,
+			isSweet: $("#isSweet")[0].value,
+			liquor: $("#liquor")[0].value,
+			percentage: parseInt($("#percentage")[0].value),
+			rating: parseInt($("#rating")[0].value)/10 - 2,
+			price: parseInt($("#price")[0].value)/4,
+			glass: $("#glass")[0].value,
+		});
+	}
+
+	/**
+		Renders out the full panel. Contains all inputs and connecting callback methods.
+		Is fully collapsable and mobile friendly
+	*/
+	render(){
+		return &lt;>
+			&lt;form className="collapse bg-dark form-group py-3" id={this.props.id} onSubmit={event=>{
+				event.preventDefault();
+				setTimeout(()=>{
+					$("#menu").animate({
+						marginTop: `${$("#nav-wrapper").height() + 50}px`
+					},200);
+				},250);
+			}}>
+				&lt;div className="row py-2 justify-content-md-center">
+					&lt;div className="col-md-9">
+						&lt;FloatingLabel
+							id="advName"
+							type="text"
+							label="Name"
+							className="form-control"
+							onChange={this.updateSubmit} />
+					&lt;/div>
+				&lt;/div>
+				&lt;div className="row py-2 justify-content-md-center">
+					&lt;div className="col-md-9">
+						&lt;MultiInput identifier="containsIng" callback={this.updateSubmit} />
+					&lt;/div>
+				&lt;/div>
+				&lt;div className="row py-2 justify-content-md-center">
+					&lt;div className="col-md-3">
+						&lt;select className="form-control" id="onIce" onChange={this.updateSubmit} >
+							&lt;option value="">Any ice amount&lt;/option>
+							&lt;option value="1">Rocks&lt;/option>
+							&lt;option value="0">Neat&lt;/option>
+						&lt;/select>
+					&lt;/div>
+					&lt;div className="col-md-3">
+						&lt;select className="form-control" id="mixMethod" onChange={this.updateSubmit}>
+							&lt;option value="">All mix methods&lt;/option>
+							&lt;option value="Shaken">Shaken&lt;/option>
+							&lt;option value="Stirred">Stirred&lt;/option>
+						&lt;/select>
+					&lt;/div>
+					&lt;div className="col-md-3">
+						&lt;select className="form-control" id="isSweet" onChange={this.updateSubmit} >
+							&lt;option value="">All mixers&lt;/option>
+							&lt;option value="1">Sweet Juices&lt;/option>
+							&lt;option value="0">Savoury Juices&lt;/option>
+						&lt;/select>
+					&lt;/div>
+				&lt;/div>
+				&lt;div className="row py-2 justify-content-md-center">
+					&lt;div className="col-md-3">
+						&lt;select className="form-control" id="liquor" onChange={this.updateSubmit} >
+							&lt;option value="">All bases&lt;/option>
+							&lt;option value="1">Liquor&lt;/option>
+							&lt;option value="0">Liqueur&lt;/option>
+						&lt;/select>
+					&lt;/div>
+					&lt;div className="col-md-6">
+						&lt;RangeSlider label="Minimum Percentage" scale={5} id="percentage" onChange={this.updateSubmit} />
+					&lt;/div>
+				&lt;/div>
+				&lt;div className="row py-2 justify-content-md-center">
+					&lt;div className="col-md-3">
+						&lt;select className="form-control" id="orderedBy" onChange={this.updateSubmit} >
+							&lt;option value="">All menu items&lt;/option>
+							&lt;option value={this.props.name}>Ordered by me ({this.props.name})&lt;/option>
+							&lt;option value="_">Ordered by anyone&lt;/option>
+						&lt;/select>
+					&lt;/div>
+					&lt;div className="col-md-6">
+						&lt;RangeSlider label="Minimum rating" outputMultipler={0.05} scale={20} id="rating" onChange={this.updateSubmit} />
+					&lt;/div>
+				&lt;/div>
+				&lt;div className="row py-2 justify-content-md-center">
+					&lt;div className="col-md-3">
+						&lt;select className="form-control" id="glass" onChange={this.updateSubmit} >
+							&lt;option value="">All Glasses&lt;/option>
+							{
+								this.props.glasses.map(g => &lt;option value={g.id}>{capitalizePrimary(g.name)}&lt;/option>)
+							}
+
+						&lt;/select>
+					&lt;/div>
+					&lt;div className="col-md-6">
+						&lt;RangeSlider label="Maximum Price" default={100} outputMultipler={0.25} scale={4} id="price" onChange={this.updateSubmit} />
+					&lt;/div>
+				&lt;/div>
+			&lt;/form>
+		&lt;/>
+	}
+}
+
+/**
+	Self contained and controlling search bar
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class Search extends React.Component{
+
+	/**
+		Renders out a search bar input siblinged to an advanced search toggler.
+		Connects them with callback methods.
+	*/
+	render(){
+		return &lt;>
+			&lt;form className="form-inline p-0 mx-3" onSubmit={event => {
+				event.preventDefault();
+				$(event.target).children().blur();
+			}}>
+				&lt;AdvancedSearchButton target={this.props.advancedSearch} expandCallback={this.props.advancedSearchCallback} />
+				&lt;FloatingLabel
+					type="text"
+					label="Search"
+					className="form-control"
+					onChange={event => {
+						this.props.callback(event.target.value);
+					}} />
+			&lt;/form>
+		&lt;/>;
+	}
+}
+
+/**
+	Main navigation component for the menu
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class Nav extends React.Component{
+
+	/**
+		Renders out a mobile friendly, collapsable nav bar with all search elements nested correctly.
+		Connects navigation elements with callback methods
+	*/
+	render(){
+		return &lt;>
+			&lt;div className="fixed-top" id="nav-wrapper">
+				&lt;nav className="navbar navbar-expand-md navbar-dark bg-dark py-3">
+					&lt;a className="navbar-brand ml-3 nav-brand-item" href=".">Every Last Drop&lt;/a>
+					&lt;button className="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarCollapse" onClick={event => {
+						$("#advancedOptions").removeClass("show");
+						this.props.advancedSearchToggleCallback();
+					}}>
+						&lt;span className="navbar-toggler-icon">&lt;/span>
+					&lt;/button>
+					&lt;div className="collapse navbar-collapse" id="navbarCollapse">
+						&lt;ul className="mr-3 ml-3 navbar-nav mr-auto">
+							&lt;li className="nav-item active">
+								&lt;a className="nav-link" href=".">Home&lt;/a>
+							&lt;/li>
+							&lt;li className="nav-item">
+								&lt;User name={this.props.user} />
+							&lt;/li>
+						&lt;/ul>
+						&lt;Search callback={this.props.searchCallback} advancedSearchCallback={this.props.advancedSearchToggleCallback} advancedSearch="advancedOptions"/>
+					&lt;/div>
+				&lt;/nav>
+				&lt;AdvancedSearchPannel id="advancedOptions" glasses={this.props.glasses} name={this.props.user} callback={this.props.advSearchCallback}/>
+			&lt;/div>
+		&lt;/>;
+	}
+}
+
+export default Nav;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="app.html">app</a></li><li><a href="backend.html">backend</a></li><li><a href="dev.html">dev</a></li><li><a href="frontend.html">frontend</a></li></ul><h3>Classes</h3><ul><li><a href="app.searchQuery.html">searchQuery</a></li><li><a href="backend.database.html">database</a></li><li><a href="backend.server.html">server</a></li><li><a href="dev.DrinkRecipe.html">DrinkRecipe</a></li><li><a href="frontend.AdminLogin.html">AdminLogin</a></li><li><a href="frontend.AdvancedSearchButton.html">AdvancedSearchButton</a></li><li><a href="frontend.AdvancedSearchPannel.html">AdvancedSearchPannel</a></li><li><a href="frontend.App.html">App</a></li><li><a href="frontend.Dashboard.html">Dashboard</a></li><li><a href="frontend.DetailedViewController.html">DetailedViewController</a></li><li><a href="frontend.DrinkDetails.html">DrinkDetails</a></li><li><a href="frontend.DrinkIcon.html">DrinkIcon</a></li><li><a href="frontend.DynamicBackground.html">DynamicBackground</a></li><li><a href="frontend.FloatingLabel.html">FloatingLabel</a></li><li><a href="frontend.FloatingSectionLabel.html">FloatingSectionLabel</a></li><li><a href="frontend.IngredientDetails.html">IngredientDetails</a></li><li><a href="frontend.IngredientIcon.html">IngredientIcon</a></li><li><a href="frontend.Login.html">Login</a></li><li><a href="frontend.LoginFooter.html">LoginFooter</a></li><li><a href="frontend.LoginHeader.html">LoginHeader</a></li><li><a href="frontend.LoginSubmit.html">LoginSubmit</a></li><li><a href="frontend.Menu.html">Menu</a></li><li><a href="frontend.MultiInput.html">MultiInput</a></li><li><a href="frontend.Nav.html">Nav</a></li><li><a href="frontend.RadioSelector.html">RadioSelector</a></li><li><a href="frontend.RangeSlider.html">RangeSlider</a></li><li><a href="frontend.Search.html">Search</a></li><li><a href="frontend.SettingsButton.html">SettingsButton</a></li><li><a href="frontend.Transaction.html">Transaction</a></li><li><a href="frontend.User.html">User</a></li><li><a href="frontend.UserLogin.html">UserLogin</a></li><li><a href="frontend_App.AppMode.html">AppMode</a></li></ul><h3>Global</h3><ul><li><a href="global.html#cutoffString">cutoffString</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Thu Nov 26 2020 21:21:39 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

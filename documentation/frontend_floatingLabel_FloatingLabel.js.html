@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: AppMode</title>
+    <title>JSDoc: Source: frontend/floatingLabel/FloatingLabel.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,141 +17,91 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: AppMode</h1>
+    <h1 class="page-title">Source: frontend/floatingLabel/FloatingLabel.js</h1>
 
     
 
 
 
-
-<section>
-
-<header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>AppMode<span class="signature">()</span><span class="type-signature"></span></h2>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-
-    
-
-    
-    <h4 class="name" id="AppMode"><span class="type-signature"></span>new AppMode<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Application mode state enum
-	Values consist of:
-		LOGIN
-		DASHBOARD
-		MENU
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="frontend_App.js.html">frontend/App.js</a>, <a href="frontend_App.js.html#line27">line 27</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Brennan Wilkes
+
+//Imports
+import React from "react";
+import "../bootstrap-import.js";
+
+import "./FloatingLabel.css";
+
+/**
+	A floating label input component.
+	Cleanly transitions an input placeholder to a upper left floated label
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class FloatingLabel extends React.Component{
+
+	/**
+		Initializes state and binds methods
+		@param {any[]} props Should contain any input classes, the input id, the label text, and optionally an onChange callback
+		@constructor
+	*/
+	constructor(props){
+		super(props);
+		this.handleTextChange = this.handleTextChange.bind(this);
+
+		this.state = {
+			isActive: false,
+			text: ""
+		}
+	}
+
+	/**
+		Event callback for input changes.
+		Updates state to comply with React standard
+		controlled input elements
+		@param {object} event
+	*/
+	handleTextChange(event) {
+		this.setState({
+			isActive:event.target.value!=="",
+			text:event.target.value
+		});
+	}
+
+	/**
+		Renders a form input with all the required callback and id information
+		nested within a div, and sibling to a label
+	*/
+	render(){
+		return &lt;>
+			&lt;div className="floating-label">
+				&lt;input
+					className={`pb-1 pt-3 ${this.props.className}`}
+					type={this.props.type}
+					id={this.props.id ? this.props.id : `floating-label${parseInt(Math.random()*1000)}`}
+					value={this.state.text}
+					onChange={event => {
+						this.handleTextChange(event);
+						if(this.props.onChange){
+							this.props.onChange(event);
+						}
+					}} />
+
+				&lt;label className={`pl-3 ${this.state.isActive ? "floating-label-active" : ""}`}>
+					{this.props.label}
+				&lt;/label>
+			&lt;/div>
+		&lt;/>;
+	}
+}
+
+export default FloatingLabel;
+</code></pre>
+        </article>
+    </section>
 
 
 

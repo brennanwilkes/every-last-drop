@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: frontend/detailedViews/DrinkDetails.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: frontend/detailedViews/DrinkDetails.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Brennan Wilkes
+
+//Imports
+import React from "react";
+import "../bootstrap-import.js";
+import axios from "axios";
+import { FaWindowClose, FaCheckSquare } from "react-icons/fa";
+
+import "./detailedView.css";
+
+//Capitalization one liner using regex
+const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
+
+/**
+	A detailed view pannel for a drink recipe.
+	Future versions should instead extend a shared detailed component
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class DrinkDetails extends React.Component {
+
+	/**
+		Initializes state and binds methods
+		@param {any[]} props Should contain an drinkId, an order drink callback method, a delete callback method, and parental update and change methods.
+		@constructor
+	*/
+	constructor(props){
+		super(props);
+		this.deleteDrink = this.deleteDrink.bind(this);
+
+		this.state = {
+			id : this.props.drinkId,
+			details : {},
+			ingredients : [],
+			ingredientHeader : []
+		}
+	}
+
+	/**
+		Button click callback for deletion. Updates self and parent.
+	*/
+	deleteDrink(){
+
+		//Run provided deletion callback method
+		this.props.deleteCallback().then(res => {
+
+			//Update self details and id
+			this.setState({id:undefined});
+
+			//Tell parent to reset drink data member
+			this.props.changeDrink(undefined);
+
+			//Tell parent to update
+			this.props.parentUpdate();
+		}).catch(err=>{});
+	}
+
+	/**
+		Component update callback. Checks for drink ID changes
+		and refreshes the drink details
+		@param {any[]} prevProps
+	*/
+	componentDidUpdate(prevProps){
+
+		//Ensure drink ID has changed
+		if(prevProps.drinkId !== this.props.drinkId &amp;&amp; this.props.drinkId !== undefined){
+
+			//Update self drink id
+			this.setState({id:this.props.drinkId});
+
+			//Refresh drink details with DB call
+			axios.post('/drinks',{
+				id: `${this.props.drinkId}`
+			}).then(res => {
+				this.setState({
+					details:res.data[0]
+				})
+			});
+
+			//Refresh ingredient details of new drink
+			axios.post('/ingredients',{
+				id: `${this.props.drinkId}`
+			}).then(res => {
+				this.setState({
+					ingredients:res.data,
+					ingredientHeader: Object.keys(res.data[0])
+				})
+			});
+		}
+
+		//Close component
+		else if(this.props.drinkId === undefined &amp;&amp; this.state.id !== undefined){
+			this.setState({id:undefined});
+		}
+	}
+
+	/**
+		Renders out a fullscreen pannel with all the drink details.
+		Contains functionality to delete and order
+	*/
+	render() {
+		return &lt;>
+			&lt;div className={`detailedView drinkDetail text-light bg-dark p-4 container-fluid detailedView-${this.state.id===undefined ? "off" : "on"}`}>
+				&lt;div className="row">
+					&lt;div className="col-md-1">
+						&lt;button className="btn btn-danger closeDetailedView" onClick={event => {
+							this.setState({id:undefined});
+							this.props.changeDrink(undefined);
+						}}>
+							&lt;FaWindowClose size={28} />
+						&lt;/button>
+					&lt;/div>
+				&lt;/div>
+				&lt;div className="row">
+					&lt;div className="col-md-12">
+						&lt;h1>{capitalize(this.state.details.name)}&lt;/h1>
+					&lt;/div>
+				&lt;/div>
+				&lt;div className="row">
+					&lt;div className="col-md-4">
+						&lt;div className="py-3 bg-secondary">
+							&lt;h5>On ice&lt;/h5>
+							&lt;div className={`btn h4 text-white bg-${this.state.details.onIce ? "success" : "danger"}`}>{
+								this.state.details.onIce ? &lt;FaCheckSquare size={22} /> : &lt;FaWindowClose size={22} />
+							}&lt;/div>
+						&lt;/div>
+						&lt;div className="py-3 bg-secondary">
+							&lt;h5>Mix Method&lt;/h5>
+							&lt;div className="btn h4 text-white bg-info">{this.state.details.mixMethod}&lt;/div>
+						&lt;/div>
+						&lt;div className="py-3 bg-secondary">
+							&lt;h5>Version of&lt;/h5>
+							&lt;div className={`btn h4 text-white bg-${this.state.details.versionOf ? "success" : "danger"}`}>{
+								this.state.details.versionOf ? &lt;a className="text-light" href="" onClick={event=>{
+									event.preventDefault();
+									this.setState({id:this.state.details.versionOf});
+									this.props.changeDrink(this.state.details.versionOf);
+								}}>{this.state.details.versionOfName}&lt;/a> : "None"
+							}&lt;/div>
+						&lt;/div>
+						&lt;div className="py-3 bg-secondary">
+							&lt;h5>Price&lt;/h5>
+							&lt;div className="btn h4 text-white bg-warning">{`\$${this.state.details.price}`}&lt;/div>
+						&lt;/div>
+					&lt;/div>
+					&lt;div className="col-md-4">
+						&lt;table className="p-4 bg-secondary">&lt;thead>
+							&lt;tr>
+								&lt;th className="h5">Quantity&lt;/th>
+								&lt;th className="h5">Ingredient&lt;/th>
+							&lt;/tr>
+						&lt;/thead>&lt;tbody>{
+							this.state.ingredients.map(ingr => {
+								return &lt;>
+									&lt;tr>
+										&lt;td>{`${ingr.quantityInDrink} oz`}&lt;/td>
+										&lt;td>&lt;a className="text-light" href="" onClick={event=>{
+											event.preventDefault();
+											this.setState({id:undefined});
+											this.props.changeDrink(undefined);
+											this.props.changeIngredient(ingr.id);
+										}}>{capitalize(ingr.name)}&lt;/a>&lt;/td>
+									&lt;/tr>
+								&lt;/>
+							})
+						}&lt;/tbody>&lt;/table>
+					&lt;/div>
+					&lt;div className="col-md-4">
+						&lt;img src={this.state.details.imgURL} alt={this.state.details.name}/>
+					&lt;/div>
+				&lt;/div>
+				&lt;div className="row justify-content-end mt-auto">
+					{
+						(this.props.deleteCallback ? &lt;>
+							&lt;button className="col-md-4 btn btn-danger" onClick={this.deleteDrink}>
+								&lt;h3>DELETE&lt;/h3>
+							&lt;/button>
+						&lt;/> : &lt;>
+							&lt;button className={`col-md-4 btn btn-${this.props.orderButtonMd}`} onClick={e => this.props.orderCallback(this.state.id)}>
+								&lt;h3>
+									{this.props.orderButtonContent}
+								&lt;/h3>
+							&lt;/button>
+						&lt;/>)
+					}
+				&lt;/div>
+
+			&lt;/div>
+		&lt;/>;
+	}
+}
+export default DrinkDetails;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="app.html">app</a></li><li><a href="backend.html">backend</a></li><li><a href="dev.html">dev</a></li><li><a href="frontend.html">frontend</a></li></ul><h3>Classes</h3><ul><li><a href="app.searchQuery.html">searchQuery</a></li><li><a href="backend.database.html">database</a></li><li><a href="backend.server.html">server</a></li><li><a href="dev.DrinkRecipe.html">DrinkRecipe</a></li><li><a href="frontend.AdminLogin.html">AdminLogin</a></li><li><a href="frontend.AdvancedSearchButton.html">AdvancedSearchButton</a></li><li><a href="frontend.AdvancedSearchPannel.html">AdvancedSearchPannel</a></li><li><a href="frontend.App.html">App</a></li><li><a href="frontend.Dashboard.html">Dashboard</a></li><li><a href="frontend.DetailedViewController.html">DetailedViewController</a></li><li><a href="frontend.DrinkDetails.html">DrinkDetails</a></li><li><a href="frontend.DrinkIcon.html">DrinkIcon</a></li><li><a href="frontend.DynamicBackground.html">DynamicBackground</a></li><li><a href="frontend.FloatingLabel.html">FloatingLabel</a></li><li><a href="frontend.FloatingSectionLabel.html">FloatingSectionLabel</a></li><li><a href="frontend.IngredientDetails.html">IngredientDetails</a></li><li><a href="frontend.IngredientIcon.html">IngredientIcon</a></li><li><a href="frontend.Login.html">Login</a></li><li><a href="frontend.LoginFooter.html">LoginFooter</a></li><li><a href="frontend.LoginHeader.html">LoginHeader</a></li><li><a href="frontend.LoginSubmit.html">LoginSubmit</a></li><li><a href="frontend.Menu.html">Menu</a></li><li><a href="frontend.MultiInput.html">MultiInput</a></li><li><a href="frontend.Nav.html">Nav</a></li><li><a href="frontend.RadioSelector.html">RadioSelector</a></li><li><a href="frontend.RangeSlider.html">RangeSlider</a></li><li><a href="frontend.Search.html">Search</a></li><li><a href="frontend.SettingsButton.html">SettingsButton</a></li><li><a href="frontend.Transaction.html">Transaction</a></li><li><a href="frontend.User.html">User</a></li><li><a href="frontend.UserLogin.html">UserLogin</a></li><li><a href="frontend_App.AppMode.html">AppMode</a></li></ul><h3>Global</h3><ul><li><a href="global.html#cutoffString">cutoffString</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Thu Nov 26 2020 21:21:39 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

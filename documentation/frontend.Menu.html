@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Namespace: dev</title>
+    <title>JSDoc: Class: Menu</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Namespace: dev</h1>
+    <h1 class="page-title">Class: Menu</h1>
 
     
 
@@ -28,7 +28,14 @@
 
 <header>
     
-        <h2>dev</h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>
+            <span class="ancestors"><a href="frontend.html">frontend</a>~</span>Menu<span class="signature">(props)</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">Customer menu component.
+	Connects all other customer visible frontend components together including
+	navigation, search and advanced search, handling search results and displaying
+	them as icons, expanding those icons into detailed views, and handling
+	ordering and deleting of items.</div>
         
     
 </header>
@@ -38,20 +45,86 @@
     
         
 
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="Menu"><span class="type-signature"></span>new Menu<span class="signature">(props)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Initializes state, binds methods, and queries database for initial data.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
         
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;any></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Should contain a username</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
 
 
 <dl class="details">
 
     
-    <dt class="tag-version">Version:</dt>
-    <dd class="tag-version"><ul class="dummy"><li>1.0</li></ul></dd>
-    
-
-    
-    <dt class="tag-since">Since:</dt>
-    <dd class="tag-since"><ul class="dummy"><li>23/10/2020</li></ul></dd>
-    
 
     
 
@@ -66,12 +139,7 @@
     
 
     
-    <dt class="tag-author">Author:</dt>
-    <dd class="tag-author">
-        <ul>
-            <li>Brennan Wilkes</li>
-        </ul>
-    </dd>
+
     
 
     
@@ -83,7 +151,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dev_transactionGenerator.js.html">dev/transactionGenerator.js</a>, <a href="dev_transactionGenerator.js.html#line1">line 1</a>
+        <a href="frontend_menu_Menu.js.html">frontend/menu/Menu.js</a>, <a href="frontend_menu_Menu.js.html#line37">line 37</a>
     </li></ul></dd>
     
 
@@ -95,21 +163,42 @@
 </dl>
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     </div>
 
     
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li>{@link</li>
+    </ul>
+
 
     
 
     
-        <h3 class="subsection-title">Classes</h3>
 
-        <dl>
-            <dt><a href="dev.DrinkRecipe.html">DrinkRecipe</a></dt>
-            <dd></dd>
-        </dl>
     
 
     
@@ -129,7 +218,7 @@
     
 
     
-    <h4 class="name" id=".dateWrap"><span class="type-signature">(static) </span>dateWrap<span class="signature">(dateStr)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="advancedSearchToggle"><span class="type-signature"></span>advancedSearchToggle<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
@@ -137,7 +226,9 @@
 
 
 <div class="description">
-    Wraps a date sting with the SQL date() function
+    Callback to be run on component mount and advanced search toggle.
+		Updates the page's top margin to accurately reflect the change in
+		fixed navigation size
 </div>
 
 
@@ -146,55 +237,6 @@
 
 
 
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>dateStr</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Date string to wrap</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -230,7 +272,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dev_transactionGenerator.js.html">dev/transactionGenerator.js</a>, <a href="dev_transactionGenerator.js.html#line51">line 51</a>
+        <a href="frontend_menu_Menu.js.html">frontend/menu/Menu.js</a>, <a href="frontend_menu_Menu.js.html#line139">line 139</a>
     </li></ul></dd>
     
 
@@ -255,28 +297,6 @@
 
 
 
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    Date wrapped in date() function
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
 
@@ -288,7 +308,7 @@
     
 
     
-    <h4 class="name" id=".dateYMD"><span class="type-signature">(static) </span>dateYMD<span class="signature">(dateObj)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="advSearch"><span class="type-signature"></span>advSearch<span class="signature">(query)</span><span class="type-signature"></span></h4>
     
 
     
@@ -296,7 +316,7 @@
 
 
 <div class="description">
-    Converts a date object into a formatted string
+    Advanced search callback
 </div>
 
 
@@ -332,507 +352,7 @@
 
         <tr>
             
-                <td class="name"><code>dateObj</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">date</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">JS Date object to format</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dev_transactionGenerator.js.html">dev/transactionGenerator.js</a>, <a href="dev_transactionGenerator.js.html#line43">line 43</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    Date in the format YYYY/MM/DD
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id=".randomDate"><span class="type-signature">(static) </span>randomDate<span class="signature">(start, end)</span><span class="type-signature"> &rarr; {date}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Generates a random date between two dates
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>start</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">date</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Initial date</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>end</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">date</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Max date</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dev_transactionGenerator.js.html">dev/transactionGenerator.js</a>, <a href="dev_transactionGenerator.js.html#line60">line 60</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    Random date btween start and end
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">date</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id=".roundQ"><span class="type-signature">(static) </span>roundQ<span class="signature">(num)</span><span class="type-signature"> &rarr; {number}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Rounds a number to the nearest quarter
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>num</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Number to round</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dev_cocktailDataCollector.js.html">dev/cocktailDataCollector.js</a>, <a href="dev_cocktailDataCollector.js.html#line19">line 19</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    num rounded to nearest quarter
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">number</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id=".splitTupleJSON"><span class="type-signature">(static) </span>splitTupleJSON<span class="signature">(json)</span><span class="type-signature"> &rarr; {object}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Splits a SQL tuple in JSON form into columns and data strings
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>json</code></td>
+                <td class="name"><code>query</code></td>
             
 
             <td class="type">
@@ -848,7 +368,7 @@
 
             
 
-            <td class="description last">SQL tuple in JSON form</td>
+            <td class="description last">Contains all the data from AdvancedSearch to send to the database</td>
         </tr>
 
     
@@ -889,7 +409,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dev_jsonToSql.js.html">dev/jsonToSql.js</a>, <a href="dev_jsonToSql.js.html#line22">line 22</a>
+        <a href="frontend_menu_Menu.js.html">frontend/menu/Menu.js</a>, <a href="frontend_menu_Menu.js.html#line157">line 157</a>
     </li></ul></dd>
     
 
@@ -914,28 +434,6 @@
 
 
 
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    column/data string tuple form.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">object</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
 
@@ -947,7 +445,7 @@
     
 
     
-    <h4 class="name" id=".strWrap"><span class="type-signature">(static) </span>strWrap<span class="signature">(val)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="componentDidMount"><span class="type-signature"></span>componentDidMount<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
@@ -955,8 +453,96 @@
 
 
 <div class="description">
-    Wraps a string in quotes if it does not begin with "date" and is a string type.
-	Intended to prepare data for SQL injection.
+    Updates the main application background image to ensure it's set correctly
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="frontend_menu_Menu.js.html">frontend/menu/Menu.js</a>, <a href="frontend_menu_Menu.js.html#line107">line 107</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="orderDrink"><span class="type-signature"></span>orderDrink<span class="signature">(id)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Callback for drink ordering events.
+		Updates state, runs queries and updates ORDER button
 </div>
 
 
@@ -992,13 +578,13 @@
 
         <tr>
             
-                <td class="name"><code>val</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">number</span>
 
 
             
@@ -1008,7 +594,7 @@
 
             
 
-            <td class="description last">String to check and wrap</td>
+            <td class="description last">ID of drink to order</td>
         </tr>
 
     
@@ -1049,7 +635,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dev_jsonToSql.js.html">dev/jsonToSql.js</a>, <a href="dev_jsonToSql.js.html#line14">line 14</a>
+        <a href="frontend_menu_Menu.js.html">frontend/menu/Menu.js</a>, <a href="frontend_menu_Menu.js.html#line66">line 66</a>
     </li></ul></dd>
     
 
@@ -1074,28 +660,233 @@
 
 
 
-<h5>Returns:</h5>
+
+
+
+
 
         
-<div class="param-desc">
-    val potentially wrapped in quotes
+            
+
+    
+
+    
+    <h4 class="name" id="render"><span class="type-signature"></span>render<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Renders out the menu
+		Renders a navigation bar, rows of 6 drink icons, and hidden drink and
+		ingredient detailed view components.
 </div>
 
 
 
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="frontend_menu_Menu.js.html">frontend/menu/Menu.js</a>, <a href="frontend_menu_Menu.js.html#line169">line 169</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
+            
+
+    
+
+    
+    <h4 class="name" id="search"><span class="type-signature"></span>search<span class="signature">(name)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Basic search callback
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
 <span class="param-type">string</span>
 
 
-    </dd>
-</dl>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Name of drink to search for</td>
+        </tr>
 
     
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="frontend_menu_Menu.js.html">frontend/menu/Menu.js</a>, <a href="frontend_menu_Menu.js.html#line121">line 121</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

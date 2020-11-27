@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: frontend/login/Login.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: frontend/login/Login.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Brennan Wilkes
+
+//Imports
+import React from "react";
+import "../bootstrap-import.js";
+
+import SettingsButton from "./SettingsButton.js";
+import DynamicBackground from "./DynamicBackground.js";
+import "./login.css";
+import FloatingLabel from "../floatingLabel/FloatingLabel.js";
+
+import barImage from "../../../assets/bar-stock.jpg";
+import computerImage from "../../../assets/computer-chip-stock.jpg";
+
+/**
+	A simple muted footer
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class LoginFooter extends React.Component{
+	render(){
+		return &lt;p className="mt-5 mb-0 text-muted">CPSC 2221 | W01 | Group 12&lt;/p>;
+	}
+}
+
+/**
+	A simple grey submit button
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class LoginSubmit extends React.Component{
+	render(){
+		return &lt;button className="btn btn-lg btn-secondary btn-block mt-4" type="submit">{this.props.text}&lt;/button>;
+	}
+}
+
+/**
+	A simple header text
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class LoginHeader extends React.Component{
+	render(){
+		return &lt;h1 className="h1 login-header mb-4">{this.props.text}&lt;/h1>
+	}
+}
+
+/**
+	Login setup for customers navigating to the menu
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class UserLogin extends React.Component{
+
+	/**
+		Binds methods
+		@param {any[]} props Should contain toMenu and settings callbacks
+	*/
+	constructor(props){
+		super(props);
+		this.login = this.login.bind(this);
+		this.componentDidMount = this.componentDidMount.bind(this);
+	}
+
+	/**
+		Login callback. Prevents default actions then runs page change callbacks
+		@param {object} event
+	*/
+	login(event){
+		event.preventDefault();
+		this.props.toMenu({
+			user: $("#name")[0].value,
+			dob: $("#dob")[0].value
+		});
+	}
+
+	/**
+		Sets up enter key form submission handlers
+	*/
+	componentDidMount(){
+		$("form").keypress(event => {
+			if(event.which == 10 || event.which == 13) {
+				this.login(event);
+			}
+		});
+	}
+
+	/**
+		Renders out a form with a settings button, header, floating label name input, date input, and footer
+	*/
+	render() {
+		return &lt;>
+			&lt;form className="text-center login-form" onSubmit={this.login} noValidate>
+				&lt;SettingsButton callback={this.props.settingsCallback} size={32} offset={10} />
+				&lt;LoginHeader text={"Every Last Drop"} />
+				&lt;FloatingLabel id="name" type="text" label="Full Name" className="form-control form-control-secondary" />
+				&lt;label>
+					&lt;input type="date" id="dob" className="pb-1 pt-3 form-control form-control-secondary" required />
+				&lt;/label>
+				&lt;LoginSubmit text={"Continue to Menu"} />
+				&lt;LoginFooter />
+			&lt;/form>
+		&lt;/>;
+	}
+}
+
+/**
+	Login setup for admin users navigating to the dashboard
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class AdminLogin extends React.Component{
+
+	/**
+		Binds methods
+		@param {any[]} props Should contain toDash and settings callbacks
+	*/
+	constructor(props){
+		super(props);
+		this.login = this.login.bind(this);
+		this.componentDidMount = this.componentDidMount.bind(this);
+	}
+
+	/**
+		Login callback. Prevents default actions then runs page change callbacks
+		@param {object} event
+	*/
+	login(event){
+		event.preventDefault();
+		this.props.toDash({
+			user: $("#username")[0].value,
+			pass: $("#pass")[0].value
+		});
+	}
+
+	/**
+		Sets up enter key form submission handlers
+	*/
+	componentDidMount(){
+		$("form").keypress(event => {
+			if(event.which == 10 || event.which == 13) {
+				this.login(event);
+			}
+		});
+	}
+
+	/**
+		Renders out a form with a settings button, header, floating label name and password input, and footer
+	*/
+	render() {
+		return &lt;>
+			&lt;form className="text-center login-form" onSubmit={this.login} noValidate>
+				&lt;SettingsButton callback={this.props.settingsCallback} size={32} offset={10} />
+				&lt;LoginHeader text={"ELD Admin Login"} />
+				&lt;FloatingLabel id="username" type="text" label="Username" className="form-control form-control-secondary" />
+				&lt;FloatingLabel id="pass" type="password" label="Password" className="form-control form-control-secondary" />
+				&lt;LoginSubmit text={"Login to Dashboard"} />
+				&lt;LoginFooter />
+			&lt;/form>
+		&lt;/>;
+	}
+}
+
+/**
+	Login controller
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class Login extends React.Component {
+
+	/**
+		Initializes state and binds methods
+		@param {any[]} props Should contain callbacks to navigate to the dashbord and menu pages
+	*/
+	constructor(props){
+		super(props);
+
+		this.settingsClick = this.settingsClick.bind(this);
+		this.state = {
+			adminMd : false
+		}
+	}
+
+	/**
+		A toggler for the settings button.
+		Will toggle between admin and customer login pages
+		@param {object} event
+	*/
+	settingsClick(event){
+		event.preventDefault();
+		this.setState({
+			adminMd: !this.state.adminMd
+		})
+	}
+
+	/**
+		Renders out a dynamic background, and either an admin or user login page
+	*/
+	render() {
+		return &lt;>
+			&lt;DynamicBackground md={this.state.adminMd} primary={barImage} secondary={computerImage} uid={"adminBackground"} />
+			{
+				(this.state.adminMd)
+				? &lt;AdminLogin settingsCallback={this.settingsClick} toDash={this.props.toDash}/>
+				: &lt;UserLogin settingsCallback={this.settingsClick} toMenu={this.props.toMenu}/>
+			}
+		&lt;/>;
+	}
+}
+export default Login;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="app.html">app</a></li><li><a href="backend.html">backend</a></li><li><a href="dev.html">dev</a></li><li><a href="frontend.html">frontend</a></li></ul><h3>Classes</h3><ul><li><a href="app.searchQuery.html">searchQuery</a></li><li><a href="backend.database.html">database</a></li><li><a href="backend.server.html">server</a></li><li><a href="dev.DrinkRecipe.html">DrinkRecipe</a></li><li><a href="frontend.AdminLogin.html">AdminLogin</a></li><li><a href="frontend.AdvancedSearchButton.html">AdvancedSearchButton</a></li><li><a href="frontend.AdvancedSearchPannel.html">AdvancedSearchPannel</a></li><li><a href="frontend.App.html">App</a></li><li><a href="frontend.Dashboard.html">Dashboard</a></li><li><a href="frontend.DetailedViewController.html">DetailedViewController</a></li><li><a href="frontend.DrinkDetails.html">DrinkDetails</a></li><li><a href="frontend.DrinkIcon.html">DrinkIcon</a></li><li><a href="frontend.DynamicBackground.html">DynamicBackground</a></li><li><a href="frontend.FloatingLabel.html">FloatingLabel</a></li><li><a href="frontend.FloatingSectionLabel.html">FloatingSectionLabel</a></li><li><a href="frontend.IngredientDetails.html">IngredientDetails</a></li><li><a href="frontend.IngredientIcon.html">IngredientIcon</a></li><li><a href="frontend.Login.html">Login</a></li><li><a href="frontend.LoginFooter.html">LoginFooter</a></li><li><a href="frontend.LoginHeader.html">LoginHeader</a></li><li><a href="frontend.LoginSubmit.html">LoginSubmit</a></li><li><a href="frontend.Menu.html">Menu</a></li><li><a href="frontend.MultiInput.html">MultiInput</a></li><li><a href="frontend.Nav.html">Nav</a></li><li><a href="frontend.RadioSelector.html">RadioSelector</a></li><li><a href="frontend.RangeSlider.html">RangeSlider</a></li><li><a href="frontend.Search.html">Search</a></li><li><a href="frontend.SettingsButton.html">SettingsButton</a></li><li><a href="frontend.Transaction.html">Transaction</a></li><li><a href="frontend.User.html">User</a></li><li><a href="frontend.UserLogin.html">UserLogin</a></li><li><a href="frontend_App.AppMode.html">AppMode</a></li></ul><h3>Global</h3><ul><li><a href="global.html#cutoffString">cutoffString</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Thu Nov 26 2020 21:21:39 GMT-0800 (Pacific Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

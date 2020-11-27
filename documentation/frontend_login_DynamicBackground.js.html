@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: AppMode</title>
+    <title>JSDoc: Source: frontend/login/DynamicBackground.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,141 +17,59 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: AppMode</h1>
+    <h1 class="page-title">Source: frontend/login/DynamicBackground.js</h1>
 
     
 
 
 
-
-<section>
-
-<header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>AppMode<span class="signature">()</span><span class="type-signature"></span></h2>
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-
-    
-
-    
-    <h4 class="name" id="AppMode"><span class="type-signature"></span>new AppMode<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Application mode state enum
-	Values consist of:
-		LOGIN
-		DASHBOARD
-		MENU
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="frontend_App.js.html">frontend/App.js</a>, <a href="frontend_App.js.html#line27">line 27</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>//Brennan Wilkes
+
+//Imports
+import React from "react";
+import "../bootstrap-import.js";
+import "./DynamicBackground.css";
+
+/**
+	An animation handler for toggleable background images.
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
+class DynamicBackground extends React.Component{
+
+	/**
+		Swaps background image transparencies with animations
+		@param {any[]} prevProps
+		@param {any[]} prevState
+	*/
+	componentDidUpdate(prevProps, prevState){
+		if(this.props.md !== prevProps.md){
+			$("#"+this.props.uid+"-primary").animate({opacity:(this.props.md ? 0 : 1)},500);
+		}
+	}
+
+	/**
+		Renders out two divs with background images which are toggled between
+	*/
+	render(){
+		return &lt;>
+			&lt;div className={"DynamicBackground"} id={this.props.uid+"-secondary"} style={{
+				backgroundImage: `url(${this.props.secondary})`
+			}}>&lt;/div>
+			&lt;div className={"DynamicBackground"} id={this.props.uid+"-primary"} style={{
+				backgroundImage: `url(${this.props.primary})`
+			}}>&lt;/div>
+		&lt;/>;
+	}
+}
+export default DynamicBackground;
+</code></pre>
+        </article>
+    </section>
 
 
 
