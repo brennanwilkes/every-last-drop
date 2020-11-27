@@ -32,8 +32,8 @@
 		"watch": "webpack --config src/webpack.config.js --watch",
 		"build:frontend": "webpack --config src/webpack.config.js",
 		"project-setup": "run-s genAuth sql-setup build:frontend",
-		"genSqlUser" : "node src/build/generateSqlUser.js",
-		"genAuth" : "node src/build/generateEnvCredentials.js",
+		"genSqlUser": "node src/build/generateSqlUser.js",
+		"genAuth": "node src/build/generateEnvCredentials.js",
 		"generate-docs": "rm -rf documentation/ ; jsdoc -d documentation/ src/app.js src/*/*.js src/frontend/*/*.js"
 	},
 	"repository": {
