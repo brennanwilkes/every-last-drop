@@ -1,3 +1,5 @@
+/* Brennan Wilkes */
+
 #dashboard{
 	display: flex;
 	flex-direction: column;
@@ -68,17 +70,14 @@
 	width: 100%;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 div::-webkit-scrollbar {
 	display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 div {
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
-
 
 .adminNavBar{
 	border-bottom: 4px solid #6c757d;
@@ -92,7 +91,6 @@ div {
 	top: 0;
 	z-index: 1;
 }
-
 
 @media (max-width: 768px) {
 	.iconContainer{
@@ -126,5 +124,4 @@ div {
 		width: 100% !important;
 		left: 0 !important;
 	}
-
 }

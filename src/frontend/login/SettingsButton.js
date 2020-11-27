@@ -1,11 +1,23 @@
+//Brennan Wilkes
+
+//Imports
 import React from "react";
 import "../bootstrap-import.js";
-
-import "./SettingsButton.css";
 import { ImCog } from "react-icons/im";
 
+import "./SettingsButton.css";
+
+/**
+	A rotating cog button for settings
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class SettingsButton extends React.Component {
 
+	/**
+		Renders a cog icon which rotates on hover
+	*/
 	render() {
 		return <>
 			<button className="settings-button text-secondary btn btn-lg" onClick={this.props.callback} style={{

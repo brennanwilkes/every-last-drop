@@ -1,19 +1,27 @@
+//Brennan Wilkes
+
+//Imports
 import React from "react";
 import "../bootstrap-import.js";
 import axios from "axios";
-import "./dashboard.css";
 
+import "./dashboard.css";
 import DrinkDetails from "../detailedViews/DrinkDetails.js";
 import DrinkIcon from "../iconViews/DrinkIcon.js";
 import IngredientDetails from "../detailedViews/IngredientDetails.js";
 import IngredientIcon from "../iconViews/IngredientIcon.js";
-
 import DetailedViewController from "../detailedViews/DetailedViewController.js";
 
 import computerImage from "../../../assets/computer-chip-stock.jpg";
 
+//capitalization one liner using regex
 const capitalize = s => String(s).toLowerCase().replace(/(?:^|\s|["'([{])+\S/g, l => l.toUpperCase());
 
+/**
+	List of transaction tuple headers
+	@type {string[]}
+	@memberof frontend
+*/
 const TRANSACTION_HEADERS = [
 	"Date",
 	"Customer",
@@ -21,15 +29,35 @@ const TRANSACTION_HEADERS = [
 	"Price"
 ]
 
+/**
+	Trims a string based on a max length and appends with ...
+	@param {string} str String to trim
+	@param {number} max Max length to trim by
+	@returns {string} Trimmed string
+*/
 const cutoffString = (str,max) => str.length > max ? `${str.substring(0,max-3).trim()}...` : str;
 
+/**
+	Renders an HTML table row with details of a transaction
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class Transaction extends React.Component{
+
+	/**
+		Binds methods
+		@param {any[]} props Should contain a click callback, and a transaction information object
+	*/
 	constructor(props){
 		super(props);
 
 		this.state = this.props.transactionInfo;
 	}
 
+	/**
+		Renders the information out as a row
+	*/
 	render(){
 		return <>
 			<tr onClick={event=>{
@@ -44,6 +72,12 @@ class Transaction extends React.Component{
 	}
 }
 
+/**
+	A styled label
+	@class
+	@memberof frontend
+	@extends React.Component
+*/
 class FloatingSectionLabel extends React.Component{
 	render(){
 		return <>
@@ -54,8 +88,19 @@ class FloatingSectionLabel extends React.Component{
 	}
 }
 
+/**
+	Admin dashboard component. Performs all function required for the admin,
+	and links all admin related components together through callbacks.
+	@class
+	@memberof frontend
+	@extends {@link DetailedViewController}
+*/
 class Dashboard extends DetailedViewController {
 
+	/**
+		Initializes state and binds methods
+		@param {any[]} props Must contain a user name and password
+	*/
 	constructor(props){
 		super(props);
 
@@ -63,7 +108,6 @@ class Dashboard extends DetailedViewController {
 		this.deleteIngredient = this.deleteIngredient.bind(this);
 		this.deleteDrink = this.deleteDrink.bind(this);
 		this.updateRefresh = this.updateRefresh.bind(this);
-
 
 		this.state = {
 			orders : [],
@@ -79,6 +123,10 @@ class Dashboard extends DetailedViewController {
 		this.updateRefresh(true);
 	}
 
+	/**
+		Updates admin dashboard data by querying the database
+		@param {boolean} firstTime Flag to reset state. Defaults to false
+	*/
 	updateRefresh(firstTime=false){
 		if(!firstTime){
 			this.setState({
@@ -88,17 +136,25 @@ class Dashboard extends DetailedViewController {
 				lowStock: []
 			});
 		}
+
+		//Database calls
 		axios.get("/orders").then(res => this.setState({orders:res.data}));
 		axios.get("/popular/drinks").then(res => this.setState({popularDrinks:res.data}));
 		axios.get("/popular/ingredients").then(res => this.setState({popularIngr:res.data}));
 		axios.get("/ingredients").then(res => this.setState({lowStock:res.data}));
 	}
 
+	/**
+		Triggers a elegent scroll animation to show the user that there is horizontal scroll within pannel sections
+	*/
 	componentDidMount(){
+
+		//Update background image
 		$("main").css("backgroundImage",`url(${computerImage})`);
 		$("main").css("background-color","#00000080");
 		$("main").css("background-blend-mode","overlay");
 
+		//Scroll each component with animations
 		setTimeout(event=>{
 			$(".scrollable-x").each((i,component) => {
 				component = $(component);
@@ -113,28 +169,43 @@ class Dashboard extends DetailedViewController {
 		},100);
 	}
 
+	/**
+		Callback to query database to order an ingredient.
+	*/
 	orderIngredient(){
 		return axios.post('/order',{
 			id: `${this.state.detailedIngredient}`,
 			userName: this.state.userName,
 			userPass: this.state.userPass
-		})
+		});
 	}
+
+	/**
+		Callback to query database to delete an ingredient.
+	*/
 	deleteIngredient(){
 		return axios.post('/delete/ingredient',{
 			id: `${this.state.detailedIngredient}`,
 			userName: this.state.userName,
 			userPass: this.state.userPass
-		})
+		});
 	}
+
+	/**
+		Callback to query database to delete a drink.
+	*/
 	deleteDrink(){
 		return axios.post('/delete/drink',{
 			id: `${this.state.detailedDrink}`,
 			userName: this.state.userName,
 			userPass: this.state.userPass
-		})
+		});
 	}
 
+	/**
+		Renders out responsive pannels containing lists of drinks and ingredients
+		based on specific criteria, as well as hidden detailed views.
+	*/
 	render(){
 		return <>
 			<div className="fixed-top" id="nav-wrapper">
@@ -147,7 +218,6 @@ class Dashboard extends DetailedViewController {
 					</ul>
 				</nav>
 			</div>
-
 			<div className="container-fluid p-3" id="dashboard">
 				<div className="row">
 					<div className="col-md-4 p-3 dashboardComponent bg-dark scrollable-y">
