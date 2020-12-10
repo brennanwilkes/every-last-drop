@@ -6,20 +6,15 @@ The complete database management system for the small bar, or bar owner. Every L
 
 **Preamble**  
 
-This is a markdown file, and should be read online on the project github page: https://github.com/brennanwilkes/every-last-drop#every-last-drop or in a markdown reader of your choice such as https://dillinger.io/, https://markdownlivepreview.com/, or any website or application which can read markdown files.  
-
 You will be prompted to enter your password a number of times during the installation. This password should be the password of the user account you are logged in as, or your sudo password for linux OS's. Any failed password attempts will likely require a reinstall.  
 
-If you have a choice of multiple computers to install Every Last Drop on, I highly recommend choosing a non-windows device, as the Windows installation is much longer, more tricky, and less robust due to the nature of Windows software.
-
-That being said, the *full* installation, setup, and deployment pipeline has been rigorously developed and tested for Ubuntu 20.04, Amazon Cloud 9 EC2 Linux 1, MAC OSX 10.14: "Mojave", and 10.15: "Catalina", as well as Windows 10, so installation for those operating systems should be possible and successful. If you are installing for an operating system not mentioned above, or are having difficulties with the installation process in general, please feel free to contact me at [bwilkes00@mylangara.ca](mailto:bwilkes00@mylangara.ca) and I will be more than happy to assist with the process, as I wrote most of the installation steps and scripts by hand.
+The *full* installation, setup, and deployment pipeline has been rigorously developed and tested for Ubuntu 20.04, Amazon Cloud 9 EC2 Linux 1, MAC OSX 10.14: "Mojave", and 10.15: "Catalina", as well as Windows 10, so installation for those operating systems should be possible and successful.  
 
 ---
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg width=40px height=40px> **Acquire Every Last Drop**
 
-> If you have downloaded Every Last Drop from D2L, make a note of where it is located on your system.  
-> However if you have *not* already downloaded the Every Last Drop project, you can clone the github repository to your system. Simply type the following in a console (terminal, CMD Prompt, etc)  
+> To clone the github repository to your system. Simply type the following in a console (terminal, CMD Prompt, etc)  
 
 ```sh
 git clone https://github.com/brennanwilkes/every-last-drop.git
@@ -37,7 +32,7 @@ git clone git@github.com:brennanwilkes/every-last-drop.git
 
 <img src=https://i.pinimg.com/originals/c7/b8/11/c7b8113247fecd83bd9b5ed5bd3f34d5.png width=40px height=40px> **Linux**
 > Install mariaDB, nodeJS  
-> You know how to do that already
+> You know how to do that already, likely similar to `sudo apt install mariadb node`
 
 <img src=https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg width=60px height=40px> **Amazon EC2 Linux**
 
