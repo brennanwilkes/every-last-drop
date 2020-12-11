@@ -29,4 +29,5 @@ EXPOSE 8080
 RUN adduser -D appuser
 USER appuser
 
+RUN node src/build/generateEnvCredentials.js
 CMD ["npm", "run", "start"]
