@@ -2,6 +2,10 @@
 cat /etc/os-release | head -n1 | grep '[aA]mazon' >/dev/null
 if [ "$?" -ne 0 ]; then
 	#NON AMAZON LINUX
+
+
+	cat /etc/os-release
+
 	mariadb --version 2>/dev/null >/dev/null
 
 	if [ "$?" -eq 0 ]; then
