@@ -8,7 +8,12 @@ ARG ADMIN_USER
 ENV ADMIN_USER=$ADMIN_USER
 
 RUN apk update
-RUN apk add mysql mysql-client
+RUN apk add mysql mysql-client mariadb mariadb-common mariadb-client
+
+RUN /etc/init.d/mariadb setup
+RUN /etc/init.d/mariadb start
+RUN rc-service mariadb start
+
 
 RUN ls -al /etc/
 RUN ls -al /etc/init.d/
