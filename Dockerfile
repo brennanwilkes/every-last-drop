@@ -10,8 +10,8 @@ ENV ADMIN_USER=$ADMIN_USER
 RUN apk update
 RUN apk add mysql mysql-client
 
-RUN mysql_install_db --user=$ADMIN_USER --basedir=/usr --datadir=/var/lib/mysql
-RUN mysqld --user=$ADMIN_USER
+RUN mysql_install_db --user=root --basedir=/usr --datadir=/var/lib/mysql
+RUN mysqld --user=root
 
 
 WORKDIR /usr/app
