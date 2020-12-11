@@ -5,6 +5,11 @@ WORKDIR /usr/app
 
 COPY package*.json /usr/app/
 
+RUN echo "test"
+RUN uname -a
+RUN npm --version
+RUN node --version
+
 RUN npm ci
 
 COPY ./ /usr/app/
