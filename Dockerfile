@@ -5,10 +5,10 @@ WORKDIR /usr/app
 
 COPY package*.json /usr/app/
 
-RUN echo "test"
-RUN uname -a
-RUN npm --version
-RUN node --version
+RUN ls -al
+RUN ls -al /
+RUN ls -al /usr/app
+RUN find -iname package.json
 
 RUN npm ci
 
