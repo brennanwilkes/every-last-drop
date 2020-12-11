@@ -22,9 +22,7 @@ RUN npm ci
 
 COPY ./ /usr/app/
 
-RUN echo "$ADMIN_NAME"
-RUN echo "$ADMIN_PASS"
-RUN npm run project-setup
+## RUN npm run project-setup
 RUN npm prune --production
 
 ## ================
