@@ -1,6 +1,12 @@
 ## dockerfile
 FROM node:12-alpine as builder
 
+ARG ADMIN_PASS
+ENV ADMIN_PASS=$ADMIN_PASS
+
+ARG ADMIN_USER
+ENV ADMIN_USER=$ADMIN_USER
+
 RUN apk update
 RUN apk add mysql mysql-client
 
