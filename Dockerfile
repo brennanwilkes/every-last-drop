@@ -2,7 +2,7 @@
 FROM node:12-alpine as builder
 
 RUN apk update
-RUN apk add mariadb mariadb-common mariadb-client
+RUN apk add mysql mysql-client
 
 WORKDIR /usr/app
 
