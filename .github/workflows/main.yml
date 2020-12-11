@@ -1,0 +1,26 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.7.8
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "every-last-drop"
+          heroku_email: "brennan@codexwilkes.com"
+          usedocker: true
+          docker_build_args: |
+            NODE_ENV
+            SECRET_KEY
+
+        env:
+          NODE_ENV: production
+          ADMIN_USER: ${{ secrets.ADMIN_NAME }}
+          ADMIN_PASS: ${{ secrets.ADMIN_PASS }}

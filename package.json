@@ -30,6 +30,7 @@
 		"dev": "run-p watch dev:server",
 		"dev:server": "nodemon .",
 		"watch": "webpack --config src/webpack.config.js --watch",
+		"build:production": "sed -i 's/development/production/' src/webpack.config.js ; npm run build:frontend ; sed -i 's/production/development/' src/webpack.config.js ;",
 		"build:frontend": "webpack --config src/webpack.config.js",
 		"project-setup": "run-s genAuth sql-setup build:frontend",
 		"genSqlUser": "node src/build/generateSqlUser.js",
