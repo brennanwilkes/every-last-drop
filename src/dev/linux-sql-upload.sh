@@ -4,15 +4,23 @@ if [ "$?" -ne 0 ]; then
 	#NON AMAZON LINUX
 
 
-	cat /etc/os-release
+	cat /etc/os-release | head -n1 | grep '[Aa]lpine' >/dev/null
+	if [ "$?" -ne 0 ]; then
+		#NON ALPINE LINUX
 
-	mariadb --version 2>/dev/null >/dev/null
+		mariadb --version 2>/dev/null >/dev/null
 
-	if [ "$?" -eq 0 ]; then
-		sudo mariadb -u root < "$1"
+		if [ "$?" -eq 0 ]; then
+			sudo mariadb -u root < "$1"
+		else
+			echo "mariadb is not installed. Try:"
+			echo "'sudo apt install mariadb-server'";
+		fi;
 	else
-		echo "mariadb is not installed. Try:"
-		echo "'sudo apt install mariadb-server'";
+		#ALPINE LINUX
+
+		mysql --version
+
 	fi;
 else
 	#AMAZON LINUX
