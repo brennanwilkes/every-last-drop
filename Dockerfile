@@ -10,11 +10,8 @@ ENV ADMIN_USER=$ADMIN_USER
 RUN apk update
 RUN apk add mysql mysql-client
 
-RUN mysqld
+RUN mysqld --user=root
 
-
-RUN ls -al /etc/
-RUN ls -al /etc/init.d/
 
 WORKDIR /usr/app
 
