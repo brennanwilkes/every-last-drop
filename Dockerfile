@@ -2,7 +2,7 @@
 FROM node:12-alpine as builder
 
 RUN apk update
-RUN apk add mariadb mariadb-common mariadb-client mariadb-server
+RUN apk add mariadb mariadb-common mariadb-client
 ## RUN /etc/init.d/mariadb setup
 RUN rc-service mariadb start
 RUN rc-update add mariadb default
