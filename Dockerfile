@@ -8,11 +8,16 @@ ARG ADMIN_USER
 ENV ADMIN_USER=$ADMIN_USER
 
 RUN set -ex && apk --no-cache add sudo
+RUN echo "Set disable_coredump false" >> /etc/sudo.conf
+
+
 RUN apk update
 RUN apk add openrc
 RUN apk add mysql mysql-client
 
 RUN sudo mysql_install_db --user=root --basedir=/usr --datadir=/var/lib/mysql
+RUN sudo rc-update add mariadb default
+RUN rc default
 RUN sudo rc-service mariadb start
 
 
