@@ -30,5 +30,4 @@ EXPOSE 8080
 RUN adduser -D appuser
 USER appuser
 
-CMD ["npm", "run", "project-setup"]
-## CMD ["npm", "run", "start"]
+CMD ["npm", "run", "heroku-start"]
