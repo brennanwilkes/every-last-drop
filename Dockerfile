@@ -10,8 +10,8 @@ RUN npm ci
 COPY ./ /usr/app/
 
 ## RUN npm run project-setup
-RUN npm prune --production
 RUN npm run build:production
+RUN npm prune --production
 
 ## ================
 FROM node:12-alpine as runner
