@@ -8,6 +8,7 @@ ARG ADMIN_USER
 ENV ADMIN_USER=$ADMIN_USER
 
 RUN apk update
+RUN apk add openrc
 RUN apk add mysql mysql-client
 
 RUN mysql_install_db --user=root --basedir=/usr --datadir=/var/lib/mysql
