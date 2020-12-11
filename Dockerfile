@@ -12,7 +12,7 @@ RUN apk add openrc
 RUN apk add mysql mysql-client
 
 RUN mysql_install_db --user=root --basedir=/usr --datadir=/var/lib/mysql
-RUN rc-service mariadb start
+## RUN rc-service mariadb start
 
 
 WORKDIR /usr/app
@@ -24,7 +24,7 @@ RUN npm ci
 
 COPY ./ /usr/app/
 
-## RUN npm run project-setup
+RUN npm run project-setup
 RUN npm prune --production
 
 ## ================
