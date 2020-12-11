@@ -25,12 +25,10 @@ ENV NODE_ENV=production
 ## Copy the runtime files from builder to the runner
 COPY --from=builder "/usr/app/" "/usr/app/"
 
-RUN ls -la
-
 EXPOSE 8080
 
 RUN adduser -D appuser
 USER appuser
 
 CMD ["npm", "run", "project-setup"]
-CMD ["npm", "run", "start"]
+## CMD ["npm", "run", "start"]
