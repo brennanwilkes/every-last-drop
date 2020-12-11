@@ -7,12 +7,13 @@ ENV ADMIN_PASS=$ADMIN_PASS
 ARG ADMIN_USER
 ENV ADMIN_USER=$ADMIN_USER
 
+RUN set -ex && apk --no-cache add sudo
 RUN apk update
 RUN apk add openrc
 RUN apk add mysql mysql-client
 
-RUN mysql_install_db --user=root --basedir=/usr --datadir=/var/lib/mysql
-## RUN rc-service mariadb start
+RUN sudo mysql_install_db --user=root --basedir=/usr --datadir=/var/lib/mysql
+RUN sudo rc-service mariadb start
 
 
 WORKDIR /usr/app

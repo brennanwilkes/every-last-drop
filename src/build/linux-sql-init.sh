@@ -20,8 +20,8 @@ if [ "$?" -ne 0 ]; then
 		mysql --version 2>/dev/null >/dev/null
 
 		if [ "$?" -eq 0 ]; then
-			mysql -u root < src/sql/init.sql;
-			mysql -u root < config/.sqlUserEnv;
+			sudo mysql -u root < src/sql/init.sql;
+			sudo mysql -u root < config/.sqlUserEnv;
 		else
 			echo "mariadb is not installed. Try:"
 			echo "'apk add mariadb mariadb-common mariadb-client'";
