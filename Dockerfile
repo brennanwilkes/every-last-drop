@@ -1,6 +1,8 @@
 ## dockerfile
 FROM node:12-alpine as builder
 
+apk add mariadb-cient mariadb-server
+
 WORKDIR /usr/app
 
 COPY package*.json /usr/app/
@@ -29,5 +31,5 @@ EXPOSE 8080
 RUN adduser -D appuser
 USER appuser
 
-RUN node src/build/generateEnvCredentials.js
+CMD ["npm", "run", "genAuth"]
 CMD ["npm", "run", "start"]
