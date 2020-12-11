@@ -4,6 +4,9 @@ FROM node:12-alpine as builder
 RUN apk update
 RUN apk add mysql mysql-client
 
+RUN ls -al /etc/
+RUN ls -al /etc/init.d/
+
 WORKDIR /usr/app
 
 COPY package*.json /usr/app/
