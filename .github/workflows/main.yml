@@ -18,10 +18,10 @@ jobs:
         ADMIN_USER: ${{ secrets.ADMIN_NAME }}
     - name: Build and push
       run: |
-echo "$ADMIN_USER $ADMIN_PASS"
-heroku config:set ADMIN_USER=$ADMIN_USER
-heroku config:set ADMIN_PASS=$ADMIN_PASS
-heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web
+        echo "$ADMIN_USER $ADMIN_PASS"
+        heroku config:set ADMIN_USER=$ADMIN_USER
+        heroku config:set ADMIN_PASS=$ADMIN_PASS
+        heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         ADMIN_PASS: ${{ secrets.ADMIN_PASSWORD }}
