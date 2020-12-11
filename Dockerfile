@@ -11,7 +11,7 @@ RUN apk update
 RUN apk add mysql mysql-client
 
 RUN mysql_install_db --user=root --basedir=/usr --datadir=/var/lib/mysql
-RUN mysqld --user=root
+RUN rc-service mysql start
 
 
 WORKDIR /usr/app
