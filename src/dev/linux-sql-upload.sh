@@ -19,8 +19,14 @@ if [ "$?" -ne 0 ]; then
 	else
 		#ALPINE LINUX
 
-		mysql --version
+		mysql --version 2>/dev/null >/dev/null
 
+		if [ "$?" -eq 0 ]; then
+			mysql -u root < "$1"
+		else
+			echo "mariadb is not installed. Try:"
+			echo "'apk add mariadb mariadb-common mariadb-client'";
+		fi;
 	fi;
 else
 	#AMAZON LINUX
