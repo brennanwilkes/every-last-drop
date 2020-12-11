@@ -5,11 +5,6 @@ WORKDIR /usr/app
 
 COPY package*.json /usr/app/
 
-RUN ls -al
-RUN ls -al /
-RUN ls -al /usr/app
-RUN find -iname package.json
-
 RUN npm ci
 
 COPY ./ /usr/app/
