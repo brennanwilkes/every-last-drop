@@ -18,7 +18,8 @@ jobs:
           usedocker: true
           docker_build_args: |
             NODE_ENV
-            SECRET_KEY
+            ADMIN_USER
+            ADMIN_PASS
 
         env:
           NODE_ENV: production
