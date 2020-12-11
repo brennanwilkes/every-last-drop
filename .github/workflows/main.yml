@@ -24,4 +24,4 @@ jobs:
         env:
           NODE_ENV: production
           ADMIN_USER: ${{ secrets.ADMIN_NAME }}
-          ADMIN_PASS: ${{ secrets.ADMIN_PASS }}
+          ADMIN_PASS: ${{ secrets.ADMIN_PASSWORD }}
