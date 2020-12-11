@@ -10,24 +10,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+
     - name: Login to Heroku Container registry
       run: heroku container:login
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        ADMIN_PASS: ${{ secrets.ADMIN_PASSWORD }}
-        ADMIN_USER: ${{ secrets.ADMIN_NAME }}
+
     - name: Build and push
-      run: |
-        heroku config:set -a ${{ secrets.HEROKU_APP_NAME }} ADMIN_USER=$ADMIN_USER
-        heroku config:set -a ${{ secrets.HEROKU_APP_NAME }} ADMIN_PASS=$ADMIN_PASS
-        heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         ADMIN_PASS: ${{ secrets.ADMIN_PASSWORD }}
         ADMIN_USER: ${{ secrets.ADMIN_NAME }}
+        APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+      run: |
+        docker login --username=_ --password=${{ env.HEROKU_API_KEY }} registry.heroku.com
+        docker build --build-arg ADMIN_PASS=${{ env.ADMIN_PASS }} --build-arg ADMIN_USER=${{ env.ADMIN_USER }} -t registry.heroku.com/${{ env.APP_NAME }}/web .
+        docker push registry.heroku.com/${{ env.APP_NAME }}/web
+
     - name: Release
       run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} web
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        ADMIN_PASS: ${{ secrets.ADMIN_PASSWORD }}
-        ADMIN_USER: ${{ secrets.ADMIN_NAME }}
