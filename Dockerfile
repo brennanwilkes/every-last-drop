@@ -8,12 +8,14 @@ WORKDIR /usr/app
 
 COPY package*.json /usr/app/
 
+RUN echo 'scripts-prepend-node-path=true' > .npmrc
 RUN npm ci
 
 COPY ./ /usr/app/
 
-## RUN npm run project-setup
-## RUN npm run build:production
+RUN echo "$ADMIN_NAME"
+RUN echo "$ADMIN_PASS"
+RUN npm run project-setup
 RUN npm prune --production
 
 ## ================
@@ -30,4 +32,4 @@ EXPOSE 8080
 RUN adduser -D appuser
 USER appuser
 
-CMD ["npm", "run", "heroku-start"]
+CMD ["npm", "run", "start"]
