@@ -1,6 +1,8 @@
 ## dockerfile
 FROM node:12-alpine as builder
 
+RUN apk add openssh
+
 ARG ADMIN_PASS
 ENV ADMIN_PASS=$ADMIN_PASS
 
