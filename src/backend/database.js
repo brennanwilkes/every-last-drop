@@ -76,6 +76,11 @@ const database = {
 			params.port = CONFIG["sqlPort"];
 		}
 
+		console.log(params.host)
+		console.log(params.user)
+		console.log(params.database)
+		console.log(params.port)
+
 		//Create mariadb pool
 		this.pool = mariadb.createPool(params);
 
