@@ -1,6 +1,16 @@
-#sudo mariadb -u root < src/sql/init.sql;
-#sudo mariadb -u root < config/.sqlUserEnv;
-#sudo mariadb -u root < "$1"
 
-echo "DEPLOYMENT SQL"
-eval "$SQL_SSH_STRING" 'myArg'
+user="$1"
+pass="$2"
+
+TEMP=$( mktemp )
+
+curl -s "https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/src/sql/init.sql" > "$TEMP"
+mariadb -u "$user" -p "$pass" < "$TEMP"
+
+curl -s "https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/data/sample-data.sql" > "$TEMP"
+mariadb -u "$user" -p "$pass" < "$TEMP"
+
+curl -s "https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/data/transaction-data.sql" > "$TEMP"
+mariadb -u "$user" -p "$pass" < "$TEMP"
+
+rm "$TEMP"

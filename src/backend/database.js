@@ -64,13 +64,17 @@ const database = {
 	init(){
 
 		//Create parameters for pool
-		const params = {
+		let params = {
 			host: this.hostname,
 			user: this.username,
 			password: this.password,
 			connectionLimit: this.connectionLimit,
 			database: this.database
 		};
+
+		if(CONFIG["sqlPort"]){
+			params.port = CONFIG["sqlPort"];
+		}
 
 		//Create mariadb pool
 		this.pool = mariadb.createPool(params);
