@@ -33,7 +33,9 @@
 		"build:production": "sed -i 's/development/production/' src/webpack.config.js ; npm run build:frontend ; sed -i 's/production/development/' src/webpack.config.js ;",
 		"build:frontend": "webpack --config src/webpack.config.js",
 		"project-setup": "run-s genAuth sql-setup build:frontend",
-		"heroku-start": "run-s genAuth sql-setup start",
+		"heroku-setup": "run-s genAuth sql-server-setup build:frontend",
+		"sql-server-setup": "run-s gen-sql gen-transaction-sql genSqlUser sql-deployment-init",
+		"sql-deployment": "sh src/build/deployment-sql.sh",
 		"genSqlUser": "node src/build/generateSqlUser.js",
 		"genAuth": "node src/build/generateEnvCredentials.js",
 		"generate-docs": "rm -rf documentation/ ; jsdoc -d documentation/ src/app.js src/*/*.js src/frontend/*/*.js"
