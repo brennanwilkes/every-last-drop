@@ -1,24 +1,13 @@
-
-user="$1"
-pass="$2"
-
-TEMP=$( mktemp )
 credentialsFile=$( mktemp )
 
 cat << EOF > "$credentialsFile"
 [client]
-user=$user
-password=$pass
+user=$ADMIN_USER
+password=$ADMIN_PASS
 EOF
 
-curl -s "https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/src/sql/init.sql" > "$TEMP"
-mariadb --defaults-extra-file="$credentialsFile" < "$TEMP"
+mariadb -h "$SQL_HOSTNAME" --defaults-extra-file="$credentialsFile" < "src/sql/init.sql"
+mariadb -h "$SQL_HOSTNAME" --defaults-extra-file="$credentialsFile" < "data/sample-data.sql"
+mariadb -h "$SQL_HOSTNAME" --defaults-extra-file="$credentialsFile" < "data/transaction-data.sql"
 
-curl -s "https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/data/sample-data.sql" > "$TEMP"
-mariadb --defaults-extra-file="$credentialsFile" < "$TEMP"
-
-curl -s "https://raw.githubusercontent.com/brennanwilkes/every-last-drop/master/data/transaction-data.sql" > "$TEMP"
-mariadb --defaults-extra-file="$credentialsFile" < "$TEMP"
-
-rm "$TEMP"
 rm "$credentialsFile"

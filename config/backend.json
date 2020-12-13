@@ -1,5 +1,5 @@
 {
-	"host": "localhost",
+	"host": "pi.codexwilkes.com",
 	"database": "everyLastDrop",
 	"port": 8080,
 	"verbose": true,
