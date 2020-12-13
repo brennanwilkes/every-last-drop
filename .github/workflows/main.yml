@@ -23,7 +23,6 @@ jobs:
         ADMIN_USER: ${{ secrets.ADMIN_NAME }}
         APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
         SQL_HOSTNAME: ${{ secrets.SQL_HOSTNAME }}
-        SQL_SSH_STRING: ${{ secrets.SQL_SSH_STRING }}
         SQL_PORT: ${{ secrets.SQL_PORT }}
       run: |
         echo "${{ env.HEROKU_API_KEY }}" | docker login --username=_ --password-stdin registry.heroku.com

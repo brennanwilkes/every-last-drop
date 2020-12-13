@@ -6,8 +6,8 @@ user=$ADMIN_USER
 password=$ADMIN_PASS
 EOF
 
-mariadb -h "$SQL_HOSTNAME" --defaults-extra-file="$credentialsFile" < "src/sql/init.sql"
-mariadb -h "$SQL_HOSTNAME" --defaults-extra-file="$credentialsFile" < "data/sample-data.sql"
-mariadb -h "$SQL_HOSTNAME" --defaults-extra-file="$credentialsFile" < "data/transaction-data.sql"
+mariadb --defaults-extra-file="$credentialsFile" -h "$SQL_HOSTNAME" < "src/sql/init.sql"
+mariadb --defaults-extra-file="$credentialsFile" -h "$SQL_HOSTNAME" < "data/sample-data.sql"
+mariadb --defaults-extra-file="$credentialsFile" -h "$SQL_HOSTNAME" < "data/transaction-data.sql"
 
 rm "$credentialsFile"
