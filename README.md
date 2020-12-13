@@ -1,4 +1,4 @@
-# Every Last Drop
+# Every Last Drop ![Build and Deploy](https://github.com/brennanwilkes/every-last-drop/workflows/Build%20and%20Deploy/badge.svg)
 
 The complete database management system for the small bar, or bar owner. Every Last Drop manages the bar's inventory, orders, and sales, as well as featuring multi-user support for default customer users, and credential-required manager and admin users.  
 
