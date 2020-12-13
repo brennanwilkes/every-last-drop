@@ -2,7 +2,7 @@
 FROM node:12-alpine as builder
 
 RUN apk update
-RUN apk install mariadb-client
+RUN apk add mariadb-client
 RUN apk add --update --no-cache openssh sshpass
 
 ARG ADMIN_PASS
